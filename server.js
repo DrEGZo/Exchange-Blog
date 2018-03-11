@@ -2,8 +2,7 @@ var http = require("http");
 var fs = require("fs");
 var url = require("url");
 
-var ip = process.env.IP;
-var port = process.env.PORT;
+var port = process.env.PORT || 8080;
 
 var contentTypes = {
   html: "text/html",
@@ -15,10 +14,10 @@ var contentTypes = {
 
 http.createServer((req, res)=>{
   if (req.url == "/" || req.url == "/de-de/") {
-    res.writeHead(302,  {Location: "http://" + ip + ":" + port + "/de-de/index.html"});
+    res.writeHead(302,  {Location: "http://" + req.headers.host + "/de-de/index.html"});
     res.end();
   } else if (req.url == "/en-us/") {
-    res.writeHead(302,  {Location: "http://" + ip + ":" + port + "/en-us/index.html"});
+    res.writeHead(302,  {Location: "http://" + req.headers.host + "/en-us/index.html"});
     res.end();
   } else {
     fs.readFile("."+req.url, (err,data)=>{
