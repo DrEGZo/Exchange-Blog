@@ -2,8 +2,8 @@ var http = require("http");
 var fs = require("fs");
 var url = require("url");
 
-var ip = process.env.IP || "192.168.2.103";
-var port = process.env.PORT || 8080;
+var ip = process.env.IP;
+var port = process.env.PORT;
 
 var contentTypes = {
   html: "text/html",
