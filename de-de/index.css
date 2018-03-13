@@ -10,8 +10,14 @@ body {
   font-size: 1.3em;
 }
 
-
-.carousel-item>img {
+.carousel-fitter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.carousel-item img {
   /*Bild aus dem Sichtfeld verschieben und mit margin:auto zentrieren lassen.*/
   position: absolute;
   width: 100%;
@@ -23,9 +29,8 @@ body {
 }
 .carousel-item {
   width: 100%;
-  /*padding-bottom: 62.5%;
-  /*Percentage refference: https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css */
   height: 500px;
+  /*Percentage refference: https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css */
 }
 .carousel-header {
   font-size: 5.5em;
