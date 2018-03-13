@@ -21,7 +21,7 @@ http.createServer((req, res)=>{
     res.end();
   } else {
     fs.readFile("."+req.url, (err,data)=>{
-	  if (!err) {
+	  if (err) {
 		res.end(""+err);
         /*var parts = req.url.split("/");
         var extension = parts[parts.length-1].split(".")[1];
