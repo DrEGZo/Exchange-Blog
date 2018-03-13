@@ -27,7 +27,6 @@ http.createServer((req, res)=>{
         res.writeHead(200, {'Content-Type': contentTypes[extension]});
         res.end(data);
       } else {
-		res.write(req.url);
         var parts = req.url.split("/");
         var file = "index.html";
         if (parts[parts.length - 1] != "") {
@@ -39,7 +38,7 @@ http.createServer((req, res)=>{
             res.end();
           } else {
             res.writeHead(404);
-			res.write(""+err);
+			res.write(""+err+req.url+"ä"+file);
             res.end("ERROR 404: FILE NOT FOUND");
           }
         });
