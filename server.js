@@ -22,12 +22,11 @@ http.createServer((req, res)=>{
   } else {
     fs.readFile("."+req.url, (err,data)=>{
 	  if (err) {
-		res.end(""+err);
-        /*var parts = req.url.split("/");
+        var parts = req.url.split("/");
         var extension = parts[parts.length-1].split(".")[1];
         res.writeHead(200, {'Content-Type': contentTypes[extension]});
-        res.end(data);*/
-      } /*else {
+        res.end(data);
+      } else {
         var parts = req.url.split("/");
         var file = "index.html";
         if (parts[parts.length - 1] != "") {
@@ -43,7 +42,7 @@ http.createServer((req, res)=>{
             res.end("ERROR 404: FILE NOT FOUND");
           }
         });
-      }*/
+      }
     });
   }
 }).listen(port);
