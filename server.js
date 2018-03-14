@@ -19,7 +19,30 @@ http.createServer((req, res)=>{
   } else if (req.url == "/en-us/" || req.url == "/en-us") {
     res.writeHead(302,  {Location: "http://" + req.headers.host + "/en-us/index.html"});
     res.end();
-  } else {
+  }
+
+
+  else if (req.url == "/testscr.js") {
+    fs.readFile('testscr.js',(err,data)=>{
+      if (err) throw err;
+      fs.appendFile('testscr2.js', data + "document.getElementById('body').innerHTML += 'x';", (err)=>{
+        if (err) throw err;
+        fs.readFile("testscr2.js", (err,data)=>{
+          if (err) throw err;
+          res.write(data);
+          fs.unlink("testscr2.js",(err)=>{
+            if (err) throw err;
+            res.end();
+          });
+        });
+      });
+    });
+  }
+
+
+
+
+  else {
     fs.readFile("."+req.url, (err,data)=>{
 	  if (!err) {
         var parts = req.url.split("/");
