@@ -61,7 +61,6 @@ http.createServer((req, res)=>{
             res.end();
           } else {
             res.writeHead(404);
-			res.write(""+err+req.url+"ä"+file);
             res.end("ERROR 404: FILE NOT FOUND");
           }
         });
