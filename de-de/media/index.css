@@ -23,6 +23,48 @@ body {
   color: #ffffff;
 }
 
+#page-menu {
+  background-color: #303030;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+}
+#page-menu > h4 {
+  color: #ffffff;
+  text-align: center;
+}
+.menu-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1px;
+}
+.divider {
+  height: 1px;
+  background-color: #a0a0a0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu-button {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 5px 15px;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 10px 10px;
+}
+.menu-button:hover {
+  color: #303030;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.menu-button.active {
+  background-color: #00bf0d;
+  color: #ffffff;
+  border: none;
+  font-weight: 500;
+}
+
 #page-content {
   background-color: #303030;
   margin-top: 50px;
