@@ -1,0 +1,235 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#comments {
+  background-color: #303030;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #ffffff;
+  padding: 40px;
+}
+#comments > h4 {
+  margin-bottom: 10px;
+}
+.comment, .comment-insert {
+  background-color: #5f5f5f;
+  margin: 10px 0;
+  padding: 10px;
+}
+.comment-content {
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-left: 3px solid #ffffff;
+}
+.comment-info {
+  margin-bottom: 10px;
+}
+.comment-avatar {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  vertical-align: center;
+  float: left;
+  margin-right: 10px;
+}
+.comment-avatar > span {
+  display: block;
+}
+.comment-author {
+  font-weight: bold;
+}
+.comment-author > span {
+  background-color: #d000e0;
+}
+.comment-time {
+  font-style: italic;
+}
+.comment-text > p {
+  margin: 3px;
+}
+.comment-controll {
+  display: flex;
+  margin: 10px 0;
+}
+.comment-controll > a {
+  display: block;
+  color: #ffffff;
+  padding: 3px 8px;
+  font-size: 0.8em;
+  margin: 0 3px;
+  transition: 0.3s;
+}
+.comment-controll > a:nth-child(1) {
+  background-color: #00b107;
+}
+.comment-controll > a:nth-child(1):hover {
+  background-color: #00a206;
+  text-decoration: none;
+}
+.comment-controll > a:nth-child(2) {
+  background-color: #ffa500;
+}
+.comment-controll > a:nth-child(2):hover {
+  background-color: #d68a00;
+  text-decoration: none;
+}
+.comment-controll > a:nth-child(3) {
+  background-color: #ff3a3a;
+}
+.comment-controll > a:nth-child(3):hover {
+  background-color: #D83a3a;
+  text-decoration: none;
+}
+.comment-controll > a:first-child {
+  margin-left: 0;
+}
+.comment-insert > textarea {
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+  padding: 15px;
+}
+.comment-insert > a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #00bf0d;
+  color: #ffffff;
+}
+.comment-replies > h6 {
+  display: block;
+}
+.comment-replies > h6:last-child {
+  display: none;
+}
+.comment-reply, .comment-reply-insert {
+  background-color: #7f7f7f;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-left: 3px solid #ffffff;
+}
+.comment-reply::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #adadad;
+}
+.comment-reply:last-child::after {
+  display: none;
+}
+.comment-reply-info {
+  margin-bottom: 10px;
+}
+.comment-reply-avatar {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  vertical-align: center;
+  float: left;
+  margin-right: 10px;
+}
+.comment-reply-avatar > span {
+  display: block;
+}
+.comment-reply-author {
+  font-weight: bold;
+  font-size: 14px;
+}
+.comment-reply-author > span {
+  background-color: #d000e0;
+}
+.comment-reply-time {
+  font-style: italic;
+  font-size: 14px;
+}
+.comment-reply-text > p {
+  margin: 3px;
+  font-size: 14px;
+}
+.comment-reply-controll {
+  display: flex;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.comment-reply-controll > a {
+  display: block;
+  color: #ffffff;
+  padding: 3px 8px;
+  font-size: 0.8em;
+  margin: 0 3px;
+  transition: 0.3s;
+}
+.comment-reply-controll > a:nth-child(1) {
+  background-color: #ffa500;
+}
+.comment-reply-controll > a:nth-child(1):hover {
+  background-color: #d8a500;
+  text-decoration: none;
+}
+.comment-reply-controll > a:nth-child(2) {
+  background-color: #ff3a3a;
+}
+.comment-reply-controll > a:nth-child(2):hover {
+  background-color: #d83a3a;
+  text-decoration: none;
+}
+.comment-reply-controll > a:first-child {
+  margin-left: 0;
+}
+.comment-reply-controll > a, .comment-controll > a {
+  background-color: #303030;
+}
+.comment-reply-insert > textarea {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  padding: 15px;
+  font-size: 1em;
+}
+.comment-reply-insert > a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #00bf0d;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  #comments {
+    margin: 35px 20px 35px 20px;
+    width: auto;
+    max-width: none;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  #comments {
+    margin: 15px 5px 10px 5px;
+    width: auto;
+    max-width: none;
+    padding: 20px;
+  }
+  .comment {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .comment-controll > a, .comment-reply-controll > a {
+    margin: 0;
+  }
+  .comment-content {
+    margin: 0 5px;
+    padding: 10px;
+    border-width: 2px;
+  }
+  .comment-reply, .comment-reply-insert {
+    margin: 0;
+    padding: 10px;
+    border-width: 2px;
+  }
+}

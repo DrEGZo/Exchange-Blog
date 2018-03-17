@@ -3,13 +3,35 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="/css/navigation.css">
+        <link rel="stylesheet" href="/css/gallery.css">
+        <link rel="stylesheet" href="/css/modal.css">
         <script scr="index.js"></script>
         <title>Exchange Blog</title>
+        <!-- Flavicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/flavicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/flavicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/flavicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/flavicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/flavicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/flavicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/flavicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/flavicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/flavicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/flavicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/flavicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/flavicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/flavicon/favicon-16x16.png">
+        <link rel="manifest" href="/flavicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/flavicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
         <div class="container-fluid page-top">
@@ -41,6 +63,7 @@
           </div>
         </div>
 
+
         <div id="page-menu" class="container">
           <h4>Jahr</h4>
           <div class="menu-box" id="year-choice">
@@ -59,6 +82,66 @@
             <div class="menu-button">November</div>
             <div class="menu-button">Dezember</div>
           </div>
+        </div>
+
+
+        <div class="container" id="page-content">
+          <div class="image-gallery">
+            <div class="gallery-row">
+              <div class="gallery-column">
+                <a href="#">
+                  <div class="gallery-image" style="background-image:url('');"></div>
+                </a>
+              </div>
+            </div>
+            <div class="gallery-row">
+              <div class="gallery-column">
+                <a href="#">
+                  <div class="gallery-image" style="background-image:url('');"></div>
+                </a>
+              </div>
+            </div>
+            <div class="gallery-row">
+              <div class="gallery-column">
+                <a href="#">
+                  <div class="gallery-image" style="background-image:url('');"></div>
+                </a>
+              </div>
+            </div>
+            <div class="gallery-row">
+              <div class="gallery-column">
+                <a href="#">
+                  <div class="gallery-image" style="background-image:url('');"></div>
+                </a>
+              </div>
+            </div>
+            <div class="gallery-row">
+              <div class="gallery-column">
+                <a href="#">
+                  <div class="gallery-image" style="background-image:url('');"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-modal">
+          <div class="image-slider">
+            <div class="slider-image"></div>
+            <span class="fa fa-chevron-left"></span>
+            <span class="fa fa-expand"></span>
+            <span class="fa fa-close"></span>
+            <span class="fa fa-chevron-right"></span>
+            <!--
+            Zum Einbetten eines YT-Videos: Wrapper Div einfügen für 16:9 Format - darin Iframe platzieren.
+            Zum Einbetten eines Videos: Ebenfalls mit Wrapper und <video> Element (siehe w3schools).
+            Berechnung des Formats: https://stackoverflow.com/questions/31924846/get-video-resolution-in-nodejs
+            -->
+          </div>
+        </div>
+
+        <div class="container" id="footer">
+          <p>Coockie Info & Private Policy</p>
         </div>
     </body>
 </html>
