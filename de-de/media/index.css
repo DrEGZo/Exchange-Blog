@@ -61,10 +61,3 @@
     display: block;
   }
 }
-
-@media screen and (max-width: 525px) {
-  .page-top {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}

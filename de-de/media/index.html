@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="/css/navigation.css">
         <link rel="stylesheet" href="/css/gallery.css">
         <link rel="stylesheet" href="/css/modal.css">
-        <script scr="index.js"></script>
+        <link rel="stylesheet" href="/css/comment.css">
+        <script src="index.js"></script>
         <title>Exchange Blog</title>
         <!-- Flavicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
         <link rel="apple-touch-icon" sizes="57x57" href="/flavicon/apple-icon-57x57.png">
@@ -127,8 +128,82 @@
 
         <div class="media-modal">
           <div class="image-slider">
-            <div class="slider-image"></div>
+            <div class="slider-image">
+              <div class="slider-image-comments">
+                <div>
+                  <div class="comment">
+                    <div class="comment-content">
+                      <div class="comment-info clearfix">
+                        <div class="comment-avatar">
+                          <span class="fa fa-user-circle"></span>
+                        </div>
+                        <div class="comment-author">
+                          DrEGZo
+                          <span class="badge">Administrator</span>
+                        </div>
+                        <div class="comment-time">
+                          vor 7 Stunden
+                        </div>
+                      </div>
+                      <div class="comment-text">
+                        <p>Das ist ein erster Testkommentar!</p>
+                        <p>Nur zu Designzwecken.</p>
+                      </div>
+                      <div class="comment-controll">
+                        <a href="#">Antworten</a>
+                        <a href="#">Melden</a>
+                        <a href="#">Löschen</a>
+                      </div>
+                      <div class="comment-replies">
+                        <h6>Antworten:</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <div class="comment-content">
+                      <div class="comment-info clearfix">
+                        <div class="comment-avatar">
+                          <span class="fa fa-user-circle"></span>
+                        </div>
+                        <div class="comment-author">
+                          DrEGZo
+                          <span class="badge">Administrator</span>
+                        </div>
+                        <div class="comment-time">
+                          vor 7 Stunden
+                        </div>
+                      </div>
+                      <div class="comment-text">
+                        <p>Das ist ein erster Testkommentar!</p>
+                        <p>Nur zu Designzwecken.</p>
+                      </div>
+                      <div class="comment-controll">
+                        <a href="#">Antworten</a>
+                        <a href="#">Melden</a>
+                        <a href="#">Löschen</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment-insert">
+                    <textarea placeholder="Schreibe einen Kommentar..."></textarea>
+                    <a href="#">
+                      Veröffentlichen
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--
+              <div class="video-base">
+                <iframe src="https://www.youtube.com/embed/Nv8ylXptYWE" width="100%" height="100%" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              -->
+              <!--video width="100%" height="100%" controls>
+                <source src="img/video.mov" type="video/mp4">
+              </video-->
+
+            </div>
             <span class="fa fa-chevron-left"></span>
+            <span class="fa fa-comments-o"></span>
             <span class="fa fa-expand"></span>
             <span class="fa fa-close"></span>
             <span class="fa fa-chevron-right"></span>
@@ -137,9 +212,9 @@
             Zum Einbetten eines Videos: Ebenfalls mit Wrapper und <video> Element (siehe w3schools).
             Berechnung des Formats: https://stackoverflow.com/questions/31924846/get-video-resolution-in-nodejs
             -->
+
           </div>
         </div>
-
         <div class="container" id="footer">
           <p>Coockie Info & Private Policy</p>
         </div>

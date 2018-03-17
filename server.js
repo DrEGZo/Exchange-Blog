@@ -10,6 +10,7 @@ var contentTypes = {
   js: "text/js",
   png: "image/png",
   jpg: "image/jpeg",
+  mov: "video/mov",
 }
 
 http.createServer((req, res)=>{
@@ -75,3 +76,5 @@ Wenn err: de-de und en-us
 Wenn err: +index.html bzw. +/index.html
 Wenn err: 404
 */
+
+//Erstellen eines Video-Thumbnails: https://stackoverflow.com/questions/13079742/how-to-generate-video-thumbnail-in-node-js

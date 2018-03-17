@@ -66,10 +66,6 @@
   .carousel-caption span.badge {
     display: none;
   }
-  .page-top {
-    padding-left: 0;
-    padding-right: 0;
-  }
   .carousel-item {
     height: 200px;
   }
