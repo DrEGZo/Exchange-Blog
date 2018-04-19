@@ -203,6 +203,83 @@ app.post('/replyToComment', (req,res) => {
     });
 });
 
+app.post('/deleteComment', (req, res) => {
+  auth(req.body.idToken)
+    .then((uid) => {
+      var id = req.body.id;
+      var typ = req.body.typ;
+      var source = req.body.source;
+      console.log(id,typ,source)
+      if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
+        if (typ == 'blog') {
+          console.log(dbBlogentries)
+          var index = dbBlogentries[source].Comments.indexOf(id);
+          dbBlogentries[source].Comments.splice(index, 1);
+          db.collection('Blogentries').doc(source).update({
+            Comments: dbBlogentries[source].Comments
+          });
+          delete dbComments[id];
+          db.collection('Comments').doc(id).delete();
+          res.end();
+        } else if (typ == 'media') {
+          var index = dbMedia[source].Comments.indexOf(id);
+          dbMedia[source].Comments.splice(index, 1);
+          db.collection('Media').doc(source).update({
+            Comments: dbMedia[source].Comments
+          });
+          delete dbComments[id];
+          db.collection('Comments').doc(id).delete();
+          res.end();
+        } else if (typ == 'comment') {
+          var index = dbComments[source].replies.indexOf(id);
+          dbComments[source].replies.splice(index, 1);
+          db.collection('Comments').doc(source).update({
+            replies: dbComments[source].replies
+          });
+          delete dbCommentReplies[id];
+          db.collection('CommentReplies').doc(id).delete();
+          res.end();
+        }
+      } else {
+        res.status(403).end();
+      }
+    }).catch((err) => {
+      console.log(err);
+      res.status(403).end();
+    });
+});
+
+app.post('/deleteCommentReply', (req, res) => {
+  auth(req.body.idToken)
+    .then((uid) => {
+      var id = req.body.id;
+      var typ = req.body.typ;
+      var source = req.body.source;
+      if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
+        if (typ == 'blog') {
+          var index = dbBlogentries[source].Comments[id].indexOf(id);
+          dbBlogentries[source].Comments[id].splice(index, 1);
+          db.collection('Blogentries').doc(source).update({
+            Comments: dbBlogentries[source].Comments
+          });
+        } else if (typ == 'media') {
+          var index = dbMedia[source].Comments[id].indexOf(id);
+          dbMedia[source].Comments[id].splice(index, 1);
+          db.collection('Media').doc(source).update({
+            Comments: dbMedia[source].Comments
+          });
+        }
+        delete dbComments[id];
+        db.collection('Comments').doc(id).delete();
+        res.end();
+      } else {
+        res.status(403).end();
+      }
+    }).catch(() => {
+      res.status(403).end();
+    });
+});
+
 function auth(idToken) {
   return new Promise((resolve,reject) => {
     admin.auth().verifyIdToken(idToken)

@@ -129,6 +129,26 @@ function main() {
       .append(stringifyComments(content.comments, true, false))
       .slideDown();
 
+    for (var i = 0; i < content.comments.length; i++) {
+      var id = content.comments[i].id;
+      $('#' + id + ' .comment-controll > .comment-controll-reply').click(((id) => () => {
+        $('#' + id + ' .comment-reply-insert').slideToggle();
+      })(id));
+      $('#' + id + ' .comment-controll > .comment-controll-report').click(((id) => () => {
+        //Report Comment Implementation goes here...
+      })(id));
+      $('#' + id + ' .comment-controll > .comment-controll-delete').click(((id) => () => {
+        $.ajax({
+          type: 'POST',
+          url: '/deleteComment',
+          contentType: 'application/json',
+          data: '{ "id": "' + id + '", "typ": "blog", "source": "' + blogid + '", "idToken": "' + idToken + '" }',
+          error: (jqxhr) => { redirector(jqxhr.status) }
+        });
+      })(id));
+    }
+    
+
     $('#comments .comment-insert a').click(() => {
       var content = $('#comments .comment-insert textarea').val()
         .replace(/"/, '&quot;')

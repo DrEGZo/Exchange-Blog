@@ -168,6 +168,9 @@
 .comment-reply-controll > a:first-child {
   margin-left: 0;
 }
+.comment-reply-insert {
+  display: none;
+}
 .comment-reply-insert > textarea {
   display: block;
   width: 100%;
