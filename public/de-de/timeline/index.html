@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <script src="index.js"></script>
+    <title>Exchange Blog</title>
+    <!-- Flavicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/flavicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/flavicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/flavicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/flavicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/flavicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/flavicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/flavicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/flavicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/flavicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/flavicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/flavicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/flavicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/flavicon/favicon-16x16.png">
+    <link rel="manifest" href="/flavicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/flavicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="container-fluid page-top">
+
+      <div id="navcontainer" class="container">
+        <nav class="navbar navbar-expand-md navbar-dark" >
+          <a href="../../.." class="navbar-brand">Exchange Blog</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Timeline</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Blogeinträge</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Medien</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Link5</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div id="header-teaser">
+        <div></div>
+      </div>
+
+    </div>
+
+    <div id="page-title" class="container">
+      <div class="jumbotron">
+        <h1>Timeline</h1>
+        <p>Absatz</p>
+      </div>
+    </div>
+
+    <div class="container" id="page-content">
+
+      <div class="status">
+        <div class="status-info">
+          <div class="status-avatar">
+            <span class="fa fa-user-circle"></span>
+          </div>
+          <div class="status-author">DrEGZo</div>
+          <div class="badge">Administrator</div>
+        </div>
+        <div class="status-content">
+          <h3>Statusmeldung</h3>
+          <i>vor 7 Stunden</i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <div class="divider">
+        <div class="baseline"></div>
+        <div class="date">
+          <div>Sonntag, 18.03.2018</div>
+          </div>
+      </div>
+
+      <div class="post">
+        <h3>A new article is available!</h3>
+        <a href="#">
+          <div class="article">
+            <div class="article-teaser"></div>
+            <div class="article-content">
+              <h4>Article Header</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="media-teaser">
+        <h3>New photos are available!</h3>
+        <div class="media-header"></div>
+        <div class="media-choice">
+          <div class="media-choice-wrapper">
+            <div class="media-choice-image" style="background-image:url('img/header01.jpg')"></div>
+            <div class="media-choice-image active" style="background-image:url('img/header01.jpg')"></div>
+            <div class="media-choice-image" style="background-image:url('img/header01.jpg')"></div>
+            <div class="media-choice-image" style="background-image:url('img/header01.jpg')"></div>
+            <div class="media-choice-image" style="background-image:url('img/header01.jpg')"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

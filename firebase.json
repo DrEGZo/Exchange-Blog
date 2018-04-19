@@ -1,0 +1,24 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": "public",
+    "rewrites": [{
+      "source": "/de-de/blog/**/index.html",
+      "destination": "/de-de/blog/blogentry/index.html"
+    }, {
+      "source": "**",
+      "function": "expressapp"
+      }],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}
