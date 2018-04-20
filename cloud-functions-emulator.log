@@ -11008,3 +11008,2371 @@ Execution took 1 ms, user function completed successfully
 2018-04-19T20:06:12.425Z - info: Execution took 2 ms, user function completed successfully
 2018-04-19T20:06:12.427Z - info: User function triggered, starting execution
 Execution took 1 ms, user function completed successfully
+2018-04-20T16:42:03.846Z - error: internal/process.js:60
+    // En©7ÐÚ
+                  ^
+
+SyntaxError: Unexpected identifier
+    at getNanoSeconds (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\performance-now\lib\performance-now.js:16:12)
+    at Object.<anonymous> (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\performance-now\lib\performance-now.js:19:22)
+    at Object.<anonymous> (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\performance-now\lib\performance-now.js:34:4)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Module.require (module.js:587:17)
+    at require (internal/module.js:11:18)
+2018-04-20T16:42:04.021Z - error: Function worker crashed with exit code: 1
+2018-04-20T16:42:04.027Z - error:  code=500, status=INTERNAL, message=Function worker crashed with exit code: 1
+undefinedinternal/process.js:60
+    // En©7ÐÚ
+                  ^
+
+SyntaxError: Unexpected identifier
+    at getNanoSeconds (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\performance-now\lib\performance-now.js:16:12)
+    at Object.<anonymous> (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\performance-now\lib\performance-now.js:19:22)
+    at Object.<anonymous> (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\performance-now\lib\performance-now.js:34:4)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Module.require (module.js:587:17)
+    at require (internal/module.js:11:18), errors=[Function worker crashed with exit code: 1
+undefinedinternal/process.js:60
+    // En©7ÐÚ
+                  ^
+
+SyntaxError: Unexpected identifier
+    at getNanoSeconds (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\performance-now\lib\performance-now.js:16:12)
+    at Object.<anonymous> (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\performance-now\lib\performance-now.js:19:22)
+    at Object.<anonymous> (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\performance-now\lib\performance-now.js:34:4)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Module.require (module.js:587:17)
+    at require (internal/module.js:11:18)]
+2018-04-20T16:44:56.236Z - info: User function triggered, starting execution
+2018-04-20T16:44:56.337Z - info: Execution took 103 ms, user function completed successfully
+2018-04-20T16:44:56.550Z - info: User function triggered, starting execution
+2018-04-20T16:44:56.554Z - info: Execution took 3 ms, user function completed successfully
+2018-04-20T16:45:06.830Z - info: User function triggered, starting execution
+2018-04-20T16:45:06.832Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T16:45:07.032Z - info: User function triggered, starting execution
+2018-04-20T16:45:07.034Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T16:45:07.086Z - info: User function triggered, starting execution
+2018-04-20T16:45:07.099Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-04-20T17:12:08.136Z - info: User function triggered, starting execution
+2018-04-20T17:12:08.224Z - info: Execution took 88 ms, user function completed successfully
+2018-04-20T17:12:08.430Z - info: User function triggered, starting execution
+2018-04-20T17:12:08.439Z - info: Execution took 5 ms, user function completed successfully
+2018-04-20T17:12:08.525Z - info: User function triggered, starting execution
+2018-04-20T17:12:08.527Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T17:12:08.532Z - info: User function triggered, starting execution
+Execution took 3 ms, user function completed successfully
+2018-04-20T17:12:51.876Z - info: User function triggered, starting execution
+2018-04-20T17:12:51.879Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T17:12:52.076Z - info: User function triggered, starting execution
+2018-04-20T17:12:52.086Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T17:12:52.147Z - info: User function triggered, starting execution
+2018-04-20T17:12:52.166Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-04-20T17:12:52.168Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T17:13:18.481Z - info: User function triggered, starting execution
+2018-04-20T17:13:18.923Z - error: (node:14200) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: Invalid login: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbuN
+534-5.7.14 Bb9qYB04ThTwDY4e78c4mv9Py2lfPfHecU0TiFWNkV2-7QP5AGSnzXLarML2SDRrDlfdR6
+534-5.7.14 xr74BUZ-nc-ME3S-XyQBZ6XKkbnTeyhJ8J7iQOre-5ff33sU-qJnPRdVxvE9p_6QajwEpu
+534-5.7.14 TWN788bLLQYEcVB0n69EjJKMrl0m1qTVaqQq8IYbK68ZvXEhb6in0wsTC80QUR95-EvxF_
+534-5.7.14 Psuh1Pl2Hh1Yl9Niu3RFSm49IfwgA> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 l53-v6sm7365523wrc.80 - gsmtp
+2018-04-20T17:13:18.926Z - error: (node:14200) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-04-20T17:14:18.481Z - info: Execution took 60002 ms, finished with status: 'timeout'
+2018-04-20T17:14:18.496Z - error: SUPERVISOR clientError { Error: read ECONNRESET
+    at _errnoException (util.js:1022:11)
+    at TCP.onread (net.js:615:25) code: 'ECONNRESET', errno: 'ECONNRESET', syscall: 'read' } connecting=false, _hadError=false, _handle=null, _parent=null, _host=null, objectMode=false, highWaterMark=16384, head=null, tail=null, length=0, length=0, pipes=null, pipesCount=0, flowing=true, ended=false, endEmitted=false, reading=true, sync=false, needReadable=true, emittedReadable=false, readableListening=false, resumeScheduled=false, destroyed=true, defaultEncoding=utf8, awaitDrain=0, readingMore=false, decoder=null, encoding=null, readable=false, domain=null, end=[function () { [native code] }, function () { [native code] }], finish=function onSocketFinish() {
+  // If still connecting - defer handling 'finish' until 'connect' will happen
+  if (this.connecting) {
+    debug('osF: not yet connected');
+    return this.once('connect', onSocketFinish);
+  }
+
+  debug('onSocketFinish');
+  if (!this.readable || this._readableState.ended) {
+    debug('oSF: ended, destroy', this._readableState);
+    return this.destroy();
+  }
+
+  debug('oSF: not ended, call shutdown()');
+
+  // otherwise, just shutdown, or destroy() if not possible
+  if (!this._handle || !this._handle.shutdown)
+    return this.destroy();
+
+  var req = new ShutdownWrap();
+  req.oncomplete = afterShutdown;
+  req.handle = this._handle;
+  // node::ShutdownWrap isn't instantiated and attached to the JS instance of
+  // ShutdownWrap above until shutdown() is called. So don't set the init
+  // trigger id until now.
+  setInitTriggerId(this[async_id_symbol]);
+  var err = this._handle.shutdown(req);
+
+  if (err)
+    return this.destroy(errnoException(err, 'shutdown'));
+}, _socketEnd=function onSocketEnd() {
+  // XXX Should not have to do as much in this function.
+  // ended should already be true, since this is called *after*
+  // the EOF errno and onread has eof'ed
+  debug('onSocketEnd', this._readableState);
+  this._readableState.ended = true;
+  if (this._readableState.endEmitted) {
+    this.readable = false;
+    maybeDestroy(this);
+  } else {
+    this.once('end', function end() {
+      this.readable = false;
+      maybeDestroy(this);
+    });
+    this.read(0);
+  }
+
+  if (!this.allowHalfOpen) {
+    this.write = writeAfterFIN;
+    this.destroySoon();
+  }
+}, drain=[function ondrain() {
+  if (this._httpMessage) this._httpMessage.emit('drain');
+}, function () { [native code] }], timeout=function socketOnTimeout() {
+  var req = this.parser && this.parser.incoming;
+  var reqTimeout = req && !req.complete && req.emit('timeout', this);
+  var res = this._httpMessage;
+  var resTimeout = res && res.emit('timeout', this);
+  var serverTimeout = this.server.emit('timeout', this);
+
+  if (!reqTimeout && !resTimeout && !serverTimeout)
+    this.destroy();
+}, data=function () { [native code] }, close=function () { [native code] }, resume=function onSocketResume() {
+  // It may seem that the socket is resumed, but this is an enemy's trick to
+  // deceive us! `resume` is emitted asynchronously, and may be called from
+  // `incoming.readStart()`. Stop the socket again here, just to preserve the
+  // state.
+  //
+  // We don't care about stream semantics for the consumed socket anyway.
+  if (this._paused) {
+    this.pause();
+    return;
+  }
+
+  if (this._handle && !this._handle.reading) {
+    this._handle.reading = true;
+    this._handle.readStart();
+  }
+}, pause=function onSocketPause() {
+  if (this._handle && this._handle.reading) {
+    this._handle.reading = false;
+    this._handle.readStop();
+  }
+}, error=() => {}, _eventsCount=10, _maxListeners=undefined, objectMode=false, highWaterMark=16384, finalCalled=false, needDrain=false, ending=false, ended=false, finished=false, destroyed=true, decodeStrings=false, defaultEncoding=utf8, length=0, writing=false, corked=0, sync=false, bufferProcessing=false, onwrite=function () { [native code] }, writecb=null, writelen=0, bufferedRequest=null, lastBufferedRequest=null, pendingcb=0, prefinished=false, errorEmitted=true, bufferedRequestCount=0, next=null, entry=null, finish=function () { [native code] }, entry=null, finish=function () { [native code] }, writable=false, allowHalfOpen=true, _bytesDispatched=322, _sockname=null, _pendingData=null, _pendingEncoding=, domain=null, request=function (req, res, next) {
+    app.handle(req, res, next);
+  }, connection=function connectionListener(socket) {
+  debug('SERVER new http connection');
+
+  httpSocketSetup(socket);
+
+  // Ensure that the server property of the socket is correctly set.
+  // See https://github.com/nodejs/node/issues/13435
+  if (socket.server === null)
+    socket.server = this;
+
+  // If the user has added a listener to the server,
+  // request, or response, then it's their responsibility.
+  // otherwise, destroy on timeout by default
+  if (this.timeout)
+    socket.setTimeout(this.timeout);
+  socket.on('timeout', socketOnTimeout);
+
+  var parser = parsers.alloc();
+  parser.reinitialize(HTTPParser.REQUEST);
+  parser.socket = socket;
+  socket.parser = parser;
+  parser.incoming = null;
+
+  // Propagate headers limit from server instance to parser
+  if (typeof this.maxHeadersCount === 'number') {
+    parser.maxHeaderPairs = this.maxHeadersCount << 1;
+  } else {
+    // Set default value because parser may be reused from FreeList
+    parser.maxHeaderPairs = 2000;
+  }
+
+  var state = {
+    onData: null,
+    onEnd: null,
+    onClose: null,
+    onDrain: null,
+    outgoing: [],
+    incoming: [],
+    // `outgoingData` is an approximate amount of bytes queued through all
+    // inactive responses. If more data than the high watermark is queued - we
+    // need to pause TCP socket/HTTP parser, and wait until the data will be
+    // sent to the client.
+    outgoingData: 0,
+    keepAliveTimeoutSet: false
+  };
+  state.onData = socketOnData.bind(undefined, this, socket, parser, state);
+  state.onEnd = socketOnEnd.bind(undefined, this, socket, parser, state);
+  state.onClose = socketOnClose.bind(undefined, socket, state);
+  state.onDrain = socketOnDrain.bind(undefined, socket, state);
+  socket.on('data', state.onData);
+  socket.on('error', socketOnError);
+  socket.on('end', state.onEnd);
+  socket.on('close', state.onClose);
+  socket.on('drain', state.onDrain);
+  parser.onIncoming = parserOnIncoming.bind(undefined, this, socket, state);
+
+  // We are consuming socket, so it won't get any actual data
+  socket.on('resume', onSocketResume);
+  socket.on('pause', onSocketPause);
+
+  // Override on to unconsume on `data`, `readable` listeners
+  socket.on = socketOnWrap;
+
+  // We only consume the socket if it has never been consumed before.
+  var external = socket._handle._externalStream;
+  if (!socket._handle._consumed && external) {
+    parser._consumed = true;
+    socket._handle._consumed = true;
+    parser.consume(external);
+  }
+  parser[kOnExecute] =
+    onParserExecute.bind(undefined, this, socket, parser, state);
+
+  socket._paused = false;
+}, listening=() => {
+        logger.debug(`Supervisor listening at ${this._server.address().address}:${this._server.address().port}.`);
+      }, error=[(err) => {
+        logger.error('SUPERVISOR error', err);
+      }, (err) => {
+        if (err.code === 'EADDRINUSE') {
+          logger.error(`${name} (${this.config[name]}) is already in use`);
+        } else {
+          logger.error(err);
+        }
+      }], clientError=(err, socket) => {
+        logger.error('SUPERVISOR clientError', err, socket);
+      }, _eventsCount=5, _maxListeners=undefined, _connections=0, reading=false, $ref=$["server"], onread=null, onconnection=function onconnection(err, clientHandle) {
+  var handle = this;
+  var self = handle.owner;
+
+  debug('onconnection');
+
+  if (err) {
+    self.emit('error', errnoException(err, 'accept'));
+    return;
+  }
+
+  if (self.maxConnections && self._connections >= self.maxConnections) {
+    clientHandle.close();
+    return;
+  }
+
+  var socket = new Socket({
+    handle: clientHandle,
+    allowHalfOpen: self.allowHalfOpen,
+    pauseOnCreate: self.pauseOnConnect
+  });
+  socket.readable = socket.writable = true;
+
+
+  self._connections++;
+  socket.server = self;
+  socket._server = self;
+
+  DTRACE_NET_SERVER_CONNECTION(socket);
+  ;
+  COUNTER_NET_SERVER_CONNECTION(socket);
+  self.emit('connection', socket);
+}, writeQueueSize=0, _usingSlaves=false, _slaves=[], _unref=false, allowHalfOpen=true, pauseOnConnect=false, httpAllowHalfOpen=false, timeout=120000, keepAliveTimeout=5000, _pendingResponseData=0, maxHeadersCount=null, _connectionKey=4:127.0.0.1:5001, $ref=$["server"], _idleTimeout=-1, _idleNext=null, _idlePrev=null, _idleStart=296220, _destroyed=false, 0=function parserOnHeaders(headers, url) {
+  // Once we exceeded headers limit - stop collecting them
+  if (this.maxHeaderPairs <= 0 ||
+      this._headers.length < this.maxHeaderPairs) {
+    this._headers = this._headers.concat(headers);
+  }
+  this._url += url;
+}, 1=function parserOnHeadersComplete(versionMajor, versionMinor, headers, method,
+                                 url, statusCode, statusMessage, upgrade,
+                                 shouldKeepAlive) {
+  var parser = this;
+
+  if (!headers) {
+    headers = parser._headers;
+    parser._headers = [];
+  }
+
+  if (!url) {
+    url = parser._url;
+    parser._url = '';
+  }
+
+  parser.incoming = new IncomingMessage(parser.socket);
+  parser.incoming.httpVersionMajor = versionMajor;
+  parser.incoming.httpVersionMinor = versionMinor;
+  parser.incoming.httpVersion = `${versionMajor}.${versionMinor}`;
+  parser.incoming.url = url;
+
+  var n = headers.length;
+
+  // If parser.maxHeaderPairs <= 0 assume that there's no limit.
+  if (parser.maxHeaderPairs > 0)
+    n = Math.min(n, parser.maxHeaderPairs);
+
+  parser.incoming._addHeaderLines(headers, n);
+
+  if (typeof method === 'number') {
+    // server only
+    parser.incoming.method = methods[method];
+  } else {
+    // client only
+    parser.incoming.statusCode = statusCode;
+    parser.incoming.statusMessage = statusMessage;
+  }
+
+  if (upgrade && parser.outgoing !== null && !parser.outgoing.upgrading) {
+    // The client made non-upgrade request, and server is just advertising
+    // supported protocols.
+    //
+    // See RFC7230 Section 6.7
+    upgrade = false;
+  }
+
+  parser.incoming.upgrade = upgrade;
+
+  var skipBody = 0; // response to HEAD or CONNECT
+
+  if (!upgrade) {
+    // For upgraded connections and CONNECT method request, we'll emit this
+    // after parser.execute so that we can capture the first part of the new
+    // protocol.
+    skipBody = parser.onIncoming(parser.incoming, shouldKeepAlive);
+  }
+
+  if (typeof skipBody !== 'number')
+    return skipBody ? 1 : 0;
+  else
+    return skipBody;
+}, 2=function parserOnBody(b, start, len) {
+  var parser = this;
+  var stream = parser.incoming;
+
+  // if the stream has already been removed, then drop it.
+  if (!stream)
+    return;
+
+  var socket = stream.socket;
+
+  // pretend this was the result of a stream._read call.
+  if (len > 0 && !stream._dumped) {
+    var slice = b.slice(start, start + len);
+    var ret = stream.push(slice);
+    if (!ret)
+      readStop(socket);
+  }
+}, 3=function parserOnMessageComplete() {
+  var parser = this;
+  var stream = parser.incoming;
+
+  if (stream) {
+    stream.complete = true;
+    // Emit any trailing headers.
+    var headers = parser._headers;
+    if (headers) {
+      parser.incoming._addHeaderLines(headers, headers.length);
+      parser._headers = [];
+      parser._url = '';
+    }
+
+    // For emit end event
+    stream.push(null);
+  }
+
+  // force to read the next incoming message
+  readStart(parser.socket);
+}, 4=function () { [native code] }, _headers=[], _url=, _consumed=true, $ref=$, objectMode=false, highWaterMark=16384, head=null, tail=null, length=0, length=0, pipes=null, pipesCount=0, flowing=false, ended=true, endEmitted=true, reading=false, sync=false, needReadable=false, emittedReadable=false, readableListening=false, resumeScheduled=false, destroyed=false, defaultEncoding=utf8, awaitDrain=0, readingMore=false, decoder=null, encoding=null, readable=false, domain=null, aborted=function () {
+      proxyReq.abort();
+    }, error=function proxyError(err) {
+        if (req.socket.destroyed && err.code === 'ECONNRESET') {
+          server.emit('econnreset', err, req, res, url);
+          return proxyReq.abort();
+        }
+
+        if (clb) {
+          clb(err, req, res, url);
+        } else {
+          server.emit('error', err, req, res, url);
+        }
+      }, _eventsCount=2, _maxListeners=undefined, $ref=$, $ref=$, httpVersionMajor=1, httpVersionMinor=1, httpVersion=1.1, complete=true, x-forwarded-host=localhost:5000, x-original-url=/reportComment, pragma=no-cache, cache-control=no-cache, no-store, host=localhost:5001, connection=keep-alive, content-length=1061, accept=*/*, origin=http://localhost:5000, x-requested-with=XMLHttpRequest, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36, content-type=application/json, referer=http://localhost:5000/de-de/blog/anything/index.html, accept-encoding=gzip, deflate, br, accept-language=de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7, rawHeaders=[X-Forwarded-Host, localhost:5000, X-Original-Url, /reportComment, Pragma, no-cache, Cache-Control, no-cache, no-store, host, localhost:5001, connection, keep-alive, content-length, 1061, accept, */*, origin, http://localhost:5000, x-requested-with, XMLHttpRequest, user-agent, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36, content-type, application/json, referer, http://localhost:5000/de-de/blog/anything/index.html, accept-encoding, gzip, deflate, br, accept-language, de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7], , rawTrailers=[], upgrade=false, url=/exchange-blog/us-central1/expressapp/reportComment, method=POST, statusCode=null, statusMessage=null, $ref=$, _consuming=true, _dumped=false, next=function next(err) {
+    var layerError = err === 'route'
+      ? null
+      : err;
+
+    // remove added slash
+    if (slashAdded) {
+      req.url = req.url.substr(1);
+      slashAdded = false;
+    }
+
+    // restore altered req.url
+    if (removed.length !== 0) {
+      req.baseUrl = parentUrl;
+      req.url = protohost + removed + req.url.substr(protohost.length);
+      removed = '';
+    }
+
+    // signal to exit router
+    if (layerError === 'router') {
+      setImmediate(done, null)
+      return
+    }
+
+    // no more matching layers
+    if (idx >= stack.length) {
+      setImmediate(done, layerError);
+      return;
+    }
+
+    // get pathname of request
+    var path = getPathname(req);
+
+    if (path == null) {
+      return done(layerError);
+    }
+
+    // find next matching layer
+    var layer;
+    var match;
+    var route;
+
+    while (match !== true && idx < stack.length) {
+      layer = stack[idx++];
+      match = matchLayer(layer, path);
+      route = layer.route;
+
+      if (typeof match !== 'boolean') {
+        // hold on to layerError
+        layerError = layerError || match;
+      }
+
+      if (match !== true) {
+        continue;
+      }
+
+      if (!route) {
+        // process non-route handlers normally
+        continue;
+      }
+
+      if (layerError) {
+        // routes do not match with a pending error
+        match = false;
+        continue;
+      }
+
+      var method = req.method;
+      var has_method = route._handles_method(method);
+
+      // build up automatic options response
+      if (!has_method && method === 'OPTIONS') {
+        appendMethods(options, route._options());
+      }
+
+      // don't even bother matching route
+      if (!has_method && method !== 'HEAD') {
+        match = false;
+        continue;
+      }
+    }
+
+    // no match
+    if (match !== true) {
+      return done(layerError);
+    }
+
+    // store route for dispatch on change
+    if (route) {
+      req.route = route;
+    }
+
+    // Capture one-time layer values
+    req.params = self.mergeParams
+      ? mergeParams(layer.params, parentParams)
+      : layer.params;
+    var layerPath = layer.path;
+
+    // this should be done for the layer
+    self.process_params(layer, paramcalled, req, res, function (err) {
+      if (err) {
+        return next(layerError || err);
+      }
+
+      if (route) {
+        return layer.handle_request(req, res, next);
+      }
+
+      trim_prefix(layer, layerError, layerPath, path);
+    });
+  }, baseUrl=, originalUrl=/exchange-blog/us-central1/expressapp/reportComment, protocol=null, slashes=null, auth=null, host=null, port=null, hostname=null, hash=null, search=null, query=null, pathname=/exchange-blog/us-central1/expressapp/reportComment, path=/exchange-blog/us-central1/expressapp/reportComment, href=/exchange-blog/us-central1/expressapp/reportComment, _raw=/exchange-blog/us-central1/expressapp/reportComment, , , domain=null, finish=function () { [native code] }, _eventsCount=1, _maxListeners=undefined, output=[], outputEncodings=[], outputCallbacks=[], outputSize=0, writable=true, _last=false, upgrading=false, chunkedEncoding=false, shouldKeepAlive=true, useChunkedEncodingByDefault=true, sendDate=true, _removedConnection=false, _removedContLen=false, _removedTE=false, _contentLength=91, _hasBody=true, _trailer=, finished=true, _headerSent=true, socket=null, connection=null, _header=HTTP/1.1 500 Internal Server Error
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 91
+ETag: W/"5b-iGspZwrtSPKK7Ipjt62rruw4psA"
+Date: Fri, 20 Apr 2018 17:14:18 GMT
+Connection: keep-alive
+
+, _onPendingData=function () { [native code] }, _sent100=false, _expect_continue=false, $ref=$["parser"]["incoming"], , statusCode=500, statusMessage=Internal Server Error, functionName=projects/exchange-blog/locations/us-central1/functions/expressapp, functionStart=1524244398479, _called=true, _idleTimeout=60000, _idlePrev=null, _idleNext=null, _idleStart=236207, _onTimeout=() => {
+          try {
+            this.closeWorker(req.functionName);
+            logger.info(`Execution took ${Date.now() - req.functionStart} ms, finished with status: 'timeout'`);
+
+            res
+              .status(500)
+              .json({
+                error: {
+                  code: 500,
+                  status: 'INTERNAL',
+                  message: 'function execution attempt timed out'
+                }
+              })
+              .end();
+          } catch (err) {
+            logger.error('Something went wrong with the function timeout!');
+            logger.error(err);
+          }
+        }, _timerArgs=undefined, _repeat=null, _destroyed=false, read=function (n) {
+  debug('read', n);
+  n = parseInt(n, 10);
+  var state = this._readableState;
+  var nOrig = n;
+
+  if (n !== 0)
+    state.emittedReadable = false;
+
+  // if we're doing read(0) to trigger a readable event, but we
+  // already have a bunch of data in the buffer, then just trigger
+  // the 'readable' event and move on.
+  if (n === 0 &&
+      state.needReadable &&
+      (state.length >= state.highWaterMark || state.ended)) {
+    debug('read: emitReadable', state.length, state.ended);
+    if (state.length === 0 && state.ended)
+      endReadable(this);
+    else
+      emitReadable(this);
+    return null;
+  }
+
+  n = howMuchToRead(n, state);
+
+  // if we've ended, and we're now clear, then finish it up.
+  if (n === 0 && state.ended) {
+    if (state.length === 0)
+      endReadable(this);
+    return null;
+  }
+
+  // All the actual chunk generation logic needs to be
+  // *below* the call to _read.  The reason is that in certain
+  // synthetic stream cases, such as passthrough streams, _read
+  // may be a completely synchronous operation which may change
+  // the state of the read buffer, providing enough data when
+  // before there was *not* enough.
+  //
+  // So, the steps are:
+  // 1. Figure out what the state of things will be after we do
+  // a read from the buffer.
+  //
+  // 2. If that resulting state will trigger a _read, then call _read.
+  // Note that this may be asynchronous, or synchronous.  Yes, it is
+  // deeply ugly to write APIs this way, but that still doesn't mean
+  // that the Readable class should behave improperly, as streams are
+  // designed to be sync/async agnostic.
+  // Take note if the _read call is sync or async (ie, if the read call
+  // has returned yet), so that we know whether or not it's safe to emit
+  // 'readable' etc.
+  //
+  // 3. Actually pull the requested chunks out of the buffer and return.
+
+  // if we need a readable event, then we need to do some reading.
+  var doRead = state.needReadable;
+  debug('need readable', doRead);
+
+  // if we currently have less than the highWaterMark, then also read some
+  if (state.length === 0 || state.length - n < state.highWaterMark) {
+    doRead = true;
+    debug('length less than watermark', doRead);
+  }
+
+  // however, if we've ended, then there's no point, and if we're already
+  // reading, then it's unnecessary.
+  if (state.ended || state.reading) {
+    doRead = false;
+    debug('reading or ended', doRead);
+  } else if (doRead) {
+    debug('do read');
+    state.reading = true;
+    state.sync = true;
+    // if the length is currently zero, then we *need* a readable event.
+    if (state.length === 0)
+      state.needReadable = true;
+    // call internal read method
+    this._read(state.highWaterMark);
+    state.sync = false;
+    // If _read pushed data synchronously, then `reading` will be false,
+    // and we need to re-evaluate how much data we can return to the user.
+    if (!state.reading)
+      n = howMuchToRead(nOrig, state);
+  }
+
+  var ret;
+  if (n > 0)
+    ret = fromList(n, state);
+  else
+    ret = null;
+
+  if (ret === null) {
+    state.needReadable = true;
+    n = 0;
+  } else {
+    state.length -= n;
+  }
+
+  if (state.length === 0) {
+    // If we have nothing in the buffer, then we want to know
+    // as soon as we *do* get something into the buffer.
+    if (!state.ended)
+      state.needReadable = true;
+
+    // If we tried to read() past the EOF, then emit end on the next tick.
+    if (nOrig !== n && state.ended)
+      endReadable(this);
+  }
+
+  if (ret !== null)
+    this.emit('data', ret);
+
+  return ret;
+}, outgoing=null, maxHeaderPairs=2000, onIncoming=function () { [native code] }, on=function socketOnWrap(ev, fn) {
+  var res = net.Socket.prototype.on.call(this, ev, fn);
+  if (!this.parser) {
+    this.on = net.Socket.prototype.on;
+    return res;
+  }
+
+  if (ev === 'data' || ev === 'readable')
+    unconsume(this.parser, this);
+
+  return res;
+}, _paused=false, read=function (n) {
+  debug('read', n);
+  n = parseInt(n, 10);
+  var state = this._readableState;
+  var nOrig = n;
+
+  if (n !== 0)
+    state.emittedReadable = false;
+
+  // if we're doing read(0) to trigger a readable event, but we
+  // already have a bunch of data in the buffer, then just trigger
+  // the 'readable' event and move on.
+  if (n === 0 &&
+      state.needReadable &&
+      (state.length >= state.highWaterMark || state.ended)) {
+    debug('read: emitReadable', state.length, state.ended);
+    if (state.length === 0 && state.ended)
+      endReadable(this);
+    else
+      emitReadable(this);
+    return null;
+  }
+
+  n = howMuchToRead(n, state);
+
+  // if we've ended, and we're now clear, then finish it up.
+  if (n === 0 && state.ended) {
+    if (state.length === 0)
+      endReadable(this);
+    return null;
+  }
+
+  // All the actual chunk generation logic needs to be
+  // *below* the call to _read.  The reason is that in certain
+  // synthetic stream cases, such as passthrough streams, _read
+  // may be a completely synchronous operation which may change
+  // the state of the read buffer, providing enough data when
+  // before there was *not* enough.
+  //
+  // So, the steps are:
+  // 1. Figure out what the state of things will be after we do
+  // a read from the buffer.
+  //
+  // 2. If that resulting state will trigger a _read, then call _read.
+  // Note that this may be asynchronous, or synchronous.  Yes, it is
+  // deeply ugly to write APIs this way, but that still doesn't mean
+  // that the Readable class should behave improperly, as streams are
+  // designed to be sync/async agnostic.
+  // Take note if the _read call is sync or async (ie, if the read call
+  // has returned yet), so that we know whether or not it's safe to emit
+  // 'readable' etc.
+  //
+  // 3. Actually pull the requested chunks out of the buffer and return.
+
+  // if we need a readable event, then we need to do some reading.
+  var doRead = state.needReadable;
+  debug('need readable', doRead);
+
+  // if we currently have less than the highWaterMark, then also read some
+  if (state.length === 0 || state.length - n < state.highWaterMark) {
+    doRead = true;
+    debug('length less than watermark', doRead);
+  }
+
+  // however, if we've ended, then there's no point, and if we're already
+  // reading, then it's unnecessary.
+  if (state.ended || state.reading) {
+    doRead = false;
+    debug('reading or ended', doRead);
+  } else if (doRead) {
+    debug('do read');
+    state.reading = true;
+    state.sync = true;
+    // if the length is currently zero, then we *need* a readable event.
+    if (state.length === 0)
+      state.needReadable = true;
+    // call internal read method
+    this._read(state.highWaterMark);
+    state.sync = false;
+    // If _read pushed data synchronously, then `reading` will be false,
+    // and we need to re-evaluate how much data we can return to the user.
+    if (!state.reading)
+      n = howMuchToRead(nOrig, state);
+  }
+
+  var ret;
+  if (n > 0)
+    ret = fromList(n, state);
+  else
+    ret = null;
+
+  if (ret === null) {
+    state.needReadable = true;
+    n = 0;
+  } else {
+    state.length -= n;
+  }
+
+  if (state.length === 0) {
+    // If we have nothing in the buffer, then we want to know
+    // as soon as we *do* get something into the buffer.
+    if (!state.ended)
+      state.needReadable = true;
+
+    // If we tried to read() past the EOF, then emit end on the next tick.
+    if (nOrig !== n && state.ended)
+      endReadable(this);
+  }
+
+  if (ret !== null)
+    this.emit('data', ret);
+
+  return ret;
+}, _consuming=true, _httpMessage=null
+2018-04-20T17:14:18.621Z - error: Function worker killed by signal: SIGTERM
+2018-04-20T17:15:18.164Z - info: User function triggered, starting execution
+2018-04-20T17:15:18.261Z - info: Execution took 95 ms, user function completed successfully
+2018-04-20T17:15:18.531Z - info: User function triggered, starting execution
+2018-04-20T17:15:18.536Z - info: Execution took 5 ms, user function completed successfully
+2018-04-20T17:15:18.587Z - info: User function triggered, starting execution
+2018-04-20T17:15:18.589Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T17:15:18.590Z - info: User function triggered, starting execution
+2018-04-20T17:15:18.593Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T17:15:24.763Z - info: User function triggered, starting execution
+2018-04-20T17:15:25.390Z - error: (node:11056) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: Invalid login: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbvD
+534-5.7.14 _1MwhBv8Kdd8D8jCdp5ZTzi7BkcRDj9JPz4jaQSVl8MMKksNKt7PjhMKEj8MKj_3fPVg2y
+534-5.7.14 Pnhqk78Mhdu1KWooL7N-P-IpZAZO6Xv1-_PG94VXguqpMwUoFvpj0I5sqBIViq88l7iEuS
+534-5.7.14 mOVDI-u97VKUrSRsrpJiZYU7tiT7HP09psqr83WHUhwcOtfJX2ALONc0FIVBwlrG1pdAb8
+534-5.7.14 rma2A_h9fhqfuQW0HnBiTF6Mg3qKo> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 d9sm3026143wmh.38 - gsmtp
+2018-04-20T17:15:25.392Z - error: (node:11056) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-04-20T17:16:24.762Z - info: Execution took 60002 ms, finished with status: 'timeout'
+2018-04-20T17:16:24.774Z - error: SUPERVISOR clientError { Error: read ECONNRESET
+    at _errnoException (util.js:1022:11)
+    at TCP.onread (net.js:615:25) code: 'ECONNRESET', errno: 'ECONNRESET', syscall: 'read' } connecting=false, _hadError=false, _handle=null, _parent=null, _host=null, objectMode=false, highWaterMark=16384, head=null, tail=null, length=0, length=0, pipes=null, pipesCount=0, flowing=true, ended=false, endEmitted=false, reading=true, sync=false, needReadable=true, emittedReadable=false, readableListening=false, resumeScheduled=false, destroyed=true, defaultEncoding=utf8, awaitDrain=0, readingMore=false, decoder=null, encoding=null, readable=false, domain=null, end=[function () { [native code] }, function () { [native code] }], finish=function onSocketFinish() {
+  // If still connecting - defer handling 'finish' until 'connect' will happen
+  if (this.connecting) {
+    debug('osF: not yet connected');
+    return this.once('connect', onSocketFinish);
+  }
+
+  debug('onSocketFinish');
+  if (!this.readable || this._readableState.ended) {
+    debug('oSF: ended, destroy', this._readableState);
+    return this.destroy();
+  }
+
+  debug('oSF: not ended, call shutdown()');
+
+  // otherwise, just shutdown, or destroy() if not possible
+  if (!this._handle || !this._handle.shutdown)
+    return this.destroy();
+
+  var req = new ShutdownWrap();
+  req.oncomplete = afterShutdown;
+  req.handle = this._handle;
+  // node::ShutdownWrap isn't instantiated and attached to the JS instance of
+  // ShutdownWrap above until shutdown() is called. So don't set the init
+  // trigger id until now.
+  setInitTriggerId(this[async_id_symbol]);
+  var err = this._handle.shutdown(req);
+
+  if (err)
+    return this.destroy(errnoException(err, 'shutdown'));
+}, _socketEnd=function onSocketEnd() {
+  // XXX Should not have to do as much in this function.
+  // ended should already be true, since this is called *after*
+  // the EOF errno and onread has eof'ed
+  debug('onSocketEnd', this._readableState);
+  this._readableState.ended = true;
+  if (this._readableState.endEmitted) {
+    this.readable = false;
+    maybeDestroy(this);
+  } else {
+    this.once('end', function end() {
+      this.readable = false;
+      maybeDestroy(this);
+    });
+    this.read(0);
+  }
+
+  if (!this.allowHalfOpen) {
+    this.write = writeAfterFIN;
+    this.destroySoon();
+  }
+}, drain=[function ondrain() {
+  if (this._httpMessage) this._httpMessage.emit('drain');
+}, function () { [native code] }], timeout=function socketOnTimeout() {
+  var req = this.parser && this.parser.incoming;
+  var reqTimeout = req && !req.complete && req.emit('timeout', this);
+  var res = this._httpMessage;
+  var resTimeout = res && res.emit('timeout', this);
+  var serverTimeout = this.server.emit('timeout', this);
+
+  if (!reqTimeout && !resTimeout && !serverTimeout)
+    this.destroy();
+}, data=function () { [native code] }, close=function () { [native code] }, resume=function onSocketResume() {
+  // It may seem that the socket is resumed, but this is an enemy's trick to
+  // deceive us! `resume` is emitted asynchronously, and may be called from
+  // `incoming.readStart()`. Stop the socket again here, just to preserve the
+  // state.
+  //
+  // We don't care about stream semantics for the consumed socket anyway.
+  if (this._paused) {
+    this.pause();
+    return;
+  }
+
+  if (this._handle && !this._handle.reading) {
+    this._handle.reading = true;
+    this._handle.readStart();
+  }
+}, pause=function onSocketPause() {
+  if (this._handle && this._handle.reading) {
+    this._handle.reading = false;
+    this._handle.readStop();
+  }
+}, error=() => {}, _eventsCount=10, _maxListeners=undefined, objectMode=false, highWaterMark=16384, finalCalled=false, needDrain=false, ending=false, ended=false, finished=false, destroyed=true, decodeStrings=false, defaultEncoding=utf8, length=0, writing=false, corked=0, sync=false, bufferProcessing=false, onwrite=function () { [native code] }, writecb=null, writelen=0, bufferedRequest=null, lastBufferedRequest=null, pendingcb=0, prefinished=false, errorEmitted=true, bufferedRequestCount=0, next=null, entry=null, finish=function () { [native code] }, entry=null, finish=function () { [native code] }, writable=false, allowHalfOpen=true, _bytesDispatched=322, _sockname=null, _pendingData=null, _pendingEncoding=, domain=null, request=function (req, res, next) {
+    app.handle(req, res, next);
+  }, connection=function connectionListener(socket) {
+  debug('SERVER new http connection');
+
+  httpSocketSetup(socket);
+
+  // Ensure that the server property of the socket is correctly set.
+  // See https://github.com/nodejs/node/issues/13435
+  if (socket.server === null)
+    socket.server = this;
+
+  // If the user has added a listener to the server,
+  // request, or response, then it's their responsibility.
+  // otherwise, destroy on timeout by default
+  if (this.timeout)
+    socket.setTimeout(this.timeout);
+  socket.on('timeout', socketOnTimeout);
+
+  var parser = parsers.alloc();
+  parser.reinitialize(HTTPParser.REQUEST);
+  parser.socket = socket;
+  socket.parser = parser;
+  parser.incoming = null;
+
+  // Propagate headers limit from server instance to parser
+  if (typeof this.maxHeadersCount === 'number') {
+    parser.maxHeaderPairs = this.maxHeadersCount << 1;
+  } else {
+    // Set default value because parser may be reused from FreeList
+    parser.maxHeaderPairs = 2000;
+  }
+
+  var state = {
+    onData: null,
+    onEnd: null,
+    onClose: null,
+    onDrain: null,
+    outgoing: [],
+    incoming: [],
+    // `outgoingData` is an approximate amount of bytes queued through all
+    // inactive responses. If more data than the high watermark is queued - we
+    // need to pause TCP socket/HTTP parser, and wait until the data will be
+    // sent to the client.
+    outgoingData: 0,
+    keepAliveTimeoutSet: false
+  };
+  state.onData = socketOnData.bind(undefined, this, socket, parser, state);
+  state.onEnd = socketOnEnd.bind(undefined, this, socket, parser, state);
+  state.onClose = socketOnClose.bind(undefined, socket, state);
+  state.onDrain = socketOnDrain.bind(undefined, socket, state);
+  socket.on('data', state.onData);
+  socket.on('error', socketOnError);
+  socket.on('end', state.onEnd);
+  socket.on('close', state.onClose);
+  socket.on('drain', state.onDrain);
+  parser.onIncoming = parserOnIncoming.bind(undefined, this, socket, state);
+
+  // We are consuming socket, so it won't get any actual data
+  socket.on('resume', onSocketResume);
+  socket.on('pause', onSocketPause);
+
+  // Override on to unconsume on `data`, `readable` listeners
+  socket.on = socketOnWrap;
+
+  // We only consume the socket if it has never been consumed before.
+  var external = socket._handle._externalStream;
+  if (!socket._handle._consumed && external) {
+    parser._consumed = true;
+    socket._handle._consumed = true;
+    parser.consume(external);
+  }
+  parser[kOnExecute] =
+    onParserExecute.bind(undefined, this, socket, parser, state);
+
+  socket._paused = false;
+}, listening=() => {
+        logger.debug(`Supervisor listening at ${this._server.address().address}:${this._server.address().port}.`);
+      }, error=[(err) => {
+        logger.error('SUPERVISOR error', err);
+      }, (err) => {
+        if (err.code === 'EADDRINUSE') {
+          logger.error(`${name} (${this.config[name]}) is already in use`);
+        } else {
+          logger.error(err);
+        }
+      }], clientError=(err, socket) => {
+        logger.error('SUPERVISOR clientError', err, socket);
+      }, _eventsCount=5, _maxListeners=undefined, _connections=0, reading=false, $ref=$["server"], onread=null, onconnection=function onconnection(err, clientHandle) {
+  var handle = this;
+  var self = handle.owner;
+
+  debug('onconnection');
+
+  if (err) {
+    self.emit('error', errnoException(err, 'accept'));
+    return;
+  }
+
+  if (self.maxConnections && self._connections >= self.maxConnections) {
+    clientHandle.close();
+    return;
+  }
+
+  var socket = new Socket({
+    handle: clientHandle,
+    allowHalfOpen: self.allowHalfOpen,
+    pauseOnCreate: self.pauseOnConnect
+  });
+  socket.readable = socket.writable = true;
+
+
+  self._connections++;
+  socket.server = self;
+  socket._server = self;
+
+  DTRACE_NET_SERVER_CONNECTION(socket);
+  ;
+  COUNTER_NET_SERVER_CONNECTION(socket);
+  self.emit('connection', socket);
+}, writeQueueSize=0, _usingSlaves=false, _slaves=[], _unref=false, allowHalfOpen=true, pauseOnConnect=false, httpAllowHalfOpen=false, timeout=120000, keepAliveTimeout=5000, _pendingResponseData=0, maxHeadersCount=null, _connectionKey=4:127.0.0.1:5001, $ref=$["server"], _idleTimeout=-1, _idleNext=null, _idlePrev=null, _idleStart=102703, _destroyed=false, 0=function parserOnHeaders(headers, url) {
+  // Once we exceeded headers limit - stop collecting them
+  if (this.maxHeaderPairs <= 0 ||
+      this._headers.length < this.maxHeaderPairs) {
+    this._headers = this._headers.concat(headers);
+  }
+  this._url += url;
+}, 1=function parserOnHeadersComplete(versionMajor, versionMinor, headers, method,
+                                 url, statusCode, statusMessage, upgrade,
+                                 shouldKeepAlive) {
+  var parser = this;
+
+  if (!headers) {
+    headers = parser._headers;
+    parser._headers = [];
+  }
+
+  if (!url) {
+    url = parser._url;
+    parser._url = '';
+  }
+
+  parser.incoming = new IncomingMessage(parser.socket);
+  parser.incoming.httpVersionMajor = versionMajor;
+  parser.incoming.httpVersionMinor = versionMinor;
+  parser.incoming.httpVersion = `${versionMajor}.${versionMinor}`;
+  parser.incoming.url = url;
+
+  var n = headers.length;
+
+  // If parser.maxHeaderPairs <= 0 assume that there's no limit.
+  if (parser.maxHeaderPairs > 0)
+    n = Math.min(n, parser.maxHeaderPairs);
+
+  parser.incoming._addHeaderLines(headers, n);
+
+  if (typeof method === 'number') {
+    // server only
+    parser.incoming.method = methods[method];
+  } else {
+    // client only
+    parser.incoming.statusCode = statusCode;
+    parser.incoming.statusMessage = statusMessage;
+  }
+
+  if (upgrade && parser.outgoing !== null && !parser.outgoing.upgrading) {
+    // The client made non-upgrade request, and server is just advertising
+    // supported protocols.
+    //
+    // See RFC7230 Section 6.7
+    upgrade = false;
+  }
+
+  parser.incoming.upgrade = upgrade;
+
+  var skipBody = 0; // response to HEAD or CONNECT
+
+  if (!upgrade) {
+    // For upgraded connections and CONNECT method request, we'll emit this
+    // after parser.execute so that we can capture the first part of the new
+    // protocol.
+    skipBody = parser.onIncoming(parser.incoming, shouldKeepAlive);
+  }
+
+  if (typeof skipBody !== 'number')
+    return skipBody ? 1 : 0;
+  else
+    return skipBody;
+}, 2=function parserOnBody(b, start, len) {
+  var parser = this;
+  var stream = parser.incoming;
+
+  // if the stream has already been removed, then drop it.
+  if (!stream)
+    return;
+
+  var socket = stream.socket;
+
+  // pretend this was the result of a stream._read call.
+  if (len > 0 && !stream._dumped) {
+    var slice = b.slice(start, start + len);
+    var ret = stream.push(slice);
+    if (!ret)
+      readStop(socket);
+  }
+}, 3=function parserOnMessageComplete() {
+  var parser = this;
+  var stream = parser.incoming;
+
+  if (stream) {
+    stream.complete = true;
+    // Emit any trailing headers.
+    var headers = parser._headers;
+    if (headers) {
+      parser.incoming._addHeaderLines(headers, headers.length);
+      parser._headers = [];
+      parser._url = '';
+    }
+
+    // For emit end event
+    stream.push(null);
+  }
+
+  // force to read the next incoming message
+  readStart(parser.socket);
+}, 4=function () { [native code] }, _headers=[], _url=, _consumed=true, $ref=$, objectMode=false, highWaterMark=16384, head=null, tail=null, length=0, length=0, pipes=null, pipesCount=0, flowing=false, ended=true, endEmitted=true, reading=false, sync=false, needReadable=false, emittedReadable=false, readableListening=false, resumeScheduled=false, destroyed=false, defaultEncoding=utf8, awaitDrain=0, readingMore=false, decoder=null, encoding=null, readable=false, domain=null, aborted=function () {
+      proxyReq.abort();
+    }, error=function proxyError(err) {
+        if (req.socket.destroyed && err.code === 'ECONNRESET') {
+          server.emit('econnreset', err, req, res, url);
+          return proxyReq.abort();
+        }
+
+        if (clb) {
+          clb(err, req, res, url);
+        } else {
+          server.emit('error', err, req, res, url);
+        }
+      }, _eventsCount=2, _maxListeners=undefined, $ref=$, $ref=$, httpVersionMajor=1, httpVersionMinor=1, httpVersion=1.1, complete=true, x-forwarded-host=localhost:5000, x-original-url=/reportComment, pragma=no-cache, cache-control=no-cache, no-store, host=localhost:5001, connection=keep-alive, content-length=1061, accept=*/*, origin=http://localhost:5000, x-requested-with=XMLHttpRequest, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36, content-type=application/json, referer=http://localhost:5000/de-de/blog/anything/index.html, accept-encoding=gzip, deflate, br, accept-language=de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7, rawHeaders=[X-Forwarded-Host, localhost:5000, X-Original-Url, /reportComment, Pragma, no-cache, Cache-Control, no-cache, no-store, host, localhost:5001, connection, keep-alive, content-length, 1061, accept, */*, origin, http://localhost:5000, x-requested-with, XMLHttpRequest, user-agent, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36, content-type, application/json, referer, http://localhost:5000/de-de/blog/anything/index.html, accept-encoding, gzip, deflate, br, accept-language, de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7], , rawTrailers=[], upgrade=false, url=/exchange-blog/us-central1/expressapp/reportComment, method=POST, statusCode=null, statusMessage=null, $ref=$, _consuming=true, _dumped=false, next=function next(err) {
+    var layerError = err === 'route'
+      ? null
+      : err;
+
+    // remove added slash
+    if (slashAdded) {
+      req.url = req.url.substr(1);
+      slashAdded = false;
+    }
+
+    // restore altered req.url
+    if (removed.length !== 0) {
+      req.baseUrl = parentUrl;
+      req.url = protohost + removed + req.url.substr(protohost.length);
+      removed = '';
+    }
+
+    // signal to exit router
+    if (layerError === 'router') {
+      setImmediate(done, null)
+      return
+    }
+
+    // no more matching layers
+    if (idx >= stack.length) {
+      setImmediate(done, layerError);
+      return;
+    }
+
+    // get pathname of request
+    var path = getPathname(req);
+
+    if (path == null) {
+      return done(layerError);
+    }
+
+    // find next matching layer
+    var layer;
+    var match;
+    var route;
+
+    while (match !== true && idx < stack.length) {
+      layer = stack[idx++];
+      match = matchLayer(layer, path);
+      route = layer.route;
+
+      if (typeof match !== 'boolean') {
+        // hold on to layerError
+        layerError = layerError || match;
+      }
+
+      if (match !== true) {
+        continue;
+      }
+
+      if (!route) {
+        // process non-route handlers normally
+        continue;
+      }
+
+      if (layerError) {
+        // routes do not match with a pending error
+        match = false;
+        continue;
+      }
+
+      var method = req.method;
+      var has_method = route._handles_method(method);
+
+      // build up automatic options response
+      if (!has_method && method === 'OPTIONS') {
+        appendMethods(options, route._options());
+      }
+
+      // don't even bother matching route
+      if (!has_method && method !== 'HEAD') {
+        match = false;
+        continue;
+      }
+    }
+
+    // no match
+    if (match !== true) {
+      return done(layerError);
+    }
+
+    // store route for dispatch on change
+    if (route) {
+      req.route = route;
+    }
+
+    // Capture one-time layer values
+    req.params = self.mergeParams
+      ? mergeParams(layer.params, parentParams)
+      : layer.params;
+    var layerPath = layer.path;
+
+    // this should be done for the layer
+    self.process_params(layer, paramcalled, req, res, function (err) {
+      if (err) {
+        return next(layerError || err);
+      }
+
+      if (route) {
+        return layer.handle_request(req, res, next);
+      }
+
+      trim_prefix(layer, layerError, layerPath, path);
+    });
+  }, baseUrl=, originalUrl=/exchange-blog/us-central1/expressapp/reportComment, protocol=null, slashes=null, auth=null, host=null, port=null, hostname=null, hash=null, search=null, query=null, pathname=/exchange-blog/us-central1/expressapp/reportComment, path=/exchange-blog/us-central1/expressapp/reportComment, href=/exchange-blog/us-central1/expressapp/reportComment, _raw=/exchange-blog/us-central1/expressapp/reportComment, , , domain=null, finish=function () { [native code] }, _eventsCount=1, _maxListeners=undefined, output=[], outputEncodings=[], outputCallbacks=[], outputSize=0, writable=true, _last=false, upgrading=false, chunkedEncoding=false, shouldKeepAlive=true, useChunkedEncodingByDefault=true, sendDate=true, _removedConnection=false, _removedContLen=false, _removedTE=false, _contentLength=91, _hasBody=true, _trailer=, finished=true, _headerSent=true, socket=null, connection=null, _header=HTTP/1.1 500 Internal Server Error
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 91
+ETag: W/"5b-iGspZwrtSPKK7Ipjt62rruw4psA"
+Date: Fri, 20 Apr 2018 17:16:24 GMT
+Connection: keep-alive
+
+, _onPendingData=function () { [native code] }, _sent100=false, _expect_continue=false, $ref=$["parser"]["incoming"], , statusCode=500, statusMessage=Internal Server Error, functionName=projects/exchange-blog/locations/us-central1/functions/expressapp, functionStart=1524244524760, _called=true, _idleTimeout=60000, _idlePrev=null, _idleNext=null, _idleStart=42693, _onTimeout=() => {
+          try {
+            this.closeWorker(req.functionName);
+            logger.info(`Execution took ${Date.now() - req.functionStart} ms, finished with status: 'timeout'`);
+
+            res
+              .status(500)
+              .json({
+                error: {
+                  code: 500,
+                  status: 'INTERNAL',
+                  message: 'function execution attempt timed out'
+                }
+              })
+              .end();
+          } catch (err) {
+            logger.error('Something went wrong with the function timeout!');
+            logger.error(err);
+          }
+        }, _timerArgs=undefined, _repeat=null, _destroyed=false, read=function (n) {
+  debug('read', n);
+  n = parseInt(n, 10);
+  var state = this._readableState;
+  var nOrig = n;
+
+  if (n !== 0)
+    state.emittedReadable = false;
+
+  // if we're doing read(0) to trigger a readable event, but we
+  // already have a bunch of data in the buffer, then just trigger
+  // the 'readable' event and move on.
+  if (n === 0 &&
+      state.needReadable &&
+      (state.length >= state.highWaterMark || state.ended)) {
+    debug('read: emitReadable', state.length, state.ended);
+    if (state.length === 0 && state.ended)
+      endReadable(this);
+    else
+      emitReadable(this);
+    return null;
+  }
+
+  n = howMuchToRead(n, state);
+
+  // if we've ended, and we're now clear, then finish it up.
+  if (n === 0 && state.ended) {
+    if (state.length === 0)
+      endReadable(this);
+    return null;
+  }
+
+  // All the actual chunk generation logic needs to be
+  // *below* the call to _read.  The reason is that in certain
+  // synthetic stream cases, such as passthrough streams, _read
+  // may be a completely synchronous operation which may change
+  // the state of the read buffer, providing enough data when
+  // before there was *not* enough.
+  //
+  // So, the steps are:
+  // 1. Figure out what the state of things will be after we do
+  // a read from the buffer.
+  //
+  // 2. If that resulting state will trigger a _read, then call _read.
+  // Note that this may be asynchronous, or synchronous.  Yes, it is
+  // deeply ugly to write APIs this way, but that still doesn't mean
+  // that the Readable class should behave improperly, as streams are
+  // designed to be sync/async agnostic.
+  // Take note if the _read call is sync or async (ie, if the read call
+  // has returned yet), so that we know whether or not it's safe to emit
+  // 'readable' etc.
+  //
+  // 3. Actually pull the requested chunks out of the buffer and return.
+
+  // if we need a readable event, then we need to do some reading.
+  var doRead = state.needReadable;
+  debug('need readable', doRead);
+
+  // if we currently have less than the highWaterMark, then also read some
+  if (state.length === 0 || state.length - n < state.highWaterMark) {
+    doRead = true;
+    debug('length less than watermark', doRead);
+  }
+
+  // however, if we've ended, then there's no point, and if we're already
+  // reading, then it's unnecessary.
+  if (state.ended || state.reading) {
+    doRead = false;
+    debug('reading or ended', doRead);
+  } else if (doRead) {
+    debug('do read');
+    state.reading = true;
+    state.sync = true;
+    // if the length is currently zero, then we *need* a readable event.
+    if (state.length === 0)
+      state.needReadable = true;
+    // call internal read method
+    this._read(state.highWaterMark);
+    state.sync = false;
+    // If _read pushed data synchronously, then `reading` will be false,
+    // and we need to re-evaluate how much data we can return to the user.
+    if (!state.reading)
+      n = howMuchToRead(nOrig, state);
+  }
+
+  var ret;
+  if (n > 0)
+    ret = fromList(n, state);
+  else
+    ret = null;
+
+  if (ret === null) {
+    state.needReadable = true;
+    n = 0;
+  } else {
+    state.length -= n;
+  }
+
+  if (state.length === 0) {
+    // If we have nothing in the buffer, then we want to know
+    // as soon as we *do* get something into the buffer.
+    if (!state.ended)
+      state.needReadable = true;
+
+    // If we tried to read() past the EOF, then emit end on the next tick.
+    if (nOrig !== n && state.ended)
+      endReadable(this);
+  }
+
+  if (ret !== null)
+    this.emit('data', ret);
+
+  return ret;
+}, outgoing=null, maxHeaderPairs=2000, onIncoming=function () { [native code] }, on=function socketOnWrap(ev, fn) {
+  var res = net.Socket.prototype.on.call(this, ev, fn);
+  if (!this.parser) {
+    this.on = net.Socket.prototype.on;
+    return res;
+  }
+
+  if (ev === 'data' || ev === 'readable')
+    unconsume(this.parser, this);
+
+  return res;
+}, _paused=false, read=function (n) {
+  debug('read', n);
+  n = parseInt(n, 10);
+  var state = this._readableState;
+  var nOrig = n;
+
+  if (n !== 0)
+    state.emittedReadable = false;
+
+  // if we're doing read(0) to trigger a readable event, but we
+  // already have a bunch of data in the buffer, then just trigger
+  // the 'readable' event and move on.
+  if (n === 0 &&
+      state.needReadable &&
+      (state.length >= state.highWaterMark || state.ended)) {
+    debug('read: emitReadable', state.length, state.ended);
+    if (state.length === 0 && state.ended)
+      endReadable(this);
+    else
+      emitReadable(this);
+    return null;
+  }
+
+  n = howMuchToRead(n, state);
+
+  // if we've ended, and we're now clear, then finish it up.
+  if (n === 0 && state.ended) {
+    if (state.length === 0)
+      endReadable(this);
+    return null;
+  }
+
+  // All the actual chunk generation logic needs to be
+  // *below* the call to _read.  The reason is that in certain
+  // synthetic stream cases, such as passthrough streams, _read
+  // may be a completely synchronous operation which may change
+  // the state of the read buffer, providing enough data when
+  // before there was *not* enough.
+  //
+  // So, the steps are:
+  // 1. Figure out what the state of things will be after we do
+  // a read from the buffer.
+  //
+  // 2. If that resulting state will trigger a _read, then call _read.
+  // Note that this may be asynchronous, or synchronous.  Yes, it is
+  // deeply ugly to write APIs this way, but that still doesn't mean
+  // that the Readable class should behave improperly, as streams are
+  // designed to be sync/async agnostic.
+  // Take note if the _read call is sync or async (ie, if the read call
+  // has returned yet), so that we know whether or not it's safe to emit
+  // 'readable' etc.
+  //
+  // 3. Actually pull the requested chunks out of the buffer and return.
+
+  // if we need a readable event, then we need to do some reading.
+  var doRead = state.needReadable;
+  debug('need readable', doRead);
+
+  // if we currently have less than the highWaterMark, then also read some
+  if (state.length === 0 || state.length - n < state.highWaterMark) {
+    doRead = true;
+    debug('length less than watermark', doRead);
+  }
+
+  // however, if we've ended, then there's no point, and if we're already
+  // reading, then it's unnecessary.
+  if (state.ended || state.reading) {
+    doRead = false;
+    debug('reading or ended', doRead);
+  } else if (doRead) {
+    debug('do read');
+    state.reading = true;
+    state.sync = true;
+    // if the length is currently zero, then we *need* a readable event.
+    if (state.length === 0)
+      state.needReadable = true;
+    // call internal read method
+    this._read(state.highWaterMark);
+    state.sync = false;
+    // If _read pushed data synchronously, then `reading` will be false,
+    // and we need to re-evaluate how much data we can return to the user.
+    if (!state.reading)
+      n = howMuchToRead(nOrig, state);
+  }
+
+  var ret;
+  if (n > 0)
+    ret = fromList(n, state);
+  else
+    ret = null;
+
+  if (ret === null) {
+    state.needReadable = true;
+    n = 0;
+  } else {
+    state.length -= n;
+  }
+
+  if (state.length === 0) {
+    // If we have nothing in the buffer, then we want to know
+    // as soon as we *do* get something into the buffer.
+    if (!state.ended)
+      state.needReadable = true;
+
+    // If we tried to read() past the EOF, then emit end on the next tick.
+    if (nOrig !== n && state.ended)
+      endReadable(this);
+  }
+
+  if (ret !== null)
+    this.emit('data', ret);
+
+  return ret;
+}, _consuming=true, _httpMessage=null
+2018-04-20T17:16:24.894Z - error: Function worker killed by signal: SIGTERM
+2018-04-20T17:18:45.511Z - info: User function triggered, starting execution
+2018-04-20T17:18:46.533Z - info: Execution took 1025 ms, user function completed successfully
+2018-04-20T17:18:46.779Z - info: User function triggered, starting execution
+2018-04-20T17:18:47.615Z - info: Execution took 836 ms, user function completed successfully
+2018-04-20T17:18:47.673Z - info: User function triggered, starting execution
+2018-04-20T17:18:47.676Z - info: Execution took 3 ms, user function completed successfully
+2018-04-20T17:18:47.680Z - info: User function triggered, starting execution
+Execution took 1 ms, user function completed successfully
+2018-04-20T17:18:55.832Z - info: User function triggered, starting execution
+2018-04-20T17:18:56.318Z - error: (node:15264) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: Invalid login: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbtv
+534-5.7.14 B9a6JJrSFRLVrXuyymnq-swVF6VyvVbfxbx8Nes4HMXsn8TL-yW3gN40CagEAZmCy_pXKb
+534-5.7.14 SlYVqsWnBbrKgj_DR3jixZpqqwviyLrqH23IdZt-cGH-vg3feUlvsQ8h5qdOXzxe9EH1Eo
+534-5.7.14 lbw7TnAdujZZRc03NFz9_UownBokvMda3xhEERTqUOVqOZjLdHdkhE5QF6M5TZ2EAEqpK5
+534-5.7.14 75nxUfczygshKrBnbGG1J7yYQiqQE> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 h7sm1801702wme.0 - gsmtp
+(node:15264) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-04-20T17:19:55.852Z - info: Execution took 60023 ms, finished with status: 'timeout'
+2018-04-20T17:19:55.907Z - error: SUPERVISOR clientError { Error: read ECONNRESET
+    at _errnoException (util.js:1022:11)
+    at TCP.onread (net.js:615:25) code: 'ECONNRESET', errno: 'ECONNRESET', syscall: 'read' } connecting=false, _hadError=false, _handle=null, _parent=null, _host=null, objectMode=false, highWaterMark=16384, head=null, tail=null, length=0, length=0, pipes=null, pipesCount=0, flowing=true, ended=false, endEmitted=false, reading=true, sync=false, needReadable=true, emittedReadable=false, readableListening=false, resumeScheduled=false, destroyed=true, defaultEncoding=utf8, awaitDrain=0, readingMore=false, decoder=null, encoding=null, readable=false, domain=null, end=[function () { [native code] }, function () { [native code] }], finish=function onSocketFinish() {
+  // If still connecting - defer handling 'finish' until 'connect' will happen
+  if (this.connecting) {
+    debug('osF: not yet connected');
+    return this.once('connect', onSocketFinish);
+  }
+
+  debug('onSocketFinish');
+  if (!this.readable || this._readableState.ended) {
+    debug('oSF: ended, destroy', this._readableState);
+    return this.destroy();
+  }
+
+  debug('oSF: not ended, call shutdown()');
+
+  // otherwise, just shutdown, or destroy() if not possible
+  if (!this._handle || !this._handle.shutdown)
+    return this.destroy();
+
+  var req = new ShutdownWrap();
+  req.oncomplete = afterShutdown;
+  req.handle = this._handle;
+  // node::ShutdownWrap isn't instantiated and attached to the JS instance of
+  // ShutdownWrap above until shutdown() is called. So don't set the init
+  // trigger id until now.
+  setInitTriggerId(this[async_id_symbol]);
+  var err = this._handle.shutdown(req);
+
+  if (err)
+    return this.destroy(errnoException(err, 'shutdown'));
+}, _socketEnd=function onSocketEnd() {
+  // XXX Should not have to do as much in this function.
+  // ended should already be true, since this is called *after*
+  // the EOF errno and onread has eof'ed
+  debug('onSocketEnd', this._readableState);
+  this._readableState.ended = true;
+  if (this._readableState.endEmitted) {
+    this.readable = false;
+    maybeDestroy(this);
+  } else {
+    this.once('end', function end() {
+      this.readable = false;
+      maybeDestroy(this);
+    });
+    this.read(0);
+  }
+
+  if (!this.allowHalfOpen) {
+    this.write = writeAfterFIN;
+    this.destroySoon();
+  }
+}, drain=[function ondrain() {
+  if (this._httpMessage) this._httpMessage.emit('drain');
+}, function () { [native code] }], timeout=function socketOnTimeout() {
+  var req = this.parser && this.parser.incoming;
+  var reqTimeout = req && !req.complete && req.emit('timeout', this);
+  var res = this._httpMessage;
+  var resTimeout = res && res.emit('timeout', this);
+  var serverTimeout = this.server.emit('timeout', this);
+
+  if (!reqTimeout && !resTimeout && !serverTimeout)
+    this.destroy();
+}, data=function () { [native code] }, close=function () { [native code] }, resume=function onSocketResume() {
+  // It may seem that the socket is resumed, but this is an enemy's trick to
+  // deceive us! `resume` is emitted asynchronously, and may be called from
+  // `incoming.readStart()`. Stop the socket again here, just to preserve the
+  // state.
+  //
+  // We don't care about stream semantics for the consumed socket anyway.
+  if (this._paused) {
+    this.pause();
+    return;
+  }
+
+  if (this._handle && !this._handle.reading) {
+    this._handle.reading = true;
+    this._handle.readStart();
+  }
+}, pause=function onSocketPause() {
+  if (this._handle && this._handle.reading) {
+    this._handle.reading = false;
+    this._handle.readStop();
+  }
+}, error=() => {}, _eventsCount=10, _maxListeners=undefined, objectMode=false, highWaterMark=16384, finalCalled=false, needDrain=false, ending=false, ended=false, finished=false, destroyed=true, decodeStrings=false, defaultEncoding=utf8, length=0, writing=false, corked=0, sync=false, bufferProcessing=false, onwrite=function () { [native code] }, writecb=null, writelen=0, bufferedRequest=null, lastBufferedRequest=null, pendingcb=0, prefinished=false, errorEmitted=true, bufferedRequestCount=0, next=null, entry=null, finish=function () { [native code] }, entry=null, finish=function () { [native code] }, writable=false, allowHalfOpen=true, _bytesDispatched=322, _sockname=null, _pendingData=null, _pendingEncoding=, domain=null, request=function (req, res, next) {
+    app.handle(req, res, next);
+  }, connection=function connectionListener(socket) {
+  debug('SERVER new http connection');
+
+  httpSocketSetup(socket);
+
+  // Ensure that the server property of the socket is correctly set.
+  // See https://github.com/nodejs/node/issues/13435
+  if (socket.server === null)
+    socket.server = this;
+
+  // If the user has added a listener to the server,
+  // request, or response, then it's their responsibility.
+  // otherwise, destroy on timeout by default
+  if (this.timeout)
+    socket.setTimeout(this.timeout);
+  socket.on('timeout', socketOnTimeout);
+
+  var parser = parsers.alloc();
+  parser.reinitialize(HTTPParser.REQUEST);
+  parser.socket = socket;
+  socket.parser = parser;
+  parser.incoming = null;
+
+  // Propagate headers limit from server instance to parser
+  if (typeof this.maxHeadersCount === 'number') {
+    parser.maxHeaderPairs = this.maxHeadersCount << 1;
+  } else {
+    // Set default value because parser may be reused from FreeList
+    parser.maxHeaderPairs = 2000;
+  }
+
+  var state = {
+    onData: null,
+    onEnd: null,
+    onClose: null,
+    onDrain: null,
+    outgoing: [],
+    incoming: [],
+    // `outgoingData` is an approximate amount of bytes queued through all
+    // inactive responses. If more data than the high watermark is queued - we
+    // need to pause TCP socket/HTTP parser, and wait until the data will be
+    // sent to the client.
+    outgoingData: 0,
+    keepAliveTimeoutSet: false
+  };
+  state.onData = socketOnData.bind(undefined, this, socket, parser, state);
+  state.onEnd = socketOnEnd.bind(undefined, this, socket, parser, state);
+  state.onClose = socketOnClose.bind(undefined, socket, state);
+  state.onDrain = socketOnDrain.bind(undefined, socket, state);
+  socket.on('data', state.onData);
+  socket.on('error', socketOnError);
+  socket.on('end', state.onEnd);
+  socket.on('close', state.onClose);
+  socket.on('drain', state.onDrain);
+  parser.onIncoming = parserOnIncoming.bind(undefined, this, socket, state);
+
+  // We are consuming socket, so it won't get any actual data
+  socket.on('resume', onSocketResume);
+  socket.on('pause', onSocketPause);
+
+  // Override on to unconsume on `data`, `readable` listeners
+  socket.on = socketOnWrap;
+
+  // We only consume the socket if it has never been consumed before.
+  var external = socket._handle._externalStream;
+  if (!socket._handle._consumed && external) {
+    parser._consumed = true;
+    socket._handle._consumed = true;
+    parser.consume(external);
+  }
+  parser[kOnExecute] =
+    onParserExecute.bind(undefined, this, socket, parser, state);
+
+  socket._paused = false;
+}, listening=() => {
+        logger.debug(`Supervisor listening at ${this._server.address().address}:${this._server.address().port}.`);
+      }, error=[(err) => {
+        logger.error('SUPERVISOR error', err);
+      }, (err) => {
+        if (err.code === 'EADDRINUSE') {
+          logger.error(`${name} (${this.config[name]}) is already in use`);
+        } else {
+          logger.error(err);
+        }
+      }], clientError=(err, socket) => {
+        logger.error('SUPERVISOR clientError', err, socket);
+      }, _eventsCount=5, _maxListeners=undefined, _connections=0, reading=false, $ref=$["server"], onread=null, onconnection=function onconnection(err, clientHandle) {
+  var handle = this;
+  var self = handle.owner;
+
+  debug('onconnection');
+
+  if (err) {
+    self.emit('error', errnoException(err, 'accept'));
+    return;
+  }
+
+  if (self.maxConnections && self._connections >= self.maxConnections) {
+    clientHandle.close();
+    return;
+  }
+
+  var socket = new Socket({
+    handle: clientHandle,
+    allowHalfOpen: self.allowHalfOpen,
+    pauseOnCreate: self.pauseOnConnect
+  });
+  socket.readable = socket.writable = true;
+
+
+  self._connections++;
+  socket.server = self;
+  socket._server = self;
+
+  DTRACE_NET_SERVER_CONNECTION(socket);
+  ;
+  COUNTER_NET_SERVER_CONNECTION(socket);
+  self.emit('connection', socket);
+}, writeQueueSize=0, _usingSlaves=false, _slaves=[], _unref=false, allowHalfOpen=true, pauseOnConnect=false, httpAllowHalfOpen=false, timeout=120000, keepAliveTimeout=5000, _pendingResponseData=0, maxHeadersCount=null, _connectionKey=4:127.0.0.1:5001, $ref=$["server"], _idleTimeout=-1, _idleNext=null, _idlePrev=null, _idleStart=83548, _destroyed=false, 0=function parserOnHeaders(headers, url) {
+  // Once we exceeded headers limit - stop collecting them
+  if (this.maxHeaderPairs <= 0 ||
+      this._headers.length < this.maxHeaderPairs) {
+    this._headers = this._headers.concat(headers);
+  }
+  this._url += url;
+}, 1=function parserOnHeadersComplete(versionMajor, versionMinor, headers, method,
+                                 url, statusCode, statusMessage, upgrade,
+                                 shouldKeepAlive) {
+  var parser = this;
+
+  if (!headers) {
+    headers = parser._headers;
+    parser._headers = [];
+  }
+
+  if (!url) {
+    url = parser._url;
+    parser._url = '';
+  }
+
+  parser.incoming = new IncomingMessage(parser.socket);
+  parser.incoming.httpVersionMajor = versionMajor;
+  parser.incoming.httpVersionMinor = versionMinor;
+  parser.incoming.httpVersion = `${versionMajor}.${versionMinor}`;
+  parser.incoming.url = url;
+
+  var n = headers.length;
+
+  // If parser.maxHeaderPairs <= 0 assume that there's no limit.
+  if (parser.maxHeaderPairs > 0)
+    n = Math.min(n, parser.maxHeaderPairs);
+
+  parser.incoming._addHeaderLines(headers, n);
+
+  if (typeof method === 'number') {
+    // server only
+    parser.incoming.method = methods[method];
+  } else {
+    // client only
+    parser.incoming.statusCode = statusCode;
+    parser.incoming.statusMessage = statusMessage;
+  }
+
+  if (upgrade && parser.outgoing !== null && !parser.outgoing.upgrading) {
+    // The client made non-upgrade request, and server is just advertising
+    // supported protocols.
+    //
+    // See RFC7230 Section 6.7
+    upgrade = false;
+  }
+
+  parser.incoming.upgrade = upgrade;
+
+  var skipBody = 0; // response to HEAD or CONNECT
+
+  if (!upgrade) {
+    // For upgraded connections and CONNECT method request, we'll emit this
+    // after parser.execute so that we can capture the first part of the new
+    // protocol.
+    skipBody = parser.onIncoming(parser.incoming, shouldKeepAlive);
+  }
+
+  if (typeof skipBody !== 'number')
+    return skipBody ? 1 : 0;
+  else
+    return skipBody;
+}, 2=function parserOnBody(b, start, len) {
+  var parser = this;
+  var stream = parser.incoming;
+
+  // if the stream has already been removed, then drop it.
+  if (!stream)
+    return;
+
+  var socket = stream.socket;
+
+  // pretend this was the result of a stream._read call.
+  if (len > 0 && !stream._dumped) {
+    var slice = b.slice(start, start + len);
+    var ret = stream.push(slice);
+    if (!ret)
+      readStop(socket);
+  }
+}, 3=function parserOnMessageComplete() {
+  var parser = this;
+  var stream = parser.incoming;
+
+  if (stream) {
+    stream.complete = true;
+    // Emit any trailing headers.
+    var headers = parser._headers;
+    if (headers) {
+      parser.incoming._addHeaderLines(headers, headers.length);
+      parser._headers = [];
+      parser._url = '';
+    }
+
+    // For emit end event
+    stream.push(null);
+  }
+
+  // force to read the next incoming message
+  readStart(parser.socket);
+}, 4=function () { [native code] }, _headers=[], _url=, _consumed=true, $ref=$, objectMode=false, highWaterMark=16384, head=null, tail=null, length=0, length=0, pipes=null, pipesCount=0, flowing=false, ended=true, endEmitted=true, reading=false, sync=false, needReadable=false, emittedReadable=false, readableListening=false, resumeScheduled=false, destroyed=false, defaultEncoding=utf8, awaitDrain=0, readingMore=false, decoder=null, encoding=null, readable=false, domain=null, aborted=function () {
+      proxyReq.abort();
+    }, error=function proxyError(err) {
+        if (req.socket.destroyed && err.code === 'ECONNRESET') {
+          server.emit('econnreset', err, req, res, url);
+          return proxyReq.abort();
+        }
+
+        if (clb) {
+          clb(err, req, res, url);
+        } else {
+          server.emit('error', err, req, res, url);
+        }
+      }, _eventsCount=2, _maxListeners=undefined, $ref=$, $ref=$, httpVersionMajor=1, httpVersionMinor=1, httpVersion=1.1, complete=true, x-forwarded-host=localhost:5000, x-original-url=/reportComment, pragma=no-cache, cache-control=no-cache, no-store, host=localhost:5001, connection=keep-alive, content-length=1061, accept=*/*, origin=http://localhost:5000, x-requested-with=XMLHttpRequest, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36, content-type=application/json, referer=http://localhost:5000/de-de/blog/anything/index.html, accept-encoding=gzip, deflate, br, accept-language=de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7, rawHeaders=[X-Forwarded-Host, localhost:5000, X-Original-Url, /reportComment, Pragma, no-cache, Cache-Control, no-cache, no-store, host, localhost:5001, connection, keep-alive, content-length, 1061, accept, */*, origin, http://localhost:5000, x-requested-with, XMLHttpRequest, user-agent, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36, content-type, application/json, referer, http://localhost:5000/de-de/blog/anything/index.html, accept-encoding, gzip, deflate, br, accept-language, de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7], , rawTrailers=[], upgrade=false, url=/exchange-blog/us-central1/expressapp/reportComment, method=POST, statusCode=null, statusMessage=null, $ref=$, _consuming=true, _dumped=false, next=function next(err) {
+    var layerError = err === 'route'
+      ? null
+      : err;
+
+    // remove added slash
+    if (slashAdded) {
+      req.url = req.url.substr(1);
+      slashAdded = false;
+    }
+
+    // restore altered req.url
+    if (removed.length !== 0) {
+      req.baseUrl = parentUrl;
+      req.url = protohost + removed + req.url.substr(protohost.length);
+      removed = '';
+    }
+
+    // signal to exit router
+    if (layerError === 'router') {
+      setImmediate(done, null)
+      return
+    }
+
+    // no more matching layers
+    if (idx >= stack.length) {
+      setImmediate(done, layerError);
+      return;
+    }
+
+    // get pathname of request
+    var path = getPathname(req);
+
+    if (path == null) {
+      return done(layerError);
+    }
+
+    // find next matching layer
+    var layer;
+    var match;
+    var route;
+
+    while (match !== true && idx < stack.length) {
+      layer = stack[idx++];
+      match = matchLayer(layer, path);
+      route = layer.route;
+
+      if (typeof match !== 'boolean') {
+        // hold on to layerError
+        layerError = layerError || match;
+      }
+
+      if (match !== true) {
+        continue;
+      }
+
+      if (!route) {
+        // process non-route handlers normally
+        continue;
+      }
+
+      if (layerError) {
+        // routes do not match with a pending error
+        match = false;
+        continue;
+      }
+
+      var method = req.method;
+      var has_method = route._handles_method(method);
+
+      // build up automatic options response
+      if (!has_method && method === 'OPTIONS') {
+        appendMethods(options, route._options());
+      }
+
+      // don't even bother matching route
+      if (!has_method && method !== 'HEAD') {
+        match = false;
+        continue;
+      }
+    }
+
+    // no match
+    if (match !== true) {
+      return done(layerError);
+    }
+
+    // store route for dispatch on change
+    if (route) {
+      req.route = route;
+    }
+
+    // Capture one-time layer values
+    req.params = self.mergeParams
+      ? mergeParams(layer.params, parentParams)
+      : layer.params;
+    var layerPath = layer.path;
+
+    // this should be done for the layer
+    self.process_params(layer, paramcalled, req, res, function (err) {
+      if (err) {
+        return next(layerError || err);
+      }
+
+      if (route) {
+        return layer.handle_request(req, res, next);
+      }
+
+      trim_prefix(layer, layerError, layerPath, path);
+    });
+  }, baseUrl=, originalUrl=/exchange-blog/us-central1/expressapp/reportComment, protocol=null, slashes=null, auth=null, host=null, port=null, hostname=null, hash=null, search=null, query=null, pathname=/exchange-blog/us-central1/expressapp/reportComment, path=/exchange-blog/us-central1/expressapp/reportComment, href=/exchange-blog/us-central1/expressapp/reportComment, _raw=/exchange-blog/us-central1/expressapp/reportComment, , , domain=null, finish=function () { [native code] }, _eventsCount=1, _maxListeners=undefined, output=[], outputEncodings=[], outputCallbacks=[], outputSize=0, writable=true, _last=false, upgrading=false, chunkedEncoding=false, shouldKeepAlive=true, useChunkedEncodingByDefault=true, sendDate=true, _removedConnection=false, _removedContLen=false, _removedTE=false, _contentLength=91, _hasBody=true, _trailer=, finished=true, _headerSent=true, socket=null, connection=null, _header=HTTP/1.1 500 Internal Server Error
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 91
+ETag: W/"5b-iGspZwrtSPKK7Ipjt62rruw4psA"
+Date: Fri, 20 Apr 2018 17:19:55 GMT
+Connection: keep-alive
+
+, _onPendingData=function () { [native code] }, _sent100=false, _expect_continue=false, $ref=$["parser"]["incoming"], , statusCode=500, statusMessage=Internal Server Error, functionName=projects/exchange-blog/locations/us-central1/functions/expressapp, functionStart=1524244735829, _called=true, _idleTimeout=60000, _idlePrev=null, _idleNext=null, _idleStart=23477, _onTimeout=() => {
+          try {
+            this.closeWorker(req.functionName);
+            logger.info(`Execution took ${Date.now() - req.functionStart} ms, finished with status: 'timeout'`);
+
+            res
+              .status(500)
+              .json({
+                error: {
+                  code: 500,
+                  status: 'INTERNAL',
+                  message: 'function execution attempt timed out'
+                }
+              })
+              .end();
+          } catch (err) {
+            logger.error('Something went wrong with the function timeout!');
+            logger.error(err);
+          }
+        }, _timerArgs=undefined, _repeat=null, _destroyed=false, read=function (n) {
+  debug('read', n);
+  n = parseInt(n, 10);
+  var state = this._readableState;
+  var nOrig = n;
+
+  if (n !== 0)
+    state.emittedReadable = false;
+
+  // if we're doing read(0) to trigger a readable event, but we
+  // already have a bunch of data in the buffer, then just trigger
+  // the 'readable' event and move on.
+  if (n === 0 &&
+      state.needReadable &&
+      (state.length >= state.highWaterMark || state.ended)) {
+    debug('read: emitReadable', state.length, state.ended);
+    if (state.length === 0 && state.ended)
+      endReadable(this);
+    else
+      emitReadable(this);
+    return null;
+  }
+
+  n = howMuchToRead(n, state);
+
+  // if we've ended, and we're now clear, then finish it up.
+  if (n === 0 && state.ended) {
+    if (state.length === 0)
+      endReadable(this);
+    return null;
+  }
+
+  // All the actual chunk generation logic needs to be
+  // *below* the call to _read.  The reason is that in certain
+  // synthetic stream cases, such as passthrough streams, _read
+  // may be a completely synchronous operation which may change
+  // the state of the read buffer, providing enough data when
+  // before there was *not* enough.
+  //
+  // So, the steps are:
+  // 1. Figure out what the state of things will be after we do
+  // a read from the buffer.
+  //
+  // 2. If that resulting state will trigger a _read, then call _read.
+  // Note that this may be asynchronous, or synchronous.  Yes, it is
+  // deeply ugly to write APIs this way, but that still doesn't mean
+  // that the Readable class should behave improperly, as streams are
+  // designed to be sync/async agnostic.
+  // Take note if the _read call is sync or async (ie, if the read call
+  // has returned yet), so that we know whether or not it's safe to emit
+  // 'readable' etc.
+  //
+  // 3. Actually pull the requested chunks out of the buffer and return.
+
+  // if we need a readable event, then we need to do some reading.
+  var doRead = state.needReadable;
+  debug('need readable', doRead);
+
+  // if we currently have less than the highWaterMark, then also read some
+  if (state.length === 0 || state.length - n < state.highWaterMark) {
+    doRead = true;
+    debug('length less than watermark', doRead);
+  }
+
+  // however, if we've ended, then there's no point, and if we're already
+  // reading, then it's unnecessary.
+  if (state.ended || state.reading) {
+    doRead = false;
+    debug('reading or ended', doRead);
+  } else if (doRead) {
+    debug('do read');
+    state.reading = true;
+    state.sync = true;
+    // if the length is currently zero, then we *need* a readable event.
+    if (state.length === 0)
+      state.needReadable = true;
+    // call internal read method
+    this._read(state.highWaterMark);
+    state.sync = false;
+    // If _read pushed data synchronously, then `reading` will be false,
+    // and we need to re-evaluate how much data we can return to the user.
+    if (!state.reading)
+      n = howMuchToRead(nOrig, state);
+  }
+
+  var ret;
+  if (n > 0)
+    ret = fromList(n, state);
+  else
+    ret = null;
+
+  if (ret === null) {
+    state.needReadable = true;
+    n = 0;
+  } else {
+    state.length -= n;
+  }
+
+  if (state.length === 0) {
+    // If we have nothing in the buffer, then we want to know
+    // as soon as we *do* get something into the buffer.
+    if (!state.ended)
+      state.needReadable = true;
+
+    // If we tried to read() past the EOF, then emit end on the next tick.
+    if (nOrig !== n && state.ended)
+      endReadable(this);
+  }
+
+  if (ret !== null)
+    this.emit('data', ret);
+
+  return ret;
+}, outgoing=null, maxHeaderPairs=2000, onIncoming=function () { [native code] }, on=function socketOnWrap(ev, fn) {
+  var res = net.Socket.prototype.on.call(this, ev, fn);
+  if (!this.parser) {
+    this.on = net.Socket.prototype.on;
+    return res;
+  }
+
+  if (ev === 'data' || ev === 'readable')
+    unconsume(this.parser, this);
+
+  return res;
+}, _paused=false, read=function (n) {
+  debug('read', n);
+  n = parseInt(n, 10);
+  var state = this._readableState;
+  var nOrig = n;
+
+  if (n !== 0)
+    state.emittedReadable = false;
+
+  // if we're doing read(0) to trigger a readable event, but we
+  // already have a bunch of data in the buffer, then just trigger
+  // the 'readable' event and move on.
+  if (n === 0 &&
+      state.needReadable &&
+      (state.length >= state.highWaterMark || state.ended)) {
+    debug('read: emitReadable', state.length, state.ended);
+    if (state.length === 0 && state.ended)
+      endReadable(this);
+    else
+      emitReadable(this);
+    return null;
+  }
+
+  n = howMuchToRead(n, state);
+
+  // if we've ended, and we're now clear, then finish it up.
+  if (n === 0 && state.ended) {
+    if (state.length === 0)
+      endReadable(this);
+    return null;
+  }
+
+  // All the actual chunk generation logic needs to be
+  // *below* the call to _read.  The reason is that in certain
+  // synthetic stream cases, such as passthrough streams, _read
+  // may be a completely synchronous operation which may change
+  // the state of the read buffer, providing enough data when
+  // before there was *not* enough.
+  //
+  // So, the steps are:
+  // 1. Figure out what the state of things will be after we do
+  // a read from the buffer.
+  //
+  // 2. If that resulting state will trigger a _read, then call _read.
+  // Note that this may be asynchronous, or synchronous.  Yes, it is
+  // deeply ugly to write APIs this way, but that still doesn't mean
+  // that the Readable class should behave improperly, as streams are
+  // designed to be sync/async agnostic.
+  // Take note if the _read call is sync or async (ie, if the read call
+  // has returned yet), so that we know whether or not it's safe to emit
+  // 'readable' etc.
+  //
+  // 3. Actually pull the requested chunks out of the buffer and return.
+
+  // if we need a readable event, then we need to do some reading.
+  var doRead = state.needReadable;
+  debug('need readable', doRead);
+
+  // if we currently have less than the highWaterMark, then also read some
+  if (state.length === 0 || state.length - n < state.highWaterMark) {
+    doRead = true;
+    debug('length less than watermark', doRead);
+  }
+
+  // however, if we've ended, then there's no point, and if we're already
+  // reading, then it's unnecessary.
+  if (state.ended || state.reading) {
+    doRead = false;
+    debug('reading or ended', doRead);
+  } else if (doRead) {
+    debug('do read');
+    state.reading = true;
+    state.sync = true;
+    // if the length is currently zero, then we *need* a readable event.
+    if (state.length === 0)
+      state.needReadable = true;
+    // call internal read method
+    this._read(state.highWaterMark);
+    state.sync = false;
+    // If _read pushed data synchronously, then `reading` will be false,
+    // and we need to re-evaluate how much data we can return to the user.
+    if (!state.reading)
+      n = howMuchToRead(nOrig, state);
+  }
+
+  var ret;
+  if (n > 0)
+    ret = fromList(n, state);
+  else
+    ret = null;
+
+  if (ret === null) {
+    state.needReadable = true;
+    n = 0;
+  } else {
+    state.length -= n;
+  }
+
+  if (state.length === 0) {
+    // If we have nothing in the buffer, then we want to know
+    // as soon as we *do* get something into the buffer.
+    if (!state.ended)
+      state.needReadable = true;
+
+    // If we tried to read() past the EOF, then emit end on the next tick.
+    if (nOrig !== n && state.ended)
+      endReadable(this);
+  }
+
+  if (ret !== null)
+    this.emit('data', ret);
+
+  return ret;
+}, _consuming=true, _httpMessage=null
+2018-04-20T17:19:56.245Z - error: Function worker killed by signal: SIGTERM
+2018-04-20T17:28:17.736Z - info: Worker for expressapp closed due to file changes.
+2018-04-20T17:29:26.281Z - info: User function triggered, starting execution
+2018-04-20T17:29:52.778Z - info: Execution took 26536 ms, finished with status: 'crash'
+2018-04-20T17:31:49.388Z - info: User function triggered, starting execution
+2018-04-20T17:31:49.480Z - info: Execution took 92 ms, user function completed successfully
+2018-04-20T20:31:21.117Z - info: User function triggered, starting execution
+2018-04-20T20:31:21.128Z - info: Execution took 10 ms, user function completed successfully
+2018-04-20T20:31:25.421Z - info: User function triggered, starting execution
+2018-04-20T20:31:25.515Z - info: Execution took 93 ms, user function completed successfully
+2018-04-20T20:31:25.696Z - info: User function triggered, starting execution
+2018-04-20T20:31:25.700Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T20:31:25.776Z - info: User function triggered, starting execution
+2018-04-20T20:31:25.778Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T20:31:25.880Z - info: User function triggered, starting execution
+2018-04-20T20:31:25.945Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T20:40:45.960Z - info: User function triggered, starting execution
+2018-04-20T20:40:46.981Z - info: Execution took 1023 ms, user function completed successfully
+2018-04-20T20:41:03.051Z - info: User function triggered, starting execution
+2018-04-20T20:41:03.056Z - info: Execution took 4 ms, user function completed successfully
+2018-04-20T20:41:03.262Z - info: User function triggered, starting execution
+2018-04-20T20:41:03.266Z - info: Execution took 3 ms, user function completed successfully
+2018-04-20T20:41:03.330Z - info: User function triggered, starting execution
+Execution took 3 ms, user function completed successfully
+2018-04-20T20:41:03.334Z - info: User function triggered, starting execution
+2018-04-20T20:41:03.336Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T20:41:08.128Z - info: User function triggered, starting execution
+2018-04-20T20:41:09.107Z - info: Execution took 974 ms, user function completed successfully
+2018-04-20T20:41:13.620Z - info: User function triggered, starting execution
+2018-04-20T20:41:13.622Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T20:41:13.836Z - info: User function triggered, starting execution
+2018-04-20T20:41:13.839Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T20:41:13.885Z - info: User function triggered, starting execution
+2018-04-20T20:41:13.924Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T20:41:14.023Z - info: User function triggered, starting execution
+2018-04-20T20:41:14.025Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T20:55:47.009Z - info: User function triggered, starting execution
+2018-04-20T20:55:48.094Z - info: Execution took 1085 ms, user function completed successfully
+2018-04-20T20:55:48.587Z - info: User function triggered, starting execution
+2018-04-20T20:55:48.590Z - info: Execution took 3 ms, user function completed successfully
+2018-04-20T20:55:48.850Z - info: User function triggered, starting execution
+2018-04-20T20:55:48.856Z - info: Execution took 4 ms, user function completed successfully
+2018-04-20T20:55:48.941Z - info: User function triggered, starting execution
+2018-04-20T20:55:48.944Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T20:57:37.934Z - info: User function triggered, starting execution
+2018-04-20T20:57:37.944Z - info: Execution took 11 ms, user function completed successfully
+2018-04-20T21:04:02.084Z - info: User function triggered, starting execution
+2018-04-20T21:04:02.087Z - info: Execution took 3 ms, user function completed successfully
+2018-04-20T21:06:51.004Z - info: Worker for expressapp closed due to file changes.
+2018-04-20T21:07:21.542Z - info: User function triggered, starting execution
+2018-04-20T21:07:21.627Z - info: Execution took 86 ms, user function completed successfully
+2018-04-20T21:07:21.825Z - info: User function triggered, starting execution
+2018-04-20T21:07:21.831Z - info: Execution took 3 ms, user function completed successfully
+2018-04-20T21:07:21.880Z - info: User function triggered, starting execution
+2018-04-20T21:07:21.890Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:07:21.935Z - info: User function triggered, starting execution
+2018-04-20T21:07:21.937Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:07:36.258Z - info: User function triggered, starting execution
+2018-04-20T21:07:36.259Z - info: Rouws2G1JnyPgQMd6oSV comment Be0gLz3V6ebqZwdrKn1B
+2018-04-20T21:07:36.260Z - info: TypeError: Cannot read property 'author' of undefined
+    at auth.then (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:214:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-20T21:07:36.262Z - info: Execution took 3 ms, user function completed successfully
+2018-04-20T21:07:50.121Z - info: User function triggered, starting execution
+2018-04-20T21:07:50.130Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:07:50.334Z - info: User function triggered, starting execution
+2018-04-20T21:07:50.337Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T21:07:50.395Z - info: User function triggered, starting execution
+2018-04-20T21:07:50.398Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:07:50.404Z - info: User function triggered, starting execution
+2018-04-20T21:07:50.408Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:09:27.915Z - info: User function triggered, starting execution
+2018-04-20T21:09:27.916Z - info: Rouws2G1JnyPgQMd6oSV comment Be0gLz3V6ebqZwdrKn1B
+2018-04-20T21:09:27.918Z - info: TypeError: Cannot read property 'author' of undefined
+    at auth.then (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:214:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Execution took 2 ms, user function completed successfully
+2018-04-20T21:09:46.651Z - info: User function triggered, starting execution
+2018-04-20T21:09:46.655Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:09:46.877Z - info: User function triggered, starting execution
+2018-04-20T21:09:46.897Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T21:09:46.965Z - info: User function triggered, starting execution
+2018-04-20T21:09:46.997Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T21:09:47.003Z - info: User function triggered, starting execution
+2018-04-20T21:09:47.005Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:11:13.959Z - info: Worker for expressapp closed due to file changes.
+2018-04-20T21:12:05.464Z - info: User function triggered, starting execution
+2018-04-20T21:12:05.548Z - info: Rouws2G1JnyPgQMd6oSV comment Be0gLz3V6ebqZwdrKn1B
+2018-04-20T21:12:05.556Z - info: Execution took 92 ms, user function completed successfully
+2018-04-20T21:12:10.959Z - info: User function triggered, starting execution
+2018-04-20T21:12:10.967Z - info: Execution took 4 ms, user function completed successfully
+2018-04-20T21:12:11.192Z - info: User function triggered, starting execution
+2018-04-20T21:12:11.196Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:12:11.242Z - info: User function triggered, starting execution
+2018-04-20T21:12:11.249Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:12:11.271Z - info: User function triggered, starting execution
+2018-04-20T21:12:11.273Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T21:12:24.678Z - info: User function triggered, starting execution
+2018-04-20T21:12:25.492Z - info: Execution took 813 ms, user function completed successfully
+2018-04-20T21:12:36.036Z - info: User function triggered, starting execution
+2018-04-20T21:12:36.266Z - info: Execution took 230 ms, user function completed successfully
+2018-04-20T21:12:40.364Z - info: User function triggered, starting execution
+2018-04-20T21:12:40.366Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T21:12:40.559Z - info: User function triggered, starting execution
+2018-04-20T21:12:40.562Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:12:40.617Z - info: User function triggered, starting execution
+2018-04-20T21:12:40.633Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 3 ms, user function completed successfully
+2018-04-20T21:12:48.327Z - info: User function triggered, starting execution
+2018-04-20T21:12:48.342Z - info: 2wyb49HnbYV5yqIHZZWf comment Be0gLz3V6ebqZwdrKn1B
+Execution took 2 ms, user function completed successfully
+2018-04-20T21:12:52.496Z - info: User function triggered, starting execution
+2018-04-20T21:12:52.498Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T21:12:52.703Z - info: User function triggered, starting execution
+2018-04-20T21:12:52.705Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T21:12:52.744Z - info: User function triggered, starting execution
+2018-04-20T21:12:52.747Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+2018-04-20T21:12:52.751Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T21:12:58.508Z - info: User function triggered, starting execution
+2018-04-20T21:12:58.510Z - info: NTFmjpOQPKt4KPOWpORn blog anything
+2018-04-20T21:12:58.511Z - info: TypeError: Cannot read property 'author' of undefined
+    at auth.then (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:214:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-20T21:12:58.514Z - info: Execution took 4 ms, user function completed successfully
+2018-04-20T21:17:23.931Z - info: Worker for expressapp closed due to file changes.
+2018-04-20T21:18:44.084Z - info: User function triggered, starting execution
+2018-04-20T21:18:44.182Z - info: Execution took 95 ms, user function completed successfully
+2018-04-20T21:18:44.387Z - info: User function triggered, starting execution
+2018-04-20T21:18:44.393Z - info: Execution took 4 ms, user function completed successfully
+2018-04-20T21:18:44.439Z - info: User function triggered, starting execution
+2018-04-20T21:18:44.444Z - info: Execution took 3 ms, user function completed successfully
+2018-04-20T21:18:44.452Z - info: User function triggered, starting execution
+2018-04-20T21:18:44.455Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T21:19:25.855Z - info: User function triggered, starting execution
+2018-04-20T21:19:25.866Z - info: Execution took 10 ms, user function completed successfully
+2018-04-20T21:19:30.046Z - info: User function triggered, starting execution
+2018-04-20T21:19:30.049Z - info: Execution took 1 ms, user function completed successfully
+2018-04-20T21:19:30.241Z - info: User function triggered, starting execution
+2018-04-20T21:19:30.243Z - info: Execution took 2 ms, user function completed successfully
+2018-04-20T21:19:30.303Z - info: User function triggered, starting execution
+2018-04-20T21:19:30.313Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 2 ms, user function completed successfully

@@ -134,18 +134,76 @@ function main() {
       $('#' + id + ' .comment-controll > .comment-controll-reply').click(((id) => () => {
         $('#' + id + ' .comment-reply-insert').slideToggle();
       })(id));
-      $('#' + id + ' .comment-controll > .comment-controll-report').click(((id) => () => {
-        //Report Comment Implementation goes here...
-      })(id));
+      $('#' + id + ' .comment-controll > .comment-controll-report').click(((id,content) => () => {
+        firebase.auth().currentUser.getIdToken(true)
+          .then((idToken) => {
+            $.ajax({
+              type: 'POST',
+              url: '/reportComment',
+              contentType: 'application/json',
+              data: '{ "id": "' + id + '", "url": "' + window.location.href + '", "content": "' + content + '", "typ": "Comment", "idToken": "' + idToken + '" }',
+              error: (jqxhr) => { redirector(jqxhr.status) }
+            });
+          });
+      })(id,content.comments[i].content));
       $('#' + id + ' .comment-controll > .comment-controll-delete').click(((id) => () => {
-        $.ajax({
-          type: 'POST',
-          url: '/deleteComment',
-          contentType: 'application/json',
-          data: '{ "id": "' + id + '", "typ": "blog", "source": "' + blogid + '", "idToken": "' + idToken + '" }',
-          error: (jqxhr) => { redirector(jqxhr.status) }
-        });
+        firebase.auth().currentUser.getIdToken(true)
+          .then((idToken) => {
+            $.ajax({
+              type: 'POST',
+              url: '/deleteComment',
+              contentType: 'application/json',
+              data: '{ "id": "' + id + '", "typ": "blog", "source": "' + blogid + '", "idToken": "' + idToken + '" }',
+              error: (jqxhr) => { redirector(jqxhr.status) }
+            });
+          });
       })(id));
+      var comtarget = content.comments[i].id;
+      $('#comments > .comment:nth-child(' + (i + 2) + ') .comment-reply-insert > a')
+        .click(((id, index) => () => {
+          firebase.auth().currentUser.getIdToken(true)
+            .then(idToken => {
+              var content = $('#comments > .comment:nth-child(' + (index + 2) + ') .comment-reply-insert > textarea').val()
+                .replace(/"/, '&quot')
+                .replace(/'/, '&#039;')
+                .replace(/\n/g, '\\\\n');
+              $.ajax({
+                type: 'POST',
+                url: '/replyToComment',
+                contentType: 'application/json',
+                data: '{ "content": "' + content + '", "typ": "blog", "target": "' + blogid + '", "comtarget": "' + id + '", "idToken": "' + idToken + '" }',
+              });
+            });
+        })(comtarget, i));
+
+      for (var j = 0; j < content.comments[i].replies.length; j++) {
+        $('#comments .comment-reply:nth-child(' + (j + 2) + ') .comment-controll-report')
+          .click(((id,content) => () => {
+            firebase.auth().currentUser.getIdToken(true)
+              .then((idToken) => {
+                $.ajax({
+                  type: 'POST',
+                  url: '/reportComment',
+                  contentType: 'application/json',
+                  data: '{ "id": "' + id + '", "url": "' + window.location.href + '", "content": "' + content + '", "typ": "CommentReply", "idToken": "' + idToken + '" }',
+                  error: (jqxhr) => { redirector(jqxhr.status) }
+                });
+              });
+          })(content.comments[i].replies[j].id, content.comments[i].replies[j].content));
+        $('#comments .comment-reply:nth-child(' + (j + 2) + ') .comment-controll-delete')
+          .click(((id,source) => () => {
+            firebase.auth().currentUser.getIdToken(true)
+              .then((idToken) => {
+                $.ajax({
+                  type: 'POST',
+                  url: '/deleteComment',
+                  contentType: 'application/json',
+                  data: '{ "id": "' + id + '", "typ": "comment", "source": "' + source + '", "idToken": "' + idToken + '" }',
+                  error: (jqxhr) => { redirector(jqxhr.status) }
+                });
+              });
+          })(content.comments[i].replies[j].id, content.comments[i].id));
+      }
     }
     
 
@@ -165,25 +223,7 @@ function main() {
         });
     });
 
-    for (var i = 0; i < content.comments.length; i++) {
-      var comtarget = content.comments[i].id;
-      $('#comments > .comment:nth-child(' + (i + 2) + ') .comment-reply-insert > a')
-        .click(((id,index) => () => {
-          firebase.auth().currentUser.getIdToken(true)
-          .then(idToken => {
-            var content = $('#comments > .comment:nth-child(' + (index + 2) + ') .comment-reply-insert > textarea').val()
-              .replace(/"/, '&quot')
-              .replace(/'/, '&#039;')
-              .replace(/\n/g,'\\\\n');
-            $.ajax({
-              type: 'POST',
-              url: '/replyToComment',
-              contentType: 'application/json',
-              data: '{ "content": "' + content + '", "typ": "blog", "target": "' + blogid + '", "comtarget": "' + id + '", "idToken": "' + idToken + '" }',
-            });
-          });
-        })(comtarget,i));
-    }
+    
   }
 
   function launchGallery(galleryid, data) {

@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const url = require('url');
 const formidable = require('formidable');
+const nodemailer = require('nodemailer');
 
 const app = express();
 
@@ -209,10 +210,8 @@ app.post('/deleteComment', (req, res) => {
       var id = req.body.id;
       var typ = req.body.typ;
       var source = req.body.source;
-      console.log(id,typ,source)
-      if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
-        if (typ == 'blog') {
-          console.log(dbBlogentries)
+      if (typ == 'blog') {
+        if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
           var index = dbBlogentries[source].Comments.indexOf(id);
           dbBlogentries[source].Comments.splice(index, 1);
           db.collection('Blogentries').doc(source).update({
@@ -221,7 +220,11 @@ app.post('/deleteComment', (req, res) => {
           delete dbComments[id];
           db.collection('Comments').doc(id).delete();
           res.end();
-        } else if (typ == 'media') {
+        } else {
+          res.status(403).end();
+        }
+      } else if (typ == 'media') {
+        if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
           var index = dbMedia[source].Comments.indexOf(id);
           dbMedia[source].Comments.splice(index, 1);
           db.collection('Media').doc(source).update({
@@ -230,7 +233,11 @@ app.post('/deleteComment', (req, res) => {
           delete dbComments[id];
           db.collection('Comments').doc(id).delete();
           res.end();
-        } else if (typ == 'comment') {
+        } else {
+          res.status(403).end();
+        }
+      } else if (typ == 'comment') {
+        if (dbCommentReplies[id].author == uid || dbUser[uid].Rank == 'Administrator') {
           var index = dbComments[source].replies.indexOf(id);
           dbComments[source].replies.splice(index, 1);
           db.collection('Comments').doc(source).update({
@@ -239,9 +246,9 @@ app.post('/deleteComment', (req, res) => {
           delete dbCommentReplies[id];
           db.collection('CommentReplies').doc(id).delete();
           res.end();
+        } else {
+          res.status(403).end();
         }
-      } else {
-        res.status(403).end();
       }
     }).catch((err) => {
       console.log(err);
@@ -275,6 +282,37 @@ app.post('/deleteCommentReply', (req, res) => {
       } else {
         res.status(403).end();
       }
+    }).catch(() => {
+      res.status(403).end();
+    });
+});
+
+app.post('/reportComment', (req,res) => {
+  auth(req.body.idToken)
+    .then((uid) => {
+      var id = req.body.id;
+      var url = req.body.url;
+      var content = req.body.content;
+      var text = 'Somebody reported a comment on your blog.\n\n';
+      text += 'Reporter: ' + dbUser[uid].Name + ' (' + uid + ')\n';
+      text += 'Typ: ' + req.body.typ;
+      text += 'Link: ' + url + '\n';
+      text += 'Content: ' + content;
+      var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: 'noreply.exchangeblog@gmail.com',
+          pass: 'U6LJ0omuqEBO6NqxBK82'
+        }
+      });
+      var mailOptions = {
+        from: 'Exchange Blog',
+        to: 'squamato77@gmail.com',
+        subject: 'EB Comment Report Alert',
+        text: text
+      };
+      transporter.sendMail(mailOptions);
+      res.end();
     }).catch(() => {
       res.status(403).end();
     });
