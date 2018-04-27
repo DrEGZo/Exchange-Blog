@@ -4,7 +4,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const url = require('url');
-const formidable = require('formidable');
 const nodemailer = require('nodemailer');
 
 const app = express();
@@ -20,6 +19,7 @@ var dbMedia = {};
 var dbComments = {};
 var dbCommentReplies = {};
 var dbBlogentries = {};
+var dbStatusUpdates = {};
 
 db.collection('User').onSnapshot(snapshot => {
   snapshot.forEach(doc => {
@@ -44,6 +44,11 @@ db.collection('CommentReplies').onSnapshot(snapshot => {
 db.collection('Blogentries').onSnapshot(snapshot => {
   snapshot.forEach(doc => {
     dbBlogentries[doc.id] = doc.data();
+  });
+});
+db.collection('StatusUpdates').onSnapshot(snapshot => {
+  snapshot.forEach(doc => {
+    dbStatusUpdates[doc.id] = doc.data();
   });
 });
 
@@ -256,7 +261,7 @@ app.post('/deleteComment', (req, res) => {
     });
 });
 
-app.post('/deleteCommentReply', (req, res) => {
+/*app.post('/deleteCommentReply', (req, res) => {
   auth(req.body.idToken)
     .then((uid) => {
       var id = req.body.id;
@@ -285,7 +290,7 @@ app.post('/deleteCommentReply', (req, res) => {
     }).catch(() => {
       res.status(403).end();
     });
-});
+});*/
 
 app.post('/reportComment', (req,res) => {
   auth(req.body.idToken)
@@ -315,6 +320,103 @@ app.post('/reportComment', (req,res) => {
       res.end();
     }).catch(() => {
       res.status(403).end();
+    });
+});
+
+app.post('/getActivityFeed', (req,res) => {
+  auth(req.body.idToken)
+    .then((uid) => {
+      var time = req.body.time;
+      //Liste aller Elemente erstellen
+      var contentList = [];
+      for (key in dbBlogentries) {
+        contentList.push({
+          typ: 'blog',
+          key: key,
+          upload: dbBlogentries[key].Upload.release
+        });
+      }
+      for (key in dbMedia) {
+        contentList.push({
+          typ: 'media',
+          key: key,
+          upload: dbMedia[key].Upload.release
+        });
+      }
+      for (key in dbStatusUpdates) {
+        contentList.push({
+          typ: 'status',
+          key: key,
+          upload: dbStatusUpdates[key].Upload.release
+        });
+      }
+      //Liste ordnen
+      contentList.sort((a,b) => {
+        if (a.upload.getTime() < b.upload.getTime()) return 1;
+        if (a.upload.getTime() > b.upload.getTime()) return -1;
+        return 0;
+      });
+      //Neue Liste erstellen- dabei Rechte beachten und Medien bündeln. Max-Länge: 10
+      var result = [];
+      for (var i = 0; i < contentList.length; i++) {
+        if (result.length == 10) break;
+        if (contentList[i].typ == 'blog') {
+          if (dbBlogentries[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1) {
+            //Blogentry anfügen: blogid, blogimage, header, intro, time
+            result.push({
+              id: contentList[i].key,
+              thumbnail: dbBlogentries[contentList[i].key].Thumbnail,
+              title: dbBlogentries[contentList[i].key].Title,
+              intro: dbBlogentries[contentList[i].key].Intro,
+              upload: contentList[i].upload
+            });
+            console.log(contentList[i].key)
+          }
+        } else if (contentList[i].typ == 'media') {
+          var medialist = [];
+          var date = contentList[i].upload.toLocaleDateString();
+          while (i < contentList.length && contentList[i].typ == 'media' && date == contentList[i].upload.toLocaleDateString()) {
+            if (dbMedia[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1) {
+              //Media an medialist anfügen: id, location, typ, comments, time -> vorhandene Funktionen nutzen!!!
+              medialist.push(getMetadata('media', contentList[i].key, uid));
+              console.log(contentList[i].key)
+            }
+            i++;
+          }
+          i--;
+          result.push(medialist);
+        } else if (contentList[i].typ == 'status') {
+          if (dbStatusUpdates[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1) {
+            //Status anfügen: id, author, content, time
+            var author;
+            var authorkey = dbStatusUpdates[contentList[i].key].Author;
+            if (dbUser[uid].canSeeClearNames) {
+              author = {
+                name: dbUser[authorkey].Name,
+                rank: dbUser[authorkey].Rank
+              };
+            } else {
+              author = {
+                name: dbUser[authorkey].Nick,
+                rank: dbUser[authorkey].Rank
+              };
+            }
+            result.push({
+              id: contentList[i].key,
+              author: author,
+              content: dbStatusUpdates[contentList[i].key].content,
+              upload: contentList[i].upload
+            });
+            console.log(contentList[i].key)
+          }
+        }
+        console.log(i)
+      }
+      //Liste zurückschicken
+      res.json(result);
+    }).catch((err) => {
+      console.log(err);
+      res.status(401).end();
     });
 });
 
@@ -363,6 +465,7 @@ function getMetadata(typ,mid,uid) {
   if (typ == 'media') {
     socialobject.typ = dbMedia[mid].Typ;
     socialobject.id = mid;
+    socialobject.upload = dbMedia[mid].Upload.release;
     socialobject.location = dbMedia[mid].Location;
     socialobject.comments = getComments(dbMedia[mid].Comments, dbComments, false, uid);
   } else if (typ == 'blogpost') {

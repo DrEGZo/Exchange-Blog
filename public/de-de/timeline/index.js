@@ -41,5 +41,16 @@ $(function () {
 });
 
 function main() {
-
+  $('#page-content').slideDown();
+  firebase.auth().currentUser.getIdToken(true)
+    .then(idToken => {
+      $.ajax({
+        type: 'POST',
+        url: '/getActivityFeed',
+        contentType: 'application/json',
+        data: '{ "time": ' + Date.now() + ', "idToken": "' + idToken + '" }',
+        error: (jqxhr) => { redirector(jqxhr.status) },
+        success: (data) => {  }
+      });
+    });
 }

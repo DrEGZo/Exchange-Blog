@@ -219,6 +219,7 @@ function main() {
             url: '/addComment',
             contentType: 'application/json',
             data: '{ "content": "' + content + '", "typ": "blog", "target": "' + blogid + '", "idToken": "' + idToken + '" }',
+            error: (jqxhr) => { redirector(jqxhr.status) }
           });
         });
     });
@@ -439,6 +440,49 @@ function main() {
           $('span.fa-comments-o').addClass('active');
           $('span.fa-chevron-left').addClass('disabled');
           $('span.fa-chevron-right').addClass('disabled');
+          for (var i = 0; i < imageData.comments.length; i++) {
+            var id = imageData.comments[i].id;
+            $('.slider-image-comments .comment-insert a').click(() => {
+              var content = $('.slider-image-comments textarea').val()
+                .replace(/"/, '&quot;')
+                .replace(/'/, '&#039;')
+                .replace(/\\/g, '\\\\');
+              firebase.auth().currentUser.getIdToken(true)
+                .then(idToken => {
+                  $.ajax({
+                    type: 'POST',
+                    url: '/addComment',
+                    contentType: 'application/json',
+                    data: '{ "content": "' + content + '", "typ": "media", "target": "' + galleryImage.attr('id') + '", "idToken": "' + idToken + '" }',
+                    error: (jqxhr) => { redirector(jqxhr.status) }
+                  });
+                });
+            });
+            $('#' + id + ' .comment-controll > .comment-controll-report').click(((id, content) => () => {
+              firebase.auth().currentUser.getIdToken(true)
+                .then((idToken) => {
+                  $.ajax({
+                    type: 'POST',
+                    url: '/reportComment',
+                    contentType: 'application/json',
+                    data: '{ "id": "' + id + '", "url": "' + window.location.href + '", "content": "' + content + '", "typ": "Comment", "idToken": "' + idToken + '" }',
+                    error: (jqxhr) => { redirector(jqxhr.status) }
+                  });
+                });
+            })(id, imageData.comments[i].content));
+            $('#' + id + ' .comment-controll > .comment-controll-delete').click(((id) => () => {
+              firebase.auth().currentUser.getIdToken(true)
+                .then((idToken) => {
+                  $.ajax({
+                    type: 'POST',
+                    url: '/deleteComment',
+                    contentType: 'application/json',
+                    data: '{ "id": "' + id + '", "typ": "media", "source": "' + galleryImage.attr('id') + '", "idToken": "' + idToken + '" }',
+                    error: (jqxhr) => { redirector(jqxhr.status) }
+                  });
+                });
+            })(id));
+          }
   	    }
 
       });
