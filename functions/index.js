@@ -300,7 +300,6 @@ app.post('/reportComment', (req,res) => {
       var content = req.body.content;
       var text = 'Somebody reported a comment on your blog.\n\n';
       text += 'Reporter: ' + dbUser[uid].Name + ' (' + uid + ')\n';
-      text += 'Typ: ' + req.body.typ;
       text += 'Link: ' + url + '\n';
       text += 'Content: ' + content;
       var transporter = nodemailer.createTransport({
@@ -327,7 +326,6 @@ app.post('/getActivityFeed', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
       var time = req.body.time;
-      //Liste aller Elemente erstellen
       var contentList = [];
       for (key in dbBlogentries) {
         contentList.push({
@@ -350,44 +348,37 @@ app.post('/getActivityFeed', (req,res) => {
           upload: dbStatusUpdates[key].Upload.release
         });
       }
-      //Liste ordnen
       contentList.sort((a,b) => {
         if (a.upload.getTime() < b.upload.getTime()) return 1;
         if (a.upload.getTime() > b.upload.getTime()) return -1;
         return 0;
       });
-      //Neue Liste erstellen- dabei Rechte beachten und Medien bündeln. Max-Länge: 10
       var result = [];
       for (var i = 0; i < contentList.length; i++) {
         if (result.length == 10) break;
         if (contentList[i].typ == 'blog') {
-          if (dbBlogentries[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1) {
-            //Blogentry anfügen: blogid, blogimage, header, intro, time
+          if (dbBlogentries[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1 && contentList[i].upload < time) {
             result.push({
               id: contentList[i].key,
-              thumbnail: dbBlogentries[contentList[i].key].Thumbnail,
+              thumbnail: dbMedia[dbBlogentries[contentList[i].key].Thumbnail].Location,
               title: dbBlogentries[contentList[i].key].Title,
               intro: dbBlogentries[contentList[i].key].Intro,
               upload: contentList[i].upload
             });
-            console.log(contentList[i].key)
           }
         } else if (contentList[i].typ == 'media') {
           var medialist = [];
           var date = contentList[i].upload.toLocaleDateString();
           while (i < contentList.length && contentList[i].typ == 'media' && date == contentList[i].upload.toLocaleDateString()) {
-            if (dbMedia[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1) {
-              //Media an medialist anfügen: id, location, typ, comments, time -> vorhandene Funktionen nutzen!!!
+            if (dbMedia[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1 && contentList[i].upload < time) {
               medialist.push(getMetadata('media', contentList[i].key, uid));
-              console.log(contentList[i].key)
             }
             i++;
           }
           i--;
-          result.push(medialist);
+          if (medialist.length != 0) result.push(medialist);
         } else if (contentList[i].typ == 'status') {
-          if (dbStatusUpdates[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1) {
-            //Status anfügen: id, author, content, time
+          if (dbStatusUpdates[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1 && contentList[i].upload < time) {
             var author;
             var authorkey = dbStatusUpdates[contentList[i].key].Author;
             if (dbUser[uid].canSeeClearNames) {
@@ -404,19 +395,15 @@ app.post('/getActivityFeed', (req,res) => {
             result.push({
               id: contentList[i].key,
               author: author,
-              content: dbStatusUpdates[contentList[i].key].content,
+              content: dbStatusUpdates[contentList[i].key].Content,
               upload: contentList[i].upload
             });
-            console.log(contentList[i].key)
           }
         }
-        console.log(i)
       }
-      //Liste zurückschicken
       res.json(result);
-    }).catch((err) => {
-      console.log(err);
-      res.status(401).end();
+    }).catch(() => {
+      res.status(403).end();
     });
 });
 

@@ -1,9 +1,10 @@
-.status, .post, .media-teaser {
+.status-wrapper, .post, .media-teaser {
   background-color: #5f5f5f;
   margin: 10px 0;
   padding: 10px;
+  display: none;
 }
-.status {
+.status-box {
   display: flex;
 }
 .status-info {
@@ -48,6 +49,7 @@
   position: relative;
   height: 20px;
   text-align: center;
+  display: none;
 }
 .baseline {
   position: absolute;
@@ -97,7 +99,6 @@
 .article-teaser {
   flex: 1;
   margin: 5px;
-  background-image: url('img/header01.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -121,17 +122,35 @@
   font-weight: 300;
 }
 .media-header {
-  background-image: url('img/header01.jpg');
-  background-position: center;
-  background-size: cover;
-  background-color: #000000;
-  width: 100%;
-  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
   outline: 3px solid rgba(0, 0, 0, 0);
   transition: outline 0.3s;
-  margin-bottom: 10px;
+  background-color: #5f5f5f;
+  overflow: hidden;
 }
-.media-header::before {
+.media-header-blurbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px) brightness(0.9);
+}
+.media-header-content {
+  position: relative;
+  z-index: 1;
+}
+.media-header-image {
+  filter: none;
+  overflow: hidden;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.media-header-image::before {
   content: "";
   display: block;
   margin-top: 56.25%;
@@ -176,7 +195,64 @@
 .media-choice-image.active {
   border: 3px solid #ffffff;
 }
+.video-fitter {
+  position: relative;
+  overflow: hidden;
+}
+.video-fitter::before {
+  content: "";
+  display: block;
+  margin-top: 56.25%;
+}
+.video-base {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.video-base iframe, .video-base video {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.media-controll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin: 10px;
+  background-color: #29a929;
+  transition: background 0.3s;
+}
+.media-controll:hover {
+  background-color: #258e25;
+  transition: background 0.3s;
+}
+.media-controll span {
+  display: block;
+  font-size: 1.5em;
+}
+.media-comments {
+  display: none;
+  background-color: #808080;
+  padding: 0 10px;
+  overflow: hidden;
+}
 
+.activity-load {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #1a7dcc;
+  text-align: center;
+  transition: background 0.3s;
+}
+.activity-load:hover {
+  background-color: #1b6aa9;
+  transition: background 0.3s;
+}
 
 
 
@@ -214,7 +290,6 @@
     display: none;
   }
   .article {
-    background-image: url("img/header01.jpg");
     background-size: cover;
     background-position: center;
   }
