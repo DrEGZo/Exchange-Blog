@@ -97,7 +97,6 @@ function main() {
   function addActivity(content) {
     for (var i = 0; i < content.length; i++) {
       if (Array.isArray(content[i])) {
-        //Media
         var html = '';
         if (date.toDateString() != new Date(content[i][0].upload).toDateString()) {
           date = new Date(content[i][0].upload);
@@ -190,7 +189,6 @@ function main() {
           }})(i,j));
         }
       } else if (content[i].author != undefined) {
-        //Status
         var html = '';
         if (date.toDateString() != new Date(content[i].upload).toDateString()) {
           date = new Date(content[i].upload);
@@ -215,7 +213,6 @@ function main() {
         $('#page-content').append(html);
         $('#' + content[i].id).slideDown();
       } else if (content[i].title != undefined) {
-        //Blog
         var html = '';
         if (date.toDateString() != new Date(content[i].upload).toDateString()) {
           date = new Date(content[i].upload);
