@@ -32,19 +32,6 @@
 .image-slider > span.disabled {
   color: #313131;
 }
-.image-slider > span:not(.disabled):hover, .image-slider > span.active {
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: 0.3s;
-}
-.image-slider > span:nth-child(3):hover, .image-slider > span.active:nth-child(3) {
-  background-color: rgba(0, 255, 0, 0.3);
-}
-.image-slider > span:nth-child(4):hover {
-  background-color: rgba(0, 0, 255, 0.3);
-}
-.image-slider > span:nth-child(5):hover {
-  background-color: rgba(255, 0, 0, 0.3);
-}
 .slider-image {
   display: flex;
   width: 100%;
@@ -96,4 +83,36 @@ iframe, video {
   height: 100%;
   width: 100%;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .image-slider > span:not(.disabled):hover, .image-slider > span.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+  }
+  .image-slider > span:nth-child(3):hover, .image-slider > span.active:nth-child(3) {
+    background-color: rgba(0, 255, 0, 0.3);
+  }
+  .image-slider > span:nth-child(4):hover {
+    background-color: rgba(0, 0, 255, 0.3);
+  }
+  .image-slider > span:nth-child(5):hover {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .image-slider > span:not(.disabled):active, .image-slider > span.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+  }
+  .image-slider > span:nth-child(3):active, .image-slider > span.active:nth-child(3) {
+    background-color: rgba(0, 255, 0, 0.3);
+  }
+  .image-slider > span:nth-child(4):active {
+    background-color: rgba(0, 0, 255, 0.3);
+  }
+  .image-slider > span:nth-child(5):active {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
 }

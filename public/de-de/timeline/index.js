@@ -70,7 +70,7 @@ function main() {
 
   refreshData(Date.now())
     .then(addStatusContent)
-    .then(() => { $('#page-content').show(0) });
+    .then(() => { $('#page-content').slideDown() });
   
   function addStatusContent() {
     return new Promise((resolve, reject) => {
@@ -141,7 +141,6 @@ function main() {
         html += '<div class="media-comments"></div>';     
         html += '</div>';
         $('#page-content').append(html);
-        $('#mediaTeaser_' + i).slideDown();
         if (content[i][0].typ == 'pic') $('#mediaTeaser_' + i +' .media-header').click(((location) => () => {
           window.open(location, '_blank');
         })(content[i][0].location));
@@ -211,7 +210,6 @@ function main() {
         html += '</div>';
         html += '</div>';
         $('#page-content').append(html);
-        $('#' + content[i].id).slideDown();
       } else if (content[i].title != undefined) {
         var html = '';
         if (date.toDateString() != new Date(content[i].upload).toDateString()) {
@@ -231,12 +229,10 @@ function main() {
         html += '</a>';
         html += '</div>';
         $('#page-content').append(html);
-        $('#blogpost_' + content[i].id).slideDown();
         if (window.innerWidth <= 767) $('#blogpost_' + content[i].id + ' .article')
           .css('background-image', $('#blogpost_' + content[i].id + ' .article-teaser').css('background-image'));
       }
     }
-    $('.divider').show();
   }
 
   function createDivider(ActivityDate) {

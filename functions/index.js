@@ -57,6 +57,39 @@ app.get('/lorem', (req,res) => {
   res.send('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
 });
 
+app.post('/getBlogList', (req,res) => {
+  auth(req.body.idToken)
+    .then((uid) => {
+      var rank = dbUser[uid].Rank;
+      var idlist = [];
+      for (var blogkey in dbBlogentries) {
+        var hasPermission = dbBlogentries[blogkey].Visibility.indexOf(rank) != -1;
+        var isShown = new Date().getTime() > new Date(dbBlogentries[blogkey].Upload.release).getTime();
+        var yearMatches = new Date(dbBlogentries[blogkey].Upload.true).getFullYear() == req.body.year;
+        var monthMatches = new Date(dbBlogentries[blogkey].Upload.true).getMonth() == req.body.month;
+        if (hasPermission && isShown && yearMatches && monthMatches) idlist.push(blogkey);
+      }
+      idlist.sort((a, b) => {
+        if (dbBlogentries[a].Upload.true.getTime() < dbBlogentries[b].Upload.true.getTime()) return 1;
+        if (dbBlogentries[a].Upload.true.getTime() > dbBlogentries[b].Upload.true.getTime()) return -1;
+        return 0;
+      });
+      var result = [];
+      for (var i = 0; i < idlist.length; i++) {
+        result.push({
+          id: idlist[i],
+          thumbnail: dbMedia[dbBlogentries[idlist[i]].Thumbnail].Location,
+          title: dbBlogentries[idlist[i]].Title,
+          intro: dbBlogentries[idlist[i]].Intro,
+          upload: dbBlogentries[idlist[i]].Upload.release
+        });
+      }
+      res.json(result);
+    }).catch(() => {
+      res.status(403).end();
+    });
+});
+
 app.post('/getMediaList', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
@@ -67,9 +100,9 @@ app.post('/getMediaList', (req,res) => {
         var isShown = new Date().getTime() > new Date(dbMedia[mediakey].Upload.release).getTime();
         var yearMatches = new Date(dbMedia[mediakey].Upload.true).getFullYear() == req.body.year;
         var monthMatches = new Date(dbMedia[mediakey].Upload.true).getMonth() == req.body.month;
-        if (hasPermission && isShown && yearMatches && monthMatches) idlist.push(mediakey);      
+        if (hasPermission && isShown && yearMatches && monthMatches) idlist.push(mediakey);
       }
-      res.json(evaluateMediaList(idlist,uid));
+      res.json(evaluateIdList(idlist,uid));
     }).catch(() => {
       res.status(403).end();
     });
@@ -78,7 +111,7 @@ app.post('/getMediaList', (req,res) => {
 app.post('/getGalleryData', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
-      res.json(evaluateMediaList(req.body.list, uid));
+      res.json(evaluateIdList(req.body.list, uid));
     }).catch(() => {
       res.status(403).end();
     });
@@ -261,37 +294,6 @@ app.post('/deleteComment', (req, res) => {
     });
 });
 
-/*app.post('/deleteCommentReply', (req, res) => {
-  auth(req.body.idToken)
-    .then((uid) => {
-      var id = req.body.id;
-      var typ = req.body.typ;
-      var source = req.body.source;
-      if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
-        if (typ == 'blog') {
-          var index = dbBlogentries[source].Comments[id].indexOf(id);
-          dbBlogentries[source].Comments[id].splice(index, 1);
-          db.collection('Blogentries').doc(source).update({
-            Comments: dbBlogentries[source].Comments
-          });
-        } else if (typ == 'media') {
-          var index = dbMedia[source].Comments[id].indexOf(id);
-          dbMedia[source].Comments[id].splice(index, 1);
-          db.collection('Media').doc(source).update({
-            Comments: dbMedia[source].Comments
-          });
-        }
-        delete dbComments[id];
-        db.collection('Comments').doc(id).delete();
-        res.end();
-      } else {
-        res.status(403).end();
-      }
-    }).catch(() => {
-      res.status(403).end();
-    });
-});*/
-
 app.post('/reportComment', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
@@ -439,7 +441,12 @@ function auth(idToken) {
 
 }
 
-function evaluateMediaList(mediaidlist,uid) {
+function evaluateIdList(mediaidlist,uid) {
+  mediaidlist.sort((a, b) => {
+    if (dbMedia[a].Upload.true.getTime() < dbMedia[b].Upload.true.getTime()) return 1;
+    if (dbMedia[a].Upload.true.getTime() > dbMedia[b].Upload.true.getTime()) return -1;
+    return 0;
+  });
   var medialist = [];
   for (var i = 0; i < mediaidlist.length; i++) {
     medialist.push(getMetadata('media',mediaidlist[i],uid));

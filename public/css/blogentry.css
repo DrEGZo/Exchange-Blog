@@ -73,10 +73,6 @@ html {
   transition: 0.5s;
   border-radius: 10px;
 }
-.img-container-border:hover {
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  transition: 0.5s;
-}
 .img-container-image {
   filter: none;
   overflow: hidden;
@@ -98,6 +94,20 @@ html {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .img-container-border:hover {
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .img-container-border:active {
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+  }
+}
+
 @media screen and (max-width: 525px) {
   .img-container {
     padding: 6px;
@@ -105,7 +115,7 @@ html {
   .img-container img {
     outline-width: 1px;
   }
-  .img-container img:hover {
+  .img-container img:active {
     outline-width: 1px;
   }
 }

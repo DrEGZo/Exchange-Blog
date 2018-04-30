@@ -1,0 +1,90 @@
+#page-menu {
+  background-color: #303030;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+  display: none;
+}
+#page-menu > h4 {
+  color: #ffffff;
+  text-align: center;
+}
+.menu-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1px;
+}
+#year-choice {
+  display: flex;
+}
+.menu-divider {
+  height: 1px;
+  background-color: #a0a0a0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu-button {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 5px 15px;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 10px 10px;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
+}
+.menu-button.active {
+  background-color: #00bf0d;
+  color: #ffffff;
+  border: 1px solid #00bf0d;
+}
+.no-image-placeholder {
+  height: 50px;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 100px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button:hover {
+    color: #303030;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .menu-button.active:hover {
+    cursor: default;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #year-choice .menu-button {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .month-choice .menu-button {
+    display: none;
+    flex: 100%;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+  }
+  .month-choice .menu-button.active {
+    display: block;
+  }
+  .no-image-placeholder {
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 80px 10px;
+  }
+  .menu-button:active {
+    color: #303030;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .menu-button.active:active {
+    cursor: default;
+  }
+}

@@ -35,14 +35,17 @@
   font-size: 1.2em;
   display: inline-block;
 }
-.carousel-link:hover .carousel-caption {
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  transition: 0.5s;
-}
 
 @media screen and (max-width: 900px) {
   .carousel-item {
     height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-link:hover .carousel-caption {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
   }
 }
 
@@ -56,6 +59,10 @@
   }
   .carousel-item {
     height: 300px;
+  }
+  .carousel-link:active .carousel-caption {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
   }
 }
 

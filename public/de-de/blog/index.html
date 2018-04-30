@@ -11,6 +11,9 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/activitylist.css">
+    <script src="/js/menu.js"></script>
     <script src="index.js"></script>
     <title>Exchange Blog</title>
     <!-- Flavicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
@@ -37,7 +40,7 @@
 
       <div id="navcontainer" class="container">
         <nav class="navbar navbar-expand-md navbar-dark" >
-          <a href="../../.." class="navbar-brand">Exchange Blog</a>
+          <a href=".." class="navbar-brand">Exchange Blog</a>
           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -68,46 +71,34 @@
     <div id="page-menu" class="container">
       <h4>Jahr</h4>
       <div class="menu-box" id="year-choice">
-        <div class="menu-button active">2018</div>
-        <div class="menu-button">2019</div>
+        <div class="menu-button" id="menu-button-2018">2018</div>
+        <div class="menu-button" id="menu-button-2019">2019</div>
       </div>
       <div class="menu-divider"></div>
       <h4>Monat</h4>
-      <div class="menu-box" id="month-choice">
-        <div class="menu-button active">Mai</div>
-        <div class="menu-button">Juni</div>
-        <div class="menu-button">Juli</div>
-        <div class="menu-button">August</div>
-        <div class="menu-button">September</div>
-        <div class="menu-button">Oktober</div>
-        <div class="menu-button">November</div>
-        <div class="menu-button">Dezember</div>
+      <div class="menu-box month-choice" id="month-choice-2018">
+        <div class="menu-button menu-button-4">Mai</div>
+        <div class="menu-button menu-button-5">Juni</div>
+        <div class="menu-button menu-button-6">Juli</div>
+        <div class="menu-button menu-button-7">August</div>
+        <div class="menu-button menu-button-8">September</div>
+        <div class="menu-button menu-button-9">Oktober</div>
+        <div class="menu-button menu-button-10">November</div>
+        <div class="menu-button menu-button-11">Dezember</div>
+      </div>
+      <div class="menu-box month-choice" id="month-choice-2019">
+        <div class="menu-button menu-button-0">Januar</div>
+        <div class="menu-button menu-button-1">Februar</div>
+        <div class="menu-button menu-button-2">M&aumlrz</div>
+        <div class="menu-button menu-button-3">April</div>
+        <div class="menu-button menu-button-4">Mai</div>
+        <div class="menu-button menu-button-5">Juni</div>
+        <div class="menu-button menu-button-6">Juli</div>
+        <div class="menu-button menu-button-7">August</div>
       </div>
     </div>
 
-    <div class="container" id="page-content">
+    <div class="container" id="page-content"></div>
 
-
-
-      <div class="divider">
-        <div class="baseline"></div>
-        <div class="date">
-          <div>Sonntag, 18.03.2018</div>
-          </div>
-      </div>
-
-      <div class="post">
-        <a href="#">
-          <div class="article">
-            <div class="article-teaser"></div>
-            <div class="article-content">
-              <h4>Article Header</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-    </div>
   </body>
 </html>
