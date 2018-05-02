@@ -78,7 +78,7 @@
     line-height: 20px;
     margin: 80px 10px;
   }
-  .menu-button:active {
+  /*.menu-button:active {
     color: #303030;
     background-color: #ffffff;
     cursor: pointer;
@@ -86,5 +86,5 @@
   }
   .menu-button.active:active {
     cursor: default;
-  }
+  }*/
 }

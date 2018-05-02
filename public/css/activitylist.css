@@ -296,7 +296,7 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .article:active {
+  /*.article:active {
     outline: 2px solid #ffffff;
     transition: outline 0.3s;
   }
@@ -315,7 +315,7 @@
   .activity-load:active {
     background-color: #1b6aa9;
     transition: background 0.3s;
-  }
+  }*/
 }
 
 @media screen and (max-width: 525px) {
@@ -334,7 +334,7 @@
   .media-choice-wrapper {
     padding: 0;
   }
-  .media-choice-image, .media-choice-image.active {
+  /*.media-choice-image, .media-choice-image.active {
     border-width: 2px;
-  }
+  }*/
 }

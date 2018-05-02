@@ -102,10 +102,10 @@ html {
 }
 
 @media screen and (max-width: 767px) {
-  .img-container-border:active {
+  /*.img-container-border:active {
     border: 3px solid rgba(255, 255, 255, 0.5);
     transition: 0.5s;
-  }
+  }*/
 }
 
 @media screen and (max-width: 525px) {
@@ -115,7 +115,7 @@ html {
   .img-container img {
     outline-width: 1px;
   }
-  .img-container img:active {
+  /*.img-container img:active {
     outline-width: 1px;
-  }
+  }*/
 }

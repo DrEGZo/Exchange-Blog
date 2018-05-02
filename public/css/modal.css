@@ -102,7 +102,7 @@ iframe, video {
 }
 
 @media screen and (max-width: 767px) {
-  .image-slider > span:not(.disabled):active, .image-slider > span.active {
+  /*.image-slider > span:not(.disabled):active, .image-slider > span.active {
     background-color: rgba(255, 255, 255, 0.1);
     transition: 0.3s;
   }
@@ -114,5 +114,5 @@ iframe, video {
   }
   .image-slider > span:nth-child(5):active {
     background-color: rgba(255, 0, 0, 0.3);
-  }
+  }*/
 }

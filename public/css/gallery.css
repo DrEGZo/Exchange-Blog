@@ -69,12 +69,12 @@
 }
 
 @media screen and (max-width: 767px) {
-  .gallery-image:active {
+  /*.gallery-image:active {
     top: -5px;
     bottom: -5px;
     left: -5px;
     right: -5px;
-  }
+  }*/
 }
 
 @media screen and (max-width: 525px) {

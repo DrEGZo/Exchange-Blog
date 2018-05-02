@@ -60,10 +60,10 @@
   .carousel-item {
     height: 300px;
   }
-  .carousel-link:active .carousel-caption {
+  /*.carousel-link:active .carousel-caption {
     border: 2px solid rgba(255, 255, 255, 0.5);
     transition: 0.5s;
-  }
+  }*/
 }
 
 

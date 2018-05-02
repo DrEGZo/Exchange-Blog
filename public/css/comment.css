@@ -197,7 +197,7 @@
     max-width: none;
     padding: 25px;
   }
-  .comment-controll-reply:active {
+  /*.comment-controll-reply:active {
     background-color: #00a206;
     text-decoration: none;
   }
@@ -208,7 +208,7 @@
   .comment-controll-delete:active {
     background-color: #D83a3a;
     text-decoration: none;
-  }
+  }*/
 }
 
 @media screen and (max-width: 525px) {

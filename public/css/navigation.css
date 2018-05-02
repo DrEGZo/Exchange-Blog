@@ -68,12 +68,12 @@ body {
     max-width: none;
     padding: 25px;
   }
-  .nav-item:active {
+  /*.nav-item:active {
     background-color: #303030;
   }
   .navbar-dark .navbar-nav .nav-link:active {
     color: #ffffff;
-  }
+  }*/
 }
 
 @media screen and (max-width: 525px) {
