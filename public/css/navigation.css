@@ -24,6 +24,12 @@ body {
   font-size: 1.3em;
   color: #ffffff;
 }
+.nav-item.login {
+  background-color: #1aab26;
+}
+.nav-item.logout {
+  background-color: #dc0e0e;
+}
 #page-content {
   background-color: #303030;
   margin-top: 50px;
@@ -44,6 +50,15 @@ body {
 @media screen and (min-width: 768px) {
   .nav-item:hover {
     background-color: #303030;
+  }
+  .nav-item.login:hover {
+    background-color: #44b64d;
+  }
+  .nav-item.logout:hover {
+    background-color: #dd3f3f;
+  }
+  .nav-item:hover {
+    transition: 0.3s;
   }
   .navbar-dark .navbar-nav .nav-link:hover {
     color: #ffffff;

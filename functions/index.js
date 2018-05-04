@@ -57,6 +57,29 @@ app.get('/lorem', (req,res) => {
   res.send('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
 });
 
+app.get('/getHomeContent', (req,res) => {
+  var bloglist = [];
+  for (var blogkey in dbBlogentries) {
+    bloglist.push({
+      id: blogkey,
+      title: dbBlogentries[blogkey].Title,
+      intro: dbBlogentries[blogkey].Intro,
+      location: dbMedia[dbBlogentries[blogkey].Thumbnail].Location,
+      upload: dbBlogentries[blogkey].Upload.true
+    })
+  }
+  bloglist.sort((a,b) => {
+    if (a.upload > b.upload) return 1;
+    if (a.upload < b.upload) return -1;
+    return 0;
+  });
+  var result = [];
+  for (var i = 0; i < 3 && i < bloglist.length; i++) {
+    result.push(bloglist[i]);
+  }
+  res.json(result);
+})
+
 app.post('/getBlogList', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
@@ -112,7 +135,8 @@ app.post('/getGalleryData', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
       res.json(evaluateIdList(req.body.list, uid));
-    }).catch(() => {
+    }).catch((err) => {
+      console.log(err);
       res.status(403).end();
     });
 });
