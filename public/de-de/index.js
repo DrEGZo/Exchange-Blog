@@ -9,41 +9,45 @@ var config = {
 };
 firebase.initializeApp(config);
 
-$(function () {
-
+$(() => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      console.log('logedin');
+      $('.navbar-nav:not(.mr-auto) .nav-item').addClass('logout');
     } else {
-      console.log('logedout');
-      firebase.auth().signInWithEmailAndPassword('squamato77@gmail.com','abcdefg');
+      $('.navbar-nav:not(.mr-auto) .nav-item').addClass('login');
     }
   });
-  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
-
-
-
-
-
-
-
-  /*console.log(firebase.auth().currentUser);
-  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
-  .then(() => {
-    return firebase.auth().signInWithEmailAndPassword('squamato77@gmail.com','abcdefg');
-  })
-  .then(() => {
-    //console.log(firebase.auth().currentUser);
-    return new Promise(resolve => setTimeout(resolve, 3000));
-  }).then(() => {
-    window.location = '/de-de/media';
-  });
-
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      console.log('signin');
-    } else {
-      console.log('signout');
-    }
-  });*/
+  main();
 });
+
+function main() {
+  $.ajax({
+    method: 'GET',
+    url: '/getHomeContent',
+    success: (data) => {launchCarousel(data)},
+    error: () => { redirector(403) }
+  });
+}
+
+function launchCarousel(data) {
+  for (var i = 0; i < data.length; i++) {
+    $('.carousel-indicators').append('<li data-target="#header_carousel" data-slide-to="' + i + '"></li>');
+    var html = '';
+    html += '<div class="carousel-item">';
+    html += '<img src="' + data[i].location + '">';
+    html += '<a class=".carousel-link" href="/de-de/blog/' + data[i].id + '/index.html">';
+    html += '<div class="carousel-caption">';
+    html += '<h1 class="display-2 carousel-header">' + data[i].title + '</h1>';
+    html += '<p>' + data[i].intro + '</p>';
+    html += '<span class="badge badge-light">Read more</span>';
+    html += '</div>';
+    html += '</a>';
+    html += '</div>';
+    $('.carousel-inner').append(html);
+    if (i == 0) $('.carousel-indicators li:first-child').addClass('active');
+    if (i == 0) $('.carousel-item:first-child').addClass('active');
+  }
+  $('#header-carousel').slideDown();
+  $('#page-title').slideDown();
+  $('#page-content').slideDown();
+}
