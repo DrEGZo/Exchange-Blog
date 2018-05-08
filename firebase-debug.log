@@ -79,3 +79,34 @@
 [debug] [2018-05-03T13:09:55.897Z] Starting @google-cloud/functions-emulator
 [debug] [2018-05-03T13:09:57.965Z] Parsing function triggers
 [info] ✔  functions: expressapp: http://localhost:5001/exchange-blog/us-central1/expressapp
+[debug] [2018-05-04T20:16:44.899Z] ----------------------------------------------------------------------
+[debug] [2018-05-04T20:16:44.904Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DrEGZo\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-05-04T20:16:44.905Z] CLI Version:   3.18.2
+[debug] [2018-05-04T20:16:44.905Z] Platform:      win32
+[debug] [2018-05-04T20:16:44.905Z] Node Version:  v8.9.4
+[debug] [2018-05-04T20:16:44.907Z] Time:          Fri May 04 2018 22:16:44 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-05-04T20:16:44.907Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-04T20:16:45.614Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-04T20:16:45.615Z] > authorizing via signed-in user
+[debug] [2018-05-04T20:16:45.617Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-05-04T20:16:45.617Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/dMz6oA8dS2OrejlXAo13a3jb-UtKSlZDffY2VYmM81E',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri May 04 2018 22:16:45 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-05-04T20:16:46.074Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-04T20:16:47.492Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/exchange-blog  
+  
+ Fri May 04 2018 22:16:47 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-05-04T20:16:49.395Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-04T20:16:49.396Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/exchange-blog/tokens  
+  
+ Fri May 04 2018 22:16:49 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-05-04T20:16:50.116Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-04T20:16:50.117Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/exchange-blog  
+  
+ Fri May 04 2018 22:16:50 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-05-04T20:16:50.954Z] <<< HTTP RESPONSE 200
