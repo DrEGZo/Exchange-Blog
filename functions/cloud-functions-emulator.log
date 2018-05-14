@@ -1,0 +1,1623 @@
+2018-05-10T11:21:57.069Z - info: User function triggered, starting execution
+2018-05-10T11:21:57.084Z - info: Execution took 10 ms, user function completed successfully
+Worker for expressapp closed due to file changes.
+2018-05-10T11:22:06.263Z - info: User function triggered, starting execution
+2018-05-10T11:22:06.278Z - info: Execution took 11 ms, user function completed successfully
+2018-05-10T11:22:06.690Z - info: User function triggered, starting execution
+2018-05-10T11:22:07.665Z - info: Execution took 975 ms, user function completed successfully
+2018-05-10T11:22:07.842Z - info: User function triggered, starting execution
+2018-05-10T11:22:09.398Z - info: Execution took 1555 ms, user function completed successfully
+2018-05-10T11:22:09.401Z - info: User function triggered, starting execution
+2018-05-10T11:22:09.406Z - info: Execution took 5 ms, user function completed successfully
+2018-05-10T11:22:09.586Z - info: User function triggered, starting execution
+2018-05-10T11:22:09.588Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:22:13.831Z - info: User function triggered, starting execution
+2018-05-10T11:22:13.834Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:22:19.426Z - info: User function triggered, starting execution
+2018-05-10T11:22:19.428Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:22:26.905Z - info: User function triggered, starting execution
+2018-05-10T11:22:26.908Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:22:31.924Z - info: User function triggered, starting execution
+2018-05-10T11:22:31.927Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:22:37.245Z - info: User function triggered, starting execution
+2018-05-10T11:22:37.248Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:22:42.262Z - info: User function triggered, starting execution
+2018-05-10T11:22:42.265Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:22:47.580Z - info: User function triggered, starting execution
+2018-05-10T11:22:47.581Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:22:52.596Z - info: User function triggered, starting execution
+2018-05-10T11:22:52.598Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:22:57.915Z - info: User function triggered, starting execution
+2018-05-10T11:22:57.917Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:23:02.932Z - info: User function triggered, starting execution
+2018-05-10T11:23:02.934Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:23:08.249Z - info: User function triggered, starting execution
+2018-05-10T11:23:08.251Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:23:13.292Z - info: User function triggered, starting execution
+2018-05-10T11:23:13.294Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:23:18.614Z - info: User function triggered, starting execution
+2018-05-10T11:23:18.617Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:23:23.633Z - info: User function triggered, starting execution
+2018-05-10T11:23:23.635Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:23:28.951Z - info: User function triggered, starting execution
+2018-05-10T11:23:28.953Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:23:33.968Z - info: User function triggered, starting execution
+2018-05-10T11:23:33.969Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:23:39.285Z - info: User function triggered, starting execution
+2018-05-10T11:23:39.287Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:23:44.302Z - info: User function triggered, starting execution
+2018-05-10T11:23:44.306Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:23:49.624Z - info: User function triggered, starting execution
+2018-05-10T11:23:49.626Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:23:54.640Z - info: User function triggered, starting execution
+2018-05-10T11:23:54.641Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:23:59.959Z - info: User function triggered, starting execution
+2018-05-10T11:23:59.960Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:24:04.979Z - info: User function triggered, starting execution
+2018-05-10T11:24:04.981Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:24:10.303Z - info: User function triggered, starting execution
+2018-05-10T11:24:10.306Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:24:15.323Z - info: User function triggered, starting execution
+2018-05-10T11:24:15.325Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:24:20.641Z - info: User function triggered, starting execution
+2018-05-10T11:24:20.643Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:24:25.659Z - info: User function triggered, starting execution
+2018-05-10T11:24:25.660Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:24:30.977Z - info: User function triggered, starting execution
+2018-05-10T11:24:30.978Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:24:35.993Z - info: User function triggered, starting execution
+2018-05-10T11:24:35.996Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:24:41.314Z - info: User function triggered, starting execution
+2018-05-10T11:24:41.316Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:24:46.360Z - info: User function triggered, starting execution
+2018-05-10T11:24:46.362Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:24:51.680Z - info: User function triggered, starting execution
+2018-05-10T11:24:51.683Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:24:56.701Z - info: User function triggered, starting execution
+2018-05-10T11:24:56.704Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:25:02.023Z - info: User function triggered, starting execution
+2018-05-10T11:25:02.027Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:25:07.061Z - info: User function triggered, starting execution
+2018-05-10T11:25:07.062Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:25:12.377Z - info: User function triggered, starting execution
+2018-05-10T11:25:12.379Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:25:17.395Z - info: User function triggered, starting execution
+2018-05-10T11:25:17.397Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:25:23.964Z - info: User function triggered, starting execution
+2018-05-10T11:25:23.966Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:25:29.058Z - info: User function triggered, starting execution
+2018-05-10T11:25:29.060Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:25:34.377Z - info: User function triggered, starting execution
+2018-05-10T11:25:34.379Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:25:39.709Z - info: User function triggered, starting execution
+2018-05-10T11:25:39.711Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:25:45.027Z - info: User function triggered, starting execution
+2018-05-10T11:25:45.029Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:25:50.047Z - info: User function triggered, starting execution
+2018-05-10T11:25:50.049Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:25:55.366Z - info: User function triggered, starting execution
+2018-05-10T11:25:55.368Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:26:00.384Z - info: User function triggered, starting execution
+2018-05-10T11:26:00.386Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:26:05.707Z - info: User function triggered, starting execution
+2018-05-10T11:26:05.710Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:26:10.724Z - info: User function triggered, starting execution
+2018-05-10T11:26:10.726Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:26:16.043Z - info: User function triggered, starting execution
+2018-05-10T11:26:16.045Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:26:21.066Z - info: User function triggered, starting execution
+2018-05-10T11:26:21.069Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:26:26.409Z - info: User function triggered, starting execution
+2018-05-10T11:26:26.414Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:26:31.463Z - info: User function triggered, starting execution
+2018-05-10T11:26:31.465Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:26:36.782Z - info: User function triggered, starting execution
+2018-05-10T11:26:36.784Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:26:41.800Z - info: User function triggered, starting execution
+2018-05-10T11:26:41.802Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:26:47.115Z - info: User function triggered, starting execution
+2018-05-10T11:26:47.117Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:26:52.151Z - info: User function triggered, starting execution
+2018-05-10T11:26:52.154Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:26:57.975Z - info: User function triggered, starting execution
+2018-05-10T11:26:57.977Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:27:04.674Z - info: User function triggered, starting execution
+2018-05-10T11:27:04.676Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:27:11.977Z - info: User function triggered, starting execution
+2018-05-10T11:27:11.979Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:27:18.677Z - info: User function triggered, starting execution
+2018-05-10T11:27:18.681Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:27:25.977Z - info: User function triggered, starting execution
+2018-05-10T11:27:25.979Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:27:32.676Z - info: User function triggered, starting execution
+2018-05-10T11:27:32.678Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:27:39.978Z - info: User function triggered, starting execution
+2018-05-10T11:27:39.981Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:27:45.685Z - info: User function triggered, starting execution
+2018-05-10T11:27:45.687Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:27:52.051Z - info: User function triggered, starting execution
+2018-05-10T11:27:52.057Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:27:58.680Z - info: User function triggered, starting execution
+2018-05-10T11:27:58.688Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:28:03.867Z - info: User function triggered, starting execution
+2018-05-10T11:28:03.879Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:28:04.485Z - info: User function triggered, starting execution
+2018-05-10T11:28:04.488Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:28:04.962Z - info: User function triggered, starting execution
+2018-05-10T11:28:04.964Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:28:05.213Z - info: User function triggered, starting execution
+2018-05-10T11:28:05.214Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:28:05.268Z - info: User function triggered, starting execution
+2018-05-10T11:28:05.272Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:28:07.532Z - info: User function triggered, starting execution
+2018-05-10T11:28:07.535Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:28:12.898Z - info: User function triggered, starting execution
+2018-05-10T11:28:12.899Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:28:17.513Z - info: User function triggered, starting execution
+2018-05-10T11:28:17.515Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:28:19.404Z - info: Worker for expressapp closed due to file changes.
+2018-05-10T11:28:26.286Z - info: User function triggered, starting execution
+2018-05-10T11:28:26.302Z - info: Execution took 17 ms, user function completed successfully
+2018-05-10T11:28:31.318Z - info: User function triggered, starting execution
+2018-05-10T11:28:31.325Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:28:36.640Z - info: User function triggered, starting execution
+2018-05-10T11:28:36.641Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:28:41.657Z - info: User function triggered, starting execution
+2018-05-10T11:28:41.659Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:28:46.976Z - info: User function triggered, starting execution
+2018-05-10T11:28:46.977Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:28:52.001Z - info: User function triggered, starting execution
+2018-05-10T11:28:52.003Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:28:57.337Z - info: User function triggered, starting execution
+2018-05-10T11:28:57.340Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:29:02.358Z - info: User function triggered, starting execution
+2018-05-10T11:29:02.362Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:29:07.690Z - info: User function triggered, starting execution
+2018-05-10T11:29:07.692Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:29:12.730Z - info: User function triggered, starting execution
+2018-05-10T11:29:12.732Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:29:18.052Z - info: User function triggered, starting execution
+2018-05-10T11:29:18.054Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:29:26.568Z - info: User function triggered, starting execution
+2018-05-10T11:29:26.578Z - info: Execution took 10 ms, user function completed successfully
+2018-05-10T11:29:31.901Z - info: User function triggered, starting execution
+2018-05-10T11:29:31.904Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:29:36.929Z - info: User function triggered, starting execution
+2018-05-10T11:29:36.931Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:29:42.253Z - info: User function triggered, starting execution
+2018-05-10T11:29:42.255Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:29:47.269Z - info: User function triggered, starting execution
+2018-05-10T11:29:47.271Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:29:52.593Z - info: User function triggered, starting execution
+2018-05-10T11:29:52.595Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:29:57.613Z - info: User function triggered, starting execution
+2018-05-10T11:29:57.614Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:02.934Z - info: User function triggered, starting execution
+2018-05-10T11:30:02.935Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:07.954Z - info: User function triggered, starting execution
+2018-05-10T11:30:07.955Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:30:13.274Z - info: User function triggered, starting execution
+2018-05-10T11:30:13.276Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:18.288Z - info: User function triggered, starting execution
+2018-05-10T11:30:18.289Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:23.609Z - info: User function triggered, starting execution
+2018-05-10T11:30:23.610Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:28.632Z - info: User function triggered, starting execution
+2018-05-10T11:30:28.634Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:33.952Z - info: User function triggered, starting execution
+2018-05-10T11:30:33.954Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:38.974Z - info: User function triggered, starting execution
+2018-05-10T11:30:38.975Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:44.311Z - info: User function triggered, starting execution
+2018-05-10T11:30:44.314Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:49.338Z - info: User function triggered, starting execution
+2018-05-10T11:30:49.340Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:54.654Z - info: User function triggered, starting execution
+2018-05-10T11:30:54.656Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:30:59.672Z - info: User function triggered, starting execution
+2018-05-10T11:30:59.673Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:31:04.989Z - info: User function triggered, starting execution
+2018-05-10T11:31:04.991Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:31:10.006Z - info: User function triggered, starting execution
+2018-05-10T11:31:10.007Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:31:18.510Z - info: User function triggered, starting execution
+2018-05-10T11:31:18.526Z - info: Execution took 16 ms, user function completed successfully
+2018-05-10T11:31:23.543Z - info: User function triggered, starting execution
+2018-05-10T11:31:23.546Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:31:28.981Z - info: User function triggered, starting execution
+2018-05-10T11:31:28.982Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:31:35.676Z - info: User function triggered, starting execution
+2018-05-10T11:31:35.678Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:31:41.985Z - info: User function triggered, starting execution
+2018-05-10T11:31:41.988Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:31:45.663Z - info: User function triggered, starting execution
+2018-05-10T11:31:45.668Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:31:46.847Z - info: User function triggered, starting execution
+2018-05-10T11:31:46.945Z - info: Execution took 97 ms, user function completed successfully
+2018-05-10T11:31:47.072Z - info: User function triggered, starting execution
+2018-05-10T11:31:47.075Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:31:47.347Z - info: User function triggered, starting execution
+2018-05-10T11:31:47.356Z - info: Execution took 7 ms, user function completed successfully
+2018-05-10T11:31:47.586Z - info: User function triggered, starting execution
+2018-05-10T11:31:47.589Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:31:49.314Z - info: User function triggered, starting execution
+2018-05-10T11:31:49.316Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:31:54.377Z - info: User function triggered, starting execution
+2018-05-10T11:31:54.378Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:31:59.693Z - info: User function triggered, starting execution
+2018-05-10T11:31:59.695Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:32:04.710Z - info: User function triggered, starting execution
+2018-05-10T11:32:04.711Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:32:10.025Z - info: User function triggered, starting execution
+2018-05-10T11:32:10.026Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:32:15.041Z - info: User function triggered, starting execution
+2018-05-10T11:32:15.044Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:32:20.364Z - info: User function triggered, starting execution
+2018-05-10T11:32:20.366Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:32:25.379Z - info: User function triggered, starting execution
+2018-05-10T11:32:25.381Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:32:30.982Z - info: User function triggered, starting execution
+2018-05-10T11:32:30.985Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:32:37.675Z - info: User function triggered, starting execution
+2018-05-10T11:32:37.677Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:32:43.995Z - info: User function triggered, starting execution
+2018-05-10T11:32:43.996Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:32:49.009Z - info: User function triggered, starting execution
+2018-05-10T11:32:49.011Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:32:54.348Z - info: User function triggered, starting execution
+2018-05-10T11:32:54.351Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:32:59.367Z - info: User function triggered, starting execution
+2018-05-10T11:32:59.369Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:33:04.685Z - info: User function triggered, starting execution
+2018-05-10T11:33:04.689Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:33:09.704Z - info: User function triggered, starting execution
+2018-05-10T11:33:09.706Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:33:15.028Z - info: User function triggered, starting execution
+2018-05-10T11:33:15.032Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:33:20.055Z - info: User function triggered, starting execution
+2018-05-10T11:33:20.057Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:33:25.378Z - info: User function triggered, starting execution
+2018-05-10T11:33:25.380Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:33:30.405Z - info: User function triggered, starting execution
+2018-05-10T11:33:30.407Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:33:35.728Z - info: User function triggered, starting execution
+2018-05-10T11:33:35.729Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:33:40.746Z - info: User function triggered, starting execution
+2018-05-10T11:33:40.748Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:33:46.062Z - info: User function triggered, starting execution
+2018-05-10T11:33:46.063Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:33:51.082Z - info: User function triggered, starting execution
+2018-05-10T11:33:51.083Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:33:56.405Z - info: User function triggered, starting execution
+2018-05-10T11:33:56.406Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:34:01.421Z - info: User function triggered, starting execution
+2018-05-10T11:34:01.423Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:34:06.756Z - info: User function triggered, starting execution
+2018-05-10T11:34:06.758Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:34:11.776Z - info: User function triggered, starting execution
+2018-05-10T11:34:11.786Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:34:17.112Z - info: User function triggered, starting execution
+2018-05-10T11:34:17.113Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:34:22.133Z - info: User function triggered, starting execution
+2018-05-10T11:34:22.135Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:34:27.451Z - info: User function triggered, starting execution
+2018-05-10T11:34:27.454Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:34:32.469Z - info: User function triggered, starting execution
+2018-05-10T11:34:32.470Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:34:37.789Z - info: User function triggered, starting execution
+2018-05-10T11:34:37.791Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T11:34:42.804Z - info: User function triggered, starting execution
+2018-05-10T11:34:42.806Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T11:34:47.296Z - info: User function triggered, starting execution
+2018-05-10T11:34:47.299Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:34:47.466Z - info: User function triggered, starting execution
+2018-05-10T11:34:47.468Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T11:34:47.693Z - info: User function triggered, starting execution
+2018-05-10T11:34:47.697Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T13:21:02.190Z - info: User function triggered, starting execution
+2018-05-10T13:21:02.198Z - info: Execution took 8 ms, user function completed successfully
+2018-05-10T13:24:31.814Z - info: User function triggered, starting execution
+2018-05-10T13:24:31.839Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T13:26:34.985Z - info: User function triggered, starting execution
+2018-05-10T13:26:34.988Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T13:27:37.030Z - info: User function triggered, starting execution
+2018-05-10T13:27:37.073Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T13:36:45.146Z - info: User function triggered, starting execution
+2018-05-10T13:36:45.148Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T15:57:18.639Z - info: User function triggered, starting execution
+2018-05-10T15:57:19.694Z - info: Execution took 1056 ms, user function completed successfully
+2018-05-10T15:57:19.953Z - info: User function triggered, starting execution
+2018-05-10T15:57:19.958Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T15:57:39.376Z - info: User function triggered, starting execution
+2018-05-10T15:57:39.386Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:57:42.279Z - info: User function triggered, starting execution
+2018-05-10T15:57:42.287Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T15:57:42.745Z - info: User function triggered, starting execution
+2018-05-10T15:57:42.766Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T15:57:43.401Z - info: User function triggered, starting execution
+2018-05-10T15:57:43.405Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:57:43.900Z - info: User function triggered, starting execution
+2018-05-10T15:57:43.902Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:57:47.120Z - info: User function triggered, starting execution
+2018-05-10T15:57:47.123Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:57:47.338Z - info: User function triggered, starting execution
+2018-05-10T15:57:47.341Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:57:54.006Z - info: User function triggered, starting execution
+2018-05-10T15:57:54.008Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T15:57:54.236Z - info: User function triggered, starting execution
+2018-05-10T15:57:54.246Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:58:30.990Z - info: User function triggered, starting execution
+2018-05-10T15:58:30.993Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:58:31.191Z - info: User function triggered, starting execution
+2018-05-10T15:58:31.193Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:58:51.656Z - info: User function triggered, starting execution
+2018-05-10T15:58:51.659Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:58:52.132Z - info: User function triggered, starting execution
+2018-05-10T15:58:52.136Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T15:58:52.956Z - info: User function triggered, starting execution
+2018-05-10T15:58:52.958Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T15:58:53.215Z - info: User function triggered, starting execution
+2018-05-10T15:58:53.218Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T15:58:53.472Z - info: User function triggered, starting execution
+2018-05-10T15:58:53.477Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T15:58:53.618Z - info: User function triggered, starting execution
+2018-05-10T15:58:53.622Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:59:08.023Z - info: User function triggered, starting execution
+2018-05-10T15:59:08.298Z - info: Execution took 274 ms, user function completed successfully
+2018-05-10T15:59:10.299Z - info: User function triggered, starting execution
+2018-05-10T15:59:10.301Z - info: Execution took 0 ms, user function completed successfully
+2018-05-10T15:59:11.202Z - info: User function triggered, starting execution
+2018-05-10T15:59:11.204Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T15:59:11.860Z - info: User function triggered, starting execution
+2018-05-10T15:59:11.871Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:59:12.366Z - info: User function triggered, starting execution
+2018-05-10T15:59:12.369Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:59:12.619Z - info: User function triggered, starting execution
+2018-05-10T15:59:12.621Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T15:59:12.742Z - info: User function triggered, starting execution
+2018-05-10T15:59:12.751Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T15:59:26.385Z - info: User function triggered, starting execution
+2018-05-10T15:59:26.633Z - info: Execution took 247 ms, user function completed successfully
+2018-05-10T15:59:28.894Z - info: User function triggered, starting execution
+2018-05-10T15:59:28.896Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T15:59:29.782Z - info: User function triggered, starting execution
+2018-05-10T15:59:29.784Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T15:59:30.416Z - info: User function triggered, starting execution
+2018-05-10T15:59:30.419Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:59:30.918Z - info: User function triggered, starting execution
+2018-05-10T15:59:30.920Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T15:59:31.193Z - info: User function triggered, starting execution
+2018-05-10T15:59:31.195Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T15:59:31.322Z - info: User function triggered, starting execution
+2018-05-10T15:59:31.332Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T16:01:59.952Z - info: User function triggered, starting execution
+2018-05-10T16:01:59.954Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T16:32:56.274Z - info: User function triggered, starting execution
+2018-05-10T16:32:57.276Z - info: Execution took 1001 ms, user function completed successfully
+2018-05-10T16:32:57.503Z - info: User function triggered, starting execution
+2018-05-10T16:32:57.507Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T16:32:57.615Z - info: User function triggered, starting execution
+2018-05-10T16:32:57.618Z - info: Execution took 3 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T16:32:57.620Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T16:33:51.186Z - info: User function triggered, starting execution
+2018-05-10T16:33:51.199Z - info: Execution took 12 ms, user function completed successfully
+2018-05-10T16:35:56.863Z - info: User function triggered, starting execution
+2018-05-10T16:35:56.865Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:35:57.059Z - info: User function triggered, starting execution
+2018-05-10T16:35:57.063Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T16:35:57.162Z - info: User function triggered, starting execution
+2018-05-10T16:35:57.165Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:35:57.170Z - info: User function triggered, starting execution
+2018-05-10T16:35:57.172Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:38:42.931Z - info: User function triggered, starting execution
+2018-05-10T16:38:42.934Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T16:38:43.123Z - info: User function triggered, starting execution
+2018-05-10T16:38:43.126Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:38:43.232Z - info: User function triggered, starting execution
+2018-05-10T16:38:43.286Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T16:38:43.524Z - info: User function triggered, starting execution
+2018-05-10T16:38:43.527Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T16:38:48.520Z - info: User function triggered, starting execution
+2018-05-10T16:38:48.522Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T16:38:48.712Z - info: User function triggered, starting execution
+2018-05-10T16:38:48.714Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:38:48.851Z - info: User function triggered, starting execution
+Execution took 1 ms, user function completed successfully
+2018-05-10T16:38:48.854Z - info: User function triggered, starting execution
+2018-05-10T16:38:48.856Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:41:11.086Z - info: User function triggered, starting execution
+2018-05-10T16:41:11.095Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:41:11.278Z - info: User function triggered, starting execution
+2018-05-10T16:41:11.284Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:41:11.348Z - info: User function triggered, starting execution
+2018-05-10T16:41:11.353Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:41:11.369Z - info: User function triggered, starting execution
+2018-05-10T16:41:11.372Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:41:46.430Z - info: User function triggered, starting execution
+2018-05-10T16:41:46.432Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T16:41:46.612Z - info: User function triggered, starting execution
+2018-05-10T16:41:46.615Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T16:41:46.679Z - info: User function triggered, starting execution
+2018-05-10T16:41:46.681Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T16:41:46.684Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T16:49:35.423Z - info: Worker for expressapp closed due to file changes.
+2018-05-10T18:02:59.071Z - info: User function triggered, starting execution
+2018-05-10T18:03:00.063Z - info: Execution took 992 ms, user function completed successfully
+2018-05-10T18:03:00.334Z - info: User function triggered, starting execution
+2018-05-10T18:03:00.348Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T18:03:01.901Z - info: User function triggered, starting execution
+2018-05-10T18:03:01.906Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:03:02.102Z - info: User function triggered, starting execution
+2018-05-10T18:03:02.105Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:03:02.477Z - info: User function triggered, starting execution
+2018-05-10T18:03:02.479Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:03:02.483Z - info: User function triggered, starting execution
+2018-05-10T18:03:02.513Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:25:26.822Z - info: User function triggered, starting execution
+2018-05-10T18:25:27.867Z - info: Execution took 1045 ms, user function completed successfully
+2018-05-10T18:25:28.055Z - info: User function triggered, starting execution
+2018-05-10T18:25:28.059Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T18:25:28.139Z - info: User function triggered, starting execution
+2018-05-10T18:25:28.143Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:25:28.149Z - info: User function triggered, starting execution
+2018-05-10T18:25:28.178Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:25:53.183Z - info: User function triggered, starting execution
+2018-05-10T18:25:53.186Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T18:25:53.387Z - info: User function triggered, starting execution
+2018-05-10T18:25:53.389Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:25:53.444Z - info: User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-10T18:25:53.448Z - info: User function triggered, starting execution
+2018-05-10T18:25:53.452Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:26:13.869Z - info: User function triggered, starting execution
+2018-05-10T18:26:13.876Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T18:26:14.155Z - info: User function triggered, starting execution
+2018-05-10T18:26:14.157Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:26:14.990Z - info: User function triggered, starting execution
+2018-05-10T18:26:14.992Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:26:15.172Z - info: User function triggered, starting execution
+2018-05-10T18:26:15.174Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:26:16.811Z - info: User function triggered, starting execution
+2018-05-10T18:26:16.813Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:26:17.169Z - info: User function triggered, starting execution
+2018-05-10T18:26:17.172Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:26:20.008Z - info: User function triggered, starting execution
+2018-05-10T18:26:20.011Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:26:20.178Z - info: User function triggered, starting execution
+2018-05-10T18:26:20.181Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:26:20.251Z - info: User function triggered, starting execution
+2018-05-10T18:26:20.253Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:26:20.257Z - info: User function triggered, starting execution
+2018-05-10T18:26:20.260Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:26:35.382Z - info: User function triggered, starting execution
+2018-05-10T18:26:35.403Z - info: User function triggered, starting execution
+2018-05-10T18:26:35.651Z - info: Execution took 267 ms, user function completed successfully
+2018-05-10T18:26:36.186Z - info: Execution took 782 ms, user function completed successfully
+2018-05-10T18:26:36.506Z - info: User function triggered, starting execution
+2018-05-10T18:26:36.509Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:26:36.869Z - info: User function triggered, starting execution
+2018-05-10T18:26:36.873Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:26:37.177Z - info: User function triggered, starting execution
+2018-05-10T18:26:37.179Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:26:38.230Z - info: User function triggered, starting execution
+2018-05-10T18:26:38.233Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:26:38.257Z - info: User function triggered, starting execution
+2018-05-10T18:26:38.259Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:27:07.629Z - info: User function triggered, starting execution
+2018-05-10T18:27:07.631Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:27:07.856Z - info: User function triggered, starting execution
+2018-05-10T18:27:07.859Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:27:10.138Z - info: User function triggered, starting execution
+2018-05-10T18:27:10.140Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:27:10.337Z - info: User function triggered, starting execution
+2018-05-10T18:27:10.340Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:27:10.411Z - info: User function triggered, starting execution
+2018-05-10T18:27:10.412Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:27:10.414Z - info: User function triggered, starting execution
+2018-05-10T18:27:10.416Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:27:33.886Z - info: User function triggered, starting execution
+2018-05-10T18:27:33.887Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:27:34.087Z - info: User function triggered, starting execution
+2018-05-10T18:27:34.089Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:27:34.141Z - info: User function triggered, starting execution
+2018-05-10T18:27:34.144Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T18:27:34.147Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:29:57.449Z - info: User function triggered, starting execution
+2018-05-10T18:29:57.453Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:29:57.667Z - info: User function triggered, starting execution
+2018-05-10T18:29:57.669Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:29:57.758Z - info: User function triggered, starting execution
+2018-05-10T18:29:57.761Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:29:57.767Z - info: User function triggered, starting execution
+2018-05-10T18:29:57.769Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:30:23.569Z - info: User function triggered, starting execution
+2018-05-10T18:30:23.571Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:30:23.764Z - info: User function triggered, starting execution
+2018-05-10T18:30:23.766Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:30:23.817Z - info: User function triggered, starting execution
+2018-05-10T18:30:23.819Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:30:23.823Z - info: User function triggered, starting execution
+2018-05-10T18:30:23.827Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:30:34.045Z - info: User function triggered, starting execution
+2018-05-10T18:30:34.047Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:31:43.916Z - info: Worker for expressapp closed due to file changes.
+2018-05-10T18:41:15.191Z - info: User function triggered, starting execution
+2018-05-10T18:41:15.278Z - info: Execution took 86 ms, user function completed successfully
+2018-05-10T18:41:15.484Z - info: User function triggered, starting execution
+2018-05-10T18:41:15.489Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T18:41:15.575Z - info: User function triggered, starting execution
+2018-05-10T18:41:15.578Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T18:41:15.595Z - info: User function triggered, starting execution
+2018-05-10T18:41:15.597Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:42:08.552Z - info: User function triggered, starting execution
+2018-05-10T18:42:08.555Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:42:08.744Z - info: User function triggered, starting execution
+2018-05-10T18:42:08.746Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:42:08.818Z - info: User function triggered, starting execution
+2018-05-10T18:42:08.822Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:42:08.823Z - info: User function triggered, starting execution
+2018-05-10T18:42:08.826Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:42:17.887Z - info: User function triggered, starting execution
+2018-05-10T18:42:17.888Z - info: x
+2018-05-10T18:42:17.893Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T18:43:02.298Z - info: Worker for expressapp closed due to file changes.
+2018-05-10T18:45:07.956Z - info: User function triggered, starting execution
+2018-05-10T18:45:08.047Z - info: Execution took 91 ms, user function completed successfully
+2018-05-10T18:45:08.236Z - info: User function triggered, starting execution
+2018-05-10T18:45:08.240Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T18:45:08.334Z - info: User function triggered, starting execution
+2018-05-10T18:45:08.336Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:45:08.337Z - info: User function triggered, starting execution
+2018-05-10T18:45:08.340Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:45:23.575Z - info: User function triggered, starting execution
+2018-05-10T18:45:23.577Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:45:23.762Z - info: User function triggered, starting execution
+2018-05-10T18:45:23.765Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:45:23.833Z - info: User function triggered, starting execution
+2018-05-10T18:45:23.838Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:45:23.852Z - info: User function triggered, starting execution
+2018-05-10T18:45:23.855Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:45:29.839Z - info: User function triggered, starting execution
+2018-05-10T18:45:29.841Z - info: undefined
+2018-05-10T18:45:29.847Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+x
+Execution took 6 ms, user function completed successfully
+2018-05-10T18:48:01.251Z - info: User function triggered, starting execution
+2018-05-10T18:48:01.256Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:48:01.448Z - info: User function triggered, starting execution
+2018-05-10T18:48:01.451Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:48:01.522Z - info: User function triggered, starting execution
+Execution took 1 ms, user function completed successfully
+2018-05-10T18:48:01.528Z - info: User function triggered, starting execution
+2018-05-10T18:48:01.530Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:49:30.109Z - info: User function triggered, starting execution
+2018-05-10T18:49:30.113Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:49:30.333Z - info: User function triggered, starting execution
+2018-05-10T18:49:30.337Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:49:30.437Z - info: User function triggered, starting execution
+2018-05-10T18:49:30.439Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:49:30.441Z - info: User function triggered, starting execution
+2018-05-10T18:49:30.444Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T18:49:40.040Z - info: User function triggered, starting execution
+2018-05-10T18:49:40.041Z - info: undefined
+2018-05-10T18:49:40.042Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+x
+Execution took 2 ms, user function completed successfully
+2018-05-10T18:52:14.442Z - info: Worker for expressapp closed due to file changes.
+2018-05-10T18:54:27.855Z - info: User function triggered, starting execution
+2018-05-10T18:54:27.948Z - info: Execution took 93 ms, user function completed successfully
+2018-05-10T18:54:28.129Z - info: User function triggered, starting execution
+2018-05-10T18:54:28.134Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T18:54:28.201Z - info: User function triggered, starting execution
+2018-05-10T18:54:28.207Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:54:28.226Z - info: User function triggered, starting execution
+2018-05-10T18:54:28.229Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:54:34.859Z - info: User function triggered, starting execution
+2018-05-10T18:54:34.861Z - info: undefined
+2018-05-10T18:54:34.863Z - info: undefined
+2018-05-10T18:54:34.864Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' } }
+2018-05-10T18:54:34.866Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+x
+Execution took 6 ms, user function completed successfully
+2018-05-10T18:57:26.288Z - info: User function triggered, starting execution
+2018-05-10T18:57:26.297Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:57:26.474Z - info: User function triggered, starting execution
+2018-05-10T18:57:26.476Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T18:57:26.531Z - info: User function triggered, starting execution
+2018-05-10T18:57:26.535Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T18:57:26.540Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T18:57:42.149Z - error: { SyntaxError: Unexpected token e in JSON at position 13
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\DrEGZo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\DrEGZo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\DrEGZo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\DrEGZo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\DrEGZo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\raw-body\index.js:273:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{ "idToken: "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhiZjA2YWU3MGJhMjVkNzZiNWM0ZjMyYTk4YTU0N2JlYjE4YmM0MGUifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhjaGFuZ2UtYmxvZyIsImF1ZCI6ImV4Y2hhbmdlLWJsb2ciLCJhdXRoX3RpbWUiOjE1MjMxMDkwNjgsInVzZXJfaWQiOiJkRWRJYWdMeUZLTmwzOEhYUHh0Z1FsRklYWm8yIiwic3ViIjoiZEVkSWFnTHlGS05sMzhIWFB4dGdRbEZJWFpvMiIsImlhdCI6MTUyNTk3ODY2MSwiZXhwIjoxNTI1OTgyMjYxLCJlbWFpbCI6InNxdWFtYXRvNzdAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNxdWFtYXRvNzdAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.idEPv6_Kjq-yGX3IJD6y0EkipPHDvecRqYJnM834fY84tOhnvxV_phJnrS53DGA4QSJs-S9Vud_L1JcOoP80NOTpDwXHyguBEIlKo76CiC7b_axeLQb6usJydukEbmhgvqQHiSFCkWP1WR9IX8hiuqV5Z5diokB42a3ewUy94FjkpvfuhcJoIu2f7n0ovOxyRfzqd7m9WFRzSPrEfkXchyxzIK89Xz6EoZ_dz7LeNZbel2Q-Vqs4Tg_eKfAouLK5T0VwI3ItHI2yEEL9k8wJKyTlLwBGRlOl_AjoK25VWvbHvJDI-91OUqkuqP9QSw3ZztwU8ecIuN0JciAstU7YLA", "typ": "blog", "source": "anything", "id": "undefined"}',
+  type: 'entity.parse.failed' }
+2018-05-10T18:58:42.146Z - info: Execution took 60002 ms, finished with status: 'timeout'
+2018-05-10T18:58:42.168Z - error: SUPERVISOR clientError { Error: read ECONNRESET
+    at _errnoException (util.js:1022:11)
+    at TCP.onread (net.js:615:25) code: 'ECONNRESET', errno: 'ECONNRESET', syscall: 'read' } connecting=false, _hadError=false, _handle=null, _parent=null, _host=null, objectMode=false, highWaterMark=16384, head=null, tail=null, length=0, length=0, pipes=null, pipesCount=0, flowing=true, ended=false, endEmitted=false, reading=true, sync=false, needReadable=true, emittedReadable=false, readableListening=false, resumeScheduled=false, destroyed=true, defaultEncoding=utf8, awaitDrain=0, readingMore=false, decoder=null, encoding=null, readable=false, domain=null, end=[function () { [native code] }, function () { [native code] }], finish=function onSocketFinish() {
+  // If still connecting - defer handling 'finish' until 'connect' will happen
+  if (this.connecting) {
+    debug('osF: not yet connected');
+    return this.once('connect', onSocketFinish);
+  }
+
+  debug('onSocketFinish');
+  if (!this.readable || this._readableState.ended) {
+    debug('oSF: ended, destroy', this._readableState);
+    return this.destroy();
+  }
+
+  debug('oSF: not ended, call shutdown()');
+
+  // otherwise, just shutdown, or destroy() if not possible
+  if (!this._handle || !this._handle.shutdown)
+    return this.destroy();
+
+  var req = new ShutdownWrap();
+  req.oncomplete = afterShutdown;
+  req.handle = this._handle;
+  // node::ShutdownWrap isn't instantiated and attached to the JS instance of
+  // ShutdownWrap above until shutdown() is called. So don't set the init
+  // trigger id until now.
+  setInitTriggerId(this[async_id_symbol]);
+  var err = this._handle.shutdown(req);
+
+  if (err)
+    return this.destroy(errnoException(err, 'shutdown'));
+}, _socketEnd=function onSocketEnd() {
+  // XXX Should not have to do as much in this function.
+  // ended should already be true, since this is called *after*
+  // the EOF errno and onread has eof'ed
+  debug('onSocketEnd', this._readableState);
+  this._readableState.ended = true;
+  if (this._readableState.endEmitted) {
+    this.readable = false;
+    maybeDestroy(this);
+  } else {
+    this.once('end', function end() {
+      this.readable = false;
+      maybeDestroy(this);
+    });
+    this.read(0);
+  }
+
+  if (!this.allowHalfOpen) {
+    this.write = writeAfterFIN;
+    this.destroySoon();
+  }
+}, drain=[function ondrain() {
+  if (this._httpMessage) this._httpMessage.emit('drain');
+}, function () { [native code] }], timeout=function socketOnTimeout() {
+  var req = this.parser && this.parser.incoming;
+  var reqTimeout = req && !req.complete && req.emit('timeout', this);
+  var res = this._httpMessage;
+  var resTimeout = res && res.emit('timeout', this);
+  var serverTimeout = this.server.emit('timeout', this);
+
+  if (!reqTimeout && !resTimeout && !serverTimeout)
+    this.destroy();
+}, data=function () { [native code] }, close=function () { [native code] }, resume=function onSocketResume() {
+  // It may seem that the socket is resumed, but this is an enemy's trick to
+  // deceive us! `resume` is emitted asynchronously, and may be called from
+  // `incoming.readStart()`. Stop the socket again here, just to preserve the
+  // state.
+  //
+  // We don't care about stream semantics for the consumed socket anyway.
+  if (this._paused) {
+    this.pause();
+    return;
+  }
+
+  if (this._handle && !this._handle.reading) {
+    this._handle.reading = true;
+    this._handle.readStart();
+  }
+}, pause=function onSocketPause() {
+  if (this._handle && this._handle.reading) {
+    this._handle.reading = false;
+    this._handle.readStop();
+  }
+}, error=() => {}, _eventsCount=10, _maxListeners=undefined, objectMode=false, highWaterMark=16384, finalCalled=false, needDrain=false, ending=false, ended=false, finished=false, destroyed=true, decodeStrings=false, defaultEncoding=utf8, length=0, writing=false, corked=0, sync=false, bufferProcessing=false, onwrite=function () { [native code] }, writecb=null, writelen=0, bufferedRequest=null, lastBufferedRequest=null, pendingcb=0, prefinished=false, errorEmitted=true, bufferedRequestCount=0, next=null, entry=null, finish=function () { [native code] }, entry=null, finish=function () { [native code] }, writable=false, allowHalfOpen=true, _bytesDispatched=322, _sockname=null, _pendingData=null, _pendingEncoding=, domain=null, request=function (req, res, next) {
+    app.handle(req, res, next);
+  }, connection=function connectionListener(socket) {
+  debug('SERVER new http connection');
+
+  httpSocketSetup(socket);
+
+  // Ensure that the server property of the socket is correctly set.
+  // See https://github.com/nodejs/node/issues/13435
+  if (socket.server === null)
+    socket.server = this;
+
+  // If the user has added a listener to the server,
+  // request, or response, then it's their responsibility.
+  // otherwise, destroy on timeout by default
+  if (this.timeout)
+    socket.setTimeout(this.timeout);
+  socket.on('timeout', socketOnTimeout);
+
+  var parser = parsers.alloc();
+  parser.reinitialize(HTTPParser.REQUEST);
+  parser.socket = socket;
+  socket.parser = parser;
+  parser.incoming = null;
+
+  // Propagate headers limit from server instance to parser
+  if (typeof this.maxHeadersCount === 'number') {
+    parser.maxHeaderPairs = this.maxHeadersCount << 1;
+  } else {
+    // Set default value because parser may be reused from FreeList
+    parser.maxHeaderPairs = 2000;
+  }
+
+  var state = {
+    onData: null,
+    onEnd: null,
+    onClose: null,
+    onDrain: null,
+    outgoing: [],
+    incoming: [],
+    // `outgoingData` is an approximate amount of bytes queued through all
+    // inactive responses. If more data than the high watermark is queued - we
+    // need to pause TCP socket/HTTP parser, and wait until the data will be
+    // sent to the client.
+    outgoingData: 0,
+    keepAliveTimeoutSet: false
+  };
+  state.onData = socketOnData.bind(undefined, this, socket, parser, state);
+  state.onEnd = socketOnEnd.bind(undefined, this, socket, parser, state);
+  state.onClose = socketOnClose.bind(undefined, socket, state);
+  state.onDrain = socketOnDrain.bind(undefined, socket, state);
+  socket.on('data', state.onData);
+  socket.on('error', socketOnError);
+  socket.on('end', state.onEnd);
+  socket.on('close', state.onClose);
+  socket.on('drain', state.onDrain);
+  parser.onIncoming = parserOnIncoming.bind(undefined, this, socket, state);
+
+  // We are consuming socket, so it won't get any actual data
+  socket.on('resume', onSocketResume);
+  socket.on('pause', onSocketPause);
+
+  // Override on to unconsume on `data`, `readable` listeners
+  socket.on = socketOnWrap;
+
+  // We only consume the socket if it has never been consumed before.
+  var external = socket._handle._externalStream;
+  if (!socket._handle._consumed && external) {
+    parser._consumed = true;
+    socket._handle._consumed = true;
+    parser.consume(external);
+  }
+  parser[kOnExecute] =
+    onParserExecute.bind(undefined, this, socket, parser, state);
+
+  socket._paused = false;
+}, listening=() => {
+        logger.debug(`Supervisor listening at ${this._server.address().address}:${this._server.address().port}.`);
+      }, error=[(err) => {
+        logger.error('SUPERVISOR error', err);
+      }, (err) => {
+        if (err.code === 'EADDRINUSE') {
+          logger.error(`${name} (${this.config[name]}) is already in use`);
+        } else {
+          logger.error(err);
+        }
+      }], clientError=(err, socket) => {
+        logger.error('SUPERVISOR clientError', err, socket);
+      }, _eventsCount=5, _maxListeners=undefined, _connections=0, reading=false, $ref=$["server"], onread=null, onconnection=function onconnection(err, clientHandle) {
+  var handle = this;
+  var self = handle.owner;
+
+  debug('onconnection');
+
+  if (err) {
+    self.emit('error', errnoException(err, 'accept'));
+    return;
+  }
+
+  if (self.maxConnections && self._connections >= self.maxConnections) {
+    clientHandle.close();
+    return;
+  }
+
+  var socket = new Socket({
+    handle: clientHandle,
+    allowHalfOpen: self.allowHalfOpen,
+    pauseOnCreate: self.pauseOnConnect
+  });
+  socket.readable = socket.writable = true;
+
+
+  self._connections++;
+  socket.server = self;
+  socket._server = self;
+
+  DTRACE_NET_SERVER_CONNECTION(socket);
+  ;
+  COUNTER_NET_SERVER_CONNECTION(socket);
+  self.emit('connection', socket);
+}, writeQueueSize=0, _usingSlaves=false, _slaves=[], _unref=false, allowHalfOpen=true, pauseOnConnect=false, httpAllowHalfOpen=false, timeout=120000, keepAliveTimeout=5000, _pendingResponseData=0, maxHeadersCount=null, _connectionKey=4:127.0.0.1:5001, $ref=$["server"], _idleTimeout=-1, _idleNext=null, _idlePrev=null, _idleStart=360776, _destroyed=false, 0=function parserOnHeaders(headers, url) {
+  // Once we exceeded headers limit - stop collecting them
+  if (this.maxHeaderPairs <= 0 ||
+      this._headers.length < this.maxHeaderPairs) {
+    this._headers = this._headers.concat(headers);
+  }
+  this._url += url;
+}, 1=function parserOnHeadersComplete(versionMajor, versionMinor, headers, method,
+                                 url, statusCode, statusMessage, upgrade,
+                                 shouldKeepAlive) {
+  var parser = this;
+
+  if (!headers) {
+    headers = parser._headers;
+    parser._headers = [];
+  }
+
+  if (!url) {
+    url = parser._url;
+    parser._url = '';
+  }
+
+  parser.incoming = new IncomingMessage(parser.socket);
+  parser.incoming.httpVersionMajor = versionMajor;
+  parser.incoming.httpVersionMinor = versionMinor;
+  parser.incoming.httpVersion = `${versionMajor}.${versionMinor}`;
+  parser.incoming.url = url;
+
+  var n = headers.length;
+
+  // If parser.maxHeaderPairs <= 0 assume that there's no limit.
+  if (parser.maxHeaderPairs > 0)
+    n = Math.min(n, parser.maxHeaderPairs);
+
+  parser.incoming._addHeaderLines(headers, n);
+
+  if (typeof method === 'number') {
+    // server only
+    parser.incoming.method = methods[method];
+  } else {
+    // client only
+    parser.incoming.statusCode = statusCode;
+    parser.incoming.statusMessage = statusMessage;
+  }
+
+  if (upgrade && parser.outgoing !== null && !parser.outgoing.upgrading) {
+    // The client made non-upgrade request, and server is just advertising
+    // supported protocols.
+    //
+    // See RFC7230 Section 6.7
+    upgrade = false;
+  }
+
+  parser.incoming.upgrade = upgrade;
+
+  var skipBody = 0; // response to HEAD or CONNECT
+
+  if (!upgrade) {
+    // For upgraded connections and CONNECT method request, we'll emit this
+    // after parser.execute so that we can capture the first part of the new
+    // protocol.
+    skipBody = parser.onIncoming(parser.incoming, shouldKeepAlive);
+  }
+
+  if (typeof skipBody !== 'number')
+    return skipBody ? 1 : 0;
+  else
+    return skipBody;
+}, 2=function parserOnBody(b, start, len) {
+  var parser = this;
+  var stream = parser.incoming;
+
+  // if the stream has already been removed, then drop it.
+  if (!stream)
+    return;
+
+  var socket = stream.socket;
+
+  // pretend this was the result of a stream._read call.
+  if (len > 0 && !stream._dumped) {
+    var slice = b.slice(start, start + len);
+    var ret = stream.push(slice);
+    if (!ret)
+      readStop(socket);
+  }
+}, 3=function parserOnMessageComplete() {
+  var parser = this;
+  var stream = parser.incoming;
+
+  if (stream) {
+    stream.complete = true;
+    // Emit any trailing headers.
+    var headers = parser._headers;
+    if (headers) {
+      parser.incoming._addHeaderLines(headers, headers.length);
+      parser._headers = [];
+      parser._url = '';
+    }
+
+    // For emit end event
+    stream.push(null);
+  }
+
+  // force to read the next incoming message
+  readStart(parser.socket);
+}, 4=function () { [native code] }, _headers=[], _url=, _consumed=true, $ref=$, objectMode=false, highWaterMark=16384, head=null, tail=null, length=0, length=0, pipes=null, pipesCount=0, flowing=false, ended=true, endEmitted=true, reading=false, sync=false, needReadable=false, emittedReadable=false, readableListening=false, resumeScheduled=false, destroyed=false, defaultEncoding=utf8, awaitDrain=0, readingMore=false, decoder=null, encoding=null, readable=false, domain=null, aborted=function () {
+      proxyReq.abort();
+    }, error=function proxyError(err) {
+        if (req.socket.destroyed && err.code === 'ECONNRESET') {
+          server.emit('econnreset', err, req, res, url);
+          return proxyReq.abort();
+        }
+
+        if (clb) {
+          clb(err, req, res, url);
+        } else {
+          server.emit('error', err, req, res, url);
+        }
+      }, _eventsCount=2, _maxListeners=undefined, $ref=$, $ref=$, httpVersionMajor=1, httpVersionMinor=1, httpVersion=1.1, complete=true, x-forwarded-host=localhost:5000, x-original-url=/getCommentData, pragma=no-cache, cache-control=no-cache, no-store, host=localhost:5001, connection=keep-alive, content-length=976, accept=*/*, origin=http://localhost:5000, x-requested-with=XMLHttpRequest, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36, content-type=application/json, referer=http://localhost:5000/de-de/blog/anything/index.html, accept-encoding=gzip, deflate, br, accept-language=de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7, rawHeaders=[X-Forwarded-Host, localhost:5000, X-Original-Url, /getCommentData, Pragma, no-cache, Cache-Control, no-cache, no-store, host, localhost:5001, connection, keep-alive, content-length, 976, accept, */*, origin, http://localhost:5000, x-requested-with, XMLHttpRequest, user-agent, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36, content-type, application/json, referer, http://localhost:5000/de-de/blog/anything/index.html, accept-encoding, gzip, deflate, br, accept-language, de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7], , rawTrailers=[], upgrade=false, url=/exchange-blog/us-central1/expressapp/getCommentData, method=POST, statusCode=null, statusMessage=null, $ref=$, _consuming=true, _dumped=false, next=function next(err) {
+    var layerError = err === 'route'
+      ? null
+      : err;
+
+    // remove added slash
+    if (slashAdded) {
+      req.url = req.url.substr(1);
+      slashAdded = false;
+    }
+
+    // restore altered req.url
+    if (removed.length !== 0) {
+      req.baseUrl = parentUrl;
+      req.url = protohost + removed + req.url.substr(protohost.length);
+      removed = '';
+    }
+
+    // signal to exit router
+    if (layerError === 'router') {
+      setImmediate(done, null)
+      return
+    }
+
+    // no more matching layers
+    if (idx >= stack.length) {
+      setImmediate(done, layerError);
+      return;
+    }
+
+    // get pathname of request
+    var path = getPathname(req);
+
+    if (path == null) {
+      return done(layerError);
+    }
+
+    // find next matching layer
+    var layer;
+    var match;
+    var route;
+
+    while (match !== true && idx < stack.length) {
+      layer = stack[idx++];
+      match = matchLayer(layer, path);
+      route = layer.route;
+
+      if (typeof match !== 'boolean') {
+        // hold on to layerError
+        layerError = layerError || match;
+      }
+
+      if (match !== true) {
+        continue;
+      }
+
+      if (!route) {
+        // process non-route handlers normally
+        continue;
+      }
+
+      if (layerError) {
+        // routes do not match with a pending error
+        match = false;
+        continue;
+      }
+
+      var method = req.method;
+      var has_method = route._handles_method(method);
+
+      // build up automatic options response
+      if (!has_method && method === 'OPTIONS') {
+        appendMethods(options, route._options());
+      }
+
+      // don't even bother matching route
+      if (!has_method && method !== 'HEAD') {
+        match = false;
+        continue;
+      }
+    }
+
+    // no match
+    if (match !== true) {
+      return done(layerError);
+    }
+
+    // store route for dispatch on change
+    if (route) {
+      req.route = route;
+    }
+
+    // Capture one-time layer values
+    req.params = self.mergeParams
+      ? mergeParams(layer.params, parentParams)
+      : layer.params;
+    var layerPath = layer.path;
+
+    // this should be done for the layer
+    self.process_params(layer, paramcalled, req, res, function (err) {
+      if (err) {
+        return next(layerError || err);
+      }
+
+      if (route) {
+        return layer.handle_request(req, res, next);
+      }
+
+      trim_prefix(layer, layerError, layerPath, path);
+    });
+  }, baseUrl=, originalUrl=/exchange-blog/us-central1/expressapp/getCommentData, protocol=null, slashes=null, auth=null, host=null, port=null, hostname=null, hash=null, search=null, query=null, pathname=/exchange-blog/us-central1/expressapp/getCommentData, path=/exchange-blog/us-central1/expressapp/getCommentData, href=/exchange-blog/us-central1/expressapp/getCommentData, _raw=/exchange-blog/us-central1/expressapp/getCommentData, , , domain=null, finish=function () { [native code] }, _eventsCount=1, _maxListeners=undefined, output=[], outputEncodings=[], outputCallbacks=[], outputSize=0, writable=true, _last=false, upgrading=false, chunkedEncoding=false, shouldKeepAlive=true, useChunkedEncodingByDefault=true, sendDate=true, _removedConnection=false, _removedContLen=false, _removedTE=false, _contentLength=91, _hasBody=true, _trailer=, finished=true, _headerSent=true, socket=null, connection=null, _header=HTTP/1.1 500 Internal Server Error
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 91
+ETag: W/"5b-iGspZwrtSPKK7Ipjt62rruw4psA"
+Date: Thu, 10 May 2018 18:58:42 GMT
+Connection: keep-alive
+
+, _onPendingData=function () { [native code] }, _sent100=false, _expect_continue=false, $ref=$["parser"]["incoming"], , statusCode=500, statusMessage=Internal Server Error, functionName=projects/exchange-blog/locations/us-central1/functions/expressapp, functionStart=1525978662144, _called=true, _idleTimeout=60000, _idlePrev=null, _idleNext=null, _idleStart=300758, _onTimeout=() => {
+          try {
+            this.closeWorker(req.functionName);
+            logger.info(`Execution took ${Date.now() - req.functionStart} ms, finished with status: 'timeout'`);
+
+            res
+              .status(500)
+              .json({
+                error: {
+                  code: 500,
+                  status: 'INTERNAL',
+                  message: 'function execution attempt timed out'
+                }
+              })
+              .end();
+          } catch (err) {
+            logger.error('Something went wrong with the function timeout!');
+            logger.error(err);
+          }
+        }, _timerArgs=undefined, _repeat=null, _destroyed=false, read=function (n) {
+  debug('read', n);
+  n = parseInt(n, 10);
+  var state = this._readableState;
+  var nOrig = n;
+
+  if (n !== 0)
+    state.emittedReadable = false;
+
+  // if we're doing read(0) to trigger a readable event, but we
+  // already have a bunch of data in the buffer, then just trigger
+  // the 'readable' event and move on.
+  if (n === 0 &&
+      state.needReadable &&
+      (state.length >= state.highWaterMark || state.ended)) {
+    debug('read: emitReadable', state.length, state.ended);
+    if (state.length === 0 && state.ended)
+      endReadable(this);
+    else
+      emitReadable(this);
+    return null;
+  }
+
+  n = howMuchToRead(n, state);
+
+  // if we've ended, and we're now clear, then finish it up.
+  if (n === 0 && state.ended) {
+    if (state.length === 0)
+      endReadable(this);
+    return null;
+  }
+
+  // All the actual chunk generation logic needs to be
+  // *below* the call to _read.  The reason is that in certain
+  // synthetic stream cases, such as passthrough streams, _read
+  // may be a completely synchronous operation which may change
+  // the state of the read buffer, providing enough data when
+  // before there was *not* enough.
+  //
+  // So, the steps are:
+  // 1. Figure out what the state of things will be after we do
+  // a read from the buffer.
+  //
+  // 2. If that resulting state will trigger a _read, then call _read.
+  // Note that this may be asynchronous, or synchronous.  Yes, it is
+  // deeply ugly to write APIs this way, but that still doesn't mean
+  // that the Readable class should behave improperly, as streams are
+  // designed to be sync/async agnostic.
+  // Take note if the _read call is sync or async (ie, if the read call
+  // has returned yet), so that we know whether or not it's safe to emit
+  // 'readable' etc.
+  //
+  // 3. Actually pull the requested chunks out of the buffer and return.
+
+  // if we need a readable event, then we need to do some reading.
+  var doRead = state.needReadable;
+  debug('need readable', doRead);
+
+  // if we currently have less than the highWaterMark, then also read some
+  if (state.length === 0 || state.length - n < state.highWaterMark) {
+    doRead = true;
+    debug('length less than watermark', doRead);
+  }
+
+  // however, if we've ended, then there's no point, and if we're already
+  // reading, then it's unnecessary.
+  if (state.ended || state.reading) {
+    doRead = false;
+    debug('reading or ended', doRead);
+  } else if (doRead) {
+    debug('do read');
+    state.reading = true;
+    state.sync = true;
+    // if the length is currently zero, then we *need* a readable event.
+    if (state.length === 0)
+      state.needReadable = true;
+    // call internal read method
+    this._read(state.highWaterMark);
+    state.sync = false;
+    // If _read pushed data synchronously, then `reading` will be false,
+    // and we need to re-evaluate how much data we can return to the user.
+    if (!state.reading)
+      n = howMuchToRead(nOrig, state);
+  }
+
+  var ret;
+  if (n > 0)
+    ret = fromList(n, state);
+  else
+    ret = null;
+
+  if (ret === null) {
+    state.needReadable = true;
+    n = 0;
+  } else {
+    state.length -= n;
+  }
+
+  if (state.length === 0) {
+    // If we have nothing in the buffer, then we want to know
+    // as soon as we *do* get something into the buffer.
+    if (!state.ended)
+      state.needReadable = true;
+
+    // If we tried to read() past the EOF, then emit end on the next tick.
+    if (nOrig !== n && state.ended)
+      endReadable(this);
+  }
+
+  if (ret !== null)
+    this.emit('data', ret);
+
+  return ret;
+}, outgoing=null, maxHeaderPairs=2000, onIncoming=function () { [native code] }, on=function socketOnWrap(ev, fn) {
+  var res = net.Socket.prototype.on.call(this, ev, fn);
+  if (!this.parser) {
+    this.on = net.Socket.prototype.on;
+    return res;
+  }
+
+  if (ev === 'data' || ev === 'readable')
+    unconsume(this.parser, this);
+
+  return res;
+}, _paused=false, read=function (n) {
+  debug('read', n);
+  n = parseInt(n, 10);
+  var state = this._readableState;
+  var nOrig = n;
+
+  if (n !== 0)
+    state.emittedReadable = false;
+
+  // if we're doing read(0) to trigger a readable event, but we
+  // already have a bunch of data in the buffer, then just trigger
+  // the 'readable' event and move on.
+  if (n === 0 &&
+      state.needReadable &&
+      (state.length >= state.highWaterMark || state.ended)) {
+    debug('read: emitReadable', state.length, state.ended);
+    if (state.length === 0 && state.ended)
+      endReadable(this);
+    else
+      emitReadable(this);
+    return null;
+  }
+
+  n = howMuchToRead(n, state);
+
+  // if we've ended, and we're now clear, then finish it up.
+  if (n === 0 && state.ended) {
+    if (state.length === 0)
+      endReadable(this);
+    return null;
+  }
+
+  // All the actual chunk generation logic needs to be
+  // *below* the call to _read.  The reason is that in certain
+  // synthetic stream cases, such as passthrough streams, _read
+  // may be a completely synchronous operation which may change
+  // the state of the read buffer, providing enough data when
+  // before there was *not* enough.
+  //
+  // So, the steps are:
+  // 1. Figure out what the state of things will be after we do
+  // a read from the buffer.
+  //
+  // 2. If that resulting state will trigger a _read, then call _read.
+  // Note that this may be asynchronous, or synchronous.  Yes, it is
+  // deeply ugly to write APIs this way, but that still doesn't mean
+  // that the Readable class should behave improperly, as streams are
+  // designed to be sync/async agnostic.
+  // Take note if the _read call is sync or async (ie, if the read call
+  // has returned yet), so that we know whether or not it's safe to emit
+  // 'readable' etc.
+  //
+  // 3. Actually pull the requested chunks out of the buffer and return.
+
+  // if we need a readable event, then we need to do some reading.
+  var doRead = state.needReadable;
+  debug('need readable', doRead);
+
+  // if we currently have less than the highWaterMark, then also read some
+  if (state.length === 0 || state.length - n < state.highWaterMark) {
+    doRead = true;
+    debug('length less than watermark', doRead);
+  }
+
+  // however, if we've ended, then there's no point, and if we're already
+  // reading, then it's unnecessary.
+  if (state.ended || state.reading) {
+    doRead = false;
+    debug('reading or ended', doRead);
+  } else if (doRead) {
+    debug('do read');
+    state.reading = true;
+    state.sync = true;
+    // if the length is currently zero, then we *need* a readable event.
+    if (state.length === 0)
+      state.needReadable = true;
+    // call internal read method
+    this._read(state.highWaterMark);
+    state.sync = false;
+    // If _read pushed data synchronously, then `reading` will be false,
+    // and we need to re-evaluate how much data we can return to the user.
+    if (!state.reading)
+      n = howMuchToRead(nOrig, state);
+  }
+
+  var ret;
+  if (n > 0)
+    ret = fromList(n, state);
+  else
+    ret = null;
+
+  if (ret === null) {
+    state.needReadable = true;
+    n = 0;
+  } else {
+    state.length -= n;
+  }
+
+  if (state.length === 0) {
+    // If we have nothing in the buffer, then we want to know
+    // as soon as we *do* get something into the buffer.
+    if (!state.ended)
+      state.needReadable = true;
+
+    // If we tried to read() past the EOF, then emit end on the next tick.
+    if (nOrig !== n && state.ended)
+      endReadable(this);
+  }
+
+  if (ret !== null)
+    this.emit('data', ret);
+
+  return ret;
+}, _consuming=true, _httpMessage=null
+2018-05-10T18:58:42.333Z - error: Function worker killed by signal: SIGTERM
+2018-05-10T19:09:10.471Z - info: User function triggered, starting execution
+2018-05-10T19:09:10.590Z - info: Execution took 118 ms, user function completed successfully
+2018-05-10T19:09:10.835Z - info: User function triggered, starting execution
+2018-05-10T19:09:10.840Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T19:09:11.006Z - info: User function triggered, starting execution
+2018-05-10T19:09:11.010Z - info: Execution took 3 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T19:09:11.014Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T19:09:16.883Z - info: User function triggered, starting execution
+2018-05-10T19:09:16.895Z - info: undefined
+undefined
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+x
+Execution took 8 ms, user function completed successfully
+2018-05-10T19:19:10.455Z - info: User function triggered, starting execution
+2018-05-10T19:19:10.538Z - info: Execution took 82 ms, user function completed successfully
+2018-05-10T19:19:10.758Z - info: User function triggered, starting execution
+2018-05-10T19:19:10.762Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T19:19:10.833Z - info: User function triggered, starting execution
+2018-05-10T19:19:10.837Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T19:19:10.840Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:19:22.542Z - info: User function triggered, starting execution
+2018-05-10T19:19:22.544Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:19:22.774Z - info: User function triggered, starting execution
+2018-05-10T19:19:22.776Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:19:22.874Z - info: User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-10T19:19:22.878Z - info: User function triggered, starting execution
+2018-05-10T19:19:22.879Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:19:27.112Z - info: User function triggered, starting execution
+2018-05-10T19:19:27.113Z - info: undefined
+2018-05-10T19:19:27.113Z - info: undefined
+2018-05-10T19:19:27.119Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+x
+Execution took 5 ms, user function completed successfully
+2018-05-10T19:20:26.041Z - info: Worker for expressapp closed due to file changes.
+2018-05-10T19:22:58.196Z - info: User function triggered, starting execution
+2018-05-10T19:22:59.113Z - info: Execution took 917 ms, user function completed successfully
+2018-05-10T19:22:59.300Z - info: User function triggered, starting execution
+2018-05-10T19:22:59.305Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T19:22:59.373Z - info: User function triggered, starting execution
+2018-05-10T19:22:59.383Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T19:22:59.391Z - info: User function triggered, starting execution
+2018-05-10T19:22:59.394Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:23:53.446Z - info: User function triggered, starting execution
+2018-05-10T19:23:53.449Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:23:53.636Z - info: User function triggered, starting execution
+2018-05-10T19:23:53.639Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:23:53.738Z - info: User function triggered, starting execution
+2018-05-10T19:23:53.759Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 1 ms, user function completed successfully
+2018-05-10T19:24:01.075Z - info: User function triggered, starting execution
+2018-05-10T19:24:01.076Z - info: undefined
+anything
+blog
+2018-05-10T19:24:01.077Z - info: undefined
+2018-05-10T19:24:01.080Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+2018-05-10T19:24:01.082Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>' } }
+x
+Execution took 6 ms, user function completed successfully
+2018-05-10T19:26:51.728Z - info: User function triggered, starting execution
+2018-05-10T19:26:51.732Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:26:51.919Z - info: User function triggered, starting execution
+2018-05-10T19:26:51.924Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T19:26:51.979Z - info: User function triggered, starting execution
+2018-05-10T19:26:51.983Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T19:26:51.998Z - info: User function triggered, starting execution
+2018-05-10T19:26:52.004Z - info: Execution took 6 ms, user function completed successfully
+2018-05-10T19:27:22.983Z - info: User function triggered, starting execution
+2018-05-10T19:27:22.985Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:27:23.190Z - info: User function triggered, starting execution
+2018-05-10T19:27:23.208Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:27:23.275Z - info: User function triggered, starting execution
+2018-05-10T19:27:23.322Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-10T19:29:00.188Z - info: User function triggered, starting execution
+2018-05-10T19:29:00.193Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T19:29:00.403Z - info: User function triggered, starting execution
+2018-05-10T19:29:00.415Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:29:00.478Z - info: User function triggered, starting execution
+2018-05-10T19:29:00.480Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:29:00.481Z - info: User function triggered, starting execution
+2018-05-10T19:29:00.483Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:29:03.232Z - info: User function triggered, starting execution
+2018-05-10T19:29:03.236Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:29:03.448Z - info: User function triggered, starting execution
+2018-05-10T19:29:03.453Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:29:03.509Z - info: User function triggered, starting execution
+2018-05-10T19:29:03.526Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:29:03.539Z - info: User function triggered, starting execution
+2018-05-10T19:29:03.555Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:29:08.840Z - info: User function triggered, starting execution
+2018-05-10T19:29:08.857Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+P2oIVaPQW4pCqtJtU2s1
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>' } }
+TypeError: Cannot read property 'release' of undefined
+    at auth.then (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:376:41)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Execution took 2 ms, user function completed successfully
+2018-05-10T19:31:03.179Z - info: User function triggered, starting execution
+2018-05-10T19:31:03.265Z - info: Execution took 87 ms, user function completed successfully
+2018-05-10T19:31:03.460Z - info: User function triggered, starting execution
+2018-05-10T19:31:03.465Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T19:31:03.550Z - info: User function triggered, starting execution
+2018-05-10T19:31:03.559Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 3 ms, user function completed successfully
+2018-05-10T19:31:12.258Z - info: User function triggered, starting execution
+2018-05-10T19:31:12.258Z - info: P2oIVaPQW4pCqtJtU2s1
+2018-05-10T19:31:12.259Z - info: anything
+blog
+2018-05-10T19:31:12.260Z - info: P2oIVaPQW4pCqtJtU2s1
+2018-05-10T19:31:12.263Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' } }
+2018-05-10T19:31:12.266Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+TypeError: Cannot read property 'release' of undefined
+    at auth.then (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:376:41)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Execution took 7 ms, user function completed successfully
+2018-05-10T19:32:03.975Z - info: Worker for expressapp closed due to file changes.

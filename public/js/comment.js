@@ -1,16 +1,44 @@
-function stringifyComments(commentData, searchforReplies, isReplyData) {
+const db = firebase.firestore();
+db.settings({ timestampsInSnapshots: true})
+
+function launchComments(commentData,containerTyp,containerId,containerQuery,mainTyp,mainId,addInserter,searchForReplies,isReplyData,slide) {
+    content = stringifyComments(commentData,addInserter,searchForReplies,isReplyData,slide);
+    if (addInserter) content += stringifyCommentInserter(isReplyData);
+    if (addInserter) {
+        $(containerQuery).append(content);
+    } else if (!isReplyData) {
+        $(containerQuery + ' .comment-insert').before(content);
+    } else {
+        $(containerQuery + ' .comment-reply-insert').before(content);
+    }
+    addCommentListeners(commentData,containerTyp,containerId,containerQuery,mainTyp,mainId,addInserter,searchForReplies,isReplyData);
+    if (addInserter) {
+        addRealtimeCommentListeners(containerTyp, containerId, containerQuery, mainTyp, mainId, searchForReplies, isReplyData);
+    }
+    if (searchForReplies) {
+        for (var i = 0; i < commentData.length; i++) {
+            addRealtimeCommentListeners('comment', commentData[i].id, '#' + commentData[i].id + ' .comment-replies', mainTyp, mainId, false, true);
+        }
+    }
+    if (slide) {
+        for (var i = 0; i < commentData.length; i++) {
+            $('#' + commentData[i].id).slideDown(400, function(){ $(this).removeClass('hidden') });
+        }
+    }
+}
+
+function stringifyComments(commentData, addReplyHeader, searchforReplies, isReplyData, hidden) {
     var content = '';
     var replymark = '';
     if (isReplyData) replymark += '-reply';
-    if (commentData.length > 0 && isReplyData) content += '<h6>Antworten:</h6>';
+    if (commentData.length > 0 && isReplyData && addReplyHeader) content += '<h6>Antworten:</h6>';
     for (var i = 0; i < commentData.length; i++) {
         var commentAuthor = commentData[i].author.name;
         var commentRank = commentData[i].author.rank;
         var commentText = commentData[i].content;
         var commentTime = renderTime(commentData[i].time);
-        content += '<div class="comment' + replymark + '"';
-        if (!isReplyData) content += ' id="' + commentData[i].id + '"';
-        content += '>';
+        if (!hidden) content += '<div class="comment' + replymark + '" id="' + commentData[i].id + '">';
+        if (hidden) content += '<div class="comment' + replymark + ' hidden" id="' + commentData[i].id + '">';
         if (!isReplyData) content += '<div class="comment-content">';
         content += '<div class="comment' + replymark + '-info clearfix">';
         content += '<div class="comment' + replymark + '-avatar">';
@@ -34,18 +62,26 @@ function stringifyComments(commentData, searchforReplies, isReplyData) {
         content += '</div>';
         if (searchforReplies) {
             content += '<div class="comment-replies">';
-            content += stringifyComments(commentData[i].replies, false, true);
+            content += stringifyComments(commentData[i].replies, false, false, true, false) + stringifyCommentInserter(true);
             content += '</div>';
         }
         if (!isReplyData) content += '</div>';
         content += '</div>';
     }
+    return content;
+}
 
-    content += '<div class="comment' + replymark + '-insert">';
-    if (!isReplyData) content += '<textarea placeholder="Schreibe einen Kommentar..."></textarea>';
-    if (isReplyData) content += '<textarea placeholder="Auf Kommentar antworten..."></textarea>';
-    if (!isReplyData) content += '<a>Veröffentlichen</a>';
-    if (isReplyData) content += '<a>Antworten</a>';
+function stringifyCommentInserter(isReplyData) {
+    var content = '';
+    if (!isReplyData) {
+        content += '<div class="comment-insert">';
+        content += '<textarea placeholder="Schreibe einen Kommentar..."></textarea>';
+        content += '<a>Veröffentlichen</a>';
+    } else {
+        content += '<div class="comment-reply-insert">';
+        content += '<textarea placeholder="Auf Kommentar antworten..."></textarea>';
+        content += '<a>Antworten</a>';
+    }
     content += '</div>';
     return content;
 }
@@ -85,53 +121,108 @@ function renderTime(timestring) {
     return commentTime;
 }
 
-function addCommentListeners(comments, containerId, containerQuery,containerTyp,mindReplies,isReplyData) {
+function addCommentListeners(commentData,containerTyp,containerId,containerQuery,mainTyp,mainId,includeSubmit,searchForReplies,isReplyData) {
     var replymark = '';
     if (isReplyData) replymark = '-reply';
-    $(containerQuery + ' .comment' + replymark + '-insert a').click(((textQuery) => () => {
-        var content = $(textQuery).val()
-            .replace(/"/, '&quot;')
-            .replace(/'/, '&#039;')
-            .replace(/\\/g, '\\\\');
-        firebase.auth().currentUser.getIdToken(true)
-            .then(idToken => {
-                $.ajax({
-                    type: 'POST',
-                    url: '/addComment',
-                    contentType: 'application/json',
-                    data: '{ "content": "' + content + '", "typ": "' + containerTyp + '", "target": "' + containerId + '", "idToken": "' + idToken + '" }',
-                    error: (jqxhr) => { redirector(jqxhr.status) }
-                });
-            });
-    })(containerQuery + ' .comment' + replymark + '-insert textarea'));
-    for (var i = 0; i < comments.length; i++) {
-        if (mindReplies) $('#' + comments[i].id + ' .comment' + replymark + '-controll-reply').click(((id) => () => {
+    if (includeSubmit) {
+        $(containerQuery + ' .comment' + replymark + '-insert a').click(((textQuery) => () => {
+            if ($(textQuery).attr('disabled') != 'disabled') {
+                $(textQuery).attr('disabled', 'disabled');
+                var content = $(textQuery).val()
+                    .replace(/"/, '&quot;')
+                    .replace(/'/, '&#039;')
+                    .replace(/\\/g, '\\\\');
+                firebase.auth().currentUser.getIdToken(true)
+                    .then(idToken => {
+                        $.ajax({
+                            type: 'POST',
+                            url: '/addComment',
+                            contentType: 'application/json',
+                            data: '{ "idToken": "' + idToken + '", "content": "' + content + '", "containerTyp": "' + containerTyp + '", "containerId": "' + containerId + '", "mainTyp": "' + mainTyp + '", "mainId": "' + mainId + '" }',
+                            //error: (jqxhr) => { redirector(jqxhr.status) }
+                        });
+                    });
+            }
+        })(containerQuery + ' .comment' + replymark + '-insert textarea'));
+    }
+    for (var i = 0; i < commentData.length; i++) {
+        if (searchForReplies) $('#' + commentData[i].id + ' .comment' + replymark + '-controll-reply').click(((id) => () => {
             $('#' + id + ' .comment-reply-insert').slideToggle();
-        })(comments[i].id));
-        $('#' + comments[i].id + ' .comment' + replymark + '-controll-report').click(((id,content) => () => {
+        })(commentData[i].id));
+        $('#' + commentData[i].id + ' .comment' + replymark + '-controll>.comment-controll-report').click(((id) => () => {
             firebase.auth().currentUser.getIdToken(true)
                 .then((idToken) => {
                     $.ajax({
                         type: 'POST',
                         url: '/reportComment',
                         contentType: 'application/json',
-                        data: '{ "id": "' + id + '", "url": "' + window.location.href + '", "content": "' + content + '", "idToken": "' + idToken + '" }',
+                        data: '{ "idToken": "' + idToken + '", "commentId": "' + id + '", "containerTyp": "' + containerTyp + '", "containerId": "' + containerId + '", "mainTyp": "' + mainTyp + '", "mainId": "' + mainId + '", "link": "' + window.location.href + '" }',
                         error: (jqxhr) => { redirector(jqxhr.status) }
                     });
+                    alert('Report sent.');
                 });
-        })(comments[i].id,comments[i].content));
-        $('#' + comments[i].id + ' .comment' + replymark + '-controll-delete').click(((id,typ,source) => () => {
+            $('#' + id + ' .comment' + replymark + '-controll>.comment-controll-report').off();
+        })(commentData[i].id));
+        $('#' + commentData[i].id + ' .comment' + replymark + '-controll>.comment-controll-delete').click(((id) => () => {
+            $('#' + id + ' .comment' + replymark + '-controll a').off();
             firebase.auth().currentUser.getIdToken(true)
                 .then((idToken) => {
                     $.ajax({
                         type: 'POST',
                         url: '/deleteComment',
                         contentType: 'application/json',
-                        data: '{ "id": "' + id + '", "typ": "' + typ + '", "source": "' + source + '", "idToken": "' + idToken + '" }',
+                        data: '{ "id": "' + id + '", "typ": "' + containerTyp + '", "source": "' + containerId + '", "idToken": "' + idToken + '" }',
                         error: (jqxhr) => { redirector(jqxhr.status) }
                     });
                 });
-        })(comments[i].id,containerTyp,containerId));
-        if (mindReplies) addCommentListeners(comments[i].replies, comments[i].id, '#' + comments[i].id, 'comment', false, true);
+        })(commentData[i].id));
+        if (searchForReplies) addCommentListeners(commentData[i].replies, 'comment', commentData[i].id, '#' + commentData[i].id, mainTyp, mainId, true, false, true);
     }
+}
+
+function addRealtimeCommentListeners(containerTyp, containerId, containerQuery, mainTyp, mainId, searchForReplies, isReplyData) {
+    var reference;
+    if (containerTyp == 'blog') {
+        reference = 'Blogentries';
+    } else if (containerTyp == 'media') {
+        reference = 'Media';
+    } else if (containerTyp == 'status') {
+        reference = 'StatusUpdates';
+    } else if (containerTyp == 'comment') {
+        reference = 'Comments';
+    }
+    db.collection(reference).doc(containerId).onSnapshot((doc) => {
+        var globalcomments;
+        if (containerTyp != 'comment') {
+            globalcomments = doc.data().Comments;
+        } else {
+            globalcomments = doc.data().replies;
+        }
+        for (var i = 0; i < globalcomments.length; i++) {
+            if (document.getElementById(globalcomments[i]) == null) {
+                firebase.auth().currentUser.getIdToken(true)
+                    .then(((id) => (idToken) => {
+                        $.ajax({
+                            type: 'POST',
+                            url: '/getCommentData',
+                            contentType: 'application/json',
+                            data: '{ "idToken": "' + idToken + '", "commentId": "' + id + '", "containerTyp": "' + containerTyp + '", "mainTyp": "' + mainTyp + '", "mainId": "' + mainId + '" }',
+                            error: (jqxhr) => { redirector(jqxhr.status) },
+                            success: (data) => {
+                                launchComments([data],containerTyp,containerId,containerQuery,mainTyp,mainId,false,searchForReplies,isReplyData,true);
+                                if ($(containerQuery + '>div>textarea').attr('disabled') == 'disabled') {
+                                    $(containerQuery + '>div>textarea').val('').removeAttr('disabled');
+                                }
+                            }
+                        });
+                    })(globalcomments[i]));
+            }
+        }
+        var localcomments = document.querySelector(containerQuery).childNodes;
+        for (var i = 0; i < localcomments.length; i++) {
+            if (localcomments[i].id != '' && globalcomments.indexOf(localcomments[i].id) == -1) {
+                $('#' + localcomments[i].id).slideUp(400,function(){ $(this).remove() });
+            }
+        }
+    });
 }

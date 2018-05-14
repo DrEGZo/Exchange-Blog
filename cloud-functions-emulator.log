@@ -15384,3 +15384,3317 @@ Execution took 1 ms, user function completed successfully
 2018-04-30T20:22:51.204Z - info: Execution took 2 ms, user function completed successfully
 2018-04-30T20:22:51.441Z - info: User function triggered, starting execution
 2018-04-30T20:22:51.446Z - info: Execution took 4 ms, user function completed successfully
+2018-05-08T21:09:08.250Z - info: User function triggered, starting execution
+2018-05-08T21:09:08.272Z - info: Execution took 8 ms, user function completed successfully
+2018-05-08T21:09:12.985Z - info: User function triggered, starting execution
+2018-05-08T21:09:12.990Z - info: Execution took 5 ms, user function completed successfully
+2018-05-08T21:09:17.711Z - info: User function triggered, starting execution
+2018-05-08T21:09:17.712Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:09:17.960Z - info: User function triggered, starting execution
+2018-05-08T21:09:17.962Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:09:18.538Z - info: User function triggered, starting execution
+2018-05-08T21:09:18.635Z - info: Execution took 96 ms, user function completed successfully
+2018-05-08T21:09:18.837Z - info: User function triggered, starting execution
+2018-05-08T21:09:18.842Z - info: Execution took 4 ms, user function completed successfully
+2018-05-08T21:10:15.569Z - info: User function triggered, starting execution
+2018-05-08T21:10:15.573Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:11:17.220Z - info: User function triggered, starting execution
+2018-05-08T21:11:17.223Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:11:19.568Z - info: User function triggered, starting execution
+2018-05-08T21:11:19.570Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:11:19.969Z - info: User function triggered, starting execution
+2018-05-08T21:11:19.971Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:11:20.807Z - info: User function triggered, starting execution
+2018-05-08T21:11:20.816Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:11:21.066Z - info: User function triggered, starting execution
+2018-05-08T21:11:21.070Z - info: Execution took 3 ms, user function completed successfully
+2018-05-08T21:11:24.066Z - info: User function triggered, starting execution
+2018-05-08T21:11:24.075Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:11:24.317Z - info: User function triggered, starting execution
+2018-05-08T21:11:24.320Z - info: Execution took 3 ms, user function completed successfully
+2018-05-08T21:11:25.971Z - info: User function triggered, starting execution
+2018-05-08T21:11:25.975Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:11:26.422Z - info: User function triggered, starting execution
+2018-05-08T21:11:26.425Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:11:27.011Z - info: User function triggered, starting execution
+2018-05-08T21:11:27.016Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:11:27.214Z - info: User function triggered, starting execution
+2018-05-08T21:11:27.217Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:11:27.636Z - info: User function triggered, starting execution
+2018-05-08T21:11:27.671Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 4 ms, user function completed successfully
+2018-05-08T21:20:57.281Z - info: User function triggered, starting execution
+2018-05-08T21:20:57.291Z - info: Execution took 10 ms, user function completed successfully
+2018-05-08T21:20:58.312Z - info: User function triggered, starting execution
+2018-05-08T21:20:58.403Z - info: Execution took 89 ms, user function completed successfully
+2018-05-08T21:20:58.598Z - info: User function triggered, starting execution
+2018-05-08T21:20:58.602Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:20:58.674Z - info: User function triggered, starting execution
+2018-05-08T21:20:58.701Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:20:58.743Z - info: User function triggered, starting execution
+2018-05-08T21:20:58.745Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:23:31.734Z - info: User function triggered, starting execution
+2018-05-08T21:23:31.736Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:23:32.264Z - info: User function triggered, starting execution
+2018-05-08T21:23:32.269Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:23:32.952Z - info: User function triggered, starting execution
+2018-05-08T21:23:32.954Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:23:33.140Z - info: User function triggered, starting execution
+2018-05-08T21:23:33.143Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:23:33.213Z - info: User function triggered, starting execution
+2018-05-08T21:23:33.215Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:23:33.218Z - info: User function triggered, starting execution
+2018-05-08T21:23:33.228Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:26:30.164Z - info: User function triggered, starting execution
+2018-05-08T21:26:30.185Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:26:30.819Z - info: User function triggered, starting execution
+2018-05-08T21:26:30.821Z - info: Execution took 0 ms, user function completed successfully
+2018-05-08T21:26:31.469Z - info: User function triggered, starting execution
+2018-05-08T21:26:31.473Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:26:31.666Z - info: User function triggered, starting execution
+2018-05-08T21:26:31.668Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:26:31.910Z - info: User function triggered, starting execution
+2018-05-08T21:26:31.916Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:26:31.929Z - info: User function triggered, starting execution
+2018-05-08T21:26:31.934Z - info: Execution took 3 ms, user function completed successfully
+2018-05-08T21:27:25.534Z - info: User function triggered, starting execution
+2018-05-08T21:27:25.588Z - info: Execution took 0 ms, user function completed successfully
+2018-05-08T21:27:26.232Z - info: User function triggered, starting execution
+2018-05-08T21:27:26.240Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:27:26.899Z - info: User function triggered, starting execution
+2018-05-08T21:27:26.906Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:27:27.105Z - info: User function triggered, starting execution
+2018-05-08T21:27:27.108Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:27:27.181Z - info: User function triggered, starting execution
+2018-05-08T21:27:27.184Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:27:27.195Z - info: User function triggered, starting execution
+2018-05-08T21:27:27.197Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T21:27:50.894Z - info: User function triggered, starting execution
+2018-05-08T21:27:50.896Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:27:52.909Z - info: User function triggered, starting execution
+2018-05-08T21:27:52.912Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:27:53.109Z - info: User function triggered, starting execution
+2018-05-08T21:27:53.276Z - info: Execution took 167 ms, user function completed successfully
+2018-05-08T21:29:09.314Z - info: User function triggered, starting execution
+2018-05-08T21:29:09.317Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:29:09.501Z - info: User function triggered, starting execution
+2018-05-08T21:29:09.504Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T21:29:09.748Z - info: User function triggered, starting execution
+2018-05-08T21:29:09.757Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:10:33.090Z - info: User function triggered, starting execution
+2018-05-08T22:10:33.142Z - info: Execution took 49 ms, user function completed successfully
+2018-05-08T22:10:35.481Z - info: User function triggered, starting execution
+2018-05-08T22:10:36.531Z - info: Execution took 1049 ms, user function completed successfully
+2018-05-08T22:10:36.720Z - info: User function triggered, starting execution
+2018-05-08T22:10:36.732Z - info: Execution took 10 ms, user function completed successfully
+2018-05-08T22:10:36.962Z - info: User function triggered, starting execution
+2018-05-08T22:10:36.967Z - info: Execution took 3 ms, user function completed successfully
+2018-05-08T22:10:38.094Z - info: User function triggered, starting execution
+2018-05-08T22:10:38.098Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:10:38.569Z - info: User function triggered, starting execution
+2018-05-08T22:10:38.572Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:10:38.818Z - info: User function triggered, starting execution
+2018-05-08T22:10:38.825Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:11:25.354Z - info: User function triggered, starting execution
+2018-05-08T22:11:25.358Z - info: Execution took 3 ms, user function completed successfully
+2018-05-08T22:11:27.277Z - info: User function triggered, starting execution
+2018-05-08T22:11:27.282Z - info: Execution took 4 ms, user function completed successfully
+2018-05-08T22:11:27.976Z - info: User function triggered, starting execution
+2018-05-08T22:11:27.977Z - info: Execution took 0 ms, user function completed successfully
+2018-05-08T22:11:29.139Z - info: User function triggered, starting execution
+2018-05-08T22:11:29.142Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:11:30.171Z - info: User function triggered, starting execution
+2018-05-08T22:11:30.174Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:11:30.405Z - info: User function triggered, starting execution
+2018-05-08T22:11:30.411Z - info: Execution took 4 ms, user function completed successfully
+2018-05-08T22:11:32.089Z - info: User function triggered, starting execution
+2018-05-08T22:11:32.094Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:11:32.491Z - info: User function triggered, starting execution
+2018-05-08T22:11:32.496Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:11:33.061Z - info: User function triggered, starting execution
+2018-05-08T22:11:33.064Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:11:33.278Z - info: User function triggered, starting execution
+2018-05-08T22:11:33.281Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:11:33.652Z - info: User function triggered, starting execution
+2018-05-08T22:11:33.656Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:11:33.659Z - info: User function triggered, starting execution
+2018-05-08T22:11:33.662Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:11:54.023Z - info: User function triggered, starting execution
+2018-05-08T22:11:54.025Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:11:54.219Z - info: User function triggered, starting execution
+2018-05-08T22:11:54.223Z - info: Execution took 3 ms, user function completed successfully
+2018-05-08T22:11:54.574Z - info: User function triggered, starting execution
+2018-05-08T22:11:54.577Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:11:54.580Z - info: User function triggered, starting execution
+2018-05-08T22:11:54.582Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:12:19.490Z - info: User function triggered, starting execution
+2018-05-08T22:12:19.787Z - info: Execution took 296 ms, user function completed successfully
+2018-05-08T22:13:47.666Z - info: User function triggered, starting execution
+2018-05-08T22:13:47.669Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:13:47.880Z - info: User function triggered, starting execution
+2018-05-08T22:13:47.883Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:13:48.262Z - info: User function triggered, starting execution
+2018-05-08T22:13:48.266Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:13:48.269Z - info: User function triggered, starting execution
+2018-05-08T22:13:48.272Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:14:16.409Z - info: User function triggered, starting execution
+2018-05-08T22:14:16.411Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:14:16.602Z - info: User function triggered, starting execution
+2018-05-08T22:14:16.605Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:14:16.969Z - info: User function triggered, starting execution
+2018-05-08T22:14:16.973Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:14:16.977Z - info: User function triggered, starting execution
+2018-05-08T22:14:16.984Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:14:27.213Z - info: User function triggered, starting execution
+2018-05-08T22:14:27.215Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:14:27.422Z - info: User function triggered, starting execution
+2018-05-08T22:14:27.425Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:14:27.496Z - info: User function triggered, starting execution
+2018-05-08T22:14:27.517Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:14:27.525Z - info: User function triggered, starting execution
+2018-05-08T22:14:27.527Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:15:28.728Z - info: User function triggered, starting execution
+2018-05-08T22:15:28.730Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:15:30.375Z - info: User function triggered, starting execution
+2018-05-08T22:15:30.377Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:15:30.869Z - info: User function triggered, starting execution
+2018-05-08T22:15:30.871Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:15:31.120Z - info: User function triggered, starting execution
+2018-05-08T22:15:31.122Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:15:52.907Z - info: User function triggered, starting execution
+2018-05-08T22:15:53.186Z - info: Execution took 279 ms, user function completed successfully
+2018-05-08T22:16:30.393Z - info: User function triggered, starting execution
+2018-05-08T22:16:30.399Z - info: Execution took 6 ms, user function completed successfully
+2018-05-08T22:16:31.075Z - info: User function triggered, starting execution
+2018-05-08T22:16:31.078Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:16:31.261Z - info: User function triggered, starting execution
+2018-05-08T22:16:31.264Z - info: Execution took 2 ms, user function completed successfully
+2018-05-08T22:16:31.470Z - info: User function triggered, starting execution
+2018-05-08T22:16:31.473Z - info: Execution took 3 ms, user function completed successfully
+2018-05-08T22:16:32.078Z - info: User function triggered, starting execution
+2018-05-08T22:16:32.080Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:16:35.169Z - info: User function triggered, starting execution
+2018-05-08T22:16:35.170Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:16:40.154Z - info: User function triggered, starting execution
+2018-05-08T22:16:40.156Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:16:45.173Z - info: User function triggered, starting execution
+2018-05-08T22:16:45.175Z - info: Execution took 0 ms, user function completed successfully
+2018-05-08T22:16:50.492Z - info: User function triggered, starting execution
+2018-05-08T22:16:50.493Z - info: Execution took 1 ms, user function completed successfully
+2018-05-08T22:16:55.510Z - info: User function triggered, starting execution
+2018-05-08T22:16:55.512Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:33:32.951Z - info: User function triggered, starting execution
+2018-05-10T19:33:33.035Z - info: Execution took 85 ms, user function completed successfully
+2018-05-10T19:33:33.229Z - info: User function triggered, starting execution
+2018-05-10T19:33:33.232Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:33:33.368Z - info: User function triggered, starting execution
+2018-05-10T19:33:33.374Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:33:33.377Z - info: User function triggered, starting execution
+2018-05-10T19:33:33.380Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:33:42.494Z - info: User function triggered, starting execution
+2018-05-10T19:33:42.497Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:33:42.747Z - info: User function triggered, starting execution
+2018-05-10T19:33:42.749Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:33:42.921Z - info: User function triggered, starting execution
+2018-05-10T19:33:42.924Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T19:33:42.949Z - info: User function triggered, starting execution
+2018-05-10T19:33:42.951Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:33:46.901Z - info: User function triggered, starting execution
+2018-05-10T19:33:46.915Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+P2oIVaPQW4pCqtJtU2s1
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 6 ms, user function completed successfully
+2018-05-10T19:34:45.199Z - info: User function triggered, starting execution
+2018-05-10T19:34:45.201Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:34:45.381Z - info: User function triggered, starting execution
+2018-05-10T19:34:45.383Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:34:45.465Z - info: User function triggered, starting execution
+2018-05-10T19:34:45.469Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T19:34:45.471Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:34:53.767Z - info: User function triggered, starting execution
+2018-05-10T19:34:53.770Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:34:53.968Z - info: User function triggered, starting execution
+2018-05-10T19:34:53.972Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:34:54.074Z - info: User function triggered, starting execution
+2018-05-10T19:34:54.076Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:34:54.079Z - info: User function triggered, starting execution
+2018-05-10T19:34:54.082Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:34:58.446Z - info: User function triggered, starting execution
+2018-05-10T19:34:58.448Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+P2oIVaPQW4pCqtJtU2s1
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T19:34:58.451Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T19:36:13.422Z - info: User function triggered, starting execution
+2018-05-10T19:36:13.426Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T19:36:13.666Z - info: User function triggered, starting execution
+2018-05-10T19:36:13.669Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:36:13.881Z - info: User function triggered, starting execution
+2018-05-10T19:36:13.884Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T19:36:13.888Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:36:25.463Z - info: User function triggered, starting execution
+2018-05-10T19:36:25.466Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:36:25.652Z - info: User function triggered, starting execution
+2018-05-10T19:36:25.656Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:36:25.729Z - info: User function triggered, starting execution
+2018-05-10T19:36:25.732Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:36:25.770Z - info: User function triggered, starting execution
+2018-05-10T19:36:25.773Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:37:07.353Z - info: User function triggered, starting execution
+2018-05-10T19:37:07.355Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:37:07.528Z - info: User function triggered, starting execution
+2018-05-10T19:37:07.530Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:37:07.593Z - info: User function triggered, starting execution
+2018-05-10T19:37:07.596Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T19:37:07.599Z - info: User function triggered, starting execution
+2018-05-10T19:37:07.602Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:37:20.851Z - info: User function triggered, starting execution
+2018-05-10T19:37:20.851Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+2018-05-10T19:37:20.852Z - info: P2oIVaPQW4pCqtJtU2s1
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T19:37:20.854Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:40:14.196Z - info: User function triggered, starting execution
+2018-05-10T19:40:14.198Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:40:14.398Z - info: User function triggered, starting execution
+2018-05-10T19:40:14.404Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:40:14.479Z - info: User function triggered, starting execution
+Execution took 1 ms, user function completed successfully
+2018-05-10T19:40:14.484Z - info: User function triggered, starting execution
+2018-05-10T19:40:14.486Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:40:16.743Z - info: User function triggered, starting execution
+2018-05-10T19:40:16.746Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:40:16.926Z - info: User function triggered, starting execution
+2018-05-10T19:40:16.928Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:40:16.989Z - info: User function triggered, starting execution
+2018-05-10T19:40:16.995Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:40:17.004Z - info: User function triggered, starting execution
+2018-05-10T19:40:17.008Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:40:22.580Z - info: User function triggered, starting execution
+2018-05-10T19:40:22.581Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+P2oIVaPQW4pCqtJtU2s1
+2018-05-10T19:40:22.583Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T19:43:07.541Z - info: User function triggered, starting execution
+2018-05-10T19:43:07.544Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:43:07.736Z - info: User function triggered, starting execution
+2018-05-10T19:43:07.738Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:43:07.799Z - info: User function triggered, starting execution
+2018-05-10T19:43:07.801Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:43:07.805Z - info: User function triggered, starting execution
+2018-05-10T19:43:07.810Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:43:20.459Z - info: User function triggered, starting execution
+2018-05-10T19:43:20.461Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:43:20.644Z - info: User function triggered, starting execution
+2018-05-10T19:43:20.646Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:43:20.696Z - info: User function triggered, starting execution
+2018-05-10T19:43:20.698Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:43:20.701Z - info: User function triggered, starting execution
+2018-05-10T19:43:20.708Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:45:34.962Z - info: User function triggered, starting execution
+2018-05-10T19:45:34.965Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:45:35.138Z - info: User function triggered, starting execution
+2018-05-10T19:45:35.140Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:45:35.217Z - info: User function triggered, starting execution
+2018-05-10T19:45:35.223Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:45:35.228Z - info: User function triggered, starting execution
+2018-05-10T19:45:35.230Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:47:12.622Z - info: User function triggered, starting execution
+2018-05-10T19:47:12.624Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:47:12.820Z - info: User function triggered, starting execution
+2018-05-10T19:47:12.828Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:47:12.921Z - info: User function triggered, starting execution
+2018-05-10T19:47:12.923Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T19:47:12.925Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:48:03.484Z - info: User function triggered, starting execution
+2018-05-10T19:48:03.487Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:48:03.667Z - info: User function triggered, starting execution
+2018-05-10T19:48:03.669Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:48:03.765Z - info: User function triggered, starting execution
+2018-05-10T19:48:03.767Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T19:48:03.769Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:48:56.586Z - info: User function triggered, starting execution
+2018-05-10T19:48:56.589Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:48:56.774Z - info: User function triggered, starting execution
+2018-05-10T19:48:56.776Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:48:56.854Z - info: User function triggered, starting execution
+2018-05-10T19:48:56.856Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:48:56.863Z - info: User function triggered, starting execution
+2018-05-10T19:48:56.865Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:49:00.412Z - info: User function triggered, starting execution
+2018-05-10T19:49:00.413Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+2018-05-10T19:49:00.414Z - info: P2oIVaPQW4pCqtJtU2s1
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+2018-05-10T19:49:00.416Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 3 ms, user function completed successfully
+2018-05-10T19:54:22.757Z - info: User function triggered, starting execution
+2018-05-10T19:54:22.760Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:54:22.956Z - info: User function triggered, starting execution
+2018-05-10T19:54:22.960Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:54:23.049Z - info: User function triggered, starting execution
+2018-05-10T19:54:23.053Z - info: Execution took 3 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T19:54:23.055Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:55:23.891Z - info: User function triggered, starting execution
+2018-05-10T19:55:23.894Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:55:24.128Z - info: User function triggered, starting execution
+2018-05-10T19:55:24.130Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:55:24.398Z - info: User function triggered, starting execution
+2018-05-10T19:55:24.400Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:55:24.519Z - info: User function triggered, starting execution
+2018-05-10T19:55:24.523Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:56:44.820Z - info: User function triggered, starting execution
+2018-05-10T19:56:44.823Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T19:56:45.073Z - info: User function triggered, starting execution
+2018-05-10T19:56:45.076Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:56:45.218Z - info: User function triggered, starting execution
+2018-05-10T19:56:45.220Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T19:56:45.237Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:57:52.932Z - info: User function triggered, starting execution
+2018-05-10T19:57:52.935Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:57:53.154Z - info: User function triggered, starting execution
+2018-05-10T19:57:53.158Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T19:57:53.264Z - info: User function triggered, starting execution
+2018-05-10T19:57:53.297Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 1 ms, user function completed successfully
+2018-05-10T19:58:34.103Z - info: User function triggered, starting execution
+2018-05-10T19:58:34.104Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+2018-05-10T19:58:34.106Z - info: P2oIVaPQW4pCqtJtU2s1
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:02:53.734Z - info: User function triggered, starting execution
+2018-05-10T20:02:53.737Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:02:53.914Z - info: User function triggered, starting execution
+2018-05-10T20:02:53.916Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:02:53.980Z - info: User function triggered, starting execution
+2018-05-10T20:02:53.999Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:02:54.004Z - info: User function triggered, starting execution
+2018-05-10T20:02:54.026Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:05:37.644Z - info: User function triggered, starting execution
+2018-05-10T20:05:37.647Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T20:05:39.570Z - info: User function triggered, starting execution
+2018-05-10T20:05:39.574Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:05:39.795Z - info: User function triggered, starting execution
+2018-05-10T20:05:39.797Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:05:39.899Z - info: User function triggered, starting execution
+2018-05-10T20:05:39.902Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T20:05:39.904Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:05:50.137Z - info: User function triggered, starting execution
+2018-05-10T20:05:50.138Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+2018-05-10T20:05:50.143Z - info: P2oIVaPQW4pCqtJtU2s1
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:06:31.528Z - info: User function triggered, starting execution
+2018-05-10T20:06:31.530Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:06:31.780Z - info: User function triggered, starting execution
+2018-05-10T20:06:31.782Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:06:31.901Z - info: User function triggered, starting execution
+2018-05-10T20:06:31.904Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T20:06:31.907Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:06:40.307Z - info: User function triggered, starting execution
+2018-05-10T20:06:40.315Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+P2oIVaPQW4pCqtJtU2s1
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 1 ms, user function completed successfully
+2018-05-10T20:07:30.778Z - info: User function triggered, starting execution
+2018-05-10T20:07:30.780Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:07:30.984Z - info: User function triggered, starting execution
+2018-05-10T20:07:30.986Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:07:31.047Z - info: User function triggered, starting execution
+2018-05-10T20:07:31.081Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:07:31.086Z - info: User function triggered, starting execution
+2018-05-10T20:07:31.095Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:07:39.497Z - info: User function triggered, starting execution
+2018-05-10T20:07:39.500Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+P2oIVaPQW4pCqtJtU2s1
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 1 ms, user function completed successfully
+2018-05-10T20:08:56.043Z - info: User function triggered, starting execution
+2018-05-10T20:08:56.045Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:08:56.242Z - info: User function triggered, starting execution
+2018-05-10T20:08:56.244Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:08:56.309Z - info: User function triggered, starting execution
+2018-05-10T20:08:56.312Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:08:56.313Z - info: User function triggered, starting execution
+2018-05-10T20:08:56.315Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:09:04.686Z - info: User function triggered, starting execution
+2018-05-10T20:09:04.687Z - info: P2oIVaPQW4pCqtJtU2s1
+anything
+blog
+2018-05-10T20:09:04.687Z - info: P2oIVaPQW4pCqtJtU2s1
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  P2oIVaPQW4pCqtJtU2s1: 
+   { time: 2018-05-10T18:26:35.383Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T20:09:04.689Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:12:13.455Z - info: User function triggered, starting execution
+2018-05-10T20:12:13.464Z - info: Execution took 7 ms, user function completed successfully
+2018-05-10T20:12:13.652Z - info: User function triggered, starting execution
+2018-05-10T20:12:13.663Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:12:13.771Z - info: User function triggered, starting execution
+2018-05-10T20:12:13.792Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:12:13.798Z - info: User function triggered, starting execution
+2018-05-10T20:12:13.801Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:12:26.461Z - info: User function triggered, starting execution
+2018-05-10T20:12:26.476Z - info: Execution took 14 ms, user function completed successfully
+2018-05-10T20:12:30.558Z - info: User function triggered, starting execution
+2018-05-10T20:12:30.561Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T20:12:30.771Z - info: User function triggered, starting execution
+2018-05-10T20:12:30.775Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:12:30.831Z - info: User function triggered, starting execution
+2018-05-10T20:12:30.834Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:12:30.839Z - info: User function triggered, starting execution
+2018-05-10T20:12:30.842Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:12:41.303Z - info: User function triggered, starting execution
+2018-05-10T20:12:41.306Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:12:41.487Z - info: User function triggered, starting execution
+2018-05-10T20:12:41.489Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:12:41.542Z - info: User function triggered, starting execution
+2018-05-10T20:12:41.544Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T20:12:41.546Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:12:52.632Z - info: User function triggered, starting execution
+2018-05-10T20:12:52.645Z - info: User function triggered, starting execution
+2018-05-10T20:12:52.862Z - info: Execution took 230 ms, user function completed successfully
+2018-05-10T20:12:53.426Z - info: Execution took 781 ms, user function completed successfully
+2018-05-10T20:12:54.040Z - info: User function triggered, starting execution
+2018-05-10T20:12:54.045Z - info: cbHhEV6a3EyFyvEwTs4V
+anything
+blog
+cbHhEV6a3EyFyvEwTs4V
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  vrljg7yoSR7cr9CsoMS0: 
+   { time: 2018-05-10T20:12:52.633Z,
+     content: '<p>Teeeeest</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  cbHhEV6a3EyFyvEwTs4V: 
+   { time: 2018-05-10T20:12:52.646Z,
+     content: '<p>Teeeeest</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 3 ms, user function completed successfully
+2018-05-10T20:12:54.344Z - info: User function triggered, starting execution
+2018-05-10T20:12:54.346Z - info: vrljg7yoSR7cr9CsoMS0
+anything
+blog
+vrljg7yoSR7cr9CsoMS0
+2018-05-10T20:12:54.347Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  vrljg7yoSR7cr9CsoMS0: 
+   { time: 2018-05-10T20:12:52.633Z,
+     content: '<p>Teeeeest</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  cbHhEV6a3EyFyvEwTs4V: 
+   { time: 2018-05-10T20:12:52.646Z,
+     content: '<p>Teeeeest</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:12:58.601Z - info: User function triggered, starting execution
+2018-05-10T20:12:58.606Z - info: cbHhEV6a3EyFyvEwTs4V
+anything
+blog
+cbHhEV6a3EyFyvEwTs4V
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  vrljg7yoSR7cr9CsoMS0: 
+   { time: 2018-05-10T20:12:52.633Z,
+     content: '<p>Teeeeest</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  cbHhEV6a3EyFyvEwTs4V: 
+   { time: 2018-05-10T20:12:52.646Z,
+     content: '<p>Teeeeest</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 3 ms, user function completed successfully
+2018-05-10T20:12:58.618Z - info: User function triggered, starting execution
+2018-05-10T20:12:58.626Z - info: vrljg7yoSR7cr9CsoMS0
+anything
+blog
+vrljg7yoSR7cr9CsoMS0
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  vrljg7yoSR7cr9CsoMS0: 
+   { time: 2018-05-10T20:12:52.633Z,
+     content: '<p>Teeeeest</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  cbHhEV6a3EyFyvEwTs4V: 
+   { time: 2018-05-10T20:12:52.646Z,
+     content: '<p>Teeeeest</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:13:22.083Z - info: User function triggered, starting execution
+2018-05-10T20:13:22.086Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:13:22.283Z - info: User function triggered, starting execution
+2018-05-10T20:13:22.285Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:13:22.320Z - info: User function triggered, starting execution
+2018-05-10T20:13:22.323Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:13:22.325Z - info: User function triggered, starting execution
+2018-05-10T20:13:22.326Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:13:26.739Z - info: User function triggered, starting execution
+2018-05-10T20:13:26.742Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:13:26.961Z - info: User function triggered, starting execution
+2018-05-10T20:13:26.963Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:13:27.345Z - info: User function triggered, starting execution
+2018-05-10T20:13:27.363Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:13:27.378Z - info: User function triggered, starting execution
+2018-05-10T20:13:27.382Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:13:31.873Z - info: User function triggered, starting execution
+2018-05-10T20:13:31.877Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T20:13:36.589Z - info: User function triggered, starting execution
+2018-05-10T20:13:36.592Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:13:42.374Z - info: User function triggered, starting execution
+2018-05-10T20:13:42.377Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:13:42.571Z - info: User function triggered, starting execution
+2018-05-10T20:13:42.577Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:13:42.664Z - info: User function triggered, starting execution
+2018-05-10T20:13:42.667Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:13:42.672Z - info: User function triggered, starting execution
+2018-05-10T20:13:42.701Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:13:49.298Z - info: User function triggered, starting execution
+2018-05-10T20:13:49.301Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:13:49.478Z - info: User function triggered, starting execution
+2018-05-10T20:13:49.480Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:13:49.520Z - info: User function triggered, starting execution
+2018-05-10T20:13:49.522Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T20:13:49.525Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:13:58.839Z - info: User function triggered, starting execution
+2018-05-10T20:13:58.842Z - info: User function triggered, starting execution
+2018-05-10T20:13:59.097Z - info: Execution took 259 ms, user function completed successfully
+2018-05-10T20:13:59.597Z - info: Execution took 755 ms, user function completed successfully
+2018-05-10T20:14:00.037Z - info: User function triggered, starting execution
+2018-05-10T20:14:00.038Z - info: Q4WEj924W9202DKiDg1u
+anything
+blog
+Q4WEj924W9202DKiDg1u
+2018-05-10T20:14:00.039Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  Q4WEj924W9202DKiDg1u: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.838Z,
+     content: '<p>Teeeest</p>' },
+  FKyjdlKgIvTmIIM3WuAc: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.842Z,
+     content: '<p>Teeeest</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 1 ms, user function completed successfully
+2018-05-10T20:14:00.530Z - info: User function triggered, starting execution
+2018-05-10T20:14:00.544Z - info: Q4WEj924W9202DKiDg1u
+anything
+blog
+Q4WEj924W9202DKiDg1u
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  Q4WEj924W9202DKiDg1u: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.838Z,
+     content: '<p>Teeeest</p>' },
+  FKyjdlKgIvTmIIM3WuAc: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.842Z,
+     content: '<p>Teeeest</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+FKyjdlKgIvTmIIM3WuAc
+anything
+blog
+FKyjdlKgIvTmIIM3WuAc
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  Q4WEj924W9202DKiDg1u: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.838Z,
+     content: '<p>Teeeest</p>' },
+  FKyjdlKgIvTmIIM3WuAc: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.842Z,
+     content: '<p>Teeeest</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 3 ms, user function completed successfully
+2018-05-10T20:14:06.371Z - info: User function triggered, starting execution
+2018-05-10T20:14:06.387Z - info: FKyjdlKgIvTmIIM3WuAc
+anything
+blog
+FKyjdlKgIvTmIIM3WuAc
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  Q4WEj924W9202DKiDg1u: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.838Z,
+     content: '<p>Teeeest</p>' },
+  FKyjdlKgIvTmIIM3WuAc: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.842Z,
+     content: '<p>Teeeest</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:14:06.774Z - info: User function triggered, starting execution
+2018-05-10T20:14:06.918Z - info: Q4WEj924W9202DKiDg1u
+anything
+blog
+Q4WEj924W9202DKiDg1u
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  Q4WEj924W9202DKiDg1u: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.838Z,
+     content: '<p>Teeeest</p>' },
+  FKyjdlKgIvTmIIM3WuAc: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.842Z,
+     content: '<p>Teeeest</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:14:07.010Z - info: User function triggered, starting execution
+2018-05-10T20:14:07.038Z - info: Q4WEj924W9202DKiDg1u
+anything
+blog
+Q4WEj924W9202DKiDg1u
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  Q4WEj924W9202DKiDg1u: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.838Z,
+     content: '<p>Teeeest</p>' },
+  FKyjdlKgIvTmIIM3WuAc: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:13:58.842Z,
+     content: '<p>Teeeest</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 3 ms, user function completed successfully
+2018-05-10T20:14:44.589Z - info: User function triggered, starting execution
+2018-05-10T20:14:44.591Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:14:44.783Z - info: User function triggered, starting execution
+2018-05-10T20:14:44.786Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:14:44.852Z - info: User function triggered, starting execution
+2018-05-10T20:14:44.858Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:14:44.863Z - info: User function triggered, starting execution
+2018-05-10T20:14:44.865Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:14:48.366Z - info: User function triggered, starting execution
+2018-05-10T20:14:48.368Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:14:49.454Z - info: User function triggered, starting execution
+2018-05-10T20:14:49.464Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:14:52.574Z - info: User function triggered, starting execution
+2018-05-10T20:14:52.577Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:14:52.785Z - info: User function triggered, starting execution
+2018-05-10T20:14:52.788Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:14:52.865Z - info: User function triggered, starting execution
+2018-05-10T20:14:52.869Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:14:52.874Z - info: User function triggered, starting execution
+2018-05-10T20:14:52.879Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:17:25.684Z - info: User function triggered, starting execution
+2018-05-10T20:17:25.686Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:17:25.905Z - info: User function triggered, starting execution
+2018-05-10T20:17:25.907Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:17:26.056Z - info: User function triggered, starting execution
+2018-05-10T20:17:26.058Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:17:26.097Z - info: User function triggered, starting execution
+2018-05-10T20:17:26.098Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:17:30.954Z - info: User function triggered, starting execution
+2018-05-10T20:17:31.212Z - info: Execution took 258 ms, user function completed successfully
+2018-05-10T20:17:31.995Z - info: User function triggered, starting execution
+2018-05-10T20:17:32.003Z - info: rHCgTSRsqSxgxcpEUYeo
+anything
+blog
+rHCgTSRsqSxgxcpEUYeo
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  rHCgTSRsqSxgxcpEUYeo: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:17:30.954Z,
+     content: '<p>asdasd</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:17:33.134Z - info: User function triggered, starting execution
+2018-05-10T20:17:33.134Z - info: rHCgTSRsqSxgxcpEUYeo
+anything
+blog
+2018-05-10T20:17:33.136Z - info: rHCgTSRsqSxgxcpEUYeo
+{ L4PTc7fdz5VWwzBzor3H: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ],
+     time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>' },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  rHCgTSRsqSxgxcpEUYeo: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:17:30.954Z,
+     content: '<p>asdasd</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:17:37.461Z - info: User function triggered, starting execution
+2018-05-10T20:17:37.467Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:17:37.669Z - info: User function triggered, starting execution
+2018-05-10T20:17:37.671Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:17:37.756Z - info: User function triggered, starting execution
+2018-05-10T20:17:37.815Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:17:37.893Z - info: User function triggered, starting execution
+2018-05-10T20:17:37.898Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:17:43.387Z - info: User function triggered, starting execution
+2018-05-10T20:17:43.391Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:17:46.165Z - info: User function triggered, starting execution
+2018-05-10T20:17:46.168Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:17:46.405Z - info: User function triggered, starting execution
+2018-05-10T20:17:46.409Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:17:46.508Z - info: User function triggered, starting execution
+2018-05-10T20:17:46.520Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T20:17:46.524Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:27:58.284Z - info: User function triggered, starting execution
+2018-05-10T20:27:59.255Z - info: Execution took 972 ms, user function completed successfully
+2018-05-10T20:27:59.467Z - info: User function triggered, starting execution
+2018-05-10T20:27:59.471Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T20:27:59.517Z - info: User function triggered, starting execution
+2018-05-10T20:27:59.522Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T20:27:59.525Z - info: User function triggered, starting execution
+2018-05-10T20:27:59.528Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:28:09.138Z - info: User function triggered, starting execution
+2018-05-10T20:28:09.140Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:28:09.390Z - info: User function triggered, starting execution
+2018-05-10T20:28:09.393Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:28:09.462Z - info: User function triggered, starting execution
+2018-05-10T20:28:09.466Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T20:28:09.468Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:28:11.569Z - info: User function triggered, starting execution
+2018-05-10T20:28:11.571Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:28:11.770Z - info: User function triggered, starting execution
+2018-05-10T20:28:11.771Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:28:12.114Z - info: User function triggered, starting execution
+Execution took 1 ms, user function completed successfully
+2018-05-10T20:28:12.118Z - info: User function triggered, starting execution
+2018-05-10T20:28:12.120Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:28:20.212Z - info: User function triggered, starting execution
+2018-05-10T20:28:20.471Z - info: Execution took 258 ms, user function completed successfully
+2018-05-10T20:28:21.653Z - info: User function triggered, starting execution
+2018-05-10T20:28:21.665Z - info: 1gzo6TKu3ncswS87xrnl
+anything
+blog
+1gzo6TKu3ncswS87xrnl
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' },
+  '1gzo6TKu3ncswS87xrnl': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:28:20.212Z,
+     content: '<p>asd</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 6 ms, user function completed successfully
+2018-05-10T20:28:21.906Z - info: User function triggered, starting execution
+2018-05-10T20:28:21.906Z - info: 1gzo6TKu3ncswS87xrnl
+anything
+blog
+2018-05-10T20:28:21.906Z - info: 1gzo6TKu3ncswS87xrnl
+2018-05-10T20:28:21.914Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' },
+  '1gzo6TKu3ncswS87xrnl': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T20:28:20.212Z,
+     content: '<p>asd</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:28:32.478Z - info: User function triggered, starting execution
+2018-05-10T20:28:32.482Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:28:32.676Z - info: User function triggered, starting execution
+2018-05-10T20:28:32.678Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:28:32.732Z - info: User function triggered, starting execution
+2018-05-10T20:28:32.735Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T20:28:32.737Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:28:38.850Z - info: User function triggered, starting execution
+2018-05-10T20:28:38.855Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T20:28:40.950Z - info: User function triggered, starting execution
+2018-05-10T20:28:40.954Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:28:41.157Z - info: User function triggered, starting execution
+2018-05-10T20:28:41.159Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:28:41.190Z - info: User function triggered, starting execution
+2018-05-10T20:28:41.191Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:28:41.193Z - info: User function triggered, starting execution
+2018-05-10T20:28:41.197Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:28:46.052Z - info: User function triggered, starting execution
+2018-05-10T20:28:46.064Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:28:46.290Z - info: User function triggered, starting execution
+2018-05-10T20:28:46.300Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T20:28:46.414Z - info: User function triggered, starting execution
+2018-05-10T20:28:46.416Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:28:46.422Z - info: User function triggered, starting execution
+2018-05-10T20:28:46.425Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:30:30.157Z - info: User function triggered, starting execution
+2018-05-10T20:30:30.162Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:30:30.405Z - info: User function triggered, starting execution
+2018-05-10T20:30:30.407Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:30:30.485Z - info: User function triggered, starting execution
+2018-05-10T20:30:30.487Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:30:30.489Z - info: User function triggered, starting execution
+2018-05-10T20:30:30.490Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:30:33.956Z - info: User function triggered, starting execution
+2018-05-10T20:30:33.959Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:30:34.168Z - info: User function triggered, starting execution
+2018-05-10T20:30:34.170Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:30:34.532Z - info: User function triggered, starting execution
+2018-05-10T20:30:34.534Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:30:34.535Z - info: User function triggered, starting execution
+2018-05-10T20:30:34.536Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:30:40.399Z - info: User function triggered, starting execution
+2018-05-10T20:30:40.651Z - info: Execution took 251 ms, user function completed successfully
+2018-05-10T20:30:41.790Z - info: User function triggered, starting execution
+2018-05-10T20:30:41.790Z - info: FhuFpzArxfsb1wKP1Ag5
+anything
+blog
+2018-05-10T20:30:41.791Z - info: FhuFpzArxfsb1wKP1Ag5
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' },
+  FhuFpzArxfsb1wKP1Ag5: 
+   { time: 2018-05-10T20:30:40.401Z,
+     content: '<p>asd</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+2018-05-10T20:30:41.793Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:30:48.186Z - info: User function triggered, starting execution
+2018-05-10T20:30:48.191Z - info: FhuFpzArxfsb1wKP1Ag5
+anything
+blog
+FhuFpzArxfsb1wKP1Ag5
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' },
+  FhuFpzArxfsb1wKP1Ag5: 
+   { time: 2018-05-10T20:30:40.401Z,
+     content: '<p>asd</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:31:27.898Z - info: User function triggered, starting execution
+2018-05-10T20:31:27.900Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:31:28.099Z - info: User function triggered, starting execution
+2018-05-10T20:31:28.101Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:31:28.181Z - info: User function triggered, starting execution
+2018-05-10T20:31:28.184Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:31:28.186Z - info: User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:31:33.822Z - info: User function triggered, starting execution
+2018-05-10T20:31:33.824Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:31:36.768Z - info: User function triggered, starting execution
+2018-05-10T20:31:36.771Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:31:36.963Z - info: User function triggered, starting execution
+2018-05-10T20:31:36.966Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:31:37.033Z - info: User function triggered, starting execution
+2018-05-10T20:31:37.035Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:31:37.036Z - info: User function triggered, starting execution
+2018-05-10T20:31:37.038Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:32:07.623Z - info: User function triggered, starting execution
+2018-05-10T20:32:07.644Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:32:07.902Z - info: User function triggered, starting execution
+2018-05-10T20:32:07.905Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:32:07.971Z - info: User function triggered, starting execution
+2018-05-10T20:32:07.992Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:32:07.999Z - info: User function triggered, starting execution
+2018-05-10T20:32:08.012Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:32:08.656Z - info: User function triggered, starting execution
+2018-05-10T20:32:08.658Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:32:09.303Z - info: User function triggered, starting execution
+2018-05-10T20:32:09.305Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:32:09.657Z - info: User function triggered, starting execution
+2018-05-10T20:32:09.661Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:32:09.664Z - info: User function triggered, starting execution
+2018-05-10T20:32:09.678Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:32:21.633Z - info: User function triggered, starting execution
+2018-05-10T20:32:21.878Z - info: Execution took 244 ms, user function completed successfully
+2018-05-10T20:32:22.759Z - info: User function triggered, starting execution
+2018-05-10T20:32:22.759Z - info: boUL8IWpd8sS3vwQGP0l
+anything
+blog
+2018-05-10T20:32:22.760Z - info: boUL8IWpd8sS3vwQGP0l
+2018-05-10T20:32:22.760Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' },
+  boUL8IWpd8sS3vwQGP0l: 
+   { time: 2018-05-10T20:32:21.635Z,
+     content: '<p>Heloooo</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T20:32:22.762Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:32:23.205Z - info: User function triggered, starting execution
+2018-05-10T20:32:23.206Z - info: boUL8IWpd8sS3vwQGP0l
+anything
+blog
+boUL8IWpd8sS3vwQGP0l
+2018-05-10T20:32:23.208Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' },
+  boUL8IWpd8sS3vwQGP0l: 
+   { time: 2018-05-10T20:32:21.635Z,
+     content: '<p>Heloooo</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:35:24.028Z - info: User function triggered, starting execution
+2018-05-10T20:35:24.031Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:35:24.089Z - info: User function triggered, starting execution
+2018-05-10T20:35:24.090Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:35:24.215Z - info: User function triggered, starting execution
+2018-05-10T20:35:24.216Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:35:24.275Z - info: User function triggered, starting execution
+2018-05-10T20:35:24.278Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:35:24.280Z - info: User function triggered, starting execution
+2018-05-10T20:35:24.282Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:35:24.327Z - info: User function triggered, starting execution
+2018-05-10T20:35:24.330Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:35:24.827Z - info: User function triggered, starting execution
+2018-05-10T20:35:24.859Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:35:24.876Z - info: User function triggered, starting execution
+2018-05-10T20:35:24.879Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:35:39.788Z - info: User function triggered, starting execution
+2018-05-10T20:35:40.031Z - info: Execution took 241 ms, user function completed successfully
+2018-05-10T20:35:40.968Z - info: User function triggered, starting execution
+2018-05-10T20:35:40.969Z - info: EAKIpBpvh74RiSeZjXjY
+anything
+blog
+2018-05-10T20:35:40.969Z - info: EAKIpBpvh74RiSeZjXjY
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' },
+  boUL8IWpd8sS3vwQGP0l: 
+   { time: 2018-05-10T20:32:21.635Z,
+     content: '<p>Heloooo</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  EAKIpBpvh74RiSeZjXjY: 
+   { time: 2018-05-10T20:35:39.790Z,
+     content: '<p>Bai</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T20:35:40.971Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:35:42.150Z - info: User function triggered, starting execution
+2018-05-10T20:35:42.150Z - info: EAKIpBpvh74RiSeZjXjY
+anything
+blog
+2018-05-10T20:35:42.151Z - info: EAKIpBpvh74RiSeZjXjY
+2018-05-10T20:35:42.151Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { id: 'anything', typ: 'Blogentries' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>' },
+  boUL8IWpd8sS3vwQGP0l: 
+   { time: 2018-05-10T20:32:21.635Z,
+     content: '<p>Heloooo</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  EAKIpBpvh74RiSeZjXjY: 
+   { time: 2018-05-10T20:35:39.790Z,
+     content: '<p>Bai</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T20:35:42.153Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:35:53.531Z - info: User function triggered, starting execution
+2018-05-10T20:35:53.532Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:35:56.343Z - info: User function triggered, starting execution
+2018-05-10T20:35:56.346Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:35:56.531Z - info: User function triggered, starting execution
+2018-05-10T20:35:56.533Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:35:56.595Z - info: User function triggered, starting execution
+2018-05-10T20:35:56.597Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:35:56.599Z - info: User function triggered, starting execution
+2018-05-10T20:35:56.600Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:36:00.261Z - info: User function triggered, starting execution
+2018-05-10T20:36:00.264Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:36:03.282Z - info: User function triggered, starting execution
+2018-05-10T20:36:03.285Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:36:03.484Z - info: User function triggered, starting execution
+2018-05-10T20:36:03.486Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:36:03.551Z - info: User function triggered, starting execution
+2018-05-10T20:36:03.554Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:36:03.578Z - info: User function triggered, starting execution
+2018-05-10T20:36:03.580Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:36:06.057Z - info: User function triggered, starting execution
+2018-05-10T20:36:06.060Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:36:06.257Z - info: User function triggered, starting execution
+2018-05-10T20:36:06.259Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:36:06.600Z - info: User function triggered, starting execution
+2018-05-10T20:36:06.606Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-10T20:59:17.673Z - info: User function triggered, starting execution
+2018-05-10T20:59:19.058Z - info: Execution took 1386 ms, user function completed successfully
+2018-05-10T20:59:19.561Z - info: User function triggered, starting execution
+2018-05-10T20:59:19.568Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T20:59:20.412Z - info: User function triggered, starting execution
+2018-05-10T20:59:20.414Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T20:59:20.415Z - info: User function triggered, starting execution
+2018-05-10T20:59:20.417Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:59:22.320Z - info: User function triggered, starting execution
+2018-05-10T20:59:22.322Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:59:22.656Z - info: User function triggered, starting execution
+2018-05-10T20:59:22.658Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T20:59:22.692Z - info: User function triggered, starting execution
+2018-05-10T20:59:22.696Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T20:59:22.708Z - info: User function triggered, starting execution
+2018-05-10T20:59:22.710Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T20:59:30.757Z - info: User function triggered, starting execution
+2018-05-10T20:59:31.020Z - info: Execution took 263 ms, user function completed successfully
+2018-05-10T20:59:31.910Z - info: User function triggered, starting execution
+2018-05-10T20:59:31.911Z - info: IwhOWTZBz0gM4XtEqTCh
+anything
+blog
+2018-05-10T20:59:31.912Z - info: IwhOWTZBz0gM4XtEqTCh
+2018-05-10T20:59:31.915Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  IwhOWTZBz0gM4XtEqTCh: 
+   { time: 2018-05-10T20:59:30.756Z,
+     content: '<p>as</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+2018-05-10T20:59:31.922Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 6 ms, user function completed successfully
+2018-05-10T20:59:33.132Z - info: User function triggered, starting execution
+2018-05-10T20:59:33.132Z - info: IwhOWTZBz0gM4XtEqTCh
+anything
+blog
+2018-05-10T20:59:33.133Z - info: IwhOWTZBz0gM4XtEqTCh
+2018-05-10T20:59:33.133Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  IwhOWTZBz0gM4XtEqTCh: 
+   { time: 2018-05-10T20:59:30.756Z,
+     content: '<p>as</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T20:59:33.135Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:01:27.564Z - info: User function triggered, starting execution
+2018-05-10T21:01:27.568Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:01:27.741Z - info: User function triggered, starting execution
+2018-05-10T21:01:27.743Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:01:27.804Z - info: User function triggered, starting execution
+2018-05-10T21:01:27.806Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-10T21:01:27.809Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:01:32.571Z - info: User function triggered, starting execution
+2018-05-10T21:01:32.574Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T21:01:37.058Z - info: User function triggered, starting execution
+2018-05-10T21:01:37.272Z - info: Execution took 215 ms, user function completed successfully
+2018-05-10T21:01:38.432Z - info: User function triggered, starting execution
+2018-05-10T21:01:38.433Z - info: aumTkXwdgx32x38EkIzr
+anything
+blog
+2018-05-10T21:01:38.433Z - info: aumTkXwdgx32x38EkIzr
+2018-05-10T21:01:38.435Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  aumTkXwdgx32x38EkIzr: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:01:37.058Z,
+     content: '<p>asd</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:01:38.436Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:01:38.840Z - info: User function triggered, starting execution
+2018-05-10T21:01:38.840Z - info: aumTkXwdgx32x38EkIzr
+anything
+blog
+2018-05-10T21:01:38.841Z - info: aumTkXwdgx32x38EkIzr
+2018-05-10T21:01:38.841Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  aumTkXwdgx32x38EkIzr: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:01:37.058Z,
+     content: '<p>asd</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:01:38.842Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:01:41.216Z - info: User function triggered, starting execution
+2018-05-10T21:01:41.218Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:02:04.657Z - info: User function triggered, starting execution
+2018-05-10T21:02:04.659Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:02:04.838Z - info: User function triggered, starting execution
+2018-05-10T21:02:04.840Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:02:04.916Z - info: User function triggered, starting execution
+2018-05-10T21:02:04.924Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:02:58.180Z - info: User function triggered, starting execution
+2018-05-10T21:02:58.182Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:02:58.353Z - info: User function triggered, starting execution
+2018-05-10T21:02:58.355Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:02:58.414Z - info: User function triggered, starting execution
+2018-05-10T21:02:58.431Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:02:58.444Z - info: User function triggered, starting execution
+2018-05-10T21:02:58.445Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:03:04.114Z - info: User function triggered, starting execution
+2018-05-10T21:03:04.912Z - info: Execution took 797 ms, user function completed successfully
+2018-05-10T21:03:06.089Z - info: User function triggered, starting execution
+2018-05-10T21:03:06.090Z - info: zJkVKqIbHHH4GFNIA0NB
+anything
+blog
+2018-05-10T21:03:06.090Z - info: zJkVKqIbHHH4GFNIA0NB
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  zJkVKqIbHHH4GFNIA0NB: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:04.114Z,
+     content: '<p>asdf</p>' } }
+2018-05-10T21:03:06.092Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:07.196Z - info: User function triggered, starting execution
+2018-05-10T21:03:07.196Z - info: zJkVKqIbHHH4GFNIA0NB
+anything
+blog
+2018-05-10T21:03:07.197Z - info: zJkVKqIbHHH4GFNIA0NB
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  zJkVKqIbHHH4GFNIA0NB: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:04.114Z,
+     content: '<p>asdf</p>' } }
+2018-05-10T21:03:07.198Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:09.449Z - info: User function triggered, starting execution
+2018-05-10T21:03:09.451Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:03:12.586Z - info: User function triggered, starting execution
+2018-05-10T21:03:12.591Z - info: User function triggered, starting execution
+2018-05-10T21:03:12.795Z - info: Execution took 209 ms, user function completed successfully
+2018-05-10T21:03:13.343Z - info: Execution took 752 ms, user function completed successfully
+2018-05-10T21:03:13.690Z - info: User function triggered, starting execution
+2018-05-10T21:03:13.691Z - info: nQgmna8pnQTfuAF8PRQY
+anything
+blog
+nQgmna8pnQTfuAF8PRQY
+2018-05-10T21:03:13.692Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  nQgmna8pnQTfuAF8PRQY: 
+   { time: 2018-05-10T21:03:12.585Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  z1pE3m7zQcUL6iCf9LOf: 
+   { time: 2018-05-10T21:03:12.591Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:03:13.693Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:14.392Z - info: User function triggered, starting execution
+2018-05-10T21:03:14.392Z - info: z1pE3m7zQcUL6iCf9LOf
+anything
+blog
+2018-05-10T21:03:14.393Z - info: z1pE3m7zQcUL6iCf9LOf
+2018-05-10T21:03:14.409Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  nQgmna8pnQTfuAF8PRQY: 
+   { time: 2018-05-10T21:03:12.585Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  z1pE3m7zQcUL6iCf9LOf: 
+   { time: 2018-05-10T21:03:12.591Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:14.844Z - info: User function triggered, starting execution
+2018-05-10T21:03:14.845Z - info: nQgmna8pnQTfuAF8PRQY
+anything
+blog
+2018-05-10T21:03:14.845Z - info: nQgmna8pnQTfuAF8PRQY
+2018-05-10T21:03:14.846Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  nQgmna8pnQTfuAF8PRQY: 
+   { time: 2018-05-10T21:03:12.585Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  z1pE3m7zQcUL6iCf9LOf: 
+   { time: 2018-05-10T21:03:12.591Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:03:14.847Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:15.150Z - info: User function triggered, starting execution
+2018-05-10T21:03:15.150Z - info: z1pE3m7zQcUL6iCf9LOf
+anything
+blog
+2018-05-10T21:03:15.150Z - info: z1pE3m7zQcUL6iCf9LOf
+2018-05-10T21:03:15.151Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  nQgmna8pnQTfuAF8PRQY: 
+   { time: 2018-05-10T21:03:12.585Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  z1pE3m7zQcUL6iCf9LOf: 
+   { time: 2018-05-10T21:03:12.591Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:03:15.152Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:15.189Z - info: User function triggered, starting execution
+2018-05-10T21:03:15.189Z - info: nQgmna8pnQTfuAF8PRQY
+anything
+blog
+2018-05-10T21:03:15.189Z - info: nQgmna8pnQTfuAF8PRQY
+2018-05-10T21:03:15.190Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  nQgmna8pnQTfuAF8PRQY: 
+   { time: 2018-05-10T21:03:12.585Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  z1pE3m7zQcUL6iCf9LOf: 
+   { time: 2018-05-10T21:03:12.591Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:03:15.191Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:03:19.436Z - info: User function triggered, starting execution
+2018-05-10T21:03:19.439Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:03:21.493Z - info: User function triggered, starting execution
+2018-05-10T21:03:21.497Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:03:23.926Z - info: User function triggered, starting execution
+2018-05-10T21:03:23.938Z - info: User function triggered, starting execution
+2018-05-10T21:03:23.940Z - info: User function triggered, starting execution
+2018-05-10T21:03:23.942Z - info: User function triggered, starting execution
+2018-05-10T21:03:24.143Z - info: Execution took 216 ms, user function completed successfully
+2018-05-10T21:03:24.707Z - info: Execution took 766 ms, user function completed successfully
+2018-05-10T21:03:24.727Z - info: Execution took 788 ms, user function completed successfully
+2018-05-10T21:03:24.730Z - info: Execution took 788 ms, user function completed successfully
+2018-05-10T21:03:25.008Z - info: User function triggered, starting execution
+2018-05-10T21:03:25.009Z - info: H6LyHCLuM3AeVc04V3lb
+anything
+blog
+2018-05-10T21:03:25.009Z - info: H6LyHCLuM3AeVc04V3lb
+2018-05-10T21:03:25.010Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+2018-05-10T21:03:25.011Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:25.446Z - info: User function triggered, starting execution
+2018-05-10T21:03:25.451Z - info: H6LyHCLuM3AeVc04V3lb
+anything
+blog
+H6LyHCLuM3AeVc04V3lb
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:25.461Z - info: User function triggered, starting execution
+2018-05-10T21:03:25.463Z - info: 5p7JMXfhpTFVx04vKdhx
+anything
+blog
+5p7JMXfhpTFVx04vKdhx
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:03:25.468Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:25.746Z - info: User function triggered, starting execution
+2018-05-10T21:03:25.749Z - info: BMOzBrig0IB22jCU6iRL
+anything
+blog
+BMOzBrig0IB22jCU6iRL
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:26.066Z - info: User function triggered, starting execution
+2018-05-10T21:03:26.076Z - info: KLTt6L6sT3bO7puC4SMO
+anything
+blog
+KLTt6L6sT3bO7puC4SMO
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 3 ms, user function completed successfully
+2018-05-10T21:03:26.138Z - info: User function triggered, starting execution
+2018-05-10T21:03:26.140Z - info: 5p7JMXfhpTFVx04vKdhx
+anything
+blog
+5p7JMXfhpTFVx04vKdhx
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:03:26.145Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T21:03:26.154Z - info: User function triggered, starting execution
+2018-05-10T21:03:26.155Z - info: H6LyHCLuM3AeVc04V3lb
+anything
+blog
+2018-05-10T21:03:26.156Z - info: H6LyHCLuM3AeVc04V3lb
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:03:26.163Z - info: Execution took 3 ms, user function completed successfully
+User function triggered, starting execution
+H6LyHCLuM3AeVc04V3lb
+anything
+blog
+H6LyHCLuM3AeVc04V3lb
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:26.166Z - info: User function triggered, starting execution
+2018-05-10T21:03:26.177Z - info: H6LyHCLuM3AeVc04V3lb
+anything
+blog
+H6LyHCLuM3AeVc04V3lb
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+5p7JMXfhpTFVx04vKdhx
+anything
+blog
+5p7JMXfhpTFVx04vKdhx
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 1 ms, user function completed successfully
+2018-05-10T21:03:26.385Z - info: User function triggered, starting execution
+2018-05-10T21:03:26.385Z - info: KLTt6L6sT3bO7puC4SMO
+anything
+blog
+2018-05-10T21:03:26.386Z - info: KLTt6L6sT3bO7puC4SMO
+2018-05-10T21:03:26.386Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:03:26.389Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:03:26.460Z - info: User function triggered, starting execution
+2018-05-10T21:03:26.460Z - info: BMOzBrig0IB22jCU6iRL
+anything
+blog
+2018-05-10T21:03:26.461Z - info: BMOzBrig0IB22jCU6iRL
+2018-05-10T21:03:26.461Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  H6LyHCLuM3AeVc04V3lb: 
+   { time: 2018-05-10T21:03:23.926Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '5p7JMXfhpTFVx04vKdhx': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.938Z,
+     content: '<p>asdf</p>' },
+  KLTt6L6sT3bO7puC4SMO: 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:03:23.937Z,
+     content: '<p>asdf</p>' },
+  BMOzBrig0IB22jCU6iRL: 
+   { time: 2018-05-10T21:03:23.941Z,
+     content: '<p>asdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:03:26.464Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:09:41.771Z - info: User function triggered, starting execution
+2018-05-10T21:09:41.774Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:09:41.951Z - info: User function triggered, starting execution
+2018-05-10T21:09:41.954Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:09:42.064Z - info: User function triggered, starting execution
+2018-05-10T21:09:42.116Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:09:42.183Z - info: User function triggered, starting execution
+2018-05-10T21:09:42.184Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:09:48.460Z - info: User function triggered, starting execution
+2018-05-10T21:09:48.462Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:09:50.442Z - info: User function triggered, starting execution
+2018-05-10T21:09:50.445Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:09:52.157Z - info: User function triggered, starting execution
+2018-05-10T21:09:52.168Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:09:53.732Z - info: User function triggered, starting execution
+2018-05-10T21:09:53.752Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:09:58.015Z - info: User function triggered, starting execution
+2018-05-10T21:09:58.229Z - info: Execution took 213 ms, user function completed successfully
+2018-05-10T21:09:59.320Z - info: User function triggered, starting execution
+2018-05-10T21:09:59.320Z - info: TrBZ4G3rHN3w9GYyzN6A
+anything
+blog
+2018-05-10T21:09:59.321Z - info: TrBZ4G3rHN3w9GYyzN6A
+2018-05-10T21:09:59.321Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  TrBZ4G3rHN3w9GYyzN6A: 
+   { time: 2018-05-10T21:09:58.017Z,
+     content: '<p>asgdasdfasdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:09:59.322Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:10:01.193Z - info: User function triggered, starting execution
+2018-05-10T21:10:01.194Z - info: TrBZ4G3rHN3w9GYyzN6A
+anything
+blog
+2018-05-10T21:10:01.194Z - info: TrBZ4G3rHN3w9GYyzN6A
+2018-05-10T21:10:01.195Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  TrBZ4G3rHN3w9GYyzN6A: 
+   { time: 2018-05-10T21:09:58.017Z,
+     content: '<p>asgdasdfasdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:10:01.196Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:10:05.373Z - info: User function triggered, starting execution
+2018-05-10T21:10:05.375Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:10:05.649Z - info: User function triggered, starting execution
+2018-05-10T21:10:05.651Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:10:05.697Z - info: User function triggered, starting execution
+2018-05-10T21:10:05.706Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 1 ms, user function completed successfully
+2018-05-10T21:10:11.624Z - info: User function triggered, starting execution
+2018-05-10T21:10:12.118Z - info: Execution took 489 ms, user function completed successfully
+2018-05-10T21:10:12.937Z - info: User function triggered, starting execution
+2018-05-10T21:10:12.939Z - info: 9LNTm9N2adxEU1N3kGwo
+anything
+blog
+9LNTm9N2adxEU1N3kGwo
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  TrBZ4G3rHN3w9GYyzN6A: 
+   { time: 2018-05-10T21:09:58.017Z,
+     content: '<p>asgdasdfasdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '9LNTm9N2adxEU1N3kGwo': 
+   { time: 2018-05-10T21:10:11.626Z,
+     content: '<p>adfgadg</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:10:12.941Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:10:14.141Z - info: User function triggered, starting execution
+2018-05-10T21:10:14.142Z - info: 9LNTm9N2adxEU1N3kGwo
+anything
+blog
+2018-05-10T21:10:14.142Z - info: 9LNTm9N2adxEU1N3kGwo
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  TrBZ4G3rHN3w9GYyzN6A: 
+   { time: 2018-05-10T21:09:58.017Z,
+     content: '<p>asgdasdfasdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '9LNTm9N2adxEU1N3kGwo': 
+   { time: 2018-05-10T21:10:11.626Z,
+     content: '<p>adfgadg</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+2018-05-10T21:10:14.144Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:10:16.106Z - info: User function triggered, starting execution
+2018-05-10T21:10:16.107Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:10:17.805Z - info: User function triggered, starting execution
+2018-05-10T21:10:17.808Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:19:07.542Z - info: User function triggered, starting execution
+2018-05-10T21:19:07.549Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:19:07.764Z - info: User function triggered, starting execution
+2018-05-10T21:19:07.766Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:19:07.854Z - info: User function triggered, starting execution
+2018-05-10T21:19:07.857Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:19:07.859Z - info: User function triggered, starting execution
+2018-05-10T21:19:07.861Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:19:49.582Z - info: User function triggered, starting execution
+2018-05-10T21:19:49.584Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:19:49.778Z - info: User function triggered, starting execution
+2018-05-10T21:19:49.780Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:19:49.851Z - info: User function triggered, starting execution
+2018-05-10T21:19:49.861Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:19:49.863Z - info: User function triggered, starting execution
+2018-05-10T21:19:49.866Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:19:57.813Z - info: User function triggered, starting execution
+2018-05-10T21:19:58.077Z - info: Execution took 262 ms, user function completed successfully
+2018-05-10T21:19:58.924Z - info: User function triggered, starting execution
+2018-05-10T21:19:58.924Z - info: ufsTl8ckZVEMsjuQIRsj
+anything
+blog
+2018-05-10T21:19:58.924Z - info: ufsTl8ckZVEMsjuQIRsj
+2018-05-10T21:19:58.925Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  ufsTl8ckZVEMsjuQIRsj: 
+   { time: 2018-05-10T21:19:57.813Z,
+     content: '<p>asd</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:19:58.926Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:20:00.150Z - info: User function triggered, starting execution
+2018-05-10T21:20:00.151Z - info: ufsTl8ckZVEMsjuQIRsj
+anything
+blog
+2018-05-10T21:20:00.151Z - info: ufsTl8ckZVEMsjuQIRsj
+2018-05-10T21:20:00.152Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  ufsTl8ckZVEMsjuQIRsj: 
+   { time: 2018-05-10T21:19:57.813Z,
+     content: '<p>asd</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:20:00.153Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:23:20.847Z - info: User function triggered, starting execution
+2018-05-10T21:23:20.849Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:23:21.018Z - info: User function triggered, starting execution
+2018-05-10T21:23:21.021Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:23:21.076Z - info: User function triggered, starting execution
+2018-05-10T21:23:21.082Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:23:21.092Z - info: User function triggered, starting execution
+2018-05-10T21:23:21.095Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:23:25.326Z - info: User function triggered, starting execution
+2018-05-10T21:23:25.328Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:23:30.335Z - info: User function triggered, starting execution
+2018-05-10T21:23:30.543Z - info: Execution took 208 ms, user function completed successfully
+2018-05-10T21:23:31.814Z - info: User function triggered, starting execution
+2018-05-10T21:23:31.814Z - info: 4poN350GDrIwAUO6hEYJ
+anything
+blog
+2018-05-10T21:23:31.815Z - info: 4poN350GDrIwAUO6hEYJ
+2018-05-10T21:23:31.815Z - info: { L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '4poN350GDrIwAUO6hEYJ': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:23:30.335Z,
+     content: '<p>ASDasd</p>' } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:23:31.816Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:23:32.070Z - info: User function triggered, starting execution
+2018-05-10T21:23:32.071Z - info: 4poN350GDrIwAUO6hEYJ
+anything
+blog
+4poN350GDrIwAUO6hEYJ
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  '4poN350GDrIwAUO6hEYJ': 
+   { author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [],
+     time: 2018-05-10T21:23:30.335Z,
+     content: '<p>ASDasd</p>' } }
+2018-05-10T21:23:32.073Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 1 ms, user function completed successfully
+2018-05-10T21:24:21.669Z - info: User function triggered, starting execution
+2018-05-10T21:24:21.693Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:24:21.904Z - info: User function triggered, starting execution
+2018-05-10T21:24:21.906Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:24:22.040Z - info: User function triggered, starting execution
+2018-05-10T21:24:22.076Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:24:26.964Z - info: User function triggered, starting execution
+2018-05-10T21:24:26.965Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:24:32.707Z - info: User function triggered, starting execution
+2018-05-10T21:24:32.901Z - info: Execution took 195 ms, user function completed successfully
+2018-05-10T21:24:33.756Z - info: User function triggered, starting execution
+2018-05-10T21:24:33.757Z - info: NSIMrj6LwAHsj9n9YPib
+anything
+blog
+2018-05-10T21:24:33.758Z - info: NSIMrj6LwAHsj9n9YPib
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  NSIMrj6LwAHsj9n9YPib: 
+   { time: 2018-05-10T21:24:32.708Z,
+     content: '<p>ASDasdfasdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+2018-05-10T21:24:33.759Z - info: { R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+2018-05-10T21:24:33.760Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:24:34.153Z - info: User function triggered, starting execution
+2018-05-10T21:24:34.165Z - info: NSIMrj6LwAHsj9n9YPib
+anything
+blog
+NSIMrj6LwAHsj9n9YPib
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  NSIMrj6LwAHsj9n9YPib: 
+   { time: 2018-05-10T21:24:32.708Z,
+     content: '<p>ASDasdfasdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:24:38.209Z - info: User function triggered, starting execution
+2018-05-10T21:24:38.666Z - info: Execution took 457 ms, user function completed successfully
+2018-05-10T21:24:39.710Z - info: User function triggered, starting execution
+2018-05-10T21:24:39.724Z - info: CB55quHkEDCAnzGY4lRQ
+anything
+blog
+CB55quHkEDCAnzGY4lRQ
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  NSIMrj6LwAHsj9n9YPib: 
+   { time: 2018-05-10T21:24:32.708Z,
+     content: '<p>ASDasdfasdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  CB55quHkEDCAnzGY4lRQ: 
+   { time: 2018-05-10T21:24:38.210Z,
+     content: '<p>asdfasdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:24:39.960Z - info: User function triggered, starting execution
+2018-05-10T21:24:39.961Z - info: CB55quHkEDCAnzGY4lRQ
+anything
+blog
+2018-05-10T21:24:39.963Z - info: CB55quHkEDCAnzGY4lRQ
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  NSIMrj6LwAHsj9n9YPib: 
+   { time: 2018-05-10T21:24:32.708Z,
+     content: '<p>ASDasdfasdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] },
+  CB55quHkEDCAnzGY4lRQ: 
+   { time: 2018-05-10T21:24:38.210Z,
+     content: '<p>asdfasdf</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:24:43.056Z - info: User function triggered, starting execution
+2018-05-10T21:24:43.059Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:24:44.837Z - info: User function triggered, starting execution
+2018-05-10T21:24:44.838Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:51:09.366Z - info: User function triggered, starting execution
+2018-05-10T21:51:10.353Z - info: Execution took 988 ms, user function completed successfully
+2018-05-10T21:51:10.838Z - info: User function triggered, starting execution
+2018-05-10T21:51:10.841Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:51:11.097Z - info: User function triggered, starting execution
+2018-05-10T21:51:11.111Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:51:11.215Z - info: User function triggered, starting execution
+2018-05-10T21:51:11.217Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:53:56.157Z - info: User function triggered, starting execution
+2018-05-10T21:53:56.162Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T21:53:56.359Z - info: User function triggered, starting execution
+2018-05-10T21:53:56.361Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:53:56.431Z - info: User function triggered, starting execution
+2018-05-10T21:53:56.433Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:53:56.440Z - info: User function triggered, starting execution
+2018-05-10T21:53:56.443Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:53:58.900Z - info: User function triggered, starting execution
+2018-05-10T21:53:58.928Z - info: R4MnB5E24cZw7nlHK8ye
+L4PTc7fdz5VWwzBzor3H
+blog
+R4MnB5E24cZw7nlHK8ye
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 6 ms, user function completed successfully
+2018-05-10T21:56:35.841Z - info: User function triggered, starting execution
+2018-05-10T21:56:35.843Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:56:36.035Z - info: User function triggered, starting execution
+2018-05-10T21:56:36.038Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:56:36.103Z - info: User function triggered, starting execution
+2018-05-10T21:56:36.105Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:56:36.106Z - info: User function triggered, starting execution
+2018-05-10T21:56:36.108Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:56:37.303Z - info: User function triggered, starting execution
+2018-05-10T21:56:37.304Z - info: R4MnB5E24cZw7nlHK8ye
+2018-05-10T21:56:37.308Z - info: L4PTc7fdz5VWwzBzor3H
+blog
+R4MnB5E24cZw7nlHK8ye
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:57:24.685Z - info: User function triggered, starting execution
+2018-05-10T21:57:24.687Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:57:24.891Z - info: User function triggered, starting execution
+2018-05-10T21:57:24.894Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T21:57:24.977Z - info: User function triggered, starting execution
+2018-05-10T21:57:25.004Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 1 ms, user function completed successfully
+2018-05-10T21:57:27.913Z - info: User function triggered, starting execution
+2018-05-10T21:57:27.917Z - info: R4MnB5E24cZw7nlHK8ye
+L4PTc7fdz5VWwzBzor3H
+blog
+R4MnB5E24cZw7nlHK8ye
+{ L4PTc7fdz5VWwzBzor3H: 
+   { time: 2018-05-10T15:59:08.024Z,
+     source: { typ: 'Blogentries', id: 'anything' },
+     content: '<p>Nur ein Testkommentar...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [ 'R4MnB5E24cZw7nlHK8ye' ] },
+  f7Cqyl9eLAyRauk8mkmG: 
+   { time: 2018-05-10T18:26:35.404Z,
+     content: '<p>AXX</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2',
+     replies: [] } }
+{ R4MnB5E24cZw7nlHK8ye: 
+   { time: 2018-05-10T15:59:26.387Z,
+     content: '<p>Nur eine Testantwort...</p>',
+     author: 'dEdIagLyFKNl38HXPxtgQlFIXZo2' } }
+Execution took 2 ms, user function completed successfully
+2018-05-10T21:58:42.190Z - info: User function triggered, starting execution
+2018-05-10T21:58:42.192Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:58:42.379Z - info: User function triggered, starting execution
+2018-05-10T21:58:42.380Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:58:42.490Z - info: User function triggered, starting execution
+2018-05-10T21:58:42.492Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T21:58:42.497Z - info: User function triggered, starting execution
+2018-05-10T21:58:42.501Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T22:09:37.568Z - info: User function triggered, starting execution
+2018-05-10T22:09:37.576Z - info: R4MnB5E24cZw7nlHK8ye
+L4PTc7fdz5VWwzBzor3H
+blog
+2018-05-10T22:09:38.202Z - info: User function triggered, starting execution
+2018-05-10T22:09:38.614Z - info: R4MnB5E24cZw7nlHK8ye
+2018-05-10T22:09:38.615Z - info: {}
+2018-05-10T22:09:38.615Z - info: {}
+x
+2018-05-10T22:09:38.617Z - info: Execution took 1049 ms, user function completed successfully
+2018-05-10T22:09:39.219Z - info: Execution took 1019 ms, user function completed successfully
+2018-05-10T22:09:39.412Z - info: User function triggered, starting execution
+2018-05-10T22:09:39.425Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T22:09:39.791Z - info: User function triggered, starting execution
+2018-05-10T22:09:39.798Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T22:09:39.805Z - info: User function triggered, starting execution
+2018-05-10T22:09:39.809Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T22:10:12.179Z - info: User function triggered, starting execution
+2018-05-10T22:10:12.189Z - info: Execution took 4 ms, user function completed successfully
+2018-05-10T22:12:15.088Z - info: User function triggered, starting execution
+2018-05-10T22:12:15.093Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T22:12:15.292Z - info: User function triggered, starting execution
+2018-05-10T22:12:15.302Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T22:12:15.389Z - info: User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-10T22:12:15.392Z - info: User function triggered, starting execution
+2018-05-10T22:12:15.394Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T22:12:54.189Z - info: User function triggered, starting execution
+2018-05-10T22:12:54.192Z - info: Execution took 2 ms, user function completed successfully
+2018-05-10T22:12:54.376Z - info: User function triggered, starting execution
+2018-05-10T22:12:54.378Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T22:12:54.443Z - info: User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-10T22:12:54.449Z - info: User function triggered, starting execution
+2018-05-10T22:12:54.450Z - info: Execution took 1 ms, user function completed successfully
+2018-05-10T22:13:06.476Z - info: User function triggered, starting execution
+2018-05-10T22:13:06.479Z - info: Execution took 3 ms, user function completed successfully
+2018-05-10T22:39:28.300Z - info: Worker for expressapp closed due to file changes.
+2018-05-14T20:22:42.815Z - info: User function triggered, starting execution
+2018-05-14T20:22:42.904Z - info: Execution took 90 ms, user function completed successfully
+2018-05-14T20:22:43.095Z - info: User function triggered, starting execution
+2018-05-14T20:22:43.098Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T20:22:43.151Z - info: User function triggered, starting execution
+2018-05-14T20:22:43.156Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T20:22:43.163Z - info: User function triggered, starting execution
+2018-05-14T20:22:43.166Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:08:05.877Z - info: User function triggered, starting execution
+2018-05-14T21:08:06.832Z - info: Execution took 955 ms, user function completed successfully
+2018-05-14T21:08:07.320Z - info: User function triggered, starting execution
+2018-05-14T21:08:07.324Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T21:08:07.586Z - info: User function triggered, starting execution
+2018-05-14T21:08:07.590Z - info: Execution took 4 ms, user function completed successfully
+2018-05-14T21:08:07.691Z - info: User function triggered, starting execution
+2018-05-14T21:08:07.694Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:08:21.974Z - info: User function triggered, starting execution
+2018-05-14T21:08:21.978Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T21:08:22.179Z - info: User function triggered, starting execution
+2018-05-14T21:08:22.182Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:08:22.264Z - info: User function triggered, starting execution
+2018-05-14T21:08:22.269Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:08:22.271Z - info: User function triggered, starting execution
+2018-05-14T21:08:22.276Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:08:42.707Z - info: User function triggered, starting execution
+2018-05-14T21:08:42.710Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:08:42.924Z - info: User function triggered, starting execution
+2018-05-14T21:08:42.942Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:08:43.096Z - info: User function triggered, starting execution
+2018-05-14T21:08:43.099Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:08:43.183Z - info: User function triggered, starting execution
+2018-05-14T21:08:43.185Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:10:56.230Z - info: User function triggered, starting execution
+2018-05-14T21:10:56.232Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:10:56.442Z - info: User function triggered, starting execution
+2018-05-14T21:10:56.445Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:10:56.512Z - info: User function triggered, starting execution
+2018-05-14T21:10:56.515Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:10:56.520Z - info: User function triggered, starting execution
+2018-05-14T21:10:56.525Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:12:18.710Z - info: User function triggered, starting execution
+2018-05-14T21:12:18.712Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:12:18.925Z - info: User function triggered, starting execution
+2018-05-14T21:12:18.927Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T21:12:19.013Z - info: User function triggered, starting execution
+2018-05-14T21:12:19.016Z - info: Execution took 3 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-14T21:12:19.025Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:15:15.373Z - info: User function triggered, starting execution
+2018-05-14T21:15:15.375Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:15:15.552Z - info: User function triggered, starting execution
+2018-05-14T21:15:15.554Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:15:15.626Z - info: User function triggered, starting execution
+2018-05-14T21:15:15.632Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:15:15.652Z - info: User function triggered, starting execution
+2018-05-14T21:15:15.664Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:18:46.616Z - info: User function triggered, starting execution
+2018-05-14T21:18:46.619Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:18:46.811Z - info: User function triggered, starting execution
+2018-05-14T21:18:46.856Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:18:46.940Z - info: User function triggered, starting execution
+2018-05-14T21:18:46.942Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:18:46.948Z - info: User function triggered, starting execution
+2018-05-14T21:18:46.983Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:19:08.249Z - info: User function triggered, starting execution
+2018-05-14T21:19:08.261Z - info: Execution took 12 ms, user function completed successfully
+2018-05-14T21:21:34.665Z - info: User function triggered, starting execution
+2018-05-14T21:21:35.502Z - info: Execution took 836 ms, user function completed successfully
+2018-05-14T21:21:36.101Z - info: User function triggered, starting execution
+2018-05-14T21:21:36.104Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:22:39.231Z - info: User function triggered, starting execution
+2018-05-14T21:22:39.421Z - info: Execution took 189 ms, user function completed successfully
+2018-05-14T21:24:20.576Z - info: User function triggered, starting execution
+2018-05-14T21:24:20.578Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:24:20.769Z - info: User function triggered, starting execution
+2018-05-14T21:24:20.772Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:24:20.868Z - info: User function triggered, starting execution
+2018-05-14T21:24:20.877Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 1 ms, user function completed successfully
+2018-05-14T21:25:01.030Z - info: User function triggered, starting execution
+2018-05-14T21:25:01.035Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:25:01.227Z - info: User function triggered, starting execution
+2018-05-14T21:25:01.229Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:25:01.307Z - info: User function triggered, starting execution
+2018-05-14T21:25:01.332Z - info: Execution took 1 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-14T21:26:28.623Z - info: User function triggered, starting execution
+2018-05-14T21:26:28.628Z - info: Execution took 4 ms, user function completed successfully
+2018-05-14T21:26:44.140Z - info: User function triggered, starting execution
+2018-05-14T21:26:44.143Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:26:44.322Z - info: User function triggered, starting execution
+2018-05-14T21:26:44.325Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:26:44.378Z - info: User function triggered, starting execution
+2018-05-14T21:26:44.382Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:26:44.384Z - info: User function triggered, starting execution
+2018-05-14T21:26:44.387Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:27:30.436Z - info: User function triggered, starting execution
+2018-05-14T21:27:31.245Z - info: Execution took 807 ms, user function completed successfully
+2018-05-14T21:27:31.824Z - info: User function triggered, starting execution
+2018-05-14T21:27:31.826Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:28:11.453Z - info: User function triggered, starting execution
+2018-05-14T21:28:12.259Z - info: Execution took 806 ms, user function completed successfully
+2018-05-14T21:28:12.867Z - info: User function triggered, starting execution
+2018-05-14T21:28:12.870Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:29:07.102Z - info: User function triggered, starting execution
+2018-05-14T21:29:07.104Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:29:07.274Z - info: User function triggered, starting execution
+2018-05-14T21:29:07.276Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:29:07.348Z - info: User function triggered, starting execution
+2018-05-14T21:29:07.351Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:29:07.354Z - info: User function triggered, starting execution
+2018-05-14T21:29:07.358Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:29:18.920Z - info: User function triggered, starting execution
+2018-05-14T21:29:18.923Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T21:29:26.410Z - info: User function triggered, starting execution
+2018-05-14T21:29:26.413Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:29:26.596Z - info: User function triggered, starting execution
+2018-05-14T21:29:26.599Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:29:26.678Z - info: User function triggered, starting execution
+2018-05-14T21:29:26.682Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:29:26.685Z - info: User function triggered, starting execution
+2018-05-14T21:29:26.690Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:29:51.901Z - info: User function triggered, starting execution
+2018-05-14T21:29:52.264Z - info: Execution took 362 ms, user function completed successfully
+2018-05-14T21:30:13.627Z - info: User function triggered, starting execution
+2018-05-14T21:30:13.629Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:30:13.831Z - info: User function triggered, starting execution
+2018-05-14T21:30:13.833Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:30:13.920Z - info: User function triggered, starting execution
+2018-05-14T21:30:13.926Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:30:13.940Z - info: User function triggered, starting execution
+2018-05-14T21:30:13.944Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T21:30:23.915Z - info: User function triggered, starting execution
+2018-05-14T21:30:23.917Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:30:24.101Z - info: User function triggered, starting execution
+2018-05-14T21:30:24.110Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:30:24.167Z - info: User function triggered, starting execution
+2018-05-14T21:30:24.171Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:30:24.178Z - info: User function triggered, starting execution
+2018-05-14T21:30:24.180Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:34:15.757Z - info: User function triggered, starting execution
+2018-05-14T21:34:15.759Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:34:15.946Z - info: User function triggered, starting execution
+2018-05-14T21:34:15.948Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:34:16.007Z - info: User function triggered, starting execution
+2018-05-14T21:34:16.010Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:34:16.015Z - info: User function triggered, starting execution
+2018-05-14T21:34:16.017Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:34:46.868Z - info: User function triggered, starting execution
+2018-05-14T21:34:46.871Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:34:47.053Z - info: User function triggered, starting execution
+2018-05-14T21:34:47.056Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:34:47.131Z - info: User function triggered, starting execution
+2018-05-14T21:34:47.135Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:34:47.140Z - info: User function triggered, starting execution
+2018-05-14T21:34:47.143Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:38:46.871Z - info: User function triggered, starting execution
+2018-05-14T21:38:46.873Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:38:47.060Z - info: User function triggered, starting execution
+2018-05-14T21:38:47.063Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:38:47.133Z - info: User function triggered, starting execution
+2018-05-14T21:38:47.138Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:38:47.147Z - info: User function triggered, starting execution
+2018-05-14T21:38:47.149Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:39:41.165Z - info: User function triggered, starting execution
+2018-05-14T21:39:41.167Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:40:15.349Z - info: User function triggered, starting execution
+2018-05-14T21:40:15.352Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T21:40:15.541Z - info: User function triggered, starting execution
+2018-05-14T21:40:15.543Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:40:15.615Z - info: User function triggered, starting execution
+2018-05-14T21:40:15.618Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:40:15.620Z - info: User function triggered, starting execution
+2018-05-14T21:40:15.623Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:40:35.528Z - info: User function triggered, starting execution
+2018-05-14T21:40:35.750Z - info: Execution took 222 ms, user function completed successfully
+2018-05-14T21:40:40.104Z - info: User function triggered, starting execution
+2018-05-14T21:40:40.108Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:45:59.689Z - info: Worker for expressapp closed due to file changes.
+2018-05-14T21:47:13.172Z - info: User function triggered, starting execution
+2018-05-14T21:47:13.255Z - info: Execution took 82 ms, user function completed successfully
+2018-05-14T21:47:13.434Z - info: User function triggered, starting execution
+2018-05-14T21:47:13.437Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:47:13.505Z - info: User function triggered, starting execution
+Execution took 3 ms, user function completed successfully
+2018-05-14T21:47:13.510Z - info: User function triggered, starting execution
+2018-05-14T21:47:13.519Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:48:31.198Z - info: User function triggered, starting execution
+2018-05-14T21:48:31.282Z - info: Execution took 85 ms, user function completed successfully
+2018-05-14T21:48:31.466Z - info: User function triggered, starting execution
+2018-05-14T21:48:31.471Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:48:31.550Z - info: User function triggered, starting execution
+2018-05-14T21:48:31.552Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:48:31.554Z - info: User function triggered, starting execution
+2018-05-14T21:48:31.556Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:48:39.075Z - info: User function triggered, starting execution
+2018-05-14T21:48:39.079Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:49:10.518Z - info: User function triggered, starting execution
+2018-05-14T21:49:10.522Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:49:10.706Z - info: User function triggered, starting execution
+2018-05-14T21:49:10.709Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:49:10.787Z - info: User function triggered, starting execution
+2018-05-14T21:49:10.789Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-14T21:49:10.791Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:49:17.386Z - info: User function triggered, starting execution
+2018-05-14T21:49:17.388Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:50:23.419Z - info: Worker for expressapp closed due to file changes.
+2018-05-14T21:50:58.107Z - info: User function triggered, starting execution
+2018-05-14T21:50:58.195Z - info: Execution took 88 ms, user function completed successfully
+2018-05-14T21:50:58.379Z - info: User function triggered, starting execution
+2018-05-14T21:50:58.383Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T21:50:58.438Z - info: User function triggered, starting execution
+2018-05-14T21:50:58.461Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:50:58.467Z - info: User function triggered, starting execution
+2018-05-14T21:50:58.469Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:51:03.178Z - info: User function triggered, starting execution
+2018-05-14T21:51:03.182Z - info: ReferenceError: containerId is not defined
+    at auth.then (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:213:55)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-05-14T21:51:03.183Z - info: Execution took 4 ms, user function completed successfully
+2018-05-14T21:51:53.466Z - info: Worker for expressapp closed due to file changes.
+2018-05-14T21:52:21.186Z - info: User function triggered, starting execution
+2018-05-14T21:52:21.288Z - info: Execution took 101 ms, user function completed successfully
+2018-05-14T21:52:21.576Z - info: User function triggered, starting execution
+2018-05-14T21:52:21.581Z - info: Execution took 5 ms, user function completed successfully
+2018-05-14T21:52:21.654Z - info: User function triggered, starting execution
+2018-05-14T21:52:21.657Z - info: Execution took 3 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-14T21:52:21.660Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:52:26.767Z - info: User function triggered, starting execution
+2018-05-14T21:52:27.560Z - info: Execution took 793 ms, user function completed successfully
+2018-05-14T21:52:27.972Z - info: User function triggered, starting execution
+2018-05-14T21:52:27.976Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T21:54:03.744Z - info: Worker for expressapp closed due to file changes.
+2018-05-14T21:55:02.720Z - info: User function triggered, starting execution
+2018-05-14T21:55:02.799Z - info: Execution took 79 ms, user function completed successfully
+2018-05-14T21:55:02.990Z - info: User function triggered, starting execution
+2018-05-14T21:55:02.993Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T21:55:03.050Z - info: User function triggered, starting execution
+2018-05-14T21:55:03.052Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:55:03.054Z - info: User function triggered, starting execution
+2018-05-14T21:55:03.056Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:55:09.373Z - info: User function triggered, starting execution
+2018-05-14T21:55:10.192Z - info: Execution took 818 ms, user function completed successfully
+2018-05-14T21:55:10.761Z - info: User function triggered, starting execution
+2018-05-14T21:55:10.764Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:55:17.569Z - info: User function triggered, starting execution
+2018-05-14T21:55:17.783Z - info: Execution took 213 ms, user function completed successfully
+2018-05-14T21:55:18.650Z - info: User function triggered, starting execution
+2018-05-14T21:55:18.654Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:55:18.961Z - info: User function triggered, starting execution
+2018-05-14T21:55:18.963Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:55:41.749Z - info: User function triggered, starting execution
+2018-05-14T21:55:41.752Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T21:55:41.754Z - info: User function triggered, starting execution
+2018-05-14T21:55:41.757Z - info: TypeError: Cannot read property 'author' of undefined
+    at auth.then (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:302:28)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-05-14T21:55:41.760Z - info: Execution took 4 ms, user function completed successfully
+2018-05-14T21:57:03.995Z - info: User function triggered, starting execution
+2018-05-14T21:57:04.002Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:57:04.189Z - info: User function triggered, starting execution
+2018-05-14T21:57:04.196Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:57:04.316Z - info: User function triggered, starting execution
+2018-05-14T21:57:04.330Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-14T21:57:17.397Z - info: User function triggered, starting execution
+2018-05-14T21:57:17.400Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:57:17.586Z - info: User function triggered, starting execution
+2018-05-14T21:57:17.588Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:57:17.643Z - info: User function triggered, starting execution
+2018-05-14T21:57:17.660Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:57:17.667Z - info: User function triggered, starting execution
+2018-05-14T21:57:17.669Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:57:28.713Z - info: User function triggered, starting execution
+2018-05-14T21:57:28.962Z - info: Execution took 248 ms, user function completed successfully
+2018-05-14T21:57:29.826Z - info: User function triggered, starting execution
+2018-05-14T21:57:29.829Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:59:34.510Z - info: User function triggered, starting execution
+2018-05-14T21:59:34.512Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:59:34.692Z - info: User function triggered, starting execution
+2018-05-14T21:59:34.694Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:59:34.756Z - info: User function triggered, starting execution
+2018-05-14T21:59:34.778Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T21:59:34.797Z - info: User function triggered, starting execution
+2018-05-14T21:59:34.800Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T21:59:54.336Z - info: User function triggered, starting execution
+2018-05-14T21:59:54.596Z - info: Execution took 259 ms, user function completed successfully
+2018-05-14T21:59:55.421Z - info: User function triggered, starting execution
+2018-05-14T21:59:55.424Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:00:04.069Z - info: User function triggered, starting execution
+2018-05-14T22:00:04.071Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:00:14.076Z - info: User function triggered, starting execution
+2018-05-14T22:00:14.324Z - info: Execution took 248 ms, user function completed successfully
+2018-05-14T22:00:15.512Z - info: User function triggered, starting execution
+2018-05-14T22:00:15.513Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:00:34.663Z - info: User function triggered, starting execution
+2018-05-14T22:00:34.875Z - info: Execution took 211 ms, user function completed successfully
+2018-05-14T22:00:35.926Z - info: User function triggered, starting execution
+2018-05-14T22:00:35.929Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:06:55.215Z - info: User function triggered, starting execution
+2018-05-14T22:06:55.218Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:06:55.399Z - info: User function triggered, starting execution
+2018-05-14T22:06:55.401Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:06:55.457Z - info: User function triggered, starting execution
+2018-05-14T22:06:55.461Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T22:06:55.478Z - info: User function triggered, starting execution
+2018-05-14T22:06:55.480Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:07:00.144Z - info: User function triggered, starting execution
+2018-05-14T22:07:00.384Z - info: Execution took 239 ms, user function completed successfully
+2018-05-14T22:07:01.269Z - info: User function triggered, starting execution
+2018-05-14T22:07:01.270Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:07:09.168Z - info: User function triggered, starting execution
+2018-05-14T22:07:09.401Z - info: Execution took 233 ms, user function completed successfully
+2018-05-14T22:07:10.313Z - info: User function triggered, starting execution
+2018-05-14T22:07:10.315Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:07:20.284Z - info: User function triggered, starting execution
+2018-05-14T22:07:20.532Z - info: Execution took 248 ms, user function completed successfully
+2018-05-14T22:07:21.444Z - info: User function triggered, starting execution
+2018-05-14T22:07:21.446Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:10:40.610Z - info: User function triggered, starting execution
+2018-05-14T22:10:40.614Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:10:40.814Z - info: User function triggered, starting execution
+2018-05-14T22:10:40.817Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:10:40.887Z - info: User function triggered, starting execution
+2018-05-14T22:10:40.890Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:10:40.894Z - info: User function triggered, starting execution
+2018-05-14T22:10:40.897Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:11:00.949Z - info: User function triggered, starting execution
+2018-05-14T22:11:01.202Z - info: Execution took 253 ms, user function completed successfully
+2018-05-14T22:11:02.093Z - info: User function triggered, starting execution
+2018-05-14T22:11:02.096Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:15:07.332Z - info: User function triggered, starting execution
+2018-05-14T22:15:07.334Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:15:07.574Z - info: User function triggered, starting execution
+2018-05-14T22:15:07.583Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:15:07.640Z - info: User function triggered, starting execution
+2018-05-14T22:15:07.658Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:15:07.688Z - info: User function triggered, starting execution
+2018-05-14T22:15:07.690Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:15:22.863Z - info: User function triggered, starting execution
+2018-05-14T22:15:23.111Z - info: Execution took 248 ms, user function completed successfully
+2018-05-14T22:15:24.271Z - info: User function triggered, starting execution
+2018-05-14T22:15:24.273Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:16:06.723Z - info: User function triggered, starting execution
+2018-05-14T22:16:06.725Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:16:07.066Z - info: User function triggered, starting execution
+2018-05-14T22:16:07.068Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:16:07.165Z - info: User function triggered, starting execution
+2018-05-14T22:16:07.169Z - info: Execution took 3 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-14T22:16:07.171Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:19:50.360Z - info: User function triggered, starting execution
+2018-05-14T22:19:50.364Z - info: Execution took 3 ms, user function completed successfully
+2018-05-14T22:19:50.577Z - info: User function triggered, starting execution
+2018-05-14T22:19:50.580Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:19:50.666Z - info: User function triggered, starting execution
+2018-05-14T22:19:50.670Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:19:50.682Z - info: User function triggered, starting execution
+2018-05-14T22:19:50.684Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:22:17.156Z - info: User function triggered, starting execution
+2018-05-14T22:22:17.158Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:22:17.360Z - info: User function triggered, starting execution
+2018-05-14T22:22:17.363Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:22:17.444Z - info: User function triggered, starting execution
+2018-05-14T22:22:17.446Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:22:17.452Z - info: User function triggered, starting execution
+Execution took 3 ms, user function completed successfully
+2018-05-14T22:23:29.721Z - info: User function triggered, starting execution
+2018-05-14T22:23:29.723Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:23:29.898Z - info: User function triggered, starting execution
+2018-05-14T22:23:29.901Z - info: Execution took 2 ms, user function completed successfully
+2018-05-14T22:23:29.994Z - info: User function triggered, starting execution
+2018-05-14T22:23:29.998Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:23:30.034Z - info: User function triggered, starting execution
+2018-05-14T22:23:30.041Z - info: Execution took 1 ms, user function completed successfully
+2018-05-14T22:23:42.161Z - info: User function triggered, starting execution
+2018-05-14T22:23:42.420Z - info: Execution took 259 ms, user function completed successfully
+2018-05-14T22:23:43.271Z - info: User function triggered, starting execution
+2018-05-14T22:23:43.273Z - info: Execution took 1 ms, user function completed successfully

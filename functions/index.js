@@ -185,51 +185,77 @@ app.post('/auth', (req,res) => {
 });
 
 app.post('/addComment', (req, res) => {
+  //idToken, mainTyp+Id, containerTyp+Id, content
+  var reference;
+  if (req.body.containerTyp == 'blog') {
+    reference = 'Blogentries';
+  } else if (req.body.containerTyp == 'media') {
+    reference = 'Media';
+  } else if (req.body.containerTyp == 'status') {
+    reference = 'StatusUpdates';
+  } else if (req.body.containerTyp == 'comment') {
+    reference = 'Comments';
+  }
   auth(req.body.idToken)
     .then((uid) => {
-      return new Promise((resolve,reject) => {
-        var directory;
-        var coll;
-        if (req.body.typ == 'media') {
-          directory = dbMedia;
-        } else if (req.body.typ == 'blog') {
-          directory = dbBlogentries;
-        }
-        if (uid in dbUser && req.body.target in directory) {
-          if (directory[req.body.target].Visibility.indexOf(dbUser[uid].Rank) != -1) {
-            resolve(uid);
-            return;
-          }
-        }
-        reject();
-      });
-    }).then((uid) => {
-      return db.collection('Comments').add({
+      var mainTyp = req.body.mainTyp;
+      var mainId = req.body.mainId;
+      if (mainTyp == 'blog') {
+        if (dbBlogentries[mainId].Visibility.indexOf(dbUser[uid].Rank) == -1) reject();
+      } else if (mainTyp == 'media') {
+        if (dbMedia[mainId].Visibility.indexOf(dbUser[uid].Rank) == -1) reject();
+      } else if (mainTyp == 'status') {
+        if (dbStatusUpdates[mainId].Visibility.indexOf(dbUser[uid].Rank) == -1) reject();
+      }
+      if (req.body.containerTyp == 'comment') {
+        return db.collection('CommentReplies').add({
+          author: uid,
+          content: escapeHtml(req.body.content),
+          time: new Date(),
+          source: { typ: reference, id: req.body.containerId}
+        });
+      } else {
+        return db.collection('Comments').add({
           author: uid,
           content: escapeHtml(req.body.content),
           replies: [],
-          time: new Date()
+          time: new Date(),
+          source: { typ: reference, id: req.body.containerId}
         });
-    }).then((id) => {
-      id = id.id;
-      if (req.body.typ == 'media') {
-        dbMedia[req.body.target].Comments.push(id);
-        db.collection('Media').doc(req.body.target).update({
-          Comments: dbMedia[req.body.target].Comments
+      }
+      res.status(403).end();
+    }).then((doc) => {
+      id = doc.id;
+      var containerId = req.body.containerId;
+      if (req.body.containerTyp == 'comment') {
+        dbComments[containerId].replies.push(id);
+        db.collection('Comments').doc(containerId).update({
+          replies: dbComments[containerId].replies
         });
-      } else if (req.body.typ == 'blog') {
-        dbBlogentries[req.body.target].Comments.push(id);
-        db.collection('Blogentries').doc(req.body.target).update({
-          Comments: dbBlogentries[req.body.target].Comments
+      } else if (req.body.containerTyp == 'media') {
+        dbMedia[containerId].Comments.push(id);
+        db.collection('Media').doc(containerId).update({
+          Comments: dbMedia[containerId].Comments
+        });
+      } else if (req.body.containerTyp == 'blog') {
+        dbBlogentries[containerId].Comments.push(id);
+        db.collection('Blogentries').doc(containerId).update({
+          Comments: dbBlogentries[containerId].Comments
+        });
+      } else if (req.body.containerTyp == 'status') {
+        dbStatusUpdates[containerId].Comments.push(id);
+        db.collection('StatusUpdates').doc(containerId).update({
+          Comments: dbStatusUpdates[containerId].Comments
         });
       }
       res.end();
-    }).catch(() => {
+    }).catch((err) => {
+      console.log(err)
       res.status(403).end();
     });
 });
 
-app.post('/replyToComment', (req,res) => {
+/*app.post('/replyToComment', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
       return new Promise((resolve, reject) => {
@@ -264,7 +290,7 @@ app.post('/replyToComment', (req,res) => {
     }).catch(() => {
       res.status(403).end();
     });
-});
+});*/
 
 app.post('/deleteComment', (req, res) => {
   auth(req.body.idToken)
@@ -311,6 +337,19 @@ app.post('/deleteComment', (req, res) => {
         } else {
           res.status(403).end();
         }
+      } else if (typ == 'status') {
+        if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
+          var index = dbStatusUpdates[source].Comments.indexOf(id);
+          dbStatusUpdates[source].Comments.splice(index, 1);
+          db.collection('StatusUpdates').doc(source).update({
+            Comments: dbStatusUpdates[source].Comments
+          });
+          delete dbComments[id];
+          db.collection('Comments').doc(id).delete();
+          res.end();
+        } else {
+          res.status(403).end();
+        }
       }
     }).catch((err) => {
       console.log(err);
@@ -321,13 +360,34 @@ app.post('/deleteComment', (req, res) => {
 app.post('/reportComment', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
-      var id = req.body.id;
-      var url = req.body.url;
-      var content = req.body.content;
+      var commentId = req.body.commentId;
+      var containerTyp = req.body.containerTyp;
+      var containerId = req.body.containerId;
+      var mainTyp = req.body.mainTyp;
+      var mainId = req.body.mainId;
+      var link = req.body.link;
+      var author = '';
+      var content = '';
+      var commentTyp = '';;
+      if (containerTyp == 'comment') {
+        author = dbCommentReplies[commentId].author;
+        content = dbCommentReplies[commentId].content;
+        commentTyp = 'Comment Reply';
+      } else {
+        author = dbComments[commentId].author;
+        content = dbComments[commentId].content;
+        commentTyp = 'Comment';
+      }
       var text = 'Somebody reported a comment on your blog.\n\n';
-      text += 'Reporter: ' + dbUser[uid].Name + ' (' + uid + ')\n';
-      text += 'Link: ' + url + '\n';
-      text += 'Content: ' + content;
+      text += 'Reporter: \t\t' + dbUser[uid].Name + ' (' + uid + ')\n\n';
+      text += 'Author: \t\t' + dbUser[author].Name + ' (' + author + ')\n';
+      text += 'Content: \t\t' + content + '\n\n';
+      text += 'ContainerID: \t' + containerId + '\n';
+      text += 'CommentTyp: \t' + commentTyp + '\n';
+      text += 'CommentID: \t' + commentId + '\n\n';
+      text += 'ParentTyp: \t' + mainTyp + '\n';
+      text += 'ParentID: \t\t' + mainId + '\n\n';
+      text += 'Link: \t\t' + link + '\n';
       var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -344,6 +404,55 @@ app.post('/reportComment', (req,res) => {
       transporter.sendMail(mailOptions);
       res.end();
     }).catch(() => {
+      res.status(403).end();
+    });
+});
+
+app.post('/getCommentData', (req,res) => {
+  var commentId = req.body.commentId;
+  var containerTyp = req.body.containerTyp;
+  var mainTyp = req.body.mainTyp;
+  var mainId = req.body.mainId;
+  auth(req.body.idToken)
+    .then((uid) => {
+      if ((() => {
+        if (mainTyp == 'blog') {
+          return dbBlogentries[mainId].Visibility.indexOf(dbUser[uid].Rank) != -1;
+        } else if (mainTyp == 'media') {
+          return dbMedia[mainId].Visibility.indexOf(dbUser[uid].Rank) != -1;
+        } else if (mainTyp == 'status') {
+          return dbStatusUpdates[mainId].Visibility.indexOf(dbUser[uid].Rank) != -1;
+        } else { return false }
+      })()) {
+        var datasource;
+        if (containerTyp == 'comment') {
+          datasource = dbCommentReplies;
+        } else {
+          datasource = dbComments;
+        }
+        var result = {
+          id: commentId,
+          content: datasource[commentId].content,
+          time: datasource[commentId].time,
+          replies: datasource[commentId].replies
+        };
+        var authorkey = datasource[commentId].author;
+        if (dbUser[uid].canSeeClearNames) {
+          result.author = {
+            name: dbUser[authorkey].Name,
+            rank: dbUser[authorkey].Rank
+          };
+        } else {
+          result.author = {
+            name: dbUser[authorkey].Nick,
+            rank: dbUser[authorkey].Rank
+          };
+        }
+        res.json(result);
+      } else {
+        res.status(403).end();
+      }
+    }).catch((err) => {
       res.status(403).end();
     });
 });
