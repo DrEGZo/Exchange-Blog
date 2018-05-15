@@ -196,6 +196,7 @@ app.post('/addComment', (req, res) => {
   } else if (req.body.containerTyp == 'comment') {
     reference = 'Comments';
   }
+  var databaseKey = createNewDatabaseKey();
   auth(req.body.idToken)
     .then((uid) => {
       var mainTyp = req.body.mainTyp;
@@ -208,42 +209,41 @@ app.post('/addComment', (req, res) => {
         if (dbStatusUpdates[mainId].Visibility.indexOf(dbUser[uid].Rank) == -1) reject();
       }
       if (req.body.containerTyp == 'comment') {
-        return db.collection('CommentReplies').add({
+        return db.collection('CommentReplies').doc(databaseKey).set({
           author: uid,
           content: escapeHtml(req.body.content),
           time: new Date(),
-          source: { typ: reference, id: req.body.containerId}
+          source: { typ: reference, id: req.body.containerId }
         });
       } else {
-        return db.collection('Comments').add({
+        return db.collection('Comments').doc(databaseKey).set({
           author: uid,
           content: escapeHtml(req.body.content),
           replies: [],
           time: new Date(),
-          source: { typ: reference, id: req.body.containerId}
+          source: { typ: reference, id: req.body.containerId }
         });
       }
       res.status(403).end();
-    }).then((doc) => {
-      id = doc.id;
+    }).then(() => {
       var containerId = req.body.containerId;
       if (req.body.containerTyp == 'comment') {
-        dbComments[containerId].replies.push(id);
+        dbComments[containerId].replies.push(databaseKey);
         db.collection('Comments').doc(containerId).update({
           replies: dbComments[containerId].replies
         });
       } else if (req.body.containerTyp == 'media') {
-        dbMedia[containerId].Comments.push(id);
+        dbMedia[containerId].Comments.push(databaseKey);
         db.collection('Media').doc(containerId).update({
           Comments: dbMedia[containerId].Comments
         });
       } else if (req.body.containerTyp == 'blog') {
-        dbBlogentries[containerId].Comments.push(id);
+        dbBlogentries[containerId].Comments.push(databaseKey);
         db.collection('Blogentries').doc(containerId).update({
           Comments: dbBlogentries[containerId].Comments
         });
       } else if (req.body.containerTyp == 'status') {
-        dbStatusUpdates[containerId].Comments.push(id);
+        dbStatusUpdates[containerId].Comments.push(databaseKey);
         db.collection('StatusUpdates').doc(containerId).update({
           Comments: dbStatusUpdates[containerId].Comments
         });
@@ -301,12 +301,17 @@ app.post('/deleteComment', (req, res) => {
       if (typ == 'blog') {
         if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
           var index = dbBlogentries[source].Comments.indexOf(id);
+          var replies = dbComments[id].replies;
           dbBlogentries[source].Comments.splice(index, 1);
           db.collection('Blogentries').doc(source).update({
             Comments: dbBlogentries[source].Comments
           });
           delete dbComments[id];
           db.collection('Comments').doc(id).delete();
+          for (var i = 0; i < replies.length; i++) {
+            delete dbCommentReplies[replies[i]];
+            db.collection('CommentReplies').doc(replies[i]).delete();
+          }
           res.end();
         } else {
           res.status(403).end();
@@ -314,12 +319,17 @@ app.post('/deleteComment', (req, res) => {
       } else if (typ == 'media') {
         if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
           var index = dbMedia[source].Comments.indexOf(id);
+          var replies = dbComments[id].replies;
           dbMedia[source].Comments.splice(index, 1);
           db.collection('Media').doc(source).update({
             Comments: dbMedia[source].Comments
           });
           delete dbComments[id];
           db.collection('Comments').doc(id).delete();
+          for (var i = 0; i < replies.length; i++) {
+            delete dbCommentReplies[replies[i]];
+            db.collection('CommentReplies').doc(replies[i]).delete();
+          }
           res.end();
         } else {
           res.status(403).end();
@@ -340,12 +350,17 @@ app.post('/deleteComment', (req, res) => {
       } else if (typ == 'status') {
         if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
           var index = dbStatusUpdates[source].Comments.indexOf(id);
+          var replies = dbComments[id].replies;
           dbStatusUpdates[source].Comments.splice(index, 1);
           db.collection('StatusUpdates').doc(source).update({
             Comments: dbStatusUpdates[source].Comments
           });
           delete dbComments[id];
           db.collection('Comments').doc(id).delete();
+          for (var i = 0; i < replies.length; i++) {
+            delete dbCommentReplies[replies[i]];
+            db.collection('CommentReplies').doc(replies[i]).delete();
+          }
           res.end();
         } else {
           res.status(403).end();
@@ -644,6 +659,25 @@ function escapeHtml(text) {
     .replace(/[<>]/g, function (m) { return map[m]; })
     .split(/\\n/)
     .join('</p><p>') + '</p>';
+}
+
+function createNewDatabaseKey() {
+  var map = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  var id;
+  do {
+    id += map.substr(Math.floor(Math.random() * 26),1);
+    for (var i = 0; i < 29; i++) {
+      id += map.substr(Math.floor(Math.random() * 36), 1);
+    }
+
+  } while(
+    !(id in dbBlogentries) &&
+    !(id in dbMedia) &&
+    !(id in dbStatusUpdates) &&
+    !(id in dbComments) &&
+    !(id in dbCommentReplies)
+  )
+  return id;
 }
 
 
