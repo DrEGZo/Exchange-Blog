@@ -11,22 +11,55 @@ firebase.initializeApp(config);
 
 $(() => {
   firebase.auth().onAuthStateChanged((user) => {
+    adjustAuthButton();
     if (user) {
-      $('.navbar-nav:not(.mr-auto) .nav-item').addClass('logout');
+      $('#auth-button a').html('Profile');
+      $('#auth-button').addClass('loggedin').fadeIn(200);
     } else {
-      $('.navbar-nav:not(.mr-auto) .nav-item').addClass('login');
+      $('#auth-button a').html('Login');
+      $('#auth-button').fadeIn(200);
     }
   });
   main();
 });
 
 function main() {
+  $(window).resize(adjustAuthButton);
+  $('#login-container button').click(() => {
+    var user = $('#login-container input[type="text"]').val();
+    var pass = $('#login-container input[type="password"]').val();
+    var keepSession = document.querySelector('#login-container input[type="checkbox"]').checked;
+    var sessionState = firebase.auth.Auth.Persistence.SESSION;
+    if (keepSession) sessionState = firebase.auth.Auth.Persistence.LOCAL;
+    firebase.auth().setPersistence(sessionState)
+      .then(function () {
+        return firebase.auth().signInWithEmailAndPassword(user, pass);
+      })
+      .then(function () {
+        $('#login-failed').slideUp();
+        if (window.innerWidth > 767) $('#login-container').fadeOut();
+        if (window.innerWidth <= 767) $('#login-container').slideUp();
+      })
+      .catch(function (error) {
+        $('#login-failed').slideDown(); 
+      });
+  });
+  $('#login-container form').submit((e) => { e.preventDefault(); $('#login-container button').click() });
   $.ajax({
     method: 'GET',
     url: '/getHomeContent',
-    success: (data) => {launchCarousel(data)},
-    error: () => { redirector(403) }
+    success: (data) => {launchCarousel(data)}
   });
+}
+
+function adjustAuthButton() {
+  var target = '#login-container';
+  if (firebase.auth().currentUser) target = '#profile-info';
+  if (window.innerWidth > 767) {
+    $('#auth-button').off().click(() => { $(target).fadeToggle() });
+  } else if (window.innerWidth <= 767) {
+    $('#auth-button').off().click(() => { $(target).slideToggle() });
+  }
 }
 
 function launchCarousel(data) {

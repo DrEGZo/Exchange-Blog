@@ -18788,3 +18788,286 @@ Execution took 3 ms, user function completed successfully
 2018-05-15T21:20:13.392Z - info: Execution took 0 ms, user function completed successfully
 2018-05-15T21:20:45.637Z - info: User function triggered, starting execution
 2018-05-15T21:20:45.638Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T15:54:54.613Z - info: User function triggered, starting execution
+2018-05-16T15:54:54.622Z - info: Execution took 9 ms, user function completed successfully
+2018-05-16T16:07:54.509Z - info: User function triggered, starting execution
+2018-05-16T16:07:54.527Z - info: Execution took 19 ms, user function completed successfully
+2018-05-16T16:08:17.317Z - info: User function triggered, starting execution
+2018-05-16T16:08:17.320Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T16:09:37.315Z - info: User function triggered, starting execution
+2018-05-16T16:09:37.317Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:10:12.146Z - info: User function triggered, starting execution
+2018-05-16T16:10:12.148Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:27:49.215Z - info: User function triggered, starting execution
+2018-05-16T16:27:49.229Z - info: Execution took 14 ms, user function completed successfully
+2018-05-16T16:28:30.552Z - info: User function triggered, starting execution
+2018-05-16T16:28:30.556Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T16:29:07.147Z - info: User function triggered, starting execution
+2018-05-16T16:29:07.158Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T16:30:30.681Z - info: User function triggered, starting execution
+2018-05-16T16:30:30.683Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T16:31:25.372Z - info: User function triggered, starting execution
+2018-05-16T16:31:25.422Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T16:34:46.995Z - info: User function triggered, starting execution
+2018-05-16T16:34:46.997Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:37:31.125Z - info: User function triggered, starting execution
+2018-05-16T16:37:31.127Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:38:24.147Z - info: User function triggered, starting execution
+2018-05-16T16:38:24.163Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:39:03.495Z - info: User function triggered, starting execution
+2018-05-16T16:39:03.505Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:39:18.300Z - info: User function triggered, starting execution
+2018-05-16T16:39:18.364Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:40:55.690Z - info: User function triggered, starting execution
+2018-05-16T16:40:55.717Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:46:43.097Z - info: User function triggered, starting execution
+2018-05-16T16:46:43.116Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:47:39.456Z - info: User function triggered, starting execution
+2018-05-16T16:47:39.458Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:47:57.768Z - info: User function triggered, starting execution
+2018-05-16T16:47:57.775Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T16:48:42.025Z - info: User function triggered, starting execution
+2018-05-16T16:48:42.027Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:49:38.195Z - info: User function triggered, starting execution
+2018-05-16T16:49:38.197Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:49:52.816Z - info: User function triggered, starting execution
+2018-05-16T16:49:52.820Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T16:50:14.948Z - info: User function triggered, starting execution
+2018-05-16T16:50:14.956Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T16:52:16.684Z - info: User function triggered, starting execution
+2018-05-16T16:52:16.686Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T16:53:27.523Z - info: User function triggered, starting execution
+2018-05-16T16:53:27.525Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T16:56:33.749Z - info: User function triggered, starting execution
+2018-05-16T16:56:33.771Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T16:57:31.133Z - info: User function triggered, starting execution
+2018-05-16T16:57:31.156Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T17:13:18.223Z - info: User function triggered, starting execution
+2018-05-16T17:13:18.240Z - info: Execution took 18 ms, user function completed successfully
+2018-05-16T17:13:33.661Z - info: User function triggered, starting execution
+2018-05-16T17:13:33.671Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T17:14:39.351Z - info: User function triggered, starting execution
+2018-05-16T17:14:39.376Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T17:40:12.700Z - info: User function triggered, starting execution
+2018-05-16T17:40:12.711Z - info: Execution took 12 ms, user function completed successfully
+2018-05-16T17:40:25.518Z - info: User function triggered, starting execution
+2018-05-16T17:40:25.557Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T17:47:19.688Z - info: User function triggered, starting execution
+2018-05-16T17:47:19.704Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T17:48:34.597Z - info: User function triggered, starting execution
+2018-05-16T17:48:34.599Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T17:49:55.959Z - info: User function triggered, starting execution
+2018-05-16T17:49:55.968Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T17:52:02.211Z - info: User function triggered, starting execution
+2018-05-16T17:52:02.238Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T18:25:33.689Z - info: User function triggered, starting execution
+2018-05-16T18:25:33.700Z - info: Execution took 12 ms, user function completed successfully
+2018-05-16T18:31:15.206Z - info: User function triggered, starting execution
+2018-05-16T18:31:15.211Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T18:31:19.655Z - info: User function triggered, starting execution
+2018-05-16T18:31:19.657Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T18:31:40.729Z - info: User function triggered, starting execution
+2018-05-16T18:31:40.732Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:31:52.476Z - info: User function triggered, starting execution
+2018-05-16T18:31:52.478Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:32:06.629Z - info: User function triggered, starting execution
+2018-05-16T18:32:06.631Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T18:34:30.100Z - info: User function triggered, starting execution
+2018-05-16T18:34:30.101Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T18:34:50.905Z - info: User function triggered, starting execution
+2018-05-16T18:34:50.906Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:35:01.890Z - info: User function triggered, starting execution
+2018-05-16T18:35:01.892Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:36:00.574Z - info: User function triggered, starting execution
+2018-05-16T18:36:00.580Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:36:34.557Z - info: User function triggered, starting execution
+2018-05-16T18:36:34.581Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T18:36:41.500Z - info: User function triggered, starting execution
+2018-05-16T18:36:41.501Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:37:26.611Z - info: User function triggered, starting execution
+2018-05-16T18:37:26.615Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:37:31.952Z - info: User function triggered, starting execution
+2018-05-16T18:37:31.953Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:37:58.293Z - info: User function triggered, starting execution
+2018-05-16T18:37:58.300Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T18:38:12.920Z - info: User function triggered, starting execution
+2018-05-16T18:38:12.945Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:38:16.011Z - info: User function triggered, starting execution
+2018-05-16T18:38:16.015Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:38:23.810Z - info: User function triggered, starting execution
+2018-05-16T18:38:23.813Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:52:21.530Z - info: User function triggered, starting execution
+2018-05-16T18:52:21.546Z - info: Execution took 16 ms, user function completed successfully
+2018-05-16T18:52:31.769Z - info: User function triggered, starting execution
+2018-05-16T18:52:31.771Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:54:38.157Z - info: User function triggered, starting execution
+2018-05-16T18:54:38.160Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:55:12.510Z - info: User function triggered, starting execution
+2018-05-16T18:55:12.514Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:55:21.503Z - info: User function triggered, starting execution
+2018-05-16T18:55:21.506Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:57:09.189Z - info: User function triggered, starting execution
+2018-05-16T18:57:09.202Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T18:57:33.894Z - info: User function triggered, starting execution
+2018-05-16T18:57:33.915Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:57:52.377Z - info: User function triggered, starting execution
+2018-05-16T18:57:52.381Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T18:59:33.547Z - info: User function triggered, starting execution
+2018-05-16T18:59:33.549Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T18:59:53.535Z - info: User function triggered, starting execution
+2018-05-16T18:59:53.550Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T19:01:31.094Z - info: User function triggered, starting execution
+2018-05-16T19:01:31.143Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T19:01:55.628Z - info: User function triggered, starting execution
+2018-05-16T19:01:55.635Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T19:02:40.097Z - info: User function triggered, starting execution
+2018-05-16T19:02:40.102Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T19:03:20.732Z - info: User function triggered, starting execution
+2018-05-16T19:03:20.742Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T19:04:43.024Z - info: User function triggered, starting execution
+2018-05-16T19:04:43.051Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T19:13:54.485Z - info: User function triggered, starting execution
+2018-05-16T19:13:54.488Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:14:37.030Z - info: User function triggered, starting execution
+2018-05-16T19:14:37.034Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:14:44.133Z - info: User function triggered, starting execution
+2018-05-16T19:14:44.134Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:14:47.866Z - info: User function triggered, starting execution
+2018-05-16T19:14:47.872Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T19:16:25.951Z - info: User function triggered, starting execution
+2018-05-16T19:16:25.953Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:16:57.042Z - info: User function triggered, starting execution
+2018-05-16T19:16:57.048Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:20:29.380Z - info: User function triggered, starting execution
+2018-05-16T19:20:29.382Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:21:21.847Z - info: User function triggered, starting execution
+2018-05-16T19:21:21.855Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:22:12.790Z - info: User function triggered, starting execution
+2018-05-16T19:22:12.792Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:28:04.023Z - info: User function triggered, starting execution
+2018-05-16T19:28:04.025Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:30:25.024Z - info: User function triggered, starting execution
+2018-05-16T19:30:25.026Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:32:54.492Z - info: User function triggered, starting execution
+2018-05-16T19:32:54.495Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:36:35.956Z - info: User function triggered, starting execution
+2018-05-16T19:36:35.991Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:36:57.958Z - info: User function triggered, starting execution
+2018-05-16T19:36:57.961Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:37:57.106Z - info: User function triggered, starting execution
+2018-05-16T19:37:57.111Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:41:49.903Z - info: User function triggered, starting execution
+2018-05-16T19:41:49.918Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T19:42:08.927Z - info: User function triggered, starting execution
+2018-05-16T19:42:08.953Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:42:53.810Z - info: User function triggered, starting execution
+2018-05-16T19:42:53.815Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:43:46.488Z - info: User function triggered, starting execution
+2018-05-16T19:43:46.489Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:46:05.993Z - info: User function triggered, starting execution
+2018-05-16T19:46:05.995Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:46:35.120Z - info: User function triggered, starting execution
+2018-05-16T19:46:35.121Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T19:48:20.605Z - info: User function triggered, starting execution
+2018-05-16T19:48:20.606Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T19:53:56.097Z - info: User function triggered, starting execution
+2018-05-16T19:53:56.131Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:02:47.183Z - info: User function triggered, starting execution
+2018-05-16T20:02:47.190Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:05:31.210Z - info: User function triggered, starting execution
+2018-05-16T20:05:31.235Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T20:06:18.599Z - info: User function triggered, starting execution
+2018-05-16T20:06:18.608Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T20:06:31.612Z - info: User function triggered, starting execution
+2018-05-16T20:06:31.614Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:16:50.753Z - info: User function triggered, starting execution
+2018-05-16T20:16:50.762Z - info: Execution took 9 ms, user function completed successfully
+2018-05-16T20:16:51.647Z - info: User function triggered, starting execution
+2018-05-16T20:16:51.659Z - error: TypeError: Cannot read property 'Location' of undefined
+    at app.get (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:67:59)
+    at Layer.handle [as handle_request] (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\index.js:275:10)
+    at jsonParser (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\body-parser\lib\types\json.js:109:7)
+    at Layer.handle [as handle_request] (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\layer.js:95:5)
+2018-05-16T20:16:51.736Z - info: Execution took 5 ms, user function completed successfully
+2018-05-16T20:18:37.069Z - info: User function triggered, starting execution
+2018-05-16T20:18:37.078Z - info: Execution took 9 ms, user function completed successfully
+2018-05-16T20:18:58.235Z - info: User function triggered, starting execution
+2018-05-16T20:18:58.245Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T20:24:48.932Z - info: User function triggered, starting execution
+2018-05-16T20:24:48.937Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:25:27.324Z - info: User function triggered, starting execution
+2018-05-16T20:25:27.335Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:28:41.525Z - info: User function triggered, starting execution
+2018-05-16T20:28:41.527Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:28:55.051Z - info: User function triggered, starting execution
+2018-05-16T20:28:55.056Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T20:29:28.977Z - info: User function triggered, starting execution
+2018-05-16T20:29:28.980Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T20:29:45.919Z - info: User function triggered, starting execution
+2018-05-16T20:29:45.922Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:32:58.355Z - info: User function triggered, starting execution
+2018-05-16T20:32:58.358Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:33:03.211Z - info: User function triggered, starting execution
+2018-05-16T20:33:03.214Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:33:07.546Z - info: User function triggered, starting execution
+2018-05-16T20:33:07.549Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:33:42.794Z - info: User function triggered, starting execution
+2018-05-16T20:33:42.810Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:33:45.732Z - info: User function triggered, starting execution
+2018-05-16T20:33:45.737Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T20:33:49.405Z - info: User function triggered, starting execution
+2018-05-16T20:33:49.409Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:36:15.052Z - info: User function triggered, starting execution
+2018-05-16T20:36:15.059Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:36:26.080Z - info: User function triggered, starting execution
+2018-05-16T20:36:26.083Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T20:36:39.944Z - info: User function triggered, starting execution
+2018-05-16T20:36:39.955Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:36:46.212Z - info: User function triggered, starting execution
+2018-05-16T20:36:46.220Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:36:50.126Z - info: User function triggered, starting execution
+2018-05-16T20:36:50.131Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:37:04.436Z - info: User function triggered, starting execution
+2018-05-16T20:37:04.439Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T20:37:49.381Z - info: User function triggered, starting execution
+2018-05-16T20:37:49.414Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:37:52.510Z - info: User function triggered, starting execution
+2018-05-16T20:37:52.511Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:37:54.302Z - info: User function triggered, starting execution
+2018-05-16T20:37:54.324Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:37:56.517Z - info: User function triggered, starting execution
+2018-05-16T20:37:56.544Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:38:24.418Z - info: User function triggered, starting execution
+2018-05-16T20:38:24.422Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T20:38:43.551Z - info: User function triggered, starting execution
+2018-05-16T20:38:43.555Z - info: Execution took 2 ms, user function completed successfully
+2018-05-16T20:40:15.686Z - info: User function triggered, starting execution
+2018-05-16T20:40:15.692Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:40:28.430Z - info: User function triggered, starting execution
+2018-05-16T20:40:28.453Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:41:10.870Z - info: User function triggered, starting execution
+2018-05-16T20:41:10.872Z - info: Execution took 0 ms, user function completed successfully
+2018-05-16T20:44:18.343Z - info: User function triggered, starting execution
+2018-05-16T20:44:18.346Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:46:43.087Z - info: User function triggered, starting execution
+2018-05-16T20:46:43.124Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:47:09.844Z - info: User function triggered, starting execution
+2018-05-16T20:47:09.847Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:55:59.866Z - info: User function triggered, starting execution
+2018-05-16T20:55:59.869Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:56:23.135Z - info: User function triggered, starting execution
+2018-05-16T20:56:23.138Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:56:31.093Z - info: User function triggered, starting execution
+2018-05-16T20:56:31.095Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:56:56.742Z - info: User function triggered, starting execution
+2018-05-16T20:56:56.748Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:57:17.032Z - info: User function triggered, starting execution
+2018-05-16T20:57:17.038Z - info: Execution took 1 ms, user function completed successfully
+2018-05-16T20:57:57.753Z - info: User function triggered, starting execution
+2018-05-16T20:57:57.757Z - info: Execution took 3 ms, user function completed successfully

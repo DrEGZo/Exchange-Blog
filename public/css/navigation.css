@@ -15,7 +15,7 @@ body {
   font-size: 2em;
 }
 .nav-item {
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 .nav-item.active {
   border-bottom: 2px solid white;
@@ -24,10 +24,111 @@ body {
   font-size: 1.3em;
   color: #ffffff;
 }
-.nav-item.login {
+#auth-button {
   background-color: #1aab26;
+  display: none;
+  border-radius: 5px;
 }
-.nav-item.logout {
+#auth-button:hover {
+  cursor: pointer;
+}
+#auth-button.loggedin {
+  background-color: #0e59dc;
+}
+#auth-button a:focus {
+  color: #ffffff;
+  /*Fixing Bootstrap...*/
+}
+#login-container, #profile-info {
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+#login-container form, #profile-info>div {
+  position: absolute;
+  top: 110%;
+  left: -28vw;
+  width: 30vw;
+  background-color: #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #5f5f5f;
+  filter: drop-shadow(1px 2px 8px #000);
+}
+#login-container input {
+  width: 100%;
+  margin: 5px 0;
+  border: 1px solid #5f5f5f;
+  border-radius: 3px;
+  padding: 3px 5px;
+}
+#login-container input[type="checkbox"] {
+  width: auto;
+  margin-left: 5px;
+}
+#login-container button {
+  display: block;
+  margin: 5px 0;
+  border: 1px solid #5f5f5f;
+  border-radius: 3px;
+  background-color: #0ec500;
+}
+#login-failed {
+  display: none;
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+}
+#profile-info>div {
+  left: -32vw;
+  width: 35vw;
+  border-radius: 3px;
+  border: none;
+  background-color: #202020;
+}
+.profile-teaser {
+  height: 50px;
+}
+.profile-avatar {
+  width: 50px;
+  height: 50px;
+  float: left;
+  color: #ffffff;
+}
+.profile-avatar {
+  line-height: 50px;
+  font-size: 45px;
+  margin: 0 5px;
+}
+.profile-name {
+  font-weight: 500;
+  line-height: 25px;
+  color: #ffffff;
+}
+.profile-rank {
+  font-weight: 500;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #d000e0;
+  margin: 2px 0;
+}
+#profile-info a {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 3px 0;
+  margin: 10px 0 5px 0;
+  transition: 0.3s;
+}
+#profile-info a:hover {
+  text-decoration: none;
+}
+.profile-info-settings {
+  background-color: #001da2;
+}
+.profile-info-logout {
   background-color: #dc0e0e;
 }
 #page-content {
@@ -63,6 +164,12 @@ body {
   .navbar-dark .navbar-nav .nav-link:hover {
     color: #ffffff;
   }
+  .profile-info-settings:hover {
+    background-color: #011986;
+  }
+  .profile-info-logout:hover {
+    background-color: #ad0a0a;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -83,12 +190,36 @@ body {
     max-width: none;
     padding: 25px;
   }
-  /*.nav-item:active {
-    background-color: #303030;
+  #login-container, #profile-info {
+    position: block;
+    padding: 10px 0;
   }
-  .navbar-dark .navbar-nav .nav-link:active {
-    color: #ffffff;
-  }*/
+  #login-container form, #profile-info>div {
+    position: static;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 0;
+    border: none;
+    filter: none;
+  }
+  #profile-info>div {
+    border: 1px solid #5f5f5f;
+    border-radius: 10px;
+  }
+  #login-container input {
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #5f5f5f;
+    border-radius: 3px;
+    padding: 3px 5px;
+  }
+  #login-container button {
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #5f5f5f;
+    border-radius: 3px;
+    background-color: #0ec500;
+  }
 }
 
 @media screen and (max-width: 525px) {
