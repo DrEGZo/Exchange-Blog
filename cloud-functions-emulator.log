@@ -19071,3 +19071,433 @@ Execution took 3 ms, user function completed successfully
 2018-05-16T20:57:17.038Z - info: Execution took 1 ms, user function completed successfully
 2018-05-16T20:57:57.753Z - info: User function triggered, starting execution
 2018-05-16T20:57:57.757Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T14:45:11.021Z - info: User function triggered, starting execution
+2018-05-17T14:45:11.033Z - info: Execution took 15 ms, user function completed successfully
+2018-05-17T14:47:43.771Z - info: Worker for expressapp closed due to file changes.
+2018-05-17T14:50:26.939Z - info: User function triggered, starting execution
+2018-05-17T14:50:27.040Z - info: Execution took 100 ms, user function completed successfully
+2018-05-17T14:50:27.262Z - info: User function triggered, starting execution
+2018-05-17T14:50:27.266Z - info: Execution took 4 ms, user function completed successfully
+2018-05-17T14:50:31.126Z - info: User function triggered, starting execution
+2018-05-17T14:50:31.130Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:50:31.333Z - info: User function triggered, starting execution
+2018-05-17T14:50:31.336Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:50:31.498Z - info: User function triggered, starting execution
+2018-05-17T14:50:31.503Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:50:31.513Z - info: User function triggered, starting execution
+2018-05-17T14:50:31.517Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T14:51:02.664Z - info: User function triggered, starting execution
+2018-05-17T14:52:44.758Z - info: User function triggered, starting execution
+2018-05-17T14:52:44.848Z - info: Execution took 91 ms, user function completed successfully
+2018-05-17T14:52:45.060Z - info: User function triggered, starting execution
+2018-05-17T14:52:45.068Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T14:52:45.467Z - info: User function triggered, starting execution
+Execution took 3 ms, user function completed successfully
+2018-05-17T14:52:45.471Z - info: User function triggered, starting execution
+2018-05-17T14:52:45.474Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T14:53:00.329Z - info: User function triggered, starting execution
+2018-05-17T14:53:00.334Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:53:00.697Z - info: User function triggered, starting execution
+2018-05-17T14:53:00.700Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:53:01.095Z - info: User function triggered, starting execution
+2018-05-17T14:53:01.101Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:53:01.106Z - info: User function triggered, starting execution
+2018-05-17T14:53:01.112Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:53:10.045Z - info: User function triggered, starting execution
+2018-05-17T14:53:10.056Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:53:10.259Z - info: User function triggered, starting execution
+2018-05-17T14:53:10.273Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T14:53:10.391Z - info: User function triggered, starting execution
+2018-05-17T14:53:10.393Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:53:10.399Z - info: User function triggered, starting execution
+2018-05-17T14:53:10.414Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T14:53:28.145Z - info: User function triggered, starting execution
+2018-05-17T14:53:28.147Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:53:28.366Z - info: User function triggered, starting execution
+2018-05-17T14:53:28.372Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:53:28.456Z - info: User function triggered, starting execution
+2018-05-17T14:53:28.484Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-17T14:53:42.323Z - info: User function triggered, starting execution
+2018-05-17T14:53:42.324Z - info: starting id creation
+2018-05-17T14:56:36.277Z - info: User function triggered, starting execution
+2018-05-17T14:56:36.371Z - info: Execution took 94 ms, user function completed successfully
+2018-05-17T14:56:36.602Z - info: User function triggered, starting execution
+2018-05-17T14:56:36.607Z - info: Execution took 4 ms, user function completed successfully
+2018-05-17T14:56:36.754Z - info: User function triggered, starting execution
+2018-05-17T14:56:36.778Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T14:56:36.788Z - info: User function triggered, starting execution
+2018-05-17T14:56:36.790Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:56:46.629Z - info: User function triggered, starting execution
+2018-05-17T14:56:46.630Z - info: starting id creation
+created id
+2018-05-17T14:56:46.897Z - info: Execution took 268 ms, user function completed successfully
+2018-05-17T14:56:47.738Z - info: User function triggered, starting execution
+2018-05-17T14:56:47.741Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:57:41.959Z - info: Worker for expressapp closed due to file changes.
+2018-05-17T14:58:53.715Z - info: User function triggered, starting execution
+2018-05-17T14:58:53.803Z - info: Execution took 88 ms, user function completed successfully
+2018-05-17T14:58:54.017Z - info: User function triggered, starting execution
+2018-05-17T14:58:54.022Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T14:58:54.114Z - info: User function triggered, starting execution
+2018-05-17T14:58:54.117Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:58:54.119Z - info: User function triggered, starting execution
+2018-05-17T14:58:54.156Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T14:59:01.593Z - info: User function triggered, starting execution
+2018-05-17T14:59:01.595Z - info: starting id creation
+created id
+2018-05-17T14:59:02.423Z - info: Execution took 826 ms, user function completed successfully
+2018-05-17T14:59:03.332Z - info: User function triggered, starting execution
+2018-05-17T14:59:03.336Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:11:09.525Z - info: User function triggered, starting execution
+2018-05-17T15:11:09.538Z - info: starting id creation
+created id
+2018-05-17T15:11:10.603Z - info: TypeError: Cannot read property 'Visibility' of undefined
+    at auth.then (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:205:35)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-05-17T15:11:10.606Z - info: Execution took 1080 ms, user function completed successfully
+2018-05-17T15:14:11.175Z - info: Worker for expressapp closed due to file changes.
+2018-05-17T15:15:27.560Z - info: User function triggered, starting execution
+2018-05-17T15:15:27.659Z - info: Execution took 95 ms, user function completed successfully
+2018-05-17T15:15:27.892Z - info: User function triggered, starting execution
+2018-05-17T15:15:27.914Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T15:15:28.030Z - info: User function triggered, starting execution
+2018-05-17T15:15:28.034Z - info: Execution took 3 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-17T15:15:28.059Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:15:36.270Z - info: User function triggered, starting execution
+2018-05-17T15:15:36.275Z - info: { Upload: 
+   { release: 2018-04-07T09:00:00.000Z,
+     true: 2018-05-07T08:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: 
+   [ 'gXinSIxuAcMMDqYNJap2',
+     'JMCBOvMtm0BCmcdBTJRW',
+     'qnq23iqfxci2c6smsyki' ],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Visibility: [ 'Administrator' ],
+  Intro: 'Some text...' }
+2018-05-17T15:15:37.027Z - info: Execution took 757 ms, user function completed successfully
+2018-05-17T15:15:37.656Z - info: User function triggered, starting execution
+2018-05-17T15:15:37.662Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T15:16:02.750Z - info: User function triggered, starting execution
+2018-05-17T15:16:02.752Z - info: { Upload: 
+   { release: 2018-04-07T09:00:00.000Z,
+     true: 2018-05-07T08:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: 
+   [ 'gXinSIxuAcMMDqYNJap2',
+     'JMCBOvMtm0BCmcdBTJRW',
+     'qnq23iqfxci2c6smsyki' ],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Visibility: [ 'Administrator' ],
+  Intro: 'Some text...' }
+2018-05-17T15:16:03.514Z - info: Execution took 764 ms, user function completed successfully
+2018-05-17T15:16:04.119Z - info: User function triggered, starting execution
+2018-05-17T15:16:04.125Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:16:08.422Z - info: User function triggered, starting execution
+2018-05-17T15:16:08.426Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T15:16:14.370Z - info: User function triggered, starting execution
+2018-05-17T15:16:14.381Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T15:16:36.042Z - info: User function triggered, starting execution
+2018-05-17T15:16:36.047Z - info: { Visibility: [ 'Administrator' ],
+  Intro: 'Some text...',
+  Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: [ 'JMCBOvMtm0BCmcdBTJRW', 'qnq23iqfxci2c6smsyki' ],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header' }
+2018-05-17T15:16:36.261Z - info: Execution took 219 ms, user function completed successfully
+2018-05-17T15:16:37.120Z - info: User function triggered, starting execution
+2018-05-17T15:16:37.122Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:17:22.299Z - info: User function triggered, starting execution
+2018-05-17T15:17:22.304Z - info: Execution took 4 ms, user function completed successfully
+2018-05-17T15:17:46.828Z - info: User function triggered, starting execution
+2018-05-17T15:17:46.829Z - info: { Visibility: [ 'Administrator' ],
+  Intro: 'Some text...',
+  Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: [ 'JMCBOvMtm0BCmcdBTJRW', 'qnq23iqfxci2c6smsyki' ],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header' }
+2018-05-17T15:17:47.083Z - info: Execution took 254 ms, user function completed successfully
+2018-05-17T15:17:47.960Z - info: User function triggered, starting execution
+2018-05-17T15:17:47.967Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:17:51.426Z - info: User function triggered, starting execution
+2018-05-17T15:17:51.440Z - info: Execution took 14 ms, user function completed successfully
+2018-05-17T15:19:03.610Z - info: User function triggered, starting execution
+2018-05-17T15:19:03.612Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:19:05.690Z - info: User function triggered, starting execution
+2018-05-17T15:19:05.706Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:19:10.426Z - info: User function triggered, starting execution
+2018-05-17T15:19:10.430Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T15:19:54.966Z - info: User function triggered, starting execution
+2018-05-17T15:19:54.967Z - info: { Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Visibility: [ 'Administrator' ],
+  Intro: 'Some text...',
+  Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: [] }
+2018-05-17T15:19:55.714Z - info: Execution took 748 ms, user function completed successfully
+2018-05-17T15:19:56.424Z - info: User function triggered, starting execution
+2018-05-17T15:19:56.428Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:20:01.642Z - info: User function triggered, starting execution
+2018-05-17T15:20:01.643Z - info: { Comments: [ 'lmhjylltpzexha443ghm' ],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Visibility: [ 'Administrator' ],
+  Intro: 'Some text...',
+  Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h' }
+2018-05-17T15:20:01.809Z - info: Execution took 167 ms, user function completed successfully
+2018-05-17T15:20:02.555Z - info: User function triggered, starting execution
+2018-05-17T15:20:02.560Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:20:07.046Z - info: User function triggered, starting execution
+2018-05-17T15:20:07.048Z - info: { Upload: 
+   { release: 2018-04-07T09:00:00.000Z,
+     true: 2018-05-07T08:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: [ 'lmhjylltpzexha443ghm', 'hbai6x6yep6rs6d3hepi' ],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Visibility: [ 'Administrator' ],
+  Intro: 'Some text...' }
+2018-05-17T15:20:07.300Z - info: Execution took 253 ms, user function completed successfully
+2018-05-17T15:20:08.143Z - info: User function triggered, starting execution
+2018-05-17T15:20:08.145Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T15:20:12.858Z - info: User function triggered, starting execution
+2018-05-17T15:20:12.860Z - info: { Upload: 
+   { release: 2018-04-07T09:00:00.000Z,
+     true: 2018-05-07T08:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: [ 'lmhjylltpzexha443ghm', 'hbai6x6yep6rs6d3hepi' ],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Visibility: [ 'Administrator' ],
+  Intro: 'Some text...' }
+2018-05-17T15:20:13.072Z - info: Execution took 213 ms, user function completed successfully
+2018-05-17T15:20:13.952Z - info: User function triggered, starting execution
+2018-05-17T15:20:13.956Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:20:16.387Z - info: User function triggered, starting execution
+2018-05-17T15:20:16.389Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:20:17.851Z - info: User function triggered, starting execution
+2018-05-17T15:20:17.857Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:20:20.029Z - info: User function triggered, starting execution
+2018-05-17T15:20:20.033Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T15:23:52.238Z - info: User function triggered, starting execution
+2018-05-17T15:23:52.241Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:35:44.981Z - info: User function triggered, starting execution
+2018-05-17T15:35:46.524Z - info: { Comments: [],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Intro: 'Some text...',
+  Visibility: [ 'Administrator' ],
+  Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h' }
+2018-05-17T15:35:46.841Z - info: Execution took 1860 ms, user function completed successfully
+2018-05-17T15:35:47.625Z - info: User function triggered, starting execution
+2018-05-17T15:35:47.632Z - info: Execution took 6 ms, user function completed successfully
+2018-05-17T15:36:29.667Z - info: User function triggered, starting execution
+2018-05-17T15:36:29.673Z - info: Execution took 5 ms, user function completed successfully
+2018-05-17T15:50:18.867Z - info: User function triggered, starting execution
+2018-05-17T15:50:19.882Z - info: Execution took 1013 ms, user function completed successfully
+2018-05-17T15:50:20.086Z - info: User function triggered, starting execution
+2018-05-17T15:50:20.094Z - info: Execution took 5 ms, user function completed successfully
+2018-05-17T15:50:20.182Z - info: User function triggered, starting execution
+2018-05-17T15:50:20.185Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:50:20.473Z - info: User function triggered, starting execution
+2018-05-17T15:50:20.475Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:50:43.743Z - info: User function triggered, starting execution
+2018-05-17T15:50:43.748Z - info: { Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Intro: 'Some text...',
+  Visibility: [ 'Administrator' ],
+  Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: [] }
+2018-05-17T15:50:44.065Z - info: Execution took 322 ms, user function completed successfully
+2018-05-17T15:50:47.215Z - info: User function triggered, starting execution
+2018-05-17T15:50:47.219Z - info: Execution took 4 ms, user function completed successfully
+2018-05-17T15:51:40.588Z - info: User function triggered, starting execution
+2018-05-17T15:51:40.592Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T15:53:32.396Z - info: User function triggered, starting execution
+2018-05-17T15:53:32.398Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:53:32.596Z - info: User function triggered, starting execution
+2018-05-17T15:53:32.599Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T15:53:32.683Z - info: User function triggered, starting execution
+2018-05-17T15:53:32.710Z - info: Execution took 3 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-17T15:53:32.715Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T15:53:42.639Z - info: User function triggered, starting execution
+2018-05-17T15:53:42.641Z - info: { Comments: [],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Visibility: [ 'Administrator' ],
+  Intro: 'Some text...',
+  Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h' }
+2018-05-17T15:53:42.885Z - info: Execution took 245 ms, user function completed successfully
+2018-05-17T15:53:44.923Z - info: User function triggered, starting execution
+2018-05-17T15:53:44.925Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T15:53:57.357Z - info: User function triggered, starting execution
+2018-05-17T15:53:57.359Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:54:42.136Z - info: User function triggered, starting execution
+2018-05-17T15:54:42.138Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:54:42.341Z - info: User function triggered, starting execution
+2018-05-17T15:54:42.344Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T15:54:42.464Z - info: User function triggered, starting execution
+2018-05-17T15:54:42.466Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+2018-05-17T15:54:42.468Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T15:55:08.015Z - info: User function triggered, starting execution
+2018-05-17T15:55:08.015Z - info: { Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: [],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Visibility: [ 'Administrator' ],
+  Intro: 'Some text...' }
+2018-05-17T15:55:08.214Z - info: Execution took 199 ms, user function completed successfully
+2018-05-17T15:55:10.761Z - info: User function triggered, starting execution
+2018-05-17T15:55:10.764Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:55:35.168Z - info: User function triggered, starting execution
+2018-05-17T15:55:35.171Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T15:58:09.834Z - info: User function triggered, starting execution
+2018-05-17T15:58:09.837Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:58:10.036Z - info: User function triggered, starting execution
+2018-05-17T15:58:10.038Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T15:58:10.105Z - info: User function triggered, starting execution
+2018-05-17T15:58:10.108Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:58:10.115Z - info: User function triggered, starting execution
+2018-05-17T15:58:10.132Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T15:58:46.097Z - info: User function triggered, starting execution
+2018-05-17T15:58:46.101Z - info: { Comments: [],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Intro: 'Some text...',
+  Visibility: [ 'Administrator' ],
+  Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h' }
+2018-05-17T15:58:46.359Z - info: Execution took 261 ms, user function completed successfully
+2018-05-17T15:58:51.767Z - info: User function triggered, starting execution
+2018-05-17T15:58:51.771Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:59:41.199Z - info: User function triggered, starting execution
+2018-05-17T15:59:41.201Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T15:59:51.943Z - info: User function triggered, starting execution
+2018-05-17T15:59:51.945Z - info: { Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: [],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Intro: 'Some text...',
+  Visibility: [ 'Administrator' ],
+  Upload: 
+   { release: 2018-04-07T09:00:00.000Z,
+     true: 2018-05-07T08:00:00.000Z } }
+2018-05-17T15:59:52.185Z - info: Execution took 240 ms, user function completed successfully
+2018-05-17T15:59:56.876Z - info: User function triggered, starting execution
+2018-05-17T15:59:56.879Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:00:32.654Z - info: User function triggered, starting execution
+2018-05-17T16:00:32.656Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T16:06:54.605Z - info: User function triggered, starting execution
+2018-05-17T16:06:54.607Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T16:06:54.797Z - info: User function triggered, starting execution
+2018-05-17T16:06:54.799Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:06:54.879Z - info: User function triggered, starting execution
+2018-05-17T16:06:54.909Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T16:06:54.922Z - info: User function triggered, starting execution
+2018-05-17T16:06:54.924Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:07:03.660Z - info: User function triggered, starting execution
+2018-05-17T16:07:03.660Z - info: { Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: [],
+  Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Visibility: [ 'Administrator' ],
+  Intro: 'Some text...' }
+2018-05-17T16:07:03.928Z - info: Execution took 269 ms, user function completed successfully
+2018-05-17T16:07:06.490Z - info: User function triggered, starting execution
+2018-05-17T16:07:06.496Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T16:08:01.386Z - info: User function triggered, starting execution
+2018-05-17T16:08:01.388Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:08:03.185Z - info: User function triggered, starting execution
+2018-05-17T16:08:03.191Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:08:03.412Z - info: User function triggered, starting execution
+2018-05-17T16:08:03.417Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:08:03.563Z - info: User function triggered, starting execution
+2018-05-17T16:08:03.593Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:08:03.604Z - info: User function triggered, starting execution
+2018-05-17T16:08:03.608Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:08:11.475Z - info: User function triggered, starting execution
+2018-05-17T16:08:11.477Z - info: { Content: 'p$$$Hier könnte ihre Werbung stehen§§§h$$$Zwischenüberschrift!§§§p$$$Hier gegebenenfalls auch.§§§p$$$Hier nicht.§§§yt$$$4kDklB6-69Q§§§vid$$$/media/video.mov§§§gal$$$["8PVXnWx0sbwiwPQKLcus","Esw1k6KA5MEADQbd7SGn","MdhCs33skChb0SCeYInB","YBaOyyiwStXGrAZTFqVQ","boUDGPxILZp1Y7C4JW8h"]§§§img$$$boUDGPxILZp1Y7C4JW8h',
+  Title: 'Header',
+  Intro: 'Some text...',
+  Visibility: [ 'Administrator' ],
+  Upload: 
+   { true: 2018-05-07T08:00:00.000Z,
+     release: 2018-04-07T09:00:00.000Z },
+  Thumbnail: 'boUDGPxILZp1Y7C4JW8h',
+  Comments: [] }
+2018-05-17T16:08:11.743Z - info: Execution took 268 ms, user function completed successfully
+2018-05-17T16:08:14.810Z - info: User function triggered, starting execution
+2018-05-17T16:08:14.812Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T16:09:38.997Z - info: User function triggered, starting execution
+2018-05-17T16:09:39.000Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:09:39.205Z - info: User function triggered, starting execution
+2018-05-17T16:09:39.209Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:09:39.293Z - info: User function triggered, starting execution
+2018-05-17T16:09:39.299Z - info: Execution took 2 ms, user function completed successfully
+User function triggered, starting execution
+Execution took 2 ms, user function completed successfully
+2018-05-17T16:10:17.021Z - info: User function triggered, starting execution
+2018-05-17T16:10:17.024Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T16:12:22.663Z - info: User function triggered, starting execution
+2018-05-17T16:12:23.736Z - info: Execution took 1073 ms, user function completed successfully
+2018-05-17T16:12:23.914Z - info: User function triggered, starting execution
+2018-05-17T16:12:23.921Z - info: Execution took 5 ms, user function completed successfully
+2018-05-17T16:12:24.000Z - info: User function triggered, starting execution
+2018-05-17T16:12:24.002Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:12:24.015Z - info: User function triggered, starting execution
+2018-05-17T16:12:24.018Z - info: Execution took 3 ms, user function completed successfully
+2018-05-17T16:12:38.253Z - info: User function triggered, starting execution
+2018-05-17T16:12:39.074Z - info: Execution took 820 ms, user function completed successfully
+2018-05-17T16:12:39.636Z - info: User function triggered, starting execution
+2018-05-17T16:12:39.640Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:12:43.722Z - info: User function triggered, starting execution
+2018-05-17T16:12:43.980Z - info: Execution took 254 ms, user function completed successfully
+2018-05-17T16:12:44.812Z - info: User function triggered, starting execution
+2018-05-17T16:12:44.814Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:12:47.847Z - info: User function triggered, starting execution
+2018-05-17T16:12:48.648Z - info: Execution took 801 ms, user function completed successfully
+2018-05-17T16:12:49.231Z - info: User function triggered, starting execution
+2018-05-17T16:12:49.234Z - info: Execution took 2 ms, user function completed successfully
+2018-05-17T16:12:51.104Z - info: User function triggered, starting execution
+2018-05-17T16:12:51.109Z - info: Execution took 4 ms, user function completed successfully
+2018-05-17T16:12:56.524Z - info: User function triggered, starting execution
+2018-05-17T16:12:56.526Z - info: Execution took 1 ms, user function completed successfully
+2018-05-17T16:14:02.280Z - info: User function triggered, starting execution
+2018-05-17T16:14:02.283Z - info: Execution took 2 ms, user function completed successfully

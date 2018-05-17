@@ -1,6 +1,8 @@
 const db = firebase.firestore();
 db.settings({ timestampsInSnapshots: true})
 
+var unsubscribeFunctions = {};
+
 function launchComments(commentData,containerTyp,containerId,containerQuery,mainTyp,mainId,addInserter,searchForReplies,isReplyData,slide) {
     content = stringifyComments(commentData,addInserter,searchForReplies,isReplyData,slide);
     if (addInserter) content += stringifyCommentInserter(isReplyData);
@@ -139,7 +141,7 @@ function addCommentListeners(commentData,containerTyp,containerId,containerQuery
                             url: '/addComment',
                             contentType: 'application/json',
                             data: '{ "idToken": "' + idToken + '", "content": "' + content + '", "containerTyp": "' + containerTyp + '", "containerId": "' + containerId + '", "mainTyp": "' + mainTyp + '", "mainId": "' + mainId + '" }',
-                            //error: (jqxhr) => { redirector(jqxhr.status) }
+                            error: (jqxhr) => { redirector(jqxhr.status) }
                         });
                     });
             }
@@ -167,6 +169,9 @@ function addCommentListeners(commentData,containerTyp,containerId,containerQuery
             $('#' + id + ' .comment' + replymark + '-controll a').off();
             firebase.auth().currentUser.getIdToken(true)
                 .then((idToken) => {
+                    if (searchForReplies) {
+                        (unsubscribeFunctions[id])();
+                    }
                     $.ajax({
                         type: 'POST',
                         url: '/deleteComment',
@@ -191,7 +196,7 @@ function addRealtimeCommentListeners(containerTyp, containerId, containerQuery, 
     } else if (containerTyp == 'comment') {
         reference = 'Comments';
     }
-    db.collection(reference).doc(containerId).onSnapshot((doc) => {
+    unsubscribeFunctions[containerId] = db.collection(reference).doc(containerId).onSnapshot((doc) => {
         var globalcomments;
         if (containerTyp != 'comment') {
             globalcomments = doc.data().Comments;

@@ -663,20 +663,20 @@ function escapeHtml(text) {
 
 function createNewDatabaseKey() {
   var map = 'abcdefghijklmnopqrstuvwxyz0123456789';
-  var id;
+  var id = '';
   do {
     id += map.substr(Math.floor(Math.random() * 26),1);
-    for (var i = 0; i < 29; i++) {
+    for (var i = 0; i < 19; i++) {
       id += map.substr(Math.floor(Math.random() * 36), 1);
     }
 
   } while(
-    !(id in dbBlogentries) &&
-    !(id in dbMedia) &&
-    !(id in dbStatusUpdates) &&
-    !(id in dbComments) &&
-    !(id in dbCommentReplies)
-  )
+    (id in dbBlogentries) ||
+    (id in dbMedia) ||
+    (id in dbStatusUpdates) ||
+    (id in dbComments) ||
+    (id in dbCommentReplies)
+  );
   return id;
 }
 
