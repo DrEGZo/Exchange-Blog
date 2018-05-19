@@ -557,6 +557,53 @@ app.post('/getActivityFeed', (req,res) => {
     });
 });
 
+app.post('/getUserSettings', (req,res) => {
+  auth(req.body.idToken)
+    .then((uid) => {
+      res.json({
+        nick: dbUser[uid].Nick,
+        privacy: dbUser[uid].Privacy,
+        notifications: dbUser[uid].Notifications,
+        notiFrequency: dbUser[uid].NotiFrequency
+      });
+    })
+    .catch(() => {
+      res.status(403).end();
+    })
+});
+
+app.post('/changeNickname', (req,res) => {
+  auth(req.body.idToken)
+    .then((uid) => {
+      dbUser[uid].Nick = req.body.nick;
+      db.collection('User').doc(uid).update({
+        Nick: req.body.nick
+      });
+      res.end();
+    })
+    .catch(() => {
+      res.status(403).end();
+    })
+});
+
+app.post('/changePrivaNoti', (req,res) => {
+  auth(req.body.idToken)
+    .then((uid) => {
+      dbUser[uid].Privacy = req.body.privacy;
+      dbUser[uid].Notifications = JSON.parse(req.body.notifications);
+      dbUser[uid].NotiFrequency = parseInt(req.body.notiFrequency);
+      db.collection('User').doc(uid).update({
+        Privacy: req.body.privacy,
+        Notifications: JSON.parse(req.body.notifications),
+        NotiFrequency: parseInt(req.body.notiFrequency)
+      });
+      res.end();
+    })
+    .catch(() => {
+      res.status(403).end();
+    })
+});
+
 function auth(idToken) {
   return new Promise((resolve,reject) => {
     admin.auth().verifyIdToken(idToken)
