@@ -131,6 +131,20 @@ body {
 .profile-info-logout {
   background-color: #dc0e0e;
 }
+#login-container a {
+  display: block;
+  cursor: pointer;
+}
+#login-container a, #login-container div.pwReset {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  font-style: italic;
+}
+#login-container div.pwReset {
+  color: #ff0000;
+  display: none;
+}
 #page-content {
   background-color: #303030;
   margin-top: 50px;

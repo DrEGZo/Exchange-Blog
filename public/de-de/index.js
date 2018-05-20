@@ -36,15 +36,32 @@ function main() {
         return firebase.auth().signInWithEmailAndPassword(user, pass);
       })
       .then(function () {
-        $('#login-failed').slideUp();
         if (window.innerWidth > 767) $('#login-container').fadeOut();
         if (window.innerWidth <= 767) $('#login-container').slideUp();
       })
       .catch(function (error) {
         $('#login-failed').slideDown(); 
+        setTimeout(() => { $('#login-failed').slideUp() }, 5000);
       });
   });
   $('#login-container form').submit((e) => { e.preventDefault(); $('#login-container button').click() });
+  $('#login-container a').click(() => {
+    var mail = $('#login-container input[type="text"]').val();
+    if (mail == '') {
+      $('#pwResetMail').slideDown();
+      setTimeout(() => { $('#pwResetMail').slideUp() }, 5000);
+    } else {
+      firebase.auth().sendPasswordResetEmail(mail)
+        .then(() => {
+          $('#pwResetConfirm').slideDown();
+          setTimeout(() => { $('#pwResetConfirm').slideUp() }, 5000);
+        })
+        .catch(() => {
+          $('#login-failed').slideDown();
+          setTimeout(() => { $('#login-failed').slideUp() }, 5000);
+        });
+    }
+  });
   $.ajax({
     method: 'GET',
     url: '/getHomeContent',
