@@ -1,8 +1,4 @@
 function initMenu(callback) {
-    // // // // // // // // // //
-    // Initialize menu choice  //
-    // // // // // // // // // //
-
     var time = new Date();
     var year = time.getFullYear();
     var month = time.getMonth();
@@ -70,4 +66,6 @@ function initMenu(callback) {
             $('.month-choice .menu-button:not(.active)').hide(0);
         }
     })
+
+    callback();
 }

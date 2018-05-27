@@ -72,67 +72,48 @@
     <div id="page-title" class="container" style="display: block;">
       <div class="jumbotron">
         <h1>Hi!</h1>
-        <p>It seems as if you've just logged in for the first time. Welcome to the Exchange-Blog community!</p>
-        <p>In order to make the blog working, we require some additional data from you.</p>
+        <p>Welcome to the Exchange-Blog community!</p>
+        <p>In order to complete your signup we require some additional data from you.</p>
       </div>
     </div>
 
     <!--Name,Password Nickname, PrivacyPlan, Notifications, -->
 
     <div class="container" id="page-content">
-      <form id="form1">
-        <h4>Name</h4>
-        <input type="text" id="emailInput"><br>
+      <form>
+        <h4>E-Mail</h4>
+        <p>Please enter a valid e-mail address.</p>
+        <input type="text" id="emailInput" placeholder="example@gmail.com"><br>
         <div id="errorEmail" class="formError">Please enter a valid e-mail address</div>
-        <br>
-        <button class="save">Save</button>
-        <button class="reset">Reset</button>
-        <div class="save">Changes saved!</div>
-        <div class="reset">Changes discarded.</div>
-      </form>
-      <form id="form2">
         <h4>Your password</h4>
-        <input type="password" id="oldPasswordInput" placeholder="Current password"><br>
-        <div id="errorWrongPassword" class="formError">Wrong password</div>
-        <div id="errorPasswordRequired" class="formError">Your current password is required for this action</div>
+        <p>Please choose a secure password.</p>
         <input type="password" id="newPasswordInput" placeholder="New password"><br>
         <input type="password" id="repeatPasswordInput" placeholder="Repeat new password"><br>
         <div id="errorPasswordNequal" class="formError">Passwords do not equal</div>
         <div id="errorWeakPassword" class="formError">New password is too weak</div>
-        <br>
-        <button class="save">Save</button>
-        <button class="reset">Reset</button>
-        <div class="save">Changes saved!</div>
-        <div class="reset">Changes discarded.</div>
-      </form>
-      <form id="form3">
+        <h4>Real name</h4>
+        <p>Your real name is used for internal purposes only and is not displayed to other users. First name is enough even though full name is actually better.</p>
+        <input type="text" id="nameInput" placeholder="John Q. Public"><br>
+        <div id="errorName" class="formError">Your name has most likely more than 3 characters.</div>
         <h4>Nickname</h4>
-        <input type="text" id="nicknameInput"><br>
-        <div id="errorNickname" class="formError">Your nickname has to contain at least 4 characters</div>
-        <br>
-        <button class="save">Save</button>
-        <button class="reset">Reset</button>
-        <div class="save">Changes saved!</div>
-        <div class="reset">Changes discarded.</div>
-      </form>
-      <form id="form4">
-        <h4>Privacy & Notifications</h4>
-        <input type="radio" name="privacy" id="privacy0">Use real name<br>
-        <input type="radio" name="privacy" id="privacy1" checked>Use both real name and nickname*<br>
-        <input type="radio" name="privacy" id="privacy2">Use nickname only<br>
-        <p class="footnote">* displayed name depends on the rank of the user viewing it</p>
-        <input type="checkbox" id="notblog">Notify when a new blog is available<br>
-        <input type="checkbox" id="notmedia">Notify when new photos are posted<br>
-        <input type="checkbox" id="notstatus">Notify when a status update is published<br>
-        <br>
+        <p>Please pick any nickname (may also be equal to your real name).</p>
+        <input type="text" id="nicknameInput" placeholder="Anonymous"><br>
+        <div id="errorNickname" class="formError">Your nickname has to contain at least 4 characters.</div>
+        <h4>Notifications</h4>
+        <p>The blog provides e-mail notifications whenever new content is posted. You can adjust the settings as you like.</p>
         <input type="radio" name="notification" id="not2" checked>Send me notifications whenever new content is released<br>
         <input type="radio" name="notification" id="not1">Send me notifications once a day at most<br>
         <input type="radio" name="notification" id="not0">Don't send me any notifications<br>
+        <div id="errorNotiFrequency" class="formError">Please check at least one option.</div>
         <br>
-        <button class="save">Save</button>
-        <button class="reset">Reset</button>
-        <div class="save">Changes saved!</div>
-        <div class="reset">Changes discarded.</div>
+        <input type="checkbox" id="notblog">Notify when a new blog is available<br>
+        <input type="checkbox" id="notmedia">Notify when new photos are posted<br>
+        <input type="checkbox" id="notstatus">Notify when a status update is published<br>
+        <h4>Private Policy</h4>
+        <input type="checkbox" id="policy">I agree to the private policy.<br>
+        <div id="errorPolicy" class="formError">Please accept the private policy.</div>
+        <br>
+        <button class="save">Save and sign up</button>
       </form>
     </div>
   </body>

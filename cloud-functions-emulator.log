@@ -19865,3 +19865,246 @@ Execution took 1 ms, user function completed successfully
 2018-05-20T09:04:35.080Z - info: Execution took 237 ms, user function completed successfully
 2018-05-20T09:04:35.295Z - info: User function triggered, starting execution
 2018-05-20T09:04:35.297Z - info: Execution took 2 ms, user function completed successfully
+2018-05-25T19:10:10.156Z - info: User function triggered, starting execution
+2018-05-25T19:10:10.187Z - info: Execution took 10 ms, user function completed successfully
+2018-05-25T19:10:53.005Z - info: User function triggered, starting execution
+2018-05-25T19:10:53.106Z - info: Execution took 100 ms, user function completed successfully
+2018-05-25T19:10:53.272Z - info: User function triggered, starting execution
+2018-05-25T19:10:53.275Z - info: Execution took 2 ms, user function completed successfully
+2018-05-25T21:26:36.964Z - info: User function triggered, starting execution
+2018-05-25T21:26:37.057Z - info: Execution took 90 ms, user function completed successfully
+2018-05-25T21:26:37.235Z - info: User function triggered, starting execution
+2018-05-25T21:26:37.238Z - info: Execution took 3 ms, user function completed successfully
+2018-05-25T21:27:56.265Z - info: User function triggered, starting execution
+2018-05-25T21:27:56.268Z - info: Execution took 2 ms, user function completed successfully
+2018-05-25T21:27:56.437Z - info: User function triggered, starting execution
+2018-05-25T21:27:56.439Z - info: Execution took 1 ms, user function completed successfully
+2018-05-25T21:32:10.564Z - info: User function triggered, starting execution
+2018-05-25T21:32:10.567Z - info: Execution took 2 ms, user function completed successfully
+2018-05-25T21:32:10.736Z - info: User function triggered, starting execution
+2018-05-25T21:32:10.738Z - info: Execution took 1 ms, user function completed successfully
+2018-05-25T21:33:05.647Z - info: User function triggered, starting execution
+2018-05-25T21:33:05.649Z - info: Execution took 2 ms, user function completed successfully
+2018-05-25T21:33:05.820Z - info: User function triggered, starting execution
+2018-05-25T21:33:05.824Z - info: Execution took 3 ms, user function completed successfully
+2018-05-25T21:49:49.474Z - info: User function triggered, starting execution
+2018-05-25T21:49:50.820Z - info: Execution took 1346 ms, user function completed successfully
+2018-05-25T21:49:51.451Z - info: User function triggered, starting execution
+2018-05-25T21:49:51.455Z - info: Execution took 3 ms, user function completed successfully
+2018-05-25T21:50:39.016Z - info: User function triggered, starting execution
+2018-05-25T21:50:39.019Z - info: Execution took 3 ms, user function completed successfully
+2018-05-25T21:50:39.312Z - info: User function triggered, starting execution
+2018-05-25T21:50:39.316Z - info: Execution took 2 ms, user function completed successfully
+2018-05-25T21:51:14.134Z - info: User function triggered, starting execution
+2018-05-25T21:51:14.137Z - info: Execution took 2 ms, user function completed successfully
+2018-05-25T21:55:06.130Z - info: User function triggered, starting execution
+2018-05-25T21:55:06.132Z - info: Execution took 1 ms, user function completed successfully
+2018-05-25T21:57:24.732Z - info: User function triggered, starting execution
+2018-05-25T21:57:24.735Z - info: Execution took 3 ms, user function completed successfully
+2018-05-25T21:57:45.719Z - info: User function triggered, starting execution
+2018-05-25T21:57:45.721Z - info: Execution took 1 ms, user function completed successfully
+2018-05-25T22:07:31.236Z - info: User function triggered, starting execution
+2018-05-25T22:07:32.295Z - info: Execution took 1059 ms, user function completed successfully
+2018-05-25T22:50:25.371Z - info: User function triggered, starting execution
+2018-05-25T22:52:34.399Z - info: User function triggered, starting execution
+2018-05-25T22:52:34.405Z - info: Execution took 5 ms, user function completed successfully
+2018-05-25T22:53:35.875Z - info: User function triggered, starting execution
+2018-05-25T22:53:35.882Z - info: Execution took 5 ms, user function completed successfully
+2018-05-25T22:53:36.315Z - info: User function triggered, starting execution
+2018-05-25T22:53:36.332Z - info: Execution took 2 ms, user function completed successfully
+2018-05-25T23:07:42.566Z - info: User function triggered, starting execution
+2018-05-25T23:07:42.581Z - info: Execution took 9 ms, user function completed successfully
+2018-05-25T23:10:37.524Z - info: User function triggered, starting execution
+2018-05-25T23:10:37.542Z - info: Execution took 13 ms, user function completed successfully
+2018-05-25T23:10:37.548Z - error: (node:4992) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: Can't set headers after they are sent.
+(node:4992) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-05-25T23:12:48.359Z - info: Worker for expressapp closed due to file changes.
+2018-05-25T23:12:48.456Z - error: Function worker killed by signal: SIGTERM
+2018-05-25T23:13:15.163Z - info: User function triggered, starting execution
+2018-05-25T23:13:15.168Z - info: true true
+2018-05-25T23:13:15.173Z - info: Execution took 10 ms, user function completed successfully
+2018-05-25T23:13:15.175Z - error: (node:7492) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: Can't set headers after they are sent.
+2018-05-25T23:13:15.176Z - error: (node:7492) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-05-25T23:13:23.607Z - info: User function triggered, starting execution
+2018-05-25T23:13:23.609Z - info: true true
+Execution took 1 ms, user function completed successfully
+2018-05-25T23:13:23.610Z - error: (node:7492) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): Error: Can't set headers after they are sent.
+2018-05-25T23:13:26.172Z - info: User function triggered, starting execution
+2018-05-25T23:13:26.173Z - info: true true
+Execution took 1 ms, user function completed successfully
+2018-05-25T23:13:26.174Z - error: (node:7492) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 3): Error: Can't set headers after they are sent.
+2018-05-25T23:13:31.688Z - info: User function triggered, starting execution
+2018-05-25T23:13:31.690Z - info: true true
+Execution took 1 ms, user function completed successfully
+2018-05-25T23:13:31.691Z - error: (node:7492) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 4): Error: Can't set headers after they are sent.
+2018-05-25T23:14:18.336Z - info: Worker for expressapp closed due to file changes.
+2018-05-25T23:14:18.468Z - error: Function worker killed by signal: SIGTERM
+2018-05-25T23:14:46.424Z - info: User function triggered, starting execution
+2018-05-25T23:14:46.438Z - info: true true
+2018-05-25T23:14:46.444Z - info: Execution took 19 ms, user function completed successfully
+2018-05-25T23:15:07.832Z - info: User function triggered, starting execution
+2018-05-25T23:15:07.833Z - info: true true
+2018-05-25T23:15:07.837Z - info: Execution took 3 ms, user function completed successfully
+2018-05-25T23:15:21.071Z - info: User function triggered, starting execution
+2018-05-25T23:15:21.081Z - info: true true
+2018-05-25T23:15:21.659Z - info: Execution took 587 ms, user function completed successfully
+2018-05-25T23:19:19.144Z - info: Worker for expressapp closed due to file changes.
+2018-05-25T23:19:46.696Z - info: User function triggered, starting execution
+2018-05-25T23:19:46.700Z - info: true true
+2018-05-25T23:19:47.249Z - info: Execution took 552 ms, user function completed successfully
+2018-05-25T23:25:53.304Z - info: Worker for expressapp closed due to file changes.
+2018-05-25T23:26:28.100Z - info: User function triggered, starting execution
+2018-05-25T23:26:28.105Z - info: true true
+2018-05-25T23:26:28.755Z - info: Execution took 655 ms, user function completed successfully
+2018-05-25T23:27:47.533Z - info: Worker for expressapp closed due to file changes.
+2018-05-25T23:31:19.064Z - info: User function triggered, starting execution
+2018-05-25T23:31:19.070Z - info: true true
+2018-05-25T23:31:19.651Z - info: Execution took 588 ms, user function completed successfully
+2018-05-25T23:34:33.521Z - info: Worker for expressapp closed due to file changes.
+2018-05-25T23:36:53.789Z - info: User function triggered, starting execution
+2018-05-25T23:36:53.795Z - info: true true
+2018-05-25T23:36:54.654Z - info: Execution took 866 ms, user function completed successfully
+2018-05-25T23:37:28.362Z - info: User function triggered, starting execution
+2018-05-25T23:37:28.364Z - info: true false
+Execution took 1 ms, user function completed successfully
+2018-05-25T23:38:07.087Z - info: Worker for expressapp closed due to file changes.
+2018-05-25T23:38:43.641Z - info: User function triggered, starting execution
+2018-05-25T23:38:43.646Z - info: true true
+2018-05-25T23:38:44.489Z - info: Execution took 847 ms, user function completed successfully
+2018-05-25T23:38:53.499Z - info: User function triggered, starting execution
+2018-05-25T23:38:53.503Z - info: true false
+Execution took 1 ms, user function completed successfully
+2018-05-25T23:39:15.139Z - info: User function triggered, starting execution
+2018-05-25T23:39:15.140Z - info: true true
+2018-05-25T23:39:15.142Z - info: Execution took 2 ms, user function completed successfully
+2018-05-25T23:39:28.258Z - info: User function triggered, starting execution
+2018-05-25T23:39:28.259Z - info: true true
+Execution took 1 ms, user function completed successfully
+2018-05-25T23:40:16.171Z - info: User function triggered, starting execution
+2018-05-25T23:40:16.177Z - info: Execution took 5 ms, user function completed successfully
+2018-05-25T23:40:16.182Z - error: TypeError: Cannot read property 'Active' of undefined
+    at app.post (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:611:61)
+    at Layer.handle [as handle_request] (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\index.js:275:10)
+    at jsonParser (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\body-parser\lib\types\json.js:100:7)
+    at Layer.handle [as handle_request] (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\express\lib\router\layer.js:95:5)
+2018-05-25T23:41:51.828Z - info: Worker for expressapp closed due to file changes.
+2018-05-25T23:41:51.920Z - error: Function worker killed by signal: SIGTERM
+2018-05-25T23:42:17.086Z - info: User function triggered, starting execution
+2018-05-25T23:42:17.093Z - info: Execution took 5 ms, user function completed successfully
+2018-05-25T23:42:49.756Z - info: User function triggered, starting execution
+2018-05-25T23:42:49.768Z - info: Execution took 9 ms, user function completed successfully
+2018-05-25T23:45:38.402Z - info: User function triggered, starting execution
+2018-05-25T23:45:38.405Z - info: Execution took 2 ms, user function completed successfully
+2018-05-26T00:04:37.568Z - info: User function triggered, starting execution
+2018-05-26T00:04:37.577Z - info: Execution took 9 ms, user function completed successfully
+2018-05-26T00:05:40.503Z - info: User function triggered, starting execution
+2018-05-26T00:05:41.706Z - info: Execution took 1203 ms, user function completed successfully
+2018-05-26T00:12:25.087Z - info: User function triggered, starting execution
+2018-05-26T00:12:25.088Z - info: Execution took 2 ms, user function completed successfully
+2018-05-26T00:12:35.643Z - info: User function triggered, starting execution
+2018-05-26T00:12:36.348Z - info: Execution took 704 ms, user function completed successfully
+2018-05-26T00:18:20.170Z - info: User function triggered, starting execution
+2018-05-26T00:18:21.040Z - info: Execution took 871 ms, user function completed successfully
+2018-05-26T00:21:04.306Z - info: Worker for expressapp closed due to file changes.
+2018-05-26T00:22:12.450Z - info: User function triggered, starting execution
+2018-05-26T00:22:12.458Z - info: Execution took 7 ms, user function completed successfully
+2018-05-26T00:22:22.092Z - info: User function triggered, starting execution
+2018-05-26T00:22:22.977Z - info: Execution took 885 ms, user function completed successfully
+2018-05-26T00:23:02.711Z - info: User function triggered, starting execution
+2018-05-26T00:23:02.718Z - info: Execution took 2 ms, user function completed successfully
+2018-05-26T00:23:26.608Z - info: User function triggered, starting execution
+2018-05-26T00:23:26.690Z - info: Execution took 82 ms, user function completed successfully
+2018-05-26T00:23:26.887Z - info: User function triggered, starting execution
+2018-05-26T00:23:26.890Z - info: Execution took 3 ms, user function completed successfully
+2018-05-26T00:23:43.440Z - info: User function triggered, starting execution
+2018-05-26T00:23:43.443Z - info: Execution took 3 ms, user function completed successfully
+2018-05-26T00:23:45.653Z - info: User function triggered, starting execution
+2018-05-26T00:23:45.656Z - info: Execution took 4 ms, user function completed successfully
+2018-05-26T00:23:56.736Z - info: User function triggered, starting execution
+2018-05-26T00:23:56.739Z - info: Execution took 1 ms, user function completed successfully
+2018-05-26T00:24:04.639Z - info: User function triggered, starting execution
+2018-05-26T00:24:04.641Z - info: Execution took 1 ms, user function completed successfully
+2018-05-26T00:25:58.335Z - info: User function triggered, starting execution
+2018-05-26T00:25:58.343Z - info: Execution took 8 ms, user function completed successfully
+2018-05-26T00:30:20.348Z - info: User function triggered, starting execution
+2018-05-26T00:30:20.350Z - info: Execution took 1 ms, user function completed successfully
+2018-05-26T00:34:24.604Z - info: User function triggered, starting execution
+2018-05-26T00:34:25.980Z - info: Execution took 1375 ms, user function completed successfully
+2018-05-26T00:35:54.294Z - info: User function triggered, starting execution
+2018-05-26T00:35:54.296Z - info: Execution took 1 ms, user function completed successfully
+2018-05-26T00:37:51.622Z - info: User function triggered, starting execution
+2018-05-26T00:37:51.639Z - info: User function triggered, starting execution
+2018-05-26T00:37:52.344Z - info: Execution took 706 ms, user function completed successfully
+2018-05-26T00:37:52.467Z - info: Execution took 844 ms, user function completed successfully
+2018-05-26T00:40:30.800Z - info: User function triggered, starting execution
+2018-05-26T00:40:30.810Z - info: User function triggered, starting execution
+2018-05-26T00:40:31.481Z - info: Execution took 680 ms, user function completed successfully
+2018-05-26T00:40:31.581Z - info: Execution took 769 ms, user function completed successfully
+2018-05-26T00:42:50.952Z - info: User function triggered, starting execution
+2018-05-26T00:42:51.567Z - info: Execution took 614 ms, user function completed successfully
+2018-05-26T00:43:34.076Z - info: User function triggered, starting execution
+2018-05-26T00:43:34.083Z - info: Execution took 5 ms, user function completed successfully
+2018-05-26T14:40:37.029Z - info: User function triggered, starting execution
+2018-05-26T14:40:37.041Z - info: Execution took 13 ms, user function completed successfully
+2018-05-26T14:40:39.677Z - info: User function triggered, starting execution
+2018-05-26T14:40:39.690Z - info: Execution took 1 ms, user function completed successfully
+2018-05-26T14:41:34.082Z - info: User function triggered, starting execution
+2018-05-26T14:41:34.167Z - info: Execution took 85 ms, user function completed successfully
+2018-05-26T14:41:34.351Z - info: User function triggered, starting execution
+2018-05-26T14:41:34.354Z - info: Execution took 3 ms, user function completed successfully
+2018-05-26T14:41:52.260Z - info: User function triggered, starting execution
+2018-05-26T14:41:52.262Z - info: Execution took 1 ms, user function completed successfully
+2018-05-26T14:41:56.224Z - info: User function triggered, starting execution
+2018-05-26T14:41:56.257Z - info: Execution took 1 ms, user function completed successfully
+2018-05-26T14:43:24.567Z - info: User function triggered, starting execution
+2018-05-26T14:43:25.468Z - info: Execution took 899 ms, user function completed successfully
+2018-05-26T14:47:08.582Z - info: User function triggered, starting execution
+2018-05-26T14:47:09.204Z - info: Execution took 608 ms, user function completed successfully
+2018-05-26T14:48:27.499Z - info: User function triggered, starting execution
+2018-05-26T14:48:27.501Z - info: Execution took 1 ms, user function completed successfully
+2018-05-26T14:49:22.083Z - info: User function triggered, starting execution
+2018-05-26T14:49:22.737Z - info: Execution took 652 ms, user function completed successfully
+2018-05-26T14:52:46.961Z - info: User function triggered, starting execution
+2018-05-26T14:52:47.680Z - info: Execution took 717 ms, user function completed successfully
+2018-05-26T15:07:46.542Z - info: User function triggered, starting execution
+2018-05-26T15:07:46.549Z - info: Execution took 6 ms, user function completed successfully
+2018-05-26T15:09:07.271Z - info: User function triggered, starting execution
+2018-05-26T15:09:08.097Z - info: Execution took 826 ms, user function completed successfully
+2018-05-26T16:54:17.132Z - error: C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\index.js:1
+(function (exports, require, module, __filename, __dirname) { import { FieldValue } from '@google-cloud/firestore';
+                                                              ^^^^^^
+
+SyntaxError: Unexpected token import
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:607:28)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Module.require (module.js:587:17)
+    at require (internal/module.js:11:18)
+    at process.on (C:\Users\DrEGZo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@google-cloud\functions-emulator\src\supervisor\worker.js:76:28)
+2018-05-26T16:54:17.524Z - error: Function worker crashed with exit code: 1
+2018-05-26T17:03:21.683Z - info: User function triggered, starting execution
+2018-05-26T17:03:21.710Z - info: Execution took 8 ms, user function completed successfully
+2018-05-26T17:03:34.242Z - info: User function triggered, starting execution
+2018-05-26T17:03:34.895Z - info: Execution took 651 ms, user function completed successfully
+2018-05-26T17:03:35.088Z - info: User function triggered, starting execution
+2018-05-26T17:03:35.093Z - info: Execution took 3 ms, user function completed successfully
+2018-05-26T17:04:53.788Z - info: User function triggered, starting execution
+2018-05-26T17:04:53.790Z - info: Execution took 1 ms, user function completed successfully
+2018-05-26T17:05:00.362Z - info: User function triggered, starting execution
+2018-05-26T17:05:00.373Z - info: Execution took 0 ms, user function completed successfully
+2018-05-26T17:06:03.788Z - info: User function triggered, starting execution
+2018-05-26T17:06:03.790Z - info: Execution took 1 ms, user function completed successfully
+2018-05-26T17:07:11.490Z - info: User function triggered, starting execution
+2018-05-26T17:07:12.282Z - info: Execution took 792 ms, user function completed successfully
+2018-05-26T17:07:23.229Z - info: User function triggered, starting execution
+2018-05-26T17:07:23.522Z - info: Execution took 291 ms, user function completed successfully

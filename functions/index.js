@@ -1,5 +1,6 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
+const serviceAccount = require("./adminsdk.json");
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
@@ -8,7 +9,11 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
-admin.initializeApp();
+//admin.initializeApp(functions.config().firebase);
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://exchange-blog.firebaseio.com"
+});
 
 const db = admin.firestore();
 
@@ -505,7 +510,7 @@ app.post('/getActivityFeed', (req,res) => {
       });
       var result = [];
       for (var i = 0; i < contentList.length; i++) {
-        if (result.length == 10) break;
+        if (result.length == 5) break;
         if (contentList[i].typ == 'blog') {
           if (dbBlogentries[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1 && contentList[i].upload < time) {
             result.push({
@@ -589,11 +594,9 @@ app.post('/changeNickname', (req,res) => {
 app.post('/changePrivaNoti', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
-      dbUser[uid].Privacy = req.body.privacy;
       dbUser[uid].Notifications = JSON.parse(req.body.notifications);
       dbUser[uid].NotiFrequency = parseInt(req.body.notiFrequency);
       db.collection('User').doc(uid).update({
-        Privacy: req.body.privacy,
         Notifications: JSON.parse(req.body.notifications),
         NotiFrequency: parseInt(req.body.notiFrequency)
       });
@@ -603,6 +606,105 @@ app.post('/changePrivaNoti', (req,res) => {
       res.status(403).end();
     })
 });
+
+app.post('/signUp', (req,res) => {
+  if (req.body.uid in dbUser) {
+    if (!dbUser[req.body.uid].Active) {
+      admin.auth().updateUser(req.body.uid, {
+        email: req.body.mail,
+        password: req.body.pass
+      })
+        .then(() => {
+          noti = req.body.noti;
+          for (key in noti) {
+            noti[key] = noti[key] === 'true';
+          }
+          db.collection('User').doc(req.body.uid).update({ 
+            Active: true,
+            Name: req.body.name,
+            Nick: req.body.nick,
+            Notifications: noti,
+            NotiFrequency: parseInt(req.body.notifreq)
+          });
+          res.json({ success: true });
+        })
+        .catch((err) => {
+          res.json({ success: false, error: err });
+        })
+    } else {
+      res.status(403).end();
+    }
+  } else {
+    res.status(403).end();
+  }
+});
+
+/*
+
+Das war mal dafür gedacht, eine Email Authentifizierung zu bauen, 
+weil die von Firebase irgendwie nicht funktioniert hat.
+Tatsächlich hat sie sehr wohl funktioniert... mein Postfach war einfach voll >.<
+
+So kann man mal eben 2 Stunden Zeit verschwenden...
+
+app.post('/verifyEmail', (req,res) => {
+  auth(req.body.idToken)
+    .then((uid) => {
+      var key = createNewDatabaseKey();
+      db.collection('User').doc(uid).update({
+        AuthId: key
+      });
+      admin.auth().getUser(uid)
+        .then((user) => {
+          console.log(user.email,key)
+          var text = 'Hello,\n\nIn order to verify your e-mail adress, please follow this link:\n\n';
+          text += 'https://exchange-blog.com/authenticate/' + uid + '/' + key + '/\n\n';
+          text += 'If you didn’t ask to verify this address, you can ignore this email.\n\n';
+          text += 'Your Exchange Blog Team';
+          var transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+              user: 'noreply.exchangeblog@gmail.com',
+              pass: 'U6LJ0omuqEBO6NqxBK82'
+            }
+          });
+          var mailOptions = {
+            from: 'Exchange Blog',
+            to: user.email,
+            subject: 'Verify your Exchange Blog e-mail',
+            text: text
+          };
+          transporter.sendMail(mailOptions);
+          res.end();
+        });
+    })
+    .catch(() => {
+      res.status(403).end();
+    });
+})
+
+app.get('/authenticate/:uid/:key', (req,res) => {
+  try {
+    if (dbUser[req.params.uid].AuthId == req.params.key) {
+      db.collection('User').doc(req.params.uid).update({
+        AuthId: FieldValue.delete()
+      });
+      admin.auth().updateUser(req.body.uid, {
+        emailVerified: true
+      })
+        .then(() => {
+          res.send('Your e-mail address has been successfully verified :)');
+        })
+        .catch(() => {
+          res.send('Your verification link is invalid :/');
+        });
+    } else {
+      res.send('Your verification link is invalid :/');
+    }
+  } catch (e) {
+    res.send('Your verification link is invalid :/');
+  }
+});*/
 
 function auth(idToken) {
   return new Promise((resolve,reject) => {

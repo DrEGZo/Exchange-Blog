@@ -60,9 +60,12 @@ function main() {
                 .then(() => {
                     user.updateEmail($('#emailInput').val())
                         .then(() => {
+                            return firebase.auth().currentUser.sendEmailVerification()
+                        })
+                        .then(() => {
                             $('#form1 div.save').slideDown();
                             $('#form2 input').val('');
-                            setTimeout(() => { $('#form1 div.save').slideUp(); },5000)
+                            setTimeout(() => { $('#form1 div.save').slideUp(); }, 5000);
                         })
                         .catch(() => {
                             //Invalid Email
@@ -173,25 +176,14 @@ function main() {
         //Form 4
         $('#form4').submit((e) => { e.preventDefault() });
         $('#form4 button.save').click(() => {
-            var p0 = document.getElementById('privacy0').checked;
-            var p1 = document.getElementById('privacy1').checked;
-            var p2 = document.getElementById('privacy2').checked;
             var n0 = document.getElementById('notblog').checked;
             var n1 = document.getElementById('notmedia').checked;
             var n2 = document.getElementById('notstatus').checked;
             var nf0 = document.getElementById('not0').checked;
             var nf1 = document.getElementById('not1').checked;
             var nf2 = document.getElementById('not2').checked;
-            var privacy = 'medium';
             var nots;
             var nofs = 2;
-            if (p0) {
-                privacy = 'weak';
-            } else if (p1) {
-                privacy = 'medium';
-            } else if (p2) {
-                privacy = 'strong';
-            } 
             nots = JSON.stringify({
                 blog: n0,
                 media: n1,
@@ -209,7 +201,7 @@ function main() {
                     $.ajax({
                         method: 'POST',
                         url: '/changePrivaNoti',
-                        data: { "idToken": idToken, "privacy": privacy, "notifications": nots, "notiFrequency": nofs },
+                        data: { "idToken": idToken, "notifications": nots, "notiFrequency": nofs },
                         error: () => { redirector(403) },
                         success: () => {
                                 $('#form4 div.save').slideDown();
@@ -228,37 +220,7 @@ function main() {
         });
         //Seite anzeigen
         $('#page-content').slideDown();
-    })
-
-    /*$('#page-content form').submit((e) => { e.preventDefault(); $('#page-content button.reset').click() });
-    resetInput().then(() => { $('#page-content').slideDown() });
-    $('button.save').click(() => {
-        //Reauthenticating...
-        var user = firebase.auth().currentUser;
-        var emailChanged = $('input[name="mail"]').val() != user.email;
-        var passChanged = $('#pwnew').val() != '';
-        if (emailChanged || passChanged) {
-            var credentials = firebase.auth.EmailAuthProvider.credential(user.email, $('#pwold').val());
-            user.reauthenticateAndRetrieveDataWithCredential(credentials)
-                .then(() => {
-                    if ((!passChanged) || ($('#pwnew').val() == $('#pwrepeater').val())) {
-                        //go on
-                    } else {
-                        //do not equal
-                    }
-                }).catch(() => {
-                    //wrong password
-                })
-        } else {
-            //go on
-        }  
     });
-    $('button.reset').click(() => {
-        resetInput().then(() => {
-            $('div.reset').slideDown();
-            setTimeout(() => { $('div.reset').slideUp() },5000);
-        });
-    })*/
 }
 
 function resetForm1() {

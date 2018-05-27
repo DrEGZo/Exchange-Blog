@@ -9,6 +9,15 @@
       "source": "/de-de/blog/**/index.html",
       "destination": "/de-de/blog/blogentry/index.html"
     }, {
+      "source": "/de-de/signup/**/index.css",
+      "destination": "/de-de/signup/index.css"
+    }, {
+      "source": "/de-de/signup/**/index.js",
+      "destination": "/de-de/signup/index.js"
+    }, {
+      "source": "/de-de/signup/**",
+      "destination": "/de-de/signup/index.html"
+    }, {
       "source": "**",
       "function": "expressapp"
       }],

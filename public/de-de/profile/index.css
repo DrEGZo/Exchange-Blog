@@ -37,10 +37,6 @@ form div.save {
 form div.reset, .formError {
     color: #dc0e0e;
 }
-.footnote {
-    font-size: 10px;
-    margin-top: 5px;
-}
 input.error {
     border: 2px solid #dc0e0e;
 }
