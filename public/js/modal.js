@@ -69,14 +69,6 @@ function openModal(index,idList,datastorage) {
                 $('.media-modal span.fa-comments-o').addClass('active');
                 $('.media-modal span.fa-chevron-left').addClass('disabled');
                 $('.media-modal span.fa-chevron-right').addClass('disabled');
-
-                //Reference: https://stackoverflow.com/questions/454202/creating-a-textarea-with-auto-resize/25621277#25621277
-                $('textarea').each(function () {
-                    this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
-                }).off().on('input', function () {
-                    this.style.height = 'auto';
-                    this.style.height = (this.scrollHeight) + 'px';
-                });
             }
         });
 

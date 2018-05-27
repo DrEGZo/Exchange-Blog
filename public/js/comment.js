@@ -27,6 +27,14 @@ function launchComments(commentData,containerTyp,containerId,containerQuery,main
             $('#' + commentData[i].id).slideDown(400, function(){ $(this).removeClass('hidden') });
         }
     }
+
+    //Reference: https://stackoverflow.com/a/25621277
+    $('textarea').each(function () {
+        this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+    }).on('input', function () {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+    });
 }
 
 function stringifyComments(commentData, addReplyHeader, searchforReplies, isReplyData, hidden) {
@@ -136,12 +144,13 @@ function addCommentListeners(commentData,containerTyp,containerId,containerQuery
                     .replace(/\\/g, '\\\\');
                 firebase.auth().currentUser.getIdToken(true)
                     .then(idToken => {
-                        $.ajax({
-                            type: 'POST',
-                            url: '/addComment',
-                            contentType: 'application/json',
-                            data: '{ "idToken": "' + idToken + '", "content": "' + content + '", "containerTyp": "' + containerTyp + '", "containerId": "' + containerId + '", "mainTyp": "' + mainTyp + '", "mainId": "' + mainId + '" }',
-                            error: (jqxhr) => { redirector(jqxhr.status) }
+                        fetch('/addComment', {
+                            idToken: idToken,
+                            content: content,
+                            containerTyp: containerTyp,
+                            containerId: containerId,
+                            mainTyp: mainTyp,
+                            mainId: mainId
                         });
                     });
             }
@@ -154,12 +163,14 @@ function addCommentListeners(commentData,containerTyp,containerId,containerQuery
         $('#' + commentData[i].id + ' .comment' + replymark + '-controll>.comment-controll-report').click(((id) => () => {
             firebase.auth().currentUser.getIdToken(true)
                 .then((idToken) => {
-                    $.ajax({
-                        type: 'POST',
-                        url: '/reportComment',
-                        contentType: 'application/json',
-                        data: '{ "idToken": "' + idToken + '", "commentId": "' + id + '", "containerTyp": "' + containerTyp + '", "containerId": "' + containerId + '", "mainTyp": "' + mainTyp + '", "mainId": "' + mainId + '", "link": "' + window.location.href + '" }',
-                        error: (jqxhr) => { redirector(jqxhr.status) }
+                    fetch('/reportComment', {
+                        idToken: idToken,
+                        commentId: id,
+                        containerTyp: containerTyp,
+                        containerId: containerId,
+                        mainTyp: mainTyp,
+                        mainId: mainId,
+                        link: window.location.href
                     });
                     alert('Report sent.');
                 });
@@ -172,12 +183,11 @@ function addCommentListeners(commentData,containerTyp,containerId,containerQuery
                     if (searchForReplies) {
                         (unsubscribeFunctions[id])();
                     }
-                    $.ajax({
-                        type: 'POST',
-                        url: '/deleteComment',
-                        contentType: 'application/json',
-                        data: '{ "id": "' + id + '", "typ": "' + containerTyp + '", "source": "' + containerId + '", "idToken": "' + idToken + '" }',
-                        error: (jqxhr) => { redirector(jqxhr.status) }
+                    fetch('/deleteComment',{
+                        idToken: idToken,
+                        id: id,
+                        typ: containerTyp,
+                        source: containerId
                     });
                 });
         })(commentData[i].id));
@@ -207,17 +217,16 @@ function addRealtimeCommentListeners(containerTyp, containerId, containerQuery, 
             if (document.getElementById(globalcomments[i]) == null) {
                 firebase.auth().currentUser.getIdToken(true)
                     .then(((id) => (idToken) => {
-                        $.ajax({
-                            type: 'POST',
-                            url: '/getCommentData',
-                            contentType: 'application/json',
-                            data: '{ "idToken": "' + idToken + '", "commentId": "' + id + '", "containerTyp": "' + containerTyp + '", "mainTyp": "' + mainTyp + '", "mainId": "' + mainId + '" }',
-                            error: (jqxhr) => { redirector(jqxhr.status) },
-                            success: (data) => {
-                                launchComments([data],containerTyp,containerId,containerQuery,mainTyp,mainId,false,searchForReplies,isReplyData,true);
-                                if ($(containerQuery + '>div>textarea').attr('disabled') == 'disabled') {
-                                    $(containerQuery + '>div>textarea').val('').removeAttr('disabled');
-                                }
+                        fetch('/getCommentData',{
+                            idToken: idToken,
+                            commentId: id,
+                            containerTyp: containerTyp,
+                            mainTyp: mainTyp,
+                            mainId: mainId
+                        }).then((data) => {
+                            launchComments([data], containerTyp, containerId, containerQuery, mainTyp, mainId, false, searchForReplies, isReplyData, true);
+                            if ($(containerQuery + '>div>textarea').attr('disabled') == 'disabled') {
+                                $(containerQuery + '>div>textarea').val('').removeAttr('disabled');
                             }
                         });
                     })(globalcomments[i]));

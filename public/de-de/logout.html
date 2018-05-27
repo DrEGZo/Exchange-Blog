@@ -64,17 +64,8 @@
             }
           }
         </style>
+        <script src="/js/index.js"></script>
         <script>
-        var config = {
-            apiKey: "AIzaSyDFm0hNUOwU1TjpA8eV5dosr1-D1SX1PbM",
-            authDomain: "exchange-blog.firebaseapp.com",
-            databaseURL: "https://exchange-blog.firebaseio.com",
-            projectId: "exchange-blog",
-            storageBucket: "exchange-blog.appspot.com",
-            messagingSenderId: "977760272277"
-          };
-          firebase.initializeApp(config);
-
           $(() => {
             firebase.auth().onAuthStateChanged(() => {
               firebase.auth().signOut();

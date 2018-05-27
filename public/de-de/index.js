@@ -1,15 +1,6 @@
-// Initialize Firebase
-var config = {
-  apiKey: "AIzaSyDFm0hNUOwU1TjpA8eV5dosr1-D1SX1PbM",
-  authDomain: "exchange-blog.firebaseapp.com",
-  databaseURL: "https://exchange-blog.firebaseio.com",
-  projectId: "exchange-blog",
-  storageBucket: "exchange-blog.appspot.com",
-  messagingSenderId: "977760272277"
-};
-firebase.initializeApp(config);
+$(main);
 
-$(() => {
+function main() {
   firebase.auth().onAuthStateChanged((user) => {
     adjustAuthButton();
     if (user) {
@@ -20,11 +11,9 @@ $(() => {
       $('#auth-button').fadeIn(200);
     }
   });
-  main();
-});
 
-function main() {
   $(window).resize(adjustAuthButton);
+
   $('#login-container button').click(() => {
     var user = $('#login-container input[type="text"]').val();
     var pass = $('#login-container input[type="password"]').val();
@@ -40,11 +29,14 @@ function main() {
         if (window.innerWidth <= 767) $('#login-container').slideUp();
       })
       .catch(function (error) {
-        $('#login-failed').slideDown(); 
+        $('#login-failed').slideDown();
+        $('#login-container input[type="password"]').val('');
         setTimeout(() => { $('#login-failed').slideUp() }, 5000);
       });
   });
+
   $('#login-container form').submit((e) => { e.preventDefault(); $('#login-container button').click() });
+  
   $('#login-container a').click(() => {
     var mail = $('#login-container input[type="text"]').val();
     if (mail == '') {
@@ -62,6 +54,7 @@ function main() {
         });
     }
   });
+  
   $.ajax({
     method: 'GET',
     url: '/getHomeContent',

@@ -1,57 +1,17 @@
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyDFm0hNUOwU1TjpA8eV5dosr1-D1SX1PbM",
-    authDomain: "exchange-blog.firebaseapp.com",
-    databaseURL: "https://exchange-blog.firebaseio.com",
-    projectId: "exchange-blog",
-    storageBucket: "exchange-blog.appspot.com",
-    messagingSenderId: "977760272277"
-};
-firebase.initializeApp(config);
-
-var logout = false;
-
-function redirector(status) {
-    if (logout) {
-        //Redirect to Logout Page
-        console.log('You got logged out.');
-    } else if (status == 403) {
-        window.location.replace("/de-de/accessdenied.html");
-    }
-}
-
 $(function () {
-    firebase.auth().onAuthStateChanged((user) => {
-        if (user) {
-            firebase.auth().currentUser.getIdToken(true)
-                .then((idToken) => {
-                    $.ajax({
-                        method: 'POST',
-                        url: '/auth',
-                        data: { "idToken": idToken },
-                        success: main,
-                        error: () => { redirector(403) }
-                    });
-                });
-        } else {
-            redirector(403);
-        }
-    });
+    authenticater().then(main);
 });
 
 var settings = {};
 
 function main() {
-    
-    resetSettingsData().then(() => {
-        //Alles vorausfüllen
+     resetSettingsData().then(() => {
         resetForm1();
         resetForm3();
         resetForm4();
-
         var user = firebase.auth().currentUser;
+        $('form').submit((e) => { e.preventDefault() });
         //Form 1
-        $('#form1').submit((e) => { e.preventDefault() });
         $('#form1 button.save').click(() => {
             $('input.error').removeClass('error');
             $('.formError').slideUp();
@@ -93,6 +53,7 @@ function main() {
             $('#form1 div.reset').slideDown();
             setTimeout(() => { $('#form1 div.reset').slideUp() }, 5000);
         });
+
         //Form 2
         $('#form2').submit((e) => { e.preventDefault() });
         $('#form2 button.save').click(() => {
@@ -124,8 +85,13 @@ function main() {
                     })
                     .catch(() => {
                         //Wrong Password!
-                        $('#oldPasswordInput').addClass('error');
-                        $('#errorWrongPassword').slideDown();
+                        if ($('#oldPasswordInput').val() == '') {
+                            $('#oldPasswordInput').addClass('error');
+                            $('#errorPasswordRequired').slideDown();
+                        } else {
+                            $('#oldPasswordInput').addClass('error');
+                            $('#errorWrongPassword').slideDown();
+                        }
                         $('#form2 input').val('');
                     });
             }
@@ -137,6 +103,7 @@ function main() {
             $('#form2 div.reset').slideDown();
             setTimeout(() => { $('#form2 div.reset').slideUp() }, 5000);
         });
+
         //Form 3
         $('#form3').submit((e) => { e.preventDefault() });
         $('#form3 button.save').click(() => {
@@ -149,17 +116,14 @@ function main() {
             } else {
                 firebase.auth().currentUser.getIdToken(true)
                     .then((idToken) => {
-                        $.ajax({
-                            method: 'POST',
-                            url: '/changeNickname',
-                            data: { "idToken": idToken, "nick": $('#nicknameInput').val() },
-                            error: () => { redirector(403) },
-                            success: () => {
-                                    $('#form3 div.save').slideDown();
-                                    setTimeout(() => { $('#form3 div.save').slideUp(); }, 5000);
-                                }
-                        
+                        return fetch('/changeNickname',{
+                            idToken: idToken,
+                            nick: $('#nicknameInput').val()
                         });
+                    })
+                    .then(() => {
+                        $('#form3 div.save').slideDown();
+                        setTimeout(() => { $('#form3 div.save').slideUp(); }, 5000);
                     });
             }
         });
@@ -173,6 +137,7 @@ function main() {
                     setTimeout(() => { $('#form3 div.reset').slideUp() }, 5000);
                 });
         });
+
         //Form 4
         $('#form4').submit((e) => { e.preventDefault() });
         $('#form4 button.save').click(() => {
@@ -198,16 +163,15 @@ function main() {
             } 
             firebase.auth().currentUser.getIdToken(true)
                 .then((idToken) => {
-                    $.ajax({
-                        method: 'POST',
-                        url: '/changePrivaNoti',
-                        data: { "idToken": idToken, "notifications": nots, "notiFrequency": nofs },
-                        error: () => { redirector(403) },
-                        success: () => {
-                                $('#form4 div.save').slideDown();
-                                setTimeout(() => { $('#form4 div.save').slideUp(); }, 5000)
-                            }
+                    return fetch('/changePrivaNoti',{
+                        idToken: idToken,
+                        notifications: nots,
+                        notiFrequency: nofs
                     });
+                })
+                .then(() => {
+                    $('#form4 div.save').slideDown();
+                    setTimeout(() => { $('#form4 div.save').slideUp(); }, 5000)
                 })
         });
         $('#form4 button.reset').click(() => {
@@ -218,7 +182,7 @@ function main() {
                     setTimeout(() => { $('#form4 div.reset').slideUp() }, 5000);
                 });
         });
-        //Seite anzeigen
+        
         $('#page-content').slideDown();
     });
 }
@@ -248,19 +212,11 @@ function resetForm4() {
 }
 
 function resetSettingsData() {
-    return new Promise ((resolve,reject) => {
-        firebase.auth().currentUser.getIdToken(true)
-            .then((idToken) => {
-                $.ajax({
-                    method: 'POST',
-                    url: '/getUserSettings',
-                    data: { "idToken": idToken },
-                    error: () => { redirector(403) },
-                    success: (data) => {
-                        settings = data;
-                        resolve();
-                    }
-                });
-            });
-    })
+    return firebase.auth().currentUser.getIdToken(true)
+        .then((idToken) => {
+            return fetch('/getUserSettings', {idToken: idToken});
+        })
+        .then((data) => {
+            settings = data;
+        });
 }

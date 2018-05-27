@@ -73,6 +73,8 @@ app.get('/getHomeContent', (req,res) => {
       upload: dbBlogentries[blogkey].Upload.true
     })
   }
+  console.log(JSON.stringify(dbBlogentries))
+  console.log(JSON.stringify(bloglist))
   bloglist.sort((a,b) => {
     if (a.upload > b.upload) return 1;
     if (a.upload < b.upload) return -1;
@@ -82,6 +84,7 @@ app.get('/getHomeContent', (req,res) => {
   for (var i = 0; i < 3 && i < bloglist.length; i++) {
     result.push(bloglist[i]);
   }
+  console.log(JSON.stringify(result))
   res.json(result);
 })
 
