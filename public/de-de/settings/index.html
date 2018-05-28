@@ -75,17 +75,10 @@
     </div>
 
     <div class="container" id="page-content">
-      <form id="form1">
+      <form id="settings">
         <h4>E-Mail</h4>
         <input type="text" id="emailInput"><br>
         <div id="errorEmail" class="formError">Please enter a valid e-mail address</div>
-        <br>
-        <button class="save">Save</button>
-        <button class="reset">Reset</button>
-        <div class="save">Changes saved!</div>
-        <div class="reset">Changes discarded.</div>
-      </form>
-      <form id="form2">
         <h4>Password</h4>
         <input type="password" id="oldPasswordInput" placeholder="Current password"><br>
         <div id="errorWrongPassword" class="formError">Wrong password</div>
@@ -94,23 +87,9 @@
         <input type="password" id="repeatPasswordInput" placeholder="Repeat new password"><br>
         <div id="errorPasswordNequal" class="formError">Passwords do not equal</div>
         <div id="errorWeakPassword" class="formError">New password is too weak</div>
-        <br>
-        <button class="save">Save</button>
-        <button class="reset">Reset</button>
-        <div class="save">Changes saved!</div>
-        <div class="reset">Changes discarded.</div>
-      </form>
-      <form id="form3">
         <h4>Nickname</h4>
         <input type="text" id="nicknameInput"><br>
         <div id="errorNickname" class="formError">Your nickname has to contain at least 4 characters</div>
-        <br>
-        <button class="save">Save</button>
-        <button class="reset">Reset</button>
-        <div class="save">Changes saved!</div>
-        <div class="reset">Changes discarded.</div>
-      </form>
-      <form id="form4">
         <h4>Notifications</h4>
         <input type="checkbox" id="notblog">Notify when a new blog is available<br>
         <input type="checkbox" id="notmedia">Notify when new photos are posted<br>
@@ -119,6 +98,7 @@
         <input type="radio" name="notification" id="not2" checked>Send me notifications whenever new content is released<br>
         <input type="radio" name="notification" id="not1">Send me notifications once a day at most<br>
         <input type="radio" name="notification" id="not0">Don't send me any notifications<br>
+        <div id="errorNotiFrequency" class="formError">Please check at least one option.</div>
         <br>
         <button class="save">Save</button>
         <button class="reset">Reset</button>

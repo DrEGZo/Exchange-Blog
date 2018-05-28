@@ -580,7 +580,7 @@ app.post('/getUserSettings', (req,res) => {
     })
 });
 
-app.post('/changeNickname', (req,res) => {
+/*app.post('/changeNickname', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
       dbUser[uid].Nick = req.body.nick;
@@ -608,7 +608,7 @@ app.post('/changePrivaNoti', (req,res) => {
     .catch(() => {
       res.status(403).end();
     })
-});
+});*/
 
 app.post('/signUp', (req,res) => {
   if (req.body.uid in dbUser) {
@@ -641,6 +641,25 @@ app.post('/signUp', (req,res) => {
     res.status(403).end();
   }
 });
+
+app.post('/changeSettings', (req,res) => {
+  auth(req.body.idToken).then((uid) => {
+    noti = req.body.noti;
+    for (key in noti) {
+      noti[key] = noti[key] === 'true';
+    }
+    return db.collection('User').doc(uid).update({ 
+      Nick: req.body.nick,
+      Notifications: noti,
+      NotiFrequency: parseInt(req.body.notifreq)
+    });
+  }).then(() => {
+    res.end();
+  }).catch(() => {
+    res.status(403).end();
+  });
+});
+
 
 /*
 

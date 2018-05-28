@@ -13,7 +13,7 @@ function fetchCb(url, data, callback) {
         method: 'POST',
         url: url,
         data: data,
-        error: (jqxhr) => { redirector(jqxhr.status) },
+        //error: (jqxhr) => { redirector(jqxhr.status) },
         success: (data) => { callback(data) }
     });
 }
