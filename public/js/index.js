@@ -25,22 +25,30 @@ function fetch(url, data) {
 }
 
 function redirector(status) {
-    if (status == 403) {
-        window.location.replace("/de-de/accessdenied.html");
+    if (status == 401) {
+        if (firebase.auth().currentUser) {
+            window.location.replace("/de-de/alert/notVerified/");
+        } else {
+            window.location.replace("/de-de/alert/notLoggedIn/");
+        }
+    } else if (status == 403) {
+        window.location.replace("/de-de/alert/forbidden/");
+    } else if (status == 500) {
+        window.location.replace("/de-de/alert/serverError/");
+    } else {
+        window.location.replace("/de-de/alert/notFound/");
     }
 }
 
-function authenticater() {
+function authenticater(verificationRequired) {
     return new Promise ((resolve, reject) => {
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {
-                firebase.auth().currentUser.getIdToken(true)
-                    .then((idToken) => {
-                        return fetch('/auth',{idToken: idToken});
-                    })
-                    .then(resolve);
+                firebase.auth().currentUser.getIdToken(true).then((idToken) => {
+                    return fetch('/auth',{idToken: idToken});
+                }).then(resolve);
             } else {
-                redirector(403);
+                redirector(401);
             }
         });
     });

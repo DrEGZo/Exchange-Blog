@@ -9,6 +9,9 @@
       "source": "/de-de/blog/**/index.html",
       "destination": "/de-de/blog/blogentry/index.html"
     }, {
+      "source": "/de-de/alert/**",
+      "destination": "/de-de/alert/index.html"
+    }, {
       "source": "/de-de/signup/**/index.css",
       "destination": "/de-de/signup/index.css"
     }, {

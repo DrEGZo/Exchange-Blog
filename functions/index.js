@@ -116,8 +116,13 @@ app.post('/getBlogList', (req,res) => {
         });
       }
       res.json(result);
-    }).catch(() => {
-      res.status(403).end();
+    }).catch((err) => {
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
     });
 });
 
@@ -134,8 +139,13 @@ app.post('/getMediaList', (req,res) => {
         if (hasPermission && isShown && yearMatches && monthMatches) idlist.push(mediakey);
       }
       res.json(evaluateIdList(idlist,uid));
-    }).catch(() => {
-      res.status(403).end();
+    }).catch((err) => {
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
     });
 });
 
@@ -144,8 +154,12 @@ app.post('/getGalleryData', (req,res) => {
     .then((uid) => {
       res.json(evaluateIdList(req.body.list, uid));
     }).catch((err) => {
-      console.log(err);
-      res.status(403).end();
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
     });
 });
 
@@ -155,8 +169,13 @@ app.post('/getMediaData', (req,res) => {
       result = getMetadata('media', req.body.mid, uid);
       result.description = dbMedia[req.body.mid].Description;
       res.json(result);
-    }).catch(() => {
-      res.status(403).end();
+    }).catch((err) => {
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
     });
 })
 
@@ -178,22 +197,30 @@ app.post('/getBlogData', (req, res) => {
         res.status(404).end();
       }
     }).catch((err) => {
-      console.log(err)
-      res.status(403).end();
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
     });
 });
 
 app.post('/auth', (req,res) => {
   auth(req.body.idToken)
     .then(() => {
-      res.send('valid');
-    }).catch(() => {
-      res.status(403).end();
-    })
+      res.end();
+    }).catch((err) => {
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
+    });
 });
 
 app.post('/addComment', (req, res) => {
-  //idToken, mainTyp+Id, containerTyp+Id, content
   var reference;
   if (req.body.containerTyp == 'blog') {
     reference = 'Blogentries';
@@ -209,57 +236,67 @@ app.post('/addComment', (req, res) => {
     .then((uid) => {
       var mainTyp = req.body.mainTyp;
       var mainId = req.body.mainId;
-      if (mainTyp == 'blog') {
-        if (dbBlogentries[mainId].Visibility.indexOf(dbUser[uid].Rank) == -1) reject();
-      } else if (mainTyp == 'media') {
-        if (dbMedia[mainId].Visibility.indexOf(dbUser[uid].Rank) == -1) reject();
-      } else if (mainTyp == 'status') {
-        if (dbStatusUpdates[mainId].Visibility.indexOf(dbUser[uid].Rank) == -1) reject();
-      }
-      if (req.body.containerTyp == 'comment') {
-        return db.collection('CommentReplies').doc(databaseKey).set({
-          author: uid,
-          content: escapeHtml(req.body.content),
-          time: new Date(),
-          source: { typ: reference, id: req.body.containerId }
-        });
+      if ((() => {
+        if (mainTyp == 'blog') {
+          return dbBlogentries[mainId].Visibility.indexOf(dbUser[uid].Rank) == -1;
+        } else if (mainTyp == 'media') {
+          return dbMedia[mainId].Visibility.indexOf(dbUser[uid].Rank) == -1;
+        } else if (mainTyp == 'status') {
+          return dbStatusUpdates[mainId].Visibility.indexOf(dbUser[uid].Rank) == -1;
+        } else { return true }
+      })()) {
+        res.status(403).end();
       } else {
-        return db.collection('Comments').doc(databaseKey).set({
-          author: uid,
-          content: escapeHtml(req.body.content),
-          replies: [],
-          time: new Date(),
-          source: { typ: reference, id: req.body.containerId }
+        (() => new Promise((resolve,reject) => { resolve() }))().then(() => {
+          if (req.body.containerTyp == 'comment') {
+            return db.collection('CommentReplies').doc(databaseKey).set({
+              author: uid,
+              content: escapeHtml(req.body.content),
+              time: new Date(),
+              source: { typ: reference, id: req.body.containerId }
+            });
+          } else {
+            return db.collection('Comments').doc(databaseKey).set({
+              author: uid,
+              content: escapeHtml(req.body.content),
+              replies: [],
+              time: new Date(),
+              source: { typ: reference, id: req.body.containerId }
+            });
+          }
+        }).then(() => {
+          var containerId = req.body.containerId;
+          if (req.body.containerTyp == 'comment') {
+            dbComments[containerId].replies.push(databaseKey);
+            db.collection('Comments').doc(containerId).update({
+              replies: dbComments[containerId].replies
+            });
+          } else if (req.body.containerTyp == 'media') {
+            dbMedia[containerId].Comments.push(databaseKey);
+            db.collection('Media').doc(containerId).update({
+              Comments: dbMedia[containerId].Comments
+            });
+          } else if (req.body.containerTyp == 'blog') {
+            dbBlogentries[containerId].Comments.push(databaseKey);
+            db.collection('Blogentries').doc(containerId).update({
+              Comments: dbBlogentries[containerId].Comments
+            });
+          } else if (req.body.containerTyp == 'status') {
+            dbStatusUpdates[containerId].Comments.push(databaseKey);
+            db.collection('StatusUpdates').doc(containerId).update({
+              Comments: dbStatusUpdates[containerId].Comments
+            });
+          }
+          res.end();
         });
       }
-      res.status(403).end();
-    }).then(() => {
-      var containerId = req.body.containerId;
-      if (req.body.containerTyp == 'comment') {
-        dbComments[containerId].replies.push(databaseKey);
-        db.collection('Comments').doc(containerId).update({
-          replies: dbComments[containerId].replies
-        });
-      } else if (req.body.containerTyp == 'media') {
-        dbMedia[containerId].Comments.push(databaseKey);
-        db.collection('Media').doc(containerId).update({
-          Comments: dbMedia[containerId].Comments
-        });
-      } else if (req.body.containerTyp == 'blog') {
-        dbBlogentries[containerId].Comments.push(databaseKey);
-        db.collection('Blogentries').doc(containerId).update({
-          Comments: dbBlogentries[containerId].Comments
-        });
-      } else if (req.body.containerTyp == 'status') {
-        dbStatusUpdates[containerId].Comments.push(databaseKey);
-        db.collection('StatusUpdates').doc(containerId).update({
-          Comments: dbStatusUpdates[containerId].Comments
-        });
-      }
-      res.end();
     }).catch((err) => {
-      console.log(err)
-      res.status(403).end();
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
     });
 });
 
@@ -375,8 +412,12 @@ app.post('/deleteComment', (req, res) => {
         }
       }
     }).catch((err) => {
-      console.log(err);
-      res.status(403).end();
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
     });
 });
 
@@ -426,8 +467,13 @@ app.post('/reportComment', (req,res) => {
       };
       transporter.sendMail(mailOptions);
       res.end();
-    }).catch(() => {
-      res.status(403).end();
+    }).catch((err) => {
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
     });
 });
 
@@ -476,7 +522,12 @@ app.post('/getCommentData', (req,res) => {
         res.status(403).end();
       }
     }).catch((err) => {
-      res.status(403).end();
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
     });
 });
 
@@ -560,8 +611,13 @@ app.post('/getActivityFeed', (req,res) => {
         }
       }
       res.json(result);
-    }).catch(() => {
-      res.status(403).end();
+    }).catch((err) => {
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
     });
 });
 
@@ -574,10 +630,14 @@ app.post('/getUserSettings', (req,res) => {
         notifications: dbUser[uid].Notifications,
         notiFrequency: dbUser[uid].NotiFrequency
       });
-    })
-    .catch(() => {
-      res.status(403).end();
-    })
+    }).catch((err) => {
+      res.status(500);
+      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+        res.status(401);
+      }).then(() => auth(req.body.idToken)).catch(() => {
+        res.status(403);
+      }).then(() => { res.end(err) });
+    });
 });
 
 /*app.post('/changeNickname', (req,res) => {
@@ -638,7 +698,7 @@ app.post('/signUp', (req,res) => {
       res.status(403).end();
     }
   } else {
-    res.status(403).end();
+    res.status(404).end();
   }
 });
 
@@ -655,8 +715,13 @@ app.post('/changeSettings', (req,res) => {
     });
   }).then(() => {
     res.end();
-  }).catch(() => {
-    res.status(403).end();
+  }).catch((err) => {
+    res.status(500);
+    admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+      res.status(401);
+    }).then(() => auth(req.body.idToken)).catch(() => {
+      res.status(403);
+    }).then(() => { res.end(err) });
   });
 });
 
@@ -851,5 +916,8 @@ function createNewDatabaseKey() {
   return id;
 }
 
+app.use(function (req, res) {
+  res.status(404).end();
+});
 
 exports.expressapp = functions.https.onRequest(app);
