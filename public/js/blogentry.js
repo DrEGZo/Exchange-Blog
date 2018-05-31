@@ -1,5 +1,5 @@
 $(function () {
-  authenticater().then(main);
+  authenticater(true).then(main);
 });
 
 var blogid = window.location.href.split('/')[5];

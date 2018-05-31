@@ -61,7 +61,7 @@ function main() {
                             return firebase.auth().currentUser.sendEmailVerification()
                         })
                         .then(() => {
-                            window.location.replace('/de-de/signedup.html')
+                            window.location.replace('/de-de/alert/signedUp/');
                         });
                 }
             })

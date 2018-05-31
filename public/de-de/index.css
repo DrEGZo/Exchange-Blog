@@ -1,3 +1,6 @@
+#auth-button {
+  display: none;
+}
 .carousel-fitter {
   position: absolute;
   top: 0;

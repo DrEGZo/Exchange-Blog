@@ -725,6 +725,22 @@ app.post('/changeSettings', (req,res) => {
   });
 });
 
+app.post('/getUserData',(req,res) => {
+  auth(req.body.idToken).then((uid) => {
+    res.json({
+      name: dbUser[uid].Nick,
+      rank: dbUser[uid].Rank
+    });
+  }).catch((err) => {
+    res.status(500);
+    admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+      res.status(401);
+    }).then(() => auth(req.body.idToken)).catch(() => {
+      res.status(403);
+    }).then(() => { res.end(err) });
+  });
+});
+
 
 /*
 

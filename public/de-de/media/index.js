@@ -1,5 +1,5 @@
 $(function () {
-  authenticater().then(() => { initMenu(initGallery) });
+  authenticater(true).then(() => { initMenu(initGallery) });
 });
 
 function initGallery() {

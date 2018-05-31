@@ -25,6 +25,11 @@ form button.save {
 form button.reset {
     background-color: #dc0e0e;
 }
+form button.verification {
+    background-color: #1aab26;
+    padding: 3px 10px;
+    margin: 0;
+}
 form div {
     display: none;
     font-weight: 600;

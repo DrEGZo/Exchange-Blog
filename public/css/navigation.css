@@ -26,7 +26,6 @@ body {
 }
 #auth-button {
   background-color: #1aab26;
-  display: none;
   border-radius: 5px;
 }
 #auth-button:hover {

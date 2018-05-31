@@ -43,13 +43,37 @@ function redirector(status) {
 function authenticater(verificationRequired) {
     return new Promise ((resolve, reject) => {
         firebase.auth().onAuthStateChanged((user) => {
+            adjustAuthButton();
+            $(window).resize(adjustAuthButton);
             if (user) {
                 firebase.auth().currentUser.getIdToken(true).then((idToken) => {
                     return fetch('/auth',{idToken: idToken});
-                }).then(resolve);
+                }).then(() => {
+                    if ((!verificationRequired) || firebase.auth().currentUser.emailVerified){
+                        firebase.auth().currentUser.getIdToken().then((idToken) => {
+                            return fetch('/getUserData', {idToken: idToken});
+                        }).then((data) => {
+                            $('#profile-info .profile-name').html(data.name);
+                            $('#profile-info .profile-rank').html(data.rank);
+                            resolve();
+                        });
+                    } else {
+                        redirector(401);
+                    }
+                });
             } else {
                 redirector(401);
             }
         });
     });
+}
+
+function adjustAuthButton() {
+    var target = '#login-container';
+    if (firebase.auth().currentUser) target = '#profile-info';
+    if (window.innerWidth > 767) {
+      $('#auth-button').off().click(() => { $(target).fadeToggle() });
+    } else if (window.innerWidth <= 767) {
+      $('#auth-button').off().click(() => { $(target).slideToggle() });
+    }
 }

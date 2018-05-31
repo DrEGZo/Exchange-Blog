@@ -3,16 +3,21 @@ $(main);
 function main() {
   firebase.auth().onAuthStateChanged((user) => {
     adjustAuthButton();
+    $(window).resize(adjustAuthButton);
     if (user) {
-      $('#auth-button a').html('Profile');
-      $('#auth-button').addClass('loggedin').fadeIn(200);
+      firebase.auth().currentUser.getIdToken().then((idToken) => {
+        return fetch('/getUserData', {idToken: idToken});
+      }).then((data) => {
+        $('#profile-info .profile-name').html(data.name);
+        $('#profile-info .profile-rank').html(data.rank);
+        $('#auth-button a').html('Profile');
+        $('#auth-button').addClass('loggedin').fadeIn(200);
+      });
     } else {
       $('#auth-button a').html('Login');
       $('#auth-button').fadeIn(200);
     }
   });
-
-  $(window).resize(adjustAuthButton);
 
   $('#login-container button').click(() => {
     var user = $('#login-container input[type="text"]').val();
@@ -60,16 +65,6 @@ function main() {
     url: '/getHomeContent',
     success: (data) => {launchCarousel(data)}
   });
-}
-
-function adjustAuthButton() {
-  var target = '#login-container';
-  if (firebase.auth().currentUser) target = '#profile-info';
-  if (window.innerWidth > 767) {
-    $('#auth-button').off().click(() => { $(target).fadeToggle() });
-  } else if (window.innerWidth <= 767) {
-    $('#auth-button').off().click(() => { $(target).slideToggle() });
-  }
 }
 
 function launchCarousel(data) {

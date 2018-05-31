@@ -1,8 +1,11 @@
 $(function () {
-    authenticater().then(main);
+    authenticater(false).then(main);
 });
 
 function main() {
+    $('button.verification').click(() => {
+        firebase.auth().currentUser.sendEmailVerification();
+    });
     resetUserSettings().then(() => {
         $('form').submit((e) => { e.preventDefault() });
         $('button.reset').click(() => {

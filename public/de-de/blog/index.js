@@ -1,5 +1,5 @@
 $(function () {
-  authenticater().then(main);
+  authenticater(true).then(main);
 });
 
 function main() {
@@ -31,6 +31,7 @@ function main() {
 }
 
 function buildBlogList(bloglist) {
+  $('#page-content').html('');
   var date = { toDateString: () => '' };
   for (var i = 0; i < bloglist.length; i++) {
     if (date.toDateString() != new Date(bloglist[i].upload).toDateString()) {
