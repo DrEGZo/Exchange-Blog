@@ -46,7 +46,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button:hover {
+  .menu-button:hover:not(.active) {
     color: #303030;
     background-color: #ffffff;
     cursor: pointer;

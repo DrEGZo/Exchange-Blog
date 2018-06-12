@@ -39,7 +39,7 @@ function addStatusContent() {
   }
   return refreshData(new Date(time).getTime())
     .then(() => {
-      if (nextActivity.length != 0) $('#page-content').append('<a class="activity-load">Mehr Inhalte laden</a>');
+      if (nextActivity.length != 0) $('#page-content').append('<a class="activity-load">Load more activity</a>');
       $('.activity-load').click(function () {
         $(this).off().fadeOut(400, addStatusContent);
       });

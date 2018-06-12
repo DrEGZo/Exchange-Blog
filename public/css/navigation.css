@@ -24,6 +24,61 @@ body {
   font-size: 1.3em;
   color: #ffffff;
 }
+#language-choice {
+  width: 35px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 10px;
+}
+#language-choice>div {
+  position: absolute;
+  width: 35px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  transition: top 0.5s, bottom 0.5s;
+}
+#lng-cnt-0 {
+  z-index: 3;
+}
+#lng-cnt-1 {
+  z-index: 2;
+}
+#lng-cnt-2 {
+  z-index: 1;
+}
+.lng-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 100%;
+}
+.lng-bdg {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-image 0.5s, opacity 0.5s;
+}
+.lng-bdg:focus {
+  outline: none;
+}
+#lng-cnt-1 a {
+  background-image: url('/media/de.svg');
+}
+#lng-cnt-2 a {
+  background-image: url('/media/en.svg');
+}
+a.lng-bdg {
+  opacity: 0;
+}
 #auth-button {
   background-color: #1aab26;
   border-radius: 5px;
@@ -109,7 +164,6 @@ body {
   font-weight: 500;
   line-height: 15px;
   color: #ffffff;
-  background-color: #d000e0;
   margin: 2px 0;
 }
 #profile-info a {
@@ -162,14 +216,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-item:hover {
+  .nav-item:hover:not(#language-choice):not(#auth-button):not(#profile-info) {
     background-color: #303030;
   }
-  .nav-item.login:hover {
+  #auth-button:hover {
     background-color: #44b64d;
   }
-  .nav-item.logout:hover {
-    background-color: #dd3f3f;
+  #auth-button.loggedin:hover {
+    background-color: #3f73cc;
   }
   .nav-item:hover {
     transition: 0.3s;

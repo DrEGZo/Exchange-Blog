@@ -8,6 +8,40 @@ var config = {
 };
 firebase.initializeApp(config);
 
+var language = window.location.href.split('/')[3].split('-')[0];
+
+$(() => {
+    $('#lng-cnt-0 button').css('background-image', 'url("/media/' + language + '.svg")');
+    var link = window.location.href.split('/');
+    link[3] = 'de-de';
+    $('#lng-cnt-1 a').attr('href',link.join('/'));
+    link[3] = 'en-us';
+    $('#lng-cnt-2 a').attr('href', link.join('/'));
+    $('#lng-cnt-0 button').click(function(){
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).css('background-image', 'url("/media/' + language + '.svg")');
+            $('a.lng-bdg').css('opacity', '0');
+            $('#lng-cnt-1, #lng-cnt-2').css({
+                top: '0',
+                bottom: '0'
+            });
+        } else {
+            $(this).addClass('active');
+            $(this).css('background-image','url("/media/arr.svg")');
+            $('a.lng-bdg').css('opacity', '1');
+            $('#lng-cnt-1').css({
+                top: '100%',
+                bottom: '-100%'
+            });
+            $('#lng-cnt-2').css({
+                top: '200%',
+                bottom: '-200%'
+            });
+        }
+    });
+});
+
 function fetchCb(url, data, callback) {
     $.ajax({
         method: 'POST',
@@ -54,7 +88,10 @@ function authenticater(verificationRequired) {
                             return fetch('/getUserData', {idToken: idToken});
                         }).then((data) => {
                             $('#profile-info .profile-name').html(data.name);
-                            $('#profile-info .profile-rank').html(data.rank);
+                            $('#profile-info .profile-rank')
+                                .html(globalranks[data.rank][language])
+                                .css('background-color',globalranks[data.rank].c);
+                            $('#language-choice>button').css('background-image', '/media/' + language + '.svg');
                             resolve();
                         });
                     } else {
@@ -75,5 +112,99 @@ function adjustAuthButton() {
       $('#auth-button').off().click(() => { $(target).fadeToggle() });
     } else if (window.innerWidth <= 767) {
       $('#auth-button').off().click(() => { $(target).slideToggle() });
+    }
+}
+
+const globalranks = {
+    admin: {
+        de: 'Administrator',
+        en: 'Administrator',
+        c: '#ffc107'
+    },
+    family: {
+        de: 'Familie',
+        en: 'Relative',
+        c: '#3c4df7'
+    },
+    hostfamily: {
+        de: 'Gastfamilie',
+        en: 'Host Family',
+        c: '#459e0b'
+    },
+    friend: {
+        de: 'Freund',
+        en: 'Friend',
+        c: '#51bb0b'
+    },
+    schoolmate: {
+        de: 'Mitschüler',
+        en: 'Schoolmate',
+        c: '#0098ff'
+    },
+    teacher: {
+        de: 'Lehrer',
+        en: 'Teacher',
+        c: '#b200ff'
+    },
+    stepin: {
+        de: 'Stepin',
+        en: 'Stepin',
+        c: '#ff0000'
+    },
+    ices: {
+        de: 'ICES',
+        en: 'ICES',
+        c: '#ff9600'
+    }
+}
+
+const dictionary = {
+    nothingthere: {
+        de: 'Noch nichts gefunden...',
+        en: 'Nothing there yet...'
+    },
+    newarticle: {
+        de: 'Ein neuer Artikel ist verfügbar!',
+        en: 'A new article is available!',
+    },
+    newmedia: {
+        de: 'Neue Fotos sind verfügbar!',
+        en: 'New photos are available!',
+    },
+    status: {
+        de: 'Statusmeldung',
+        en: 'Status update',
+    },
+    weekday: {
+        de: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
+        en: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    },
+    month: {
+        de: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+        en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    },
+    replies: {
+        de: 'Antworten',
+        en: 'Replies'
+    },
+    report: {
+        de: 'Melden',
+        en: 'Report'
+    },
+    delete: {
+        de: 'Löschen',
+        en: 'Delete'
+    },
+    writecomment: {
+        de: 'Schreibe einen Kommentar...',
+        en: 'Write a comment...'
+    },
+    publish: {
+        de: 'Veröffentlichen',
+        en: 'Publish'
+    },
+    answertocomment: {
+        de: 'Auf Kommentar antworten...',
+        en: 'Answer to comment...'
     }
 }

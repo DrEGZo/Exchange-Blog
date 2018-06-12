@@ -1,3 +1,6 @@
+#auth-button {
+  display: none;
+}
 .carousel-fitter {
   position: absolute;
   top: 0;
@@ -26,21 +29,26 @@
   line-height: 1.2;
 }
 .carousel-caption {
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0);
   transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
 }
 .carousel-caption span.badge {
   font-size: 1.2em;
   display: inline-block;
 }
-.carousel-link:hover .carousel-caption {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  transition: 0.5s;
-}
 
 @media screen and (max-width: 900px) {
   .carousel-item {
     height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-link:hover .carousel-caption {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
   }
 }
 

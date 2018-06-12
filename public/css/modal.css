@@ -27,9 +27,11 @@
   color: #ffffff;
   font-size: 8vh;
   transition: 0.3s;
+  cursor: pointer;
 }
 .image-slider > span.disabled {
   color: #313131;
+  curser: default;
 }
 .slider-image {
   display: flex;
@@ -106,20 +108,4 @@ iframe, video {
   .image-slider > span:nth-child(5):hover {
     background-color: rgba(255, 0, 0, 0.3);
   }
-}
-
-@media screen and (max-width: 767px) {
-  /*.image-slider > span:not(.disabled):active, .image-slider > span.active {
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: 0.3s;
-  }
-  .image-slider > span:nth-child(3):active, .image-slider > span.active:nth-child(3) {
-    background-color: rgba(0, 255, 0, 0.3);
-  }
-  .image-slider > span:nth-child(4):active {
-    background-color: rgba(0, 0, 255, 0.3);
-  }
-  .image-slider > span:nth-child(5):active {
-    background-color: rgba(255, 0, 0, 0.3);
-  }*/
 }

@@ -23,23 +23,23 @@
     <script src="/js/modal.js"></script>
     <script src="/js/blogentry.js"></script>
     <title>Exchange Blog</title>
-    <!-- Flavicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/flavicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/flavicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/flavicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/flavicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/flavicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/flavicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/flavicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/flavicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/flavicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/flavicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/flavicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/flavicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/flavicon/favicon-16x16.png">
-    <link rel="manifest" href="/flavicon/manifest.json">
+    <!-- favicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/flavicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
 
@@ -65,8 +65,25 @@
               </li>
             </ul>
             <ul class="navbar-nav">
+              <li class="nav-item" id="language-choice">
+                <div class="nav-link" id="lng-cnt-0">
+                  <div class="lng-cnt">
+                    <button class="lng-bdg"></button>
+                  </div>
+                </div>
+                <div class="nav-link" id="lng-cnt-1">
+                  <div class="lng-cnt">
+                    <a href="" class="lng-bdg"></a>
+                  </div>
+                </div>
+                <div class="nav-link" id="lng-cnt-2">
+                  <div class="lng-cnt">
+                    <a href="" class="lng-bdg"></a>
+                  </div>
+                </div>
+              </li>
               <li class="nav-item loggedin" id="auth-button">
-                <a class="nav-link">Profile</a>
+                <a class="nav-link">Profil</a>
               </li>
               <div id="profile-info" class="nav-item">
                 <div>
@@ -77,7 +94,7 @@
                     <div class="profile-name"></div>
                     <span class="badge profile-rank"></span>
                   </div>
-                  <a href="/de-de/settings/" class="profile-info-settings">Settings</a>
+                  <a href="/de-de/settings/" class="profile-info-settings">Einstellungen</a>
                   <a href="/de-de/alert/logout/" class="profile-info-logout">Logout</a>
                 </div>
               </div>

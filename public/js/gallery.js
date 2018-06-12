@@ -32,7 +32,7 @@ function launchGallery(galleryQuery, data) {
     if (data.length == 0) {
         var content = '';
         content += '<span class="fa fa-search no-image-placeholder"></span>';
-        content += '<span class="no-image-placeholder">Nothing there yet</span>';
+        content += '<span class="no-image-placeholder">' + dictionary.nothingthere[language] + '</span>';
         gallery.innerHTML += content;
     }
     var mediaList = document.querySelectorAll(galleryQuery + ' .gallery-image');

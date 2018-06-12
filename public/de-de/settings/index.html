@@ -16,24 +16,24 @@
     <script src="/js/index.js"></script>
     <script src="/js/comment.js"></script>
     <script src="index.js"></script>
-    <title>Exchange Blog</title>
-    <!-- Flavicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/flavicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/flavicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/flavicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/flavicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/flavicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/flavicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/flavicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/flavicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/flavicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/flavicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/flavicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/flavicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/flavicon/favicon-16x16.png">
-    <link rel="manifest" href="/flavicon/manifest.json">
+    <title>Einstellungen</title>
+    <!-- favicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/flavicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
@@ -58,8 +58,25 @@
               </li>
             </ul>
             <ul class="navbar-nav">
+              <li class="nav-item" id="language-choice">
+                <div class="nav-link" id="lng-cnt-0">
+                  <div class="lng-cnt">
+                    <button class="lng-bdg"></button>
+                  </div>
+                </div>
+                <div class="nav-link" id="lng-cnt-1">
+                  <div class="lng-cnt">
+                    <a href="" class="lng-bdg"></a>
+                  </div>
+                </div>
+                <div class="nav-link" id="lng-cnt-2">
+                  <div class="lng-cnt">
+                    <a href="" class="lng-bdg"></a>
+                  </div>
+                </div>
+              </li>
               <li class="nav-item loggedin" id="auth-button">
-                <a class="nav-link">Profile</a>
+                <a class="nav-link">Profil</a>
               </li>
               <div id="profile-info" class="nav-item">
                 <div>
@@ -70,7 +87,7 @@
                     <div class="profile-name"></div>
                     <span class="badge profile-rank"></span>
                   </div>
-                  <a href="/de-de/settings/" class="profile-info-settings">Settings</a>
+                  <a href="/de-de/settings/" class="profile-info-settings">Einstellungen</a>
                   <a href="/de-de/alert/logout/" class="profile-info-logout">Logout</a>
                 </div>
               </div>
@@ -83,41 +100,41 @@
 
     <div id="page-title" class="container" style="display: block;">
       <div class="jumbotron">
-        <h1>Profile Settings</h1>
+        <h1>Profileinstellungen</h1>
       </div>
     </div>
 
     <div class="container" id="page-content">
       <form id="settings">
         <h4>E-Mail</h4>
-        <input type="text" id="emailInput"><br>
-        <div id="errorEmail" class="formError">Please enter a valid e-mail address</div>
-        <button class="verification">Send verification e-mail</button>
+        <input type="text" id="emailInput" placeholder="muster@beispiel.de"><br>
+        <div id="errorEmail" class="formError">Bitte gib eine gültige E-Mail-Adresse an!</div>
+        <button class="verification">Sende Verifizierungs-E-Mail</button>
         <h4>Password</h4>
-        <input type="password" id="oldPasswordInput" placeholder="Current password"><br>
-        <div id="errorWrongPassword" class="formError">Wrong password</div>
-        <div id="errorPasswordRequired" class="formError">Your current password is required for this action</div>
-        <input type="password" id="newPasswordInput" placeholder="New password"><br>
-        <input type="password" id="repeatPasswordInput" placeholder="Repeat new password"><br>
-        <div id="errorPasswordNequal" class="formError">Passwords do not equal</div>
-        <div id="errorWeakPassword" class="formError">New password is too weak</div>
+        <input type="password" id="oldPasswordInput" placeholder="Momentanes Passwort"><br>
+        <div id="errorWrongPassword" class="formError">Falsches Passwort</div>
+        <div id="errorPasswordRequired" class="formError">Dein aktuelles Passwort wird benötigt</div>
+        <input type="password" id="newPasswordInput" placeholder="Neues Passwort"><br>
+        <input type="password" id="repeatPasswordInput" placeholder="Wiederhole neues Passwort"><br>
+        <div id="errorPasswordNequal" class="formError">Die Passwörter sind nicht gleich</div>
+        <div id="errorWeakPassword" class="formError">Dein neues Passwort ist nicht sicher genug.</div>
         <h4>Nickname</h4>
-        <input type="text" id="nicknameInput"><br>
-        <div id="errorNickname" class="formError">Your nickname has to contain at least 4 characters</div>
-        <h4>Notifications</h4>
-        <input type="checkbox" id="notblog">Notify when a new blog is available<br>
-        <input type="checkbox" id="notmedia">Notify when new photos are posted<br>
-        <input type="checkbox" id="notstatus">Notify when a status update is published<br>
+        <input type="text" id="nicknameInput" placeholder="Anonym"><br>
+        <div id="errorNickname" class="formError">Dein Nickname muss mindestens 4 Zeichen lang sein</div>
+        <h4>Benachrichtigungen</h4>
+        <input type="checkbox" id="notblog">Benahrichtige mich, wenn ein neuer Artikel verfügbar ist<br>
+        <input type="checkbox" id="notmedia">Benachrichtige mich, wenn neue Bilder gepostet werden<br>
+        <input type="checkbox" id="notstatus">Benachrichtige mich, wenn es ein neues Statusupdate gibt<br>
         <br>
-        <input type="radio" name="notification" id="not2" checked>Send me notifications whenever new content is released<br>
-        <input type="radio" name="notification" id="not1">Send me notifications once a day at most<br>
-        <input type="radio" name="notification" id="not0">Don't send me any notifications<br>
-        <div id="errorNotiFrequency" class="formError">Please check at least one option.</div>
+        <input type="radio" name="notification" id="not2" checked>Benachrichtigungen immer sofort senden<br>
+        <input type="radio" name="notification" id="not1">Benachrichtigungen einmal pro Tag senden<br>
+        <input type="radio" name="notification" id="not0">Keine Benachrichtigungen senden<br>
+        <div id="errorNotiFrequency" class="formError">Bitte w&aumlhle mindestens eine Option aus</div>
         <br>
-        <button class="save">Save</button>
-        <button class="reset">Reset</button>
-        <div class="save">Changes saved!</div>
-        <div class="reset">Changes discarded.</div>
+        <button class="save">Speichern</button>
+        <button class="reset">Zurücksetzen</button>
+        <div class="save">Änderungen gespeichert!</div>
+        <div class="reset">Änderungen verworfen.</div>
       </form>
     </div>
   </body>

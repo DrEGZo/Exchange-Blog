@@ -1,0 +1,46 @@
+form h4 {
+    margin-top: 30px;
+}
+input[type="text"], input[type="password"] {
+    border-radius: 5px;
+    border: 2px solid #aaaaaa;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin: 10px;
+}
+form button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    color: #ffffff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+form button.save {
+    background-color: #1aab26;
+}
+form button.reset {
+    background-color: #dc0e0e;
+}
+form div {
+    display: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 5px;
+}
+form div.save {
+    color: #1aab26;
+}
+form div.reset, .formError {
+    color: #dc0e0e;
+}
+.footnote {
+    font-size: 10px;
+    margin-top: 5px;
+}
+input.error {
+    border: 2px solid #dc0e0e;
+}

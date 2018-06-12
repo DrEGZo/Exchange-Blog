@@ -1,7 +1,7 @@
 function insertMediaTeaser(medialist, i) {
     var html = '';
     html += '<div class="media-teaser" id="mediaTeaser_' + i + '">';
-    html += '<h3>New photos are available!</h3>';
+    html += '<h3>' + dictionary.newmedia[language] + '</h3>';
     html += '<div class="media-header"></div>';
     html += '<div class="media-choice">';
     html += '<div class="media-choice-wrapper">';
@@ -75,7 +75,7 @@ function insertStatusUpdate(status) {
     html += '<span class="fa fa-user-circle"></span>';
     html += '</div>';
     html += '<div class="status-author">' + status.author.name + '</div>';
-    html += '<div class="badge">' + status.author.rank + '</div>';
+    html += '<div class="badge" style="background-color:' + globalranks[status.author.rank].c + '">' + globalranks[status.author.rank][language] + '</div>';
     html += '</div>';
     html += '<div class="status-content">';
     html += '<h3>Statusmeldung</h3>';
@@ -87,11 +87,12 @@ function insertStatusUpdate(status) {
     $('#page-content').append(html);
 }
 
-function insertBlogEntry(blogentry) {
+function insertBlogEntry(blogentry, addHeader) {
     var html = '';
     html += '<div class="post" id="blogpost_' + blogentry.id + '">';
-    html += '<h3>A new article is available!</h3>';
-    html += '<a href="/de-de/blog/' + blogentry.id + '/index.html">';
+    if (addHeader) html += '<h3>' + dictionary.newarticle[language] + '</h3>';
+    if (language == 'de') html += '<a href="/de-de/blog/' + blogentry.id + '/index.html">';
+    if (language == 'en') html += '<a href="/en-us/blog/' + blogentry.id + '/index.html">';
     html += '<div class="article">';
     html += '<div class="article-teaser" style="background-image: url(\'' + blogentry.thumbnail + '\');"></div>';
     html += '<div class="article-content">';
@@ -107,13 +108,17 @@ function insertBlogEntry(blogentry) {
 }
 
 function createDivider(ActivityDate) {
-    var ActivityWeekday = new Array('Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag')[ActivityDate.getDay()];
+    var ActivityWeekday = dictionary.weekday[language][ActivityDate.getDay()];
     var ActivityDay = ActivityDate.getDate();
-    var ActivityMonth = new Array('Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember')[ActivityDate.getMonth()];
+    var ActivityMonth = dictionary.month[language][ActivityDate.getMonth()];
     var ActivityYear = ActivityDate.getFullYear();
     if (ActivityDay.length == 1) ActivityDay = '0' + ActivityDay;
     if (ActivityMonth.length == 1) ActivityMonth = '0' + ActivityMonth;
-    var datestring = ActivityWeekday + ', ' + ActivityDay + '. ' + ActivityMonth + ' ' + ActivityYear;
+    if (language == 'de') {
+        var datestring = ActivityWeekday + ', ' + ActivityDay + '. ' + ActivityMonth + ' ' + ActivityYear;
+    } else {
+        var datestring = ActivityWeekday + ', ' + ActivityMonth + ' ' + ActivityDay + ', ' + ActivityYear;
+    }
     html = '';
     html += '<div class="divider">';
     html += '<div class="baseline"></div>';

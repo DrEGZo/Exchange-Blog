@@ -62,13 +62,13 @@ app.get('/lorem', (req,res) => {
   res.send('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
 });
 
-app.get('/getHomeContent', (req,res) => {
+app.post('/getHomeContent', (req,res) => {
   var bloglist = [];
   for (var blogkey in dbBlogentries) {
     bloglist.push({
       id: blogkey,
-      title: dbBlogentries[blogkey].Title,
-      intro: dbBlogentries[blogkey].Intro,
+      title: dbBlogentries[blogkey]['Title_' + req.body.lang],
+      intro: dbBlogentries[blogkey]['Intro_' + req.body.lang],
       location: dbMedia[dbBlogentries[blogkey].Thumbnail].Location,
       upload: dbBlogentries[blogkey].Upload.true
     })
@@ -110,8 +110,8 @@ app.post('/getBlogList', (req,res) => {
         result.push({
           id: idlist[i],
           thumbnail: dbMedia[dbBlogentries[idlist[i]].Thumbnail].Location,
-          title: dbBlogentries[idlist[i]].Title,
-          intro: dbBlogentries[idlist[i]].Intro,
+          title: dbBlogentries[idlist[i]]['Title_' + req.body.lang],
+          intro: dbBlogentries[idlist[i]]['Intro_' + req.body.lang],
           upload: dbBlogentries[idlist[i]].Upload.release
         });
       }
@@ -138,7 +138,7 @@ app.post('/getMediaList', (req,res) => {
         var monthMatches = new Date(dbMedia[mediakey].Upload.true).getMonth() == req.body.month;
         if (hasPermission && isShown && yearMatches && monthMatches) idlist.push(mediakey);
       }
-      res.json(evaluateIdList(idlist,uid));
+      res.json(evaluateIdList(idlist,uid,req.body.lang));
     }).catch((err) => {
       res.status(500);
       admin.auth().verifyIdToken(req.body.idToken).catch(() => {
@@ -152,7 +152,7 @@ app.post('/getMediaList', (req,res) => {
 app.post('/getGalleryData', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
-      res.json(evaluateIdList(req.body.list, uid));
+      res.json(evaluateIdList(req.body.list, uid, req.body.lang));
     }).catch((err) => {
       res.status(500);
       admin.auth().verifyIdToken(req.body.idToken).catch(() => {
@@ -167,7 +167,7 @@ app.post('/getMediaData', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
       result = getMetadata('media', req.body.mid, uid);
-      result.description = dbMedia[req.body.mid].Description;
+      result.description = dbMedia[req.body.mid]['Description_' + req.body.lang];
       res.json(result);
     }).catch((err) => {
       res.status(500);
@@ -187,7 +187,7 @@ app.post('/getBlogData', (req, res) => {
         var hasPermission = dbBlogentries[blogid].Visibility.indexOf(dbUser[uid].Rank) != -1;
         var isShown = new Date().getTime() > new Date(dbBlogentries[blogid].Upload.release).getTime();
         if (hasPermission && isShown) {
-          res.json(getMetadata('blogpost',blogid,uid));
+          res.json(getMetadata('blogpost',blogid,uid,req.body.lang));
         } else if (isShown) {
           res.status(403).end();
         } else {
@@ -344,7 +344,7 @@ app.post('/deleteComment', (req, res) => {
       var typ = req.body.typ;
       var source = req.body.source;
       if (typ == 'blog') {
-        if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
+        if (dbComments[id].author == uid || dbUser[uid].Rank == 'admin') {
           var index = dbBlogentries[source].Comments.indexOf(id);
           var replies = dbComments[id].replies;
           dbBlogentries[source].Comments.splice(index, 1);
@@ -362,7 +362,7 @@ app.post('/deleteComment', (req, res) => {
           res.status(403).end();
         }
       } else if (typ == 'media') {
-        if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
+        if (dbComments[id].author == uid || dbUser[uid].Rank == 'admin') {
           var index = dbMedia[source].Comments.indexOf(id);
           var replies = dbComments[id].replies;
           dbMedia[source].Comments.splice(index, 1);
@@ -380,7 +380,7 @@ app.post('/deleteComment', (req, res) => {
           res.status(403).end();
         }
       } else if (typ == 'comment') {
-        if (dbCommentReplies[id].author == uid || dbUser[uid].Rank == 'Administrator') {
+        if (dbCommentReplies[id].author == uid || dbUser[uid].Rank == 'admin') {
           var index = dbComments[source].replies.indexOf(id);
           dbComments[source].replies.splice(index, 1);
           db.collection('Comments').doc(source).update({
@@ -393,7 +393,7 @@ app.post('/deleteComment', (req, res) => {
           res.status(403).end();
         }
       } else if (typ == 'status') {
-        if (dbComments[id].author == uid || dbUser[uid].Rank == 'Administrator') {
+        if (dbComments[id].author == uid || dbUser[uid].Rank == 'admin') {
           var index = dbStatusUpdates[source].Comments.indexOf(id);
           var replies = dbComments[id].replies;
           dbStatusUpdates[source].Comments.splice(index, 1);
@@ -570,8 +570,8 @@ app.post('/getActivityFeed', (req,res) => {
             result.push({
               id: contentList[i].key,
               thumbnail: dbMedia[dbBlogentries[contentList[i].key].Thumbnail].Location,
-              title: dbBlogentries[contentList[i].key].Title,
-              intro: dbBlogentries[contentList[i].key].Intro,
+              title: dbBlogentries[contentList[i].key]['Title_' + req.body.lang],
+              intro: dbBlogentries[contentList[i].key]['Intro_' + req.body.lang],
               upload: contentList[i].upload
             });
           }
@@ -580,7 +580,7 @@ app.post('/getActivityFeed', (req,res) => {
           var date = contentList[i].upload.toLocaleDateString();
           while (i < contentList.length && contentList[i].typ == 'media' && date == contentList[i].upload.toLocaleDateString()) {
             if (dbMedia[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1 && contentList[i].upload < time) {
-              medialist.push(getMetadata('media', contentList[i].key, uid));
+              medialist.push(getMetadata('media', contentList[i].key, uid, req.body.lang));
             }
             i++;
           }
@@ -604,7 +604,7 @@ app.post('/getActivityFeed', (req,res) => {
             result.push({
               id: contentList[i].key,
               author: author,
-              content: dbStatusUpdates[contentList[i].key].Content,
+              content: dbStatusUpdates[contentList[i].key]['Content_' + req.body.lang],
               upload: contentList[i].upload
             });
           }
@@ -841,7 +841,7 @@ function auth(idToken) {
 
 }
 
-function evaluateIdList(mediaidlist,uid) {
+function evaluateIdList(mediaidlist,uid,lang) {
   mediaidlist.sort((a, b) => {
     if (dbMedia[a].Upload.true.getTime() < dbMedia[b].Upload.true.getTime()) return 1;
     if (dbMedia[a].Upload.true.getTime() > dbMedia[b].Upload.true.getTime()) return -1;
@@ -849,24 +849,25 @@ function evaluateIdList(mediaidlist,uid) {
   });
   var medialist = [];
   for (var i = 0; i < mediaidlist.length; i++) {
-    medialist.push(getMetadata('media',mediaidlist[i],uid));
+    medialist.push(getMetadata('media',mediaidlist[i],uid,lang));
   }
   return medialist;
 }
 
-function getMetadata(typ,mid,uid) {
+function getMetadata(typ,mid,uid,lang) {
   var socialobject = {};
   if (typ == 'media') {
     socialobject.typ = dbMedia[mid].Typ;
     socialobject.id = mid;
     socialobject.upload = dbMedia[mid].Upload.release;
     socialobject.location = dbMedia[mid].Location;
+    socialobject.description = dbMedia[mid]['Description_' + lang];
     socialobject.comments = getComments(dbMedia[mid].Comments, dbComments, false, uid);
   } else if (typ == 'blogpost') {
-    socialobject.title = dbBlogentries[mid].Title;
+    socialobject.title = dbBlogentries[mid]['Title_' + lang];
     socialobject.thumbnail = dbMedia[dbBlogentries[mid].Thumbnail].Location;
-    socialobject.intro = dbBlogentries[mid].Intro;
-    socialobject.content = dbBlogentries[mid].Content;
+    socialobject.intro = dbBlogentries[mid]['Intro_' + lang];
+    socialobject.content = dbBlogentries[mid]['Content_' + lang];
     socialobject.upload = dbBlogentries[mid].Upload.release;
     socialobject.comments = getComments(dbBlogentries[mid].Comments, dbComments, true, uid);
   }
@@ -882,19 +883,11 @@ function getComments(commentlist,reference,searchReplies,uid) {
     newcomment.time = reference[commentkey].time;
     newcomment.id = commentkey;
     var authorkey = reference[commentkey].author;
-    var canSeeClearNames = false;
-    if (dbUser[uid].canSeeClearNames) canSeeClearNames = true;
-    if (canSeeClearNames) {
-      newcomment.author = {
-        name: dbUser[authorkey].Name,
-        rank: dbUser[authorkey].Rank
-      };
-    } else {
-      newcomment.author = {
-        name: dbUser[authorkey].Nick,
-        rank: dbUser[authorkey].Rank
-      };
-    }
+    newcomment.author = {
+      id: authorkey,
+      name: dbUser[authorkey].Nick,
+      rank: dbUser[authorkey].Rank
+    };
     if (searchReplies) newcomment.replies = getComments(reference[commentkey].replies, dbCommentReplies, false, uid);
     comments.push(newcomment);
   }

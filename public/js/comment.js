@@ -41,7 +41,7 @@ function stringifyComments(commentData, addReplyHeader, searchforReplies, isRepl
     var content = '';
     var replymark = '';
     if (isReplyData) replymark += '-reply';
-    if (commentData.length > 0 && isReplyData && addReplyHeader) content += '<h6>Antworten:</h6>';
+    if (commentData.length > 0 && isReplyData && addReplyHeader) content += '<h6>' + dictionary.replies[language] + ':</h6>';
     for (var i = 0; i < commentData.length; i++) {
         var commentAuthor = commentData[i].author.name;
         var commentRank = commentData[i].author.rank;
@@ -56,8 +56,8 @@ function stringifyComments(commentData, addReplyHeader, searchforReplies, isRepl
         content += '</span></div>';
         content += '<div class="comment' + replymark + '-author">';
         content += commentAuthor + '&nbsp';
-        content += '<span class="badge">';
-        content += commentRank
+        content += '<span class="badge" style="background-color:' + globalranks[commentRank].c + '">';
+        content += globalranks[commentRank][language];
         content += '</span></div>';
         content += '<div class="comment' + replymark + '-time">';
         content += commentTime;
@@ -66,9 +66,9 @@ function stringifyComments(commentData, addReplyHeader, searchforReplies, isRepl
         content += commentText;
         content += '</div>';
         content += '<div class="comment' + replymark + '-controll">';
-        if (searchforReplies) content += '<a class="comment-controll-reply">Antworten</a>';
-        content += '<a class="comment-controll-report">Melden</a>';
-        content += '<a class="comment-controll-delete">Löschen</a>';
+        if (searchforReplies) content += '<button class="comment-controll-reply">' + dictionary.replies[language] + '</button>';
+        content += '<button class="comment-controll-report">' + dictionary.report[language] + '</button>';
+        if (commentData[i].author.id == firebase.auth().currentUser.uid) content += '<button class="comment-controll-delete">' + dictionary.delete[language] + '</button>';
         content += '</div>';
         if (searchforReplies) {
             content += '<div class="comment-replies">';
@@ -85,12 +85,12 @@ function stringifyCommentInserter(isReplyData) {
     var content = '';
     if (!isReplyData) {
         content += '<div class="comment-insert">';
-        content += '<textarea placeholder="Schreibe einen Kommentar..."></textarea>';
-        content += '<a>Veröffentlichen</a>';
+        content += '<textarea placeholder="' + dictionary.writecomment[language] + '"></textarea>';
+        content += '<button>' + dictionary.publish[language] + '</button>';
     } else {
         content += '<div class="comment-reply-insert">';
-        content += '<textarea placeholder="Auf Kommentar antworten..."></textarea>';
-        content += '<a>Antworten</a>';
+        content += '<textarea placeholder="' + dictionary.answertocomment[language] + '"></textarea>';
+        content += '<button>' + dictionary.reply[language] + '</button>';
     }
     content += '</div>';
     return content;
@@ -100,34 +100,72 @@ function renderTime(timestring) {
     var commentDate = new Date(timestring);
     var commentTimeDiff = new Date().getTime() - commentDate.getTime();
     var commentTime = '';
-    if (commentTimeDiff < 60 * 1000) {
-        commentTime = 'vor wenigen Sekunden';
-    } else if (commentTimeDiff < 60 * 60 * 1000) {
-        commentTime = 'vor ' + Math.floor(commentTimeDiff / (60 * 1000)) + ' Minute';
-        if (Math.floor(commentTimeDiff / (60 * 1000)) > 1) commentTime += 'n';
-    } else if (commentTimeDiff < 6 * 60 * 60 * 1000) {
-        commentTime = 'vor ' + Math.floor(commentTimeDiff / (60 * 60 * 1000)) + ' Stunde';
-        if (Math.floor(commentTimeDiff / (60 * 60 * 1000)) > 1) commentTime += 'n';
-    } else {
-        if (new Date().getDay() == commentDate.getDay() && new Date().getTime() - commentDate.getTime() < 24 * 60 * 60 * 1000) {
-            commentTime += 'heute um ';
-        } else if (new Date(new Date().getTime() - 24 * 60 * 60 * 1000).getDay() == commentDate.getDay() && new Date().getTime() - commentDate.getTime() < 48 * 60 * 60 * 1000) {
-            commentTime += 'gestern um ';
-        } else if (new Date(new Date().getTime() - 7 * 24 * 60 * 60 * 1000).getTime() < commentDate.getTime() && new Date().getDay() != commentDate.getDay()) {
-            commentTime += 'letzten ' + new Array('Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag')[commentDate.getDay()] + ' um ';
+    if (language == 'de') {
+        if (commentTimeDiff < 60 * 1000) {
+            commentTime = 'vor wenigen Sekunden';
+        } else if (commentTimeDiff < 60 * 60 * 1000) {
+            commentTime = 'vor ' + Math.floor(commentTimeDiff / (60 * 1000)) + ' Minute';
+            if (Math.floor(commentTimeDiff / (60 * 1000)) > 1) commentTime += 'n';
+        } else if (commentTimeDiff < 6 * 60 * 60 * 1000) {
+            commentTime = 'vor ' + Math.floor(commentTimeDiff / (60 * 60 * 1000)) + ' Stunde';
+            if (Math.floor(commentTimeDiff / (60 * 60 * 1000)) > 1) commentTime += 'n';
         } else {
-            var commentDayOfMonth = commentDate.getDate();
-            var commentMonth = commentDate.getMonth() + 1;
-            if (commentDayOfMonth < 10) commentDayOfMonth = '0' + commentDayOfMonth;
-            if (commentMonth < 10) commentMonth = '0' + commentMonth;
-            commentTime += commentDayOfMonth + '.' + commentMonth + '.' + commentDate.getFullYear() + ' ';
+            if (new Date().getDay() == commentDate.getDay() && new Date().getTime() - commentDate.getTime() < 24 * 60 * 60 * 1000) {
+                commentTime += 'heute um ';
+            } else if (new Date(new Date().getTime() - 24 * 60 * 60 * 1000).getDay() == commentDate.getDay() && new Date().getTime() - commentDate.getTime() < 48 * 60 * 60 * 1000) {
+                commentTime += 'gestern um ';
+            } else if (new Date(new Date().getTime() - 7 * 24 * 60 * 60 * 1000).getTime() < commentDate.getTime() && new Date().getDay() != commentDate.getDay()) {
+                commentTime += 'letzten ' + dictionary.weekday.de[commentDate.getDay()] + ' um ';
+            } else {
+                var commentDayOfMonth = commentDate.getDate();
+                var commentMonth = commentDate.getMonth() + 1;
+                if (commentDayOfMonth < 10) commentDayOfMonth = '0' + commentDayOfMonth;
+                if (commentMonth < 10) commentMonth = '0' + commentMonth;
+                commentTime += commentDayOfMonth + '.' + commentMonth + '.' + commentDate.getFullYear() + ' ';
+            }
+            var commentHour = commentDate.getHours();
+            var commentMinute = commentDate.getMinutes();
+            if (commentHour < 10) commentHour = '0' + commentHour;
+            if (commentMinute < 10) commentMinute = '0' + commentMinute;
+            commentTime += commentHour + ':' + commentMinute + ' Uhr';
         }
-        var commentHour = commentDate.getHours();
-        var commentMinute = commentDate.getMinutes();
-        if (commentHour < 10) commentHour = '0' + commentHour;
-        if (commentMinute < 10) commentMinute = '0' + commentMinute;
-        commentTime += commentHour + ':' + commentMinute + ' Uhr';
+    } else {
+        if (commentTimeDiff < 60 * 1000) {
+            commentTime = 'a few seconds ago';
+        } else if (commentTimeDiff < 60 * 60 * 1000) {
+            commentTime = Math.floor(commentTimeDiff / (60 * 1000)) + ' minute';
+            if (Math.floor(commentTimeDiff / (60 * 1000)) > 1) commentTime += 's';
+            commentTime += ' ago';
+        } else if (commentTimeDiff < 6 * 60 * 60 * 1000) {
+            commentTime = Math.floor(commentTimeDiff / (60 * 60 * 1000)) + ' hour';
+            if (Math.floor(commentTimeDiff / (60 * 60 * 1000)) > 1) commentTime += 's';
+            commentTime += ' ago';
+        } else {
+            if (new Date().getDay() == commentDate.getDay() && new Date().getTime() - commentDate.getTime() < 24 * 60 * 60 * 1000) {
+                commentTime += 'today at ';
+            } else if (new Date(new Date().getTime() - 24 * 60 * 60 * 1000).getDay() == commentDate.getDay() && new Date().getTime() - commentDate.getTime() < 48 * 60 * 60 * 1000) {
+                commentTime += 'yesterday at ';
+            } else if (new Date(new Date().getTime() - 7 * 24 * 60 * 60 * 1000).getTime() < commentDate.getTime() && new Date().getDay() != commentDate.getDay()) {
+                commentTime += 'last ' + dictionary.weekday.en[commentDate.getDay()] + ' at ';
+            } else {
+                var commentDayOfMonth = commentDate.getDate();
+                var commentMonth = dictionary.month.en[commentDate.getMonth()];
+                if (commentDayOfMonth < 10) commentDayOfMonth = '0' + commentDayOfMonth;
+                commentTime += commentMonth + ' ' + commentDayOfMonth + ' ' + commentDate.getFullYear() + ' ';
+            } 
+            var commentHour = commentDate.getHours() % 12;
+            var commentMinute = commentDate.getMinutes();
+            if (commentHour < 10) commentHour = '0' + commentHour;
+            if (commentMinute < 10) commentMinute = '0' + commentMinute;
+            commentTime += commentHour + ':' + commentMinute + ' ';
+            if (commentDate.getHours() < 12) {
+                commentTime += 'a.m.';
+            } else {
+                commentTime += 'p.m.';
+            }
+        }
     }
+    
     return commentTime;
 }
 
@@ -135,7 +173,7 @@ function addCommentListeners(commentData,containerTyp,containerId,containerQuery
     var replymark = '';
     if (isReplyData) replymark = '-reply';
     if (includeSubmit) {
-        $(containerQuery + ' .comment' + replymark + '-insert a').click(((textQuery) => () => {
+        $(containerQuery + ' .comment' + replymark + '-insert button').click(((textQuery) => () => {
             if ($(textQuery).attr('disabled') != 'disabled') {
                 $(textQuery).attr('disabled', 'disabled');
                 var content = $(textQuery).val()
@@ -177,7 +215,7 @@ function addCommentListeners(commentData,containerTyp,containerId,containerQuery
             $('#' + id + ' .comment' + replymark + '-controll>.comment-controll-report').off();
         })(commentData[i].id));
         $('#' + commentData[i].id + ' .comment' + replymark + '-controll>.comment-controll-delete').click(((id) => () => {
-            $('#' + id + ' .comment' + replymark + '-controll a').off();
+            $('#' + id + ' .comment' + replymark + '-controll button').off();
             firebase.auth().currentUser.getIdToken(true)
                 .then((idToken) => {
                     if (searchForReplies) {

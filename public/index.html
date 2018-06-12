@@ -1,68 +1,144 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDFm0hNUOwU1TjpA8eV5dosr1-D1SX1PbM",
-        authDomain: "exchange-blog.firebaseapp.com",
-        databaseURL: "https://exchange-blog.firebaseio.com",
-        projectId: "exchange-blog",
-        storageBucket: "exchange-blog.appspot.com",
-        messagingSenderId: "977760272277"
-      };
-      firebase.initializeApp(config);
+<html>
 
-      function login() {
-        $.ajax({
-          method: 'POST',
-          url: '/login',
-          data: {"email": "squamato77@gmail.com", "pass": "abcde"},
-          success: (data) => {
-            firebase.auth().signInWithCustomToken(data);
-          }
-        });
-      }
-      function logout() {
-        firebase.auth().signOut();
-      }
-      function state () {
-        var user = firebase.auth().currentUser;
-        if (user) {
-          console.log('User is signed in');
-        } else {
-          console.log('No user is signed in');
-        }
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./bootstrap/bootstrap-min.css">
+  <script src="./bootstrap/bootstrap-min.js"></script>
+  <script src="./bootstrap/jquery-min.js"></script>
+  <script src="./bootstrap/popper-min.js"></script>
+  <link rel="stylesheet" href="./css/navigation.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <script src="index.js"></script>
+  <title>Startseite</title>
+  <!-- Flavicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./flavicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./flavicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./flavicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./flavicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./flavicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./flavicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./flavicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./flavicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./flavicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./flavicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./flavicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./flavicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./flavicon/favicon-16x16.png">
+  <link rel="manifest" href="./flavicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./flavicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
 
-      function auth () {
-        firebase.auth().signInWithEmailAndPassword('squamato77@gmail.com','abcdefg')
-        .catch(error => {
-          console.log('Error occured:', error);
-        })
-        .then(() => {
-          firebase.auth().currentUser.getIdToken(true)
-          .then(function(idToken) {
-            $.ajax({
-              method: 'POST',
-              url: '/auth',
-              data: {"idToken": idToken},
-              success: (data) => {
-                console.log(data);
-              }
-            });
-          });
-        });
-      }
-    </script>
-  </head>
-  <body>
-    <button type="button" onclick="auth()">Auth</button>
-    <button type="button" onclick="logout()">Logout</button>
-    <button type="button" onclick="state()">State</button>
-  </body>
+<body>
+  <div class="container-fluid page-top">
+
+    <div id="navcontainer" class="container">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="/de-de/" class="navbar-brand">Exchange Blog</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="/de-de/timeline/" class="nav-link active">Timeline</a>
+            </li>
+            <li class="nav-item">
+              <a href="/de-de/blog/" class="nav-link">Blogeinträge</a>
+            </li>
+            <li class="nav-item">
+              <a href="/de-de/media/" class="nav-link">Medien</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item" id="language-choice">
+              <div class="nav-link" id="lng-cnt-0">
+                <div class="lng-cnt">
+                  <button class="lng-bdg"></button>
+                </div>
+              </div>
+              <div class="nav-link" id="lng-cnt-1">
+                <div class="lng-cnt">
+                  <a href="" class="lng-bdg"></a>
+                </div>
+              </div>
+              <div class="nav-link" id="lng-cnt-2">
+                <div class="lng-cnt">
+                  <a href="" class="lng-bdg"></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item" id="auth-button">
+              <a class="nav-link">Login</a>
+            </li>
+            <div id="login-container" class="nav-item">
+              <form>
+                <input type="text" placeholder="E-Mail">
+                <input type="password" placeholder="Password">
+                <input type="checkbox"> Remember me
+                <button>Login</button>
+                <a>Reset password</a>
+                <div id="login-failed">Wrong e-mail or password!</div>
+                <div id="pwResetMail" class="pwReset">Please enter your e-mail address first</div>
+                <div id="pwResetConfirm" class="pwReset">A reset link has been sent to your e-mail address</div>
+              </form>
+            </div>
+            <div id="profile-info" class="nav-item">
+              <div>
+                <div class="profile-info-teaser">
+                  <div class="profile-avatar">
+                    <span class="fa fa-user-circle"></span>
+                  </div>
+                  <div class="profile-name"></div>
+                  <span class="badge profile-rank"></span>
+                </div>
+                <a href="/de-de/settings/" class="profile-info-settings">Settings</a>
+                <a href="/de-de/alert/logout/" class="profile-info-logout">Logout</a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="header_carousel" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators"></ul>
+      <div class="carousel-inner"></div>
+      <a href="#header_carousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#header_carousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </div>
+
+  <div id="page-title" class="container">
+    <div class="jumbotron">
+      <h1>Header</h1>
+      <p>Absatz</p>
+    </div>
+  </div>
+
+  <div class="container" id="page-content">
+    <p>Hier könnte ihre Werbung stehen</p>
+    <p>Hier gegebenenfalls auch.</p>
+    <p>Hier nicht.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div class="container" id="footer">
+    <p>Coockie Info & Private Policy</p>
+  </div>
+
+</body>
+
 </html>

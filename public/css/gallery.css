@@ -44,6 +44,7 @@
     right: -10px;
     transition: top 0.3s, bottom 0.3s, left 0.3s, right 0.3s;
     z-index: 1;
+    cursor: pointer;
   }
 }
 
@@ -65,16 +66,8 @@
     bottom: -5px;
     left: -5px;
     right: -5px;
+    cursor: pointer;
   }
-}
-
-@media screen and (max-width: 767px) {
-  /*.gallery-image:active {
-    top: -5px;
-    bottom: -5px;
-    left: -5px;
-    right: -5px;
-  }*/
 }
 
 @media screen and (max-width: 525px) {

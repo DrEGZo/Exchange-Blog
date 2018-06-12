@@ -9,12 +9,14 @@ function main() {
     .then((idToken) => {
       fetch('/getBlogData', {
         idToken: idToken,
+        lang: language,
         blogid: blogid
       }).then((data) => { buildBlogPage(data, idToken) });
     });
 }
 
 function buildBlogPage(content, idToken) {
+  $('title').html(content.title);
   $('#header-teaser div').css('background-image', 'url("' + content.thumbnail + '")');
   $('#header-teaser').fadeIn();
   $('#page-title h1').html(content.title);
@@ -47,6 +49,7 @@ function buildBlogPage(content, idToken) {
       $('#page-content').append(element);
       fetch('/getGalleryData', {
         idToken: idToken,
+        lang: language,
         list: mediaentities
       }).then((data) => {
         launchGallery('#' + galleryid, data);
@@ -65,6 +68,7 @@ function buildBlogPage(content, idToken) {
       $('#page-content').append(element);
       fetch('/getMediaData', {
         idToken: idToken,
+        lang: language,
         mid: rawcontent
       }).then((data) => { launchImage(imageid, data) });
     }

@@ -13,7 +13,7 @@ function main() {
         $('#profile-info .profile-rank')
           .html(globalranks[data.rank][language])
           .css('background-color',globalranks[data.rank].c);
-        $('#auth-button a').html('Profil');
+        $('#auth-button a').html('Profile');
         $('#auth-button').addClass('loggedin').fadeIn(0);
         $('#language-choice').css('visibility','visible');
       });
@@ -76,11 +76,11 @@ function launchCarousel(data) {
     var html = '';
     html += '<div class="carousel-item">';
     html += '<img src="' + data[i].location + '">';
-    html += '<a class=".carousel-link" href="/de-de/blog/' + data[i].id + '/index.html">';
+    html += '<a class=".carousel-link" href="/en-us/blog/' + data[i].id + '/index.html">';
     html += '<div class="carousel-caption">';
     html += '<h1 class="display-2 carousel-header">' + data[i].title + '</h1>';
     html += '<p>' + data[i].intro + '</p>';
-    html += '<span class="badge badge-light">Weiterlesen</span>';
+    html += '<span class="badge badge-light">Read more</span>';
     html += '</div>';
     html += '</a>';
     html += '</div>';

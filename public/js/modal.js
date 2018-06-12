@@ -64,8 +64,16 @@ function openModal(index,idList,datastorage) {
                 if (index + 1 < Object.keys(datastorage).length) $('span.fa-chevron-right').removeClass('disabled');
             } else {
                 $('.slider-image-comments').html('<div></div>');
-                launchComments(imageData.comments,'media',id,'.slider-image-comments>div','media',id,true,false,false,false);
-                $('.slider-image-comments').fadeIn(400);
+                firebase.auth().currentUser.getIdToken(true).then((idToken) => {
+                    return fetch('/getMediaData', {
+                        idToken:  idToken,
+                        lang: language,
+                        mid: id
+                    });
+                }).then((data) => {
+                    launchComments(data.comments, 'media', id, '.slider-image-comments>div', 'media', id, true, false, false, false);
+                    $('.slider-image-comments').fadeIn(400);
+                });
                 $('.media-modal span.fa-comments-o').addClass('active');
                 $('.media-modal span.fa-chevron-left').addClass('disabled');
                 $('.media-modal span.fa-chevron-right').addClass('disabled');

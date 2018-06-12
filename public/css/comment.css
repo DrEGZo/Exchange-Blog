@@ -58,13 +58,15 @@
   display: flex;
   margin: 10px 0;
 }
-.comment-controll > a {
+.comment-controll > button {
   display: block;
   color: #ffffff;
   padding: 3px 8px;
   font-size: 0.8em;
   margin: 0 3px;
   transition: 0.3s;
+  border: none;
+  cursor: pointer;
 }
 .comment-controll-reply {
   background-color: #00b107;
@@ -75,7 +77,7 @@
 .comment-controll-delete {
   background-color: #ff3a3a;
 }
-.comment-controll > a:first-child {
+.comment-controll > button:first-child {
   margin-left: 0;
 }
 .comment-insert > textarea {
@@ -85,12 +87,14 @@
   resize: none;
   padding: 15px;
 }
-.comment-insert > a {
+.comment-insert > button {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 15px;
   background-color: #00bf0d;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 .comment-replies > h6 {
   display: block;
@@ -148,15 +152,17 @@
   margin: 10px 0;
   font-size: 13px;
 }
-.comment-reply-controll > a {
+.comment-reply-controll > button {
   display: block;
   color: #ffffff;
   padding: 3px 8px;
   font-size: 0.8em;
   margin: 0 3px;
   transition: 0.3s;
+  border: none;
+  cursor: pointer;
 }
-.comment-reply-controll > a:first-child {
+.comment-reply-controll > button:first-child {
   margin-left: 0;
 }
 .comment-reply-insert {
@@ -170,12 +176,14 @@
   padding: 15px;
   font-size: 1em;
 }
-.comment-reply-insert > a {
+.comment-reply-insert > button {
   display: inline-block;
   margin-top: 10px;
   padding: 5px 10px;
   background-color: #00bf0d;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -200,18 +208,6 @@
     max-width: none;
     padding: 25px;
   }
-  /*.comment-controll-reply:active {
-    background-color: #00a206;
-    text-decoration: none;
-  }
-  .comment-controll-report:active {
-    background-color: #d68a00;
-    text-decoration: none;
-  }
-  .comment-controll-delete:active {
-    background-color: #D83a3a;
-    text-decoration: none;
-  }*/
 }
 
 @media screen and (max-width: 525px) {
@@ -225,7 +221,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .comment-controll > a, .comment-reply-controll > a {
+  .comment-controll > button, .comment-reply-controll > button {
     margin: 0;
   }
   .comment-content {
