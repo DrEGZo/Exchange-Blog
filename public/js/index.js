@@ -24,23 +24,27 @@ $(() => {
             $('a.lng-bdg').css('opacity', '0');
             $('#lng-cnt-1, #lng-cnt-2').css({
                 top: '0',
-                bottom: '0'
+                bottom: '0',
+                left: '0',
+                right: '0'
             });
         } else {
             $(this).addClass('active');
-            $(this).css('background-image','url("/media/arr.svg")');
             $('a.lng-bdg').css('opacity', '1');
-            $('#lng-cnt-1').css({
-                top: '100%',
-                bottom: '-100%'
-            });
-            $('#lng-cnt-2').css({
-                top: '200%',
-                bottom: '-200%'
-            });
+            if (window.innerWidth > 767) {
+                $(this).css('background-image', 'url("/media/arr.svg")');
+                $('#lng-cnt-1').css({ top: '100%', bottom: '-100%' });
+                $('#lng-cnt-2').css({ top: '200%', bottom: '-200%' });
+            } else {
+                $(this).css('background-image', 'url("/media/arr2.svg")');
+                $('#lng-cnt-1').css({ left: '150%', right: '-150%' });
+                $('#lng-cnt-2').css({ left: '300%', right: '-300%' });
+            }
         }
     });
 });
+
+$(window).resize(() => { if ($('#lng-cnt-0 button').hasClass('active')) $('#lng-cnt-0 button').click() });
 
 function fetchCb(url, data, callback) {
     $.ajax({

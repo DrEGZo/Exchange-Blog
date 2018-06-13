@@ -107,7 +107,7 @@ app.post('/getBlogList', (req,res) => {
       });
       var result = [];
       for (var i = 0; i < idlist.length; i++) {
-        result.push({
+        if (dbBlogentries[idlist[i]].Visibility.indexOf(dbUser[uid].Rank) != -1) result.push({
           id: idlist[i],
           thumbnail: dbMedia[dbBlogentries[idlist[i]].Thumbnail].Location,
           title: dbBlogentries[idlist[i]]['Title_' + req.body.lang],
@@ -166,9 +166,13 @@ app.post('/getGalleryData', (req,res) => {
 app.post('/getMediaData', (req,res) => {
   auth(req.body.idToken)
     .then((uid) => {
-      result = getMetadata('media', req.body.mid, uid);
-      result.description = dbMedia[req.body.mid]['Description_' + req.body.lang];
-      res.json(result);
+      if (dbMedia[req.body.mid].Visibility.indexOf(dbUser[uid].Rank) != -1) {
+        result = getMetadata('media', req.body.mid, uid);
+        result.description = dbMedia[req.body.mid]['Description_' + req.body.lang];
+        res.json(result);
+      } else {
+        res.status(403).end();
+      }
     }).catch((err) => {
       res.status(500);
       admin.auth().verifyIdToken(req.body.idToken).catch(() => {
@@ -503,20 +507,13 @@ app.post('/getCommentData', (req,res) => {
           id: commentId,
           content: datasource[commentId].content,
           time: datasource[commentId].time,
-          replies: datasource[commentId].replies
+          replies: datasource[commentId].replies,
+          author: {
+            id: datasource[commentId].author,
+            name: dbUser[datasource[commentId].author].Nick,
+            rank: dbUser[datasource[commentId].author].Rank
+          }
         };
-        var authorkey = datasource[commentId].author;
-        if (dbUser[uid].canSeeClearNames) {
-          result.author = {
-            name: dbUser[authorkey].Name,
-            rank: dbUser[authorkey].Rank
-          };
-        } else {
-          result.author = {
-            name: dbUser[authorkey].Nick,
-            rank: dbUser[authorkey].Rank
-          };
-        }
         res.json(result);
       } else {
         res.status(403).end();
@@ -537,21 +534,21 @@ app.post('/getActivityFeed', (req,res) => {
       var time = req.body.time;
       var contentList = [];
       for (key in dbBlogentries) {
-        contentList.push({
+        if (dbBlogentries[key].Visibility.indexOf(dbUser[uid].Rank) != -1) contentList.push({
           typ: 'blog',
           key: key,
           upload: dbBlogentries[key].Upload.release
         });
       }
       for (key in dbMedia) {
-        contentList.push({
+        if (dbMedia[key].Visibility.indexOf(dbUser[uid].Rank) != -1) contentList.push({
           typ: 'media',
           key: key,
           upload: dbMedia[key].Upload.release
         });
       }
       for (key in dbStatusUpdates) {
-        contentList.push({
+        if (dbStatusUpdates[key].Visibility.indexOf(dbUser[uid].Rank) != -1) contentList.push({
           typ: 'status',
           key: key,
           upload: dbStatusUpdates[key].Upload.release
@@ -588,24 +585,15 @@ app.post('/getActivityFeed', (req,res) => {
           if (medialist.length != 0) result.push(medialist);
         } else if (contentList[i].typ == 'status') {
           if (dbStatusUpdates[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1 && contentList[i].upload < time) {
-            var author;
-            var authorkey = dbStatusUpdates[contentList[i].key].Author;
-            if (dbUser[uid].canSeeClearNames) {
-              author = {
-                name: dbUser[authorkey].Name,
-                rank: dbUser[authorkey].Rank
-              };
-            } else {
-              author = {
-                name: dbUser[authorkey].Nick,
-                rank: dbUser[authorkey].Rank
-              };
-            }
             result.push({
               id: contentList[i].key,
-              author: author,
+              author: {
+                name: dbUser[dbStatusUpdates[contentList[i].key].Author].Nick,
+                rank: dbUser[dbStatusUpdates[contentList[i].key].Author].Rank
+              },
               content: dbStatusUpdates[contentList[i].key]['Content_' + req.body.lang],
-              upload: contentList[i].upload
+              upload: contentList[i].upload,
+              comments: dbStatusUpdates[contentList[i].key].Comments
             });
           }
         }
@@ -849,7 +837,8 @@ function evaluateIdList(mediaidlist,uid,lang) {
   });
   var medialist = [];
   for (var i = 0; i < mediaidlist.length; i++) {
-    medialist.push(getMetadata('media',mediaidlist[i],uid,lang));
+    if (dbMedia[mediaidlist[i]].Visibility.indexOf(dbUser[uid].Rank) != -1) 
+      medialist.push(getMetadata('media',mediaidlist[i],uid,lang));
   }
   return medialist;
 }

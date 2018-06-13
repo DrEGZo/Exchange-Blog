@@ -39,7 +39,7 @@ body {
   left: 0;
   right: 0;
   padding: 0;
-  transition: top 0.5s, bottom 0.5s;
+  transition: top 0.5s, bottom 0.5s, left 0.5s, right 0.5s;
 }
 #lng-cnt-0 {
   z-index: 3;
@@ -286,6 +286,10 @@ a.lng-bdg {
     border: 1px solid #5f5f5f;
     border-radius: 3px;
     background-color: #0ec500;
+  }
+  #language-choice {
+    height: 47px;
+    margin-bottom: 10px;
   }
 }
 

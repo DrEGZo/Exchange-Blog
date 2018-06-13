@@ -83,8 +83,16 @@ function insertStatusUpdate(status) {
     html += '<p>' + status.content.split('§§§').join('</p><p>') + '</p>';
     html += '</div>';
     html += '</div>';
+    html += '<div class="media-controll">';
+    html += '<span class="fa fa-comments-o"></span>';
+    html += '</div>';
+    html += '<div class="media-comments"></div>';
     html += '</div>';
     $('#page-content').append(html);
+    launchComments(status.comments,'status',status.id,'#' + status.id + ' .media-comments','status',status.id,true,false,false,false);
+    $('#' + status.id + ' .media-controll').click(() => {
+        $('#' + status.id + ' .media-comments').slideToggle();
+    });
 }
 
 function insertBlogEntry(blogentry, addHeader) {

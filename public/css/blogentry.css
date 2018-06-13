@@ -23,10 +23,10 @@ html {
 }
 
 
-.video-fitter {
+.video-border {
   border: 3px solid #000;
   border-radius: 18px;
-  margin: 30px 0;
+  margin: 30px 0 10px;
   overflow: hidden;
 }
 .video-container {
