@@ -186,7 +186,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media (pointer: fine) {
   .comment-controll-reply:hover {
     background-color: #00a206;
     text-decoration: none;

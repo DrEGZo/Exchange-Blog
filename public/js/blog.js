@@ -45,7 +45,7 @@ function buildBlogList(bloglist) {
     var html = '';
     html += '<div class="placeholder-wrapper" style="display: flex;justify - content: center;">';
     html += '<span class="fa fa-search no-image-placeholder"></span>';
-    html += '<span class="no-image-placeholder">Noch nichts da...</span>';
+    html += '<span class="no-image-placeholder">' + dictionary.nothingthere[language] + '</span>';
     html += '</div>'; 
     $('#page-content').html(html);
   }

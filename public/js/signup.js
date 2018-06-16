@@ -1,6 +1,7 @@
 $(main);
 
 function main() {
+    firebase.auth().useDeviceLanguage();
     var uid = window.location.pathname.split('/')[3];
     $('#page-content').slideDown();
     $('form').submit((e) => { e.preventDefault() });
@@ -61,7 +62,8 @@ function main() {
                             return firebase.auth().currentUser.sendEmailVerification()
                         })
                         .then(() => {
-                            window.location.replace('/de-de/alert/signedUp/');
+                            if (language == 'de') window.location.replace('/de-de/alert/signedUp/');
+                            else window.location.replace('/en-us/alert/signedUp/');
                         });
                 }
             })

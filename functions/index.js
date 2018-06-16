@@ -25,6 +25,7 @@ var dbComments = {};
 var dbCommentReplies = {};
 var dbBlogentries = {};
 var dbStatusUpdates = {};
+var dbMailsettings = {};
 
 db.collection('User').onSnapshot(snapshot => {
   snapshot.forEach(doc => {
@@ -34,6 +35,13 @@ db.collection('User').onSnapshot(snapshot => {
 db.collection('Media').onSnapshot(snapshot => {
   snapshot.forEach(doc => {
     dbMedia[doc.id] = doc.data();
+    if (doc.data().Upload.release.getTime() > Date.now())
+      notReleasedObjects[doc.id] = {
+        typ: 'media',
+        id: doc.id,
+        release: doc.data().Upload.release.getTime(),
+        upload: doc.data().Upload.true.getTime()
+      };
   });
 });
 db.collection('Comments').onSnapshot(snapshot => {
@@ -49,11 +57,30 @@ db.collection('CommentReplies').onSnapshot(snapshot => {
 db.collection('Blogentries').onSnapshot(snapshot => {
   snapshot.forEach(doc => {
     dbBlogentries[doc.id] = doc.data();
+    if (doc.data().Upload.release.getTime() > Date.now()) 
+      notReleasedObjects[doc.id] = {
+        typ: 'blog',
+        id: doc.id,
+        release: doc.data().Upload.release.getTime(),
+        upload: doc.data().Upload.true.getTime()
+      };
   });
 });
 db.collection('StatusUpdates').onSnapshot(snapshot => {
   snapshot.forEach(doc => {
     dbStatusUpdates[doc.id] = doc.data();
+    if (doc.data().Upload.release.getTime() > Date.now())
+      notReleasedObjects[doc.id] = {
+        typ: 'status',
+        id: doc.id,
+        release: doc.data().Upload.release.getTime(),
+        upload: doc.data().Upload.true.getTime()
+      };
+  });
+});
+db.collection('Mailsettings').onSnapshot(snapshot => {
+  snapshot.forEach(doc => {
+    dbMailsettings[doc.id] = doc.data();
   });
 });
 
@@ -73,8 +100,6 @@ app.post('/getHomeContent', (req,res) => {
       upload: dbBlogentries[blogkey].Upload.true
     })
   }
-  console.log(JSON.stringify(dbBlogentries))
-  console.log(JSON.stringify(bloglist))
   bloglist.sort((a,b) => {
     if (a.upload > b.upload) return 1;
     if (a.upload < b.upload) return -1;
@@ -84,7 +109,6 @@ app.post('/getHomeContent', (req,res) => {
   for (var i = 0; i < 3 && i < bloglist.length; i++) {
     result.push(bloglist[i]);
   }
-  console.log(JSON.stringify(result))
   res.json(result);
 })
 
@@ -274,22 +298,22 @@ app.post('/addComment', (req, res) => {
             dbComments[containerId].replies.push(databaseKey);
             db.collection('Comments').doc(containerId).update({
               replies: dbComments[containerId].replies
-            });
+            }).catch((err) => { console.log(err) });
           } else if (req.body.containerTyp == 'media') {
             dbMedia[containerId].Comments.push(databaseKey);
             db.collection('Media').doc(containerId).update({
               Comments: dbMedia[containerId].Comments
-            });
+            }).catch((err) => { console.log(err) });
           } else if (req.body.containerTyp == 'blog') {
             dbBlogentries[containerId].Comments.push(databaseKey);
             db.collection('Blogentries').doc(containerId).update({
               Comments: dbBlogentries[containerId].Comments
-            });
+            }).catch((err) => { console.log(err) });
           } else if (req.body.containerTyp == 'status') {
             dbStatusUpdates[containerId].Comments.push(databaseKey);
             db.collection('StatusUpdates').doc(containerId).update({
               Comments: dbStatusUpdates[containerId].Comments
-            });
+            }).catch((err) => { console.log(err) });
           }
           res.end();
         });
@@ -354,7 +378,7 @@ app.post('/deleteComment', (req, res) => {
           dbBlogentries[source].Comments.splice(index, 1);
           db.collection('Blogentries').doc(source).update({
             Comments: dbBlogentries[source].Comments
-          });
+          }).catch((err) => { console.log(err) });
           delete dbComments[id];
           db.collection('Comments').doc(id).delete();
           for (var i = 0; i < replies.length; i++) {
@@ -372,7 +396,7 @@ app.post('/deleteComment', (req, res) => {
           dbMedia[source].Comments.splice(index, 1);
           db.collection('Media').doc(source).update({
             Comments: dbMedia[source].Comments
-          });
+          }).catch((err) => { console.log(err) });
           delete dbComments[id];
           db.collection('Comments').doc(id).delete();
           for (var i = 0; i < replies.length; i++) {
@@ -389,7 +413,7 @@ app.post('/deleteComment', (req, res) => {
           dbComments[source].replies.splice(index, 1);
           db.collection('Comments').doc(source).update({
             replies: dbComments[source].replies
-          });
+          }).catch((err) => { console.log(err) });
           delete dbCommentReplies[id];
           db.collection('CommentReplies').doc(id).delete();
           res.end();
@@ -403,7 +427,7 @@ app.post('/deleteComment', (req, res) => {
           dbStatusUpdates[source].Comments.splice(index, 1);
           db.collection('StatusUpdates').doc(source).update({
             Comments: dbStatusUpdates[source].Comments
-          });
+          }).catch((err) => { console.log(err) });
           delete dbComments[id];
           db.collection('Comments').doc(id).delete();
           for (var i = 0; i < replies.length; i++) {
@@ -459,13 +483,13 @@ app.post('/reportComment', (req,res) => {
       var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'noreply.exchangeblog@gmail.com',
-          pass: 'U6LJ0omuqEBO6NqxBK82'
+          user: dbMailsettings.Options.User,
+          pass: dbMailsettings.Options.Pass
         }
       });
       var mailOptions = {
         from: 'Exchange Blog',
-        to: 'squamato77@gmail.com',
+        to: dbMailsettings.Options.Receiver,
         subject: 'EB Comment Report Alert',
         text: text
       };
@@ -676,7 +700,7 @@ app.post('/signUp', (req,res) => {
             Nick: req.body.nick,
             Notifications: noti,
             NotiFrequency: parseInt(req.body.notifreq)
-          });
+          }).catch((err) => { console.log(err) });
           res.json({ success: true });
         })
         .catch((err) => {
@@ -700,7 +724,7 @@ app.post('/changeSettings', (req,res) => {
       Nick: req.body.nick,
       Notifications: noti,
       NotiFrequency: parseInt(req.body.notifreq)
-    });
+    }).catch((err) => { console.log(err) });
   }).then(() => {
     res.end();
   }).catch((err) => {
@@ -912,6 +936,124 @@ function createNewDatabaseKey() {
     (id in dbCommentReplies)
   );
   return id;
+}
+
+var notReleasedObjects = {};
+
+setInterval(() => {
+  var notReleasedContent = [];
+  for (key in notReleasedObjects) notReleasedContent.push(notReleasedObjects[key]);
+  notReleasedContent.sort((a,b) => {
+    if (a.release < b.release) return -1;
+    if (a.release > b.release) return 1;
+    if (a.upload < b.upload) return -1;
+    if (a.upload > b.upload) return 1;
+    return 0;
+  });
+  for (user in dbUser) {
+    for (var i = 0; i < notReleasedContent.length; i++) {
+      if (notReleasedContent[i].release < Date.now()) {
+        dbUser[user].Mailinglist.push(notReleasedContent[i]);
+        delete notReleasedObjects[notReleasedContent[i].id];
+      } else break;
+    }
+    if (dbUser[user].NotiFrequency == 2) mailTrigger(user);
+    if (dbUser[user].NotiFrequency == 0) {
+      dbUser[user].Mailinglist = [];
+      
+    }
+    if (new Date().getUTCHours() == 21 
+      && dbUser[user].NotiFrequency == 1 
+      && dbUser[user].LastDailyMail != new Date().toDateString()) {
+      dbUser[user].LastDailyMail = new Date().toDateString();
+      mailTrigger(user);
+    }
+    db.collection('User').doc(user).update({ Mailinglist: dbUser[user].Mailinglist, LastDailyMail: dbUser[user].LastDailyMail }).catch((err) => { console.log(err) });
+  }
+},60*1000);
+
+function mailTrigger(uid) {
+  var mailingList = [];
+  for (var i = 0; i < dbUser[uid].Mailinglist.length; i++) {
+    if (dbUser[uid].Notifications[dbUser[uid].Mailinglist[i].typ])
+      mailingList.push(dbUser[uid].Mailinglist[i]);
+  }
+  dbUser[uid].Mailinglist = [];
+  if (mailingList.length == 0) return;
+  dbUser[uid].Mailinglist = [];
+  mailingList = mailingList.sort((a,b) => {
+    if (a.typ == 'blog' && a.typ != b.typ) return -1;
+    if (a.typ == 'media' && a.typ != b.typ) return 1;
+    if (a.release < b.release) return -1;
+    if (a.release > b.release) return 1;
+    if (a.upload < b.upload) return -1;
+    if (a.upload > b.upload) return 1;
+    return 0;
+  });
+  var mailtext = '';
+  var lang = dbUser[uid].Language;
+  if (dbUser[uid].NotiFrequency == 1) mailtext += dbMailsettings[lang].introDaily.replace('%NAME%',dbUser[uid].Name);
+  else mailtext += dbMailsettings[lang].introImd.replace('%NAME%', dbUser[uid].Name);
+  mailtext += '\n\n';
+  var mediacount = 0;
+  for (var i = 0; i < mailingList.length; i++) {
+    if (mailingList[i].typ == 'blog') {
+      mailtext += dbMailsettings[lang].newBlog
+        .replace('%TITLE%', dbBlogentries[mailingList[i].id]['Title_' + lang])
+        .replace('%LINK%', 'https://exchange-blog.firebaseapp.com/' + dbMailsettings[lang].link + '/blog/' + mailingList[i].id + '/');
+      mailtext += '\n\n';
+    } else if (mailingList[i].typ == 'status') {
+      var date = new Date(mailingList[i].release);
+      var datestring = '';
+      if (lang == 'de') {
+        datestring += date.getUTCDate() + '.' + date.getUTCMonth() + '.' + date.getUTCFullYear() + ' ';
+        if (date.getUTCHours() < 10) datestring += '0';
+        datestring += date.getUTCHours() + ':';
+        if (date.getUTCMinutes() < 10) datestring += '0';
+        datestring += date.getUTCMinutes() + ' (UTC)';
+      } else {
+        datestring += date.getUTCMonth() + '/' + date.getUTCDate() + '/' + date.getUTCFullYear() + ' ';
+        datestring += (date.getUTCHours()%12) + ':' + date.getUTCMinutes() + ' ';
+        if (date.getUTCHours() < 12) datestring += 'a.m. (UTC)'; else datestring += 'p.m. (UTC)';
+      }
+      var textlist = dbStatusUpdates[mailingList[i].id]['Content_' + lang].split(' ');
+      var text = '';
+      for (var j = 0; j<textlist.length && j<20; j++) text += textlist[j] + ' ';
+      if (textlist.length > 20) text += '[...]';
+      mailtext += dbMailsettings[lang].newStatus
+        .replace('%AUTHOR%', dbUser[dbStatusUpdates[mailingList[i].id].Author].Nick)
+        .replace('%TIME%', datestring)
+        .replace('%TEXT%', text)
+        .replace('%LINK%', 'https://exchange-blog.firebaseapp.com/' + dbMailsettings[lang].link + '/timeline/');
+      mailtext += '\n\n';
+      } else if (mailingList[i].typ == 'media') mediacount++;
+  }
+  if (mediacount > 0) {
+    mailtext += dbMailsettings[lang].newMedia
+      .replace('%COUNT%', '' + mediacount)
+      .replace('%LINK1%', 'https://exchange-blog.firebaseapp.com/' + dbMailsettings[lang].link + '/timeline/')
+      .replace('%LINK2%', 'https://exchange-blog.firebaseapp.com/' + dbMailsettings[lang].link + '/media/');
+    mailtext += '\n\n';
+  }
+  mailtext += dbMailsettings[lang].outro;
+  mailtext = mailtext.replace(/%BR%/g, '\n');
+  var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: dbMailsettings.Options.User,
+      pass: dbMailsettings.Options.Pass
+    }
+  });
+  admin.auth().getUser(uid).then(record => {
+    var subject = {de: 'Benachrichtigung', en: 'Notification'};
+    var mailOptions = {
+      from: 'Exchange Blog',
+      to: record.email,
+      subject: 'Exchange Blog ' + subject[lang],
+      text: mailtext
+    };
+    transporter.sendMail(mailOptions);
+  });
 }
 
 app.use(function (req, res) {

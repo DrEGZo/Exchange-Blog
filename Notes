@@ -1,0 +1,16 @@
+Ein Fehler, der beim Updaten von Dokumenten von Serverseite aus auftritt:
+
+{ Error: 4 DEADLINE_EXCEEDED: Deadline Exceeded
+    at Object.exports.createStatusError (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\grpc\src\common.js:87:15)
+    at Object.onReceiveStatus (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\grpc\src\client_interceptors.js:1214:28)
+    at InterceptingListener._callNext (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\grpc\src\client_interceptors.js:590:42)
+    at InterceptingListener.onReceiveStatus (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\grpc\src\client_interceptors.js:640:8)
+    at callback (C:\Users\DrEGZo\Documents\Programmieren\WebProjects\Exchange-Blog\functions\node_modules\grpc\src\client_interceptors.js:867:24)
+  code: 4,
+  metadata: Metadata { _internal_repr: {} },
+  details: 'Deadline Exceeded' }
+
+Ursache:    Unbekannt.
+Maßnahme:   Sämtliche DokumentReference.update() Befehle werden mit einem catch versehen, dass den Error loggt.
+            Damit ist sichergestellt, dass zumindest der Serverskript weiterläuft.
+            Möglicherweise kann es zur Beeinträchtigung der Funktion der gesamten Website kommen.

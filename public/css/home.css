@@ -1,4 +1,7 @@
 #auth-button {
+  visibility: hidden;
+}
+#header-carousel {
   display: none;
 }
 .carousel-fitter {

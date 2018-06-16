@@ -52,7 +52,9 @@ function insertMediaTeaser(medialist, i) {
                         html += '</div>';
                         html += '</div>';
                     }
+                    if (medialist[index].description != '') html += '<div class="media-header-description">' + medialist[index].description + '</div>';
                     $('#mediaTeaser_' + target + ' .media-header').html(html);
+                    adjustMediaDescription();
                     if (medialist[index].typ == 'pic') $('#mediaTeaser_' + target + ' .media-header').click(((location) => () => {
                         window.open(location, '_blank');
                     })(medialist[index].location));
@@ -151,6 +153,22 @@ function adjustBlogTeaser() {
     }
 }
 
+function adjustMediaDescription() {
+    if (window.innerWidth > 767) {
+        $('.media-header').off().hover(function () {
+            $(this).find('.media-header-description').fadeIn(300);
+        }, function () {
+            $(this).find('.media-header-description').fadeOut(300);
+        });
+    } else {
+        $('.media-header').off('mouseon mouseout');
+        $('.media-header-description').show();
+    };
+}
+
 var aboveBorder = false;
 if (window.innerWidth > 767) aboveBorder = true;
-$(window).resize(adjustBlogTeaser);
+$(window).resize(() => {
+    adjustBlogTeaser();
+    adjustMediaDescription();
+});

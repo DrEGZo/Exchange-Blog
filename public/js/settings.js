@@ -3,6 +3,7 @@ $(function () {
 });
 
 function main() {
+    firebase.auth().useDeviceLanguage();
     $('button.verification').click(() => {
         firebase.auth().currentUser.sendEmailVerification();
     });
@@ -10,7 +11,7 @@ function main() {
         $('form').submit((e) => { e.preventDefault() });
         $('button.reset').click(() => {
             resetUserSettings().then(() => {
-                showMessage($('div.reset'));
+                showMessage($('div.reset'),true);
             });
         });
         $('button.save').click(() => {
@@ -77,7 +78,7 @@ function main() {
                 }).then(() => {
                     if (!err) resetUserSettings().then(() => { 
                         showMessage($('div.save'), true);
-                        user.sendEmailVerification();
+                        if (mailChanged) user.sendEmailVerification();
                     });
                 });
             }

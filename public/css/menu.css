@@ -45,7 +45,7 @@
   margin: 100px 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media (pointer: fine) {
   .menu-button:hover:not(.active) {
     color: #303030;
     background-color: #ffffff;
@@ -78,13 +78,4 @@
     line-height: 20px;
     margin: 80px 10px;
   }
-  /*.menu-button:active {
-    color: #303030;
-    background-color: #ffffff;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .menu-button.active:active {
-    cursor: default;
-  }*/
 }

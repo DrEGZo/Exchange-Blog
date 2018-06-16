@@ -15,14 +15,14 @@
       "source": "/de-de/alert/**",
       "destination": "/de-de/alert/index.html"
     }, {
-      "source": "/de-de/signup/**/index.css",
-      "destination": "/de-de/signup/index.css"
-    }, {
-      "source": "/de-de/signup/**/index.js",
-      "destination": "/de-de/signup/index.js"
+      "source": "/en-us/alert/**",
+      "destination": "/en-us/alert/index.html"
     }, {
       "source": "/de-de/signup/**",
       "destination": "/de-de/signup/index.html"
+    }, {
+      "source": "/en-us/signup/**",
+      "destination": "/en-us/signup/index.html"
     }, {
       "source": "**",
       "function": "expressapp"

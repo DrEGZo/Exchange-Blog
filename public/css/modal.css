@@ -31,7 +31,7 @@
 }
 .image-slider > span.disabled {
   color: #313131;
-  curser: default;
+  cursor: default;
 }
 .slider-image {
   display: flex;
@@ -42,6 +42,19 @@
   background-position: center;
   align-items: center;
   position: relative;
+}
+.slider-image-description {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px 25px;
+  background-color: rgba(64, 64, 64, 0.4);
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-style: italic;
 }
 .slider-image-comments {
   display: none;
@@ -94,7 +107,7 @@ iframe, video {
   background-color: rgba(0, 255, 0, 0.3);
 }
 
-@media screen and (min-width: 768px) {
+@media (pointer: fine) {
   .image-slider > span:not(.disabled):hover, .image-slider > span.active {
     background-color: rgba(255, 255, 255, 0.1);
     transition: 0.3s;

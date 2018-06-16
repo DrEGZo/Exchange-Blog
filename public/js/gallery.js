@@ -8,7 +8,8 @@ function launchGallery(galleryQuery, data) {
         datastorage[media.id] = {
             typ: media.typ,
             location: media.location,
-            comments: media.comments
+            comments: media.comments,
+            description: media.description
         };
         var content = '';
         content += '<div class="gallery-row">';

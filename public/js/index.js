@@ -71,7 +71,7 @@ function redirector(status) {
         }
     } else if (status == 403) {
         window.location.replace("/de-de/alert/forbidden/");
-    } else if (status == 500) {
+    } else if (status >= 500) {
         window.location.replace("/de-de/alert/serverError/");
     } else {
         window.location.replace("/de-de/alert/notFound/");
@@ -164,7 +164,7 @@ const globalranks = {
 
 const dictionary = {
     nothingthere: {
-        de: 'Noch nichts gefunden...',
+        de: 'Noch nichts da...',
         en: 'Nothing there yet...'
     },
     newarticle: {
@@ -179,6 +179,18 @@ const dictionary = {
         de: 'Statusmeldung',
         en: 'Status update',
     },
+    loadactivity: {
+        de: 'Mehr Inhalte laden',
+        en: 'Load more activity'
+    },
+    profile: {
+        de: 'Profil',
+        en: 'Profile'
+    },
+    readmore: {
+        de: 'Weiterlesen',
+        en: 'Read more'
+    },
     weekday: {
         de: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
         en: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -186,6 +198,10 @@ const dictionary = {
     month: {
         de: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
         en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    },
+    reply: {
+        de: 'Antworten',
+        en: 'Reply'
     },
     replies: {
         de: 'Antworten',

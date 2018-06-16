@@ -63,9 +63,9 @@ function buildBlogPage(content, idToken) {
         if (mediadata[id].typ == 'pic') {
           launchImage('#' + mediacontainers[i].id,mediadata[id]);
         } else if (mediadata[id].typ == 'vid') {
-          launchVideo('#' + mediacontainers[i].id, mediadata[id].id, mediadata[id].location, false);
+          launchVideo('#' + mediacontainers[i].id, mediadata[id], false);
         } else if (mediadata[id].typ == 'ytvid') {
-          launchVideo('#' + mediacontainers[i].id, mediadata[id].id, mediadata[id].location, true);
+          launchVideo('#' + mediacontainers[i].id, mediadata[id], true);
         }
       }
     }
@@ -82,6 +82,7 @@ function buildBlogPage(content, idToken) {
         launchGallery('#' + galleryid + '>.image-gallery', entities);
       }
     }
+    adjustBlogMediaDescription();
     $('#page-content').slideDown();
     launchComments(content.comments, 'blog', blogid, '#comments', 'blog', blogid, true, true, false, false)
     $('#comments').slideDown();
@@ -93,11 +94,10 @@ function launchImage(id, data) {
   html += '<div class="img-container">';
   html += '<div class="img-container-blurbox"></div>';
   html += '<div class="img-container-content">';
-  html += '<div class="img-container-border">';
   html += '<div class="img-container-image"></div>';
   html += '</div>';
-  html += '<p></p>';
-  html += '</div></div>';
+  html += '<div class="media-description">' + data.description + '</div>';
+  html += '</div>';
   $(id).html(html);
   var datastorage = {};
   datastorage[data.id] = data;
@@ -105,44 +105,38 @@ function launchImage(id, data) {
   $(id + ' .img-container-image')
     .css('background-image', 'url(' + data.location + ')')
     .click(openModal(0, [data.id], datastorage));
-  $(id + ' p').html(data.description);
 }
 
-function launchVideo(query,id,reference,isYT) {
+function launchVideo(query,data,isYT) {
   var html = '';
   html += '<div class="video-border">';
   html += '<div class="video-container">';
-  if (isYT) html += '<iframe class="video-frame"src="https://www.youtube.com/embed/' + reference + '" allowfullscreen></iframe>';
-  else html += '<video class="video-frame" src="' + reference + '" preload="none" controls poster="/media/vidplaceholder.svg"></video>';
+  if (isYT) html += '<iframe class="video-frame"src="https://www.youtube.com/embed/' + data.location + '" allowfullscreen></iframe>';
+  else html += '<video class="video-frame" src="' + data.location + '" preload="none" controls poster="/media/vidplaceholder.svg"></video>';
+  html += '<div class="media-description">' + data.description + '</div>';
   html += '</div></div>';
   html += '<div class="media-controll">';
   html += '<span class="fa fa-comments-o"></span>';
   html += '</div>';
   html += '<div class="media-comments"></div>';
   $(query).html(html);
-  firebase.auth().currentUser.getIdToken(true).then((idToken) => {
-    return fetch('/getMediaData', {
-      idToken: idToken,
-      lang: language,
-      mid: id
-    });
-  }).then((data) => {
-    launchComments(data.comments,'media',id,query + ' .media-comments','media',id,true,false,false,false);
-    $(query + ' .media-controll').click(() => {
-      $(query + ' .media-comments').slideToggle();
-    });
+  launchComments(data.comments, 'media', data.id, query + ' .media-comments', 'media', data.id, true, false, false, false);
+  $(query + ' .media-controll').click(() => {
+    $(query + ' .media-comments').slideToggle();
   });
 }
 
-function launchYTVideo(query,reference) {
-  var html = '';
-  html += '<div class="video-border">';
-  html += '<div class="video-container">';
-  html += '<iframe class="video-frame"src="https://www.youtube.com/embed/' + reference + '" allowfullscreen></iframe>';
-  html += '</div></div>';
-  html += '<div class="media-controll">';
-  html += '<span class="fa fa-comments-o"></span>';
-  html += '</div>';
-  html += '<div class="media-comments"></div>';
-  $(query).html(html);
+$(window).resize(adjustBlogMediaDescription);
+
+function adjustBlogMediaDescription() {
+  if (window.innerWidth > 767) {
+    $('.video-container, .img-container').off().hover(function () {
+      $(this).find('.media-description').fadeIn(300);
+    }, function () {
+      $(this).find('.media-description').fadeOut(300);
+    });
+  } else {
+    $('.video-container, .img-container').off();
+    $('.media-description').show();
+  };
 }

@@ -13,13 +13,13 @@ function main() {
         $('#profile-info .profile-rank')
           .html(globalranks[data.rank][language])
           .css('background-color',globalranks[data.rank].c);
-        $('#auth-button a').html('Profil');
-        $('#auth-button').addClass('loggedin').fadeIn(0);
+        $('#auth-button a').html(dictionary.profile[language]);
+        $('#auth-button').addClass('loggedin').css('visibility', 'visible');
         $('#language-choice').css('visibility','visible');
       });
     } else {
       $('#auth-button a').html('Login');
-      $('#auth-button').fadeIn(0);
+      $('#auth-button').css('visibility', 'visible');
       $('#language-choice').css('visibility','visible');
     }
   });
@@ -76,11 +76,12 @@ function launchCarousel(data) {
     var html = '';
     html += '<div class="carousel-item">';
     html += '<img src="' + data[i].location + '">';
-    html += '<a class=".carousel-link" href="/de-de/blog/' + data[i].id + '/index.html">';
+    if (language == 'de') html += '<a class=".carousel-link" href="/de-de/blog/' + data[i].id + '/index.html">';
+    else html += '<a class=".carousel-link" href="/en-us/blog/' + data[i].id + '/index.html">';
     html += '<div class="carousel-caption">';
     html += '<h1 class="display-2 carousel-header">' + data[i].title + '</h1>';
     html += '<p>' + data[i].intro + '</p>';
-    html += '<span class="badge badge-light">Weiterlesen</span>';
+    html += '<span class="badge badge-light">' + dictionary.readmore[language] + '</span>';
     html += '</div>';
     html += '</a>';
     html += '</div>';
@@ -88,7 +89,7 @@ function launchCarousel(data) {
     if (i == 0) $('.carousel-indicators li:first-child').addClass('active');
     if (i == 0) $('.carousel-item:first-child').addClass('active');
   }
-  $('#header-carousel').slideDown();
+  $('#header-carousel').fadeIn();
   $('#page-title').slideDown();
   $('#page-content').slideDown();
 }
