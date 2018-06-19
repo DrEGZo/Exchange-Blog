@@ -9,136 +9,100 @@
   <script src="./bootstrap/bootstrap-min.js"></script>
   <script src="./bootstrap/jquery-min.js"></script>
   <script src="./bootstrap/popper-min.js"></script>
-  <link rel="stylesheet" href="./css/navigation.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <script src="index.js"></script>
-  <title>Startseite</title>
-  <!-- Flavicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
-  <link rel="apple-touch-icon" sizes="57x57" href="./flavicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./flavicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./flavicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./flavicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./flavicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./flavicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./flavicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./flavicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./flavicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./flavicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./flavicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./flavicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./flavicon/favicon-16x16.png">
-  <link rel="manifest" href="./flavicon/manifest.json">
+  <title>Exchange Blog</title>
+  <!-- favicon Einbindung - Erstellt unter https://hosting.1und1.de/favicon-generator -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./flavicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <style>
+    body {
+      background-color: #202020;
+    }
+    #mainbox {
+      height: 100vh;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #mainbox>h1 {
+      color: #ffffff;
+      text-align: center;
+    }
+    #mainbox>div {
+      width: 100%;
+      display: flex;
+      margin-top: 50px;
+    }
+    .subbox {
+      flex: 50%;
+      display: flex;
+      justify-content: center;
+    }
+    a::before {
+      content: "";
+      display: block;
+      margin-top: 100%;
+    }
+    a {
+      display: block;
+      width: 70%;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50px;
+    }
+    a[href="/de-de/"] {
+      background-image: url("/media/de.svg");
+    }
+    a[href="/en-us/"] {
+      background-image: url("/media/en.svg");
+    }
+    @media screen and (max-width: 767px) {
+      #mainbox>div {
+        margin-top: 20px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+    }
+    @media screen and (max-height: 400px) {
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div class="container-fluid page-top">
-
-    <div id="navcontainer" class="container">
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <a href="/de-de/" class="navbar-brand">Exchange Blog</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-content">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a href="/de-de/timeline/" class="nav-link active">Timeline</a>
-            </li>
-            <li class="nav-item">
-              <a href="/de-de/blog/" class="nav-link">Blogeinträge</a>
-            </li>
-            <li class="nav-item">
-              <a href="/de-de/media/" class="nav-link">Medien</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item" id="language-choice">
-              <div class="nav-link" id="lng-cnt-0">
-                <div class="lng-cnt">
-                  <button class="lng-bdg"></button>
-                </div>
-              </div>
-              <div class="nav-link" id="lng-cnt-1">
-                <div class="lng-cnt">
-                  <a href="" class="lng-bdg"></a>
-                </div>
-              </div>
-              <div class="nav-link" id="lng-cnt-2">
-                <div class="lng-cnt">
-                  <a href="" class="lng-bdg"></a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item" id="auth-button">
-              <a class="nav-link">Login</a>
-            </li>
-            <div id="login-container" class="nav-item">
-              <form>
-                <input type="text" placeholder="E-Mail">
-                <input type="password" placeholder="Password">
-                <input type="checkbox"> Remember me
-                <button>Login</button>
-                <a>Reset password</a>
-                <div id="login-failed">Wrong e-mail or password!</div>
-                <div id="pwResetMail" class="pwReset">Please enter your e-mail address first</div>
-                <div id="pwResetConfirm" class="pwReset">A reset link has been sent to your e-mail address</div>
-              </form>
-            </div>
-            <div id="profile-info" class="nav-item">
-              <div>
-                <div class="profile-info-teaser">
-                  <div class="profile-avatar">
-                    <span class="fa fa-user-circle"></span>
-                  </div>
-                  <div class="profile-name"></div>
-                  <span class="badge profile-rank"></span>
-                </div>
-                <a href="/de-de/settings/" class="profile-info-settings">Settings</a>
-                <a href="/de-de/alert/logout/" class="profile-info-logout">Logout</a>
-              </div>
-            </div>
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div id="header_carousel" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators"></ul>
-      <div class="carousel-inner"></div>
-      <a href="#header_carousel" data-slide="prev" class="carousel-control-prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a href="#header_carousel" data-slide="next" class="carousel-control-next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-    </div>
-
-  </div>
-
-  <div id="page-title" class="container">
-    <div class="jumbotron">
-      <h1>Header</h1>
-      <p>Absatz</p>
+  <div id="mainbox">
+    <h1>Bitte w&aumlhle deine bevorzugte Sprache</h1>
+    <h1>Please select your prefered language</h1>
+    <div>
+      <div class="subbox">
+        <a href="/de-de/"></a>
+      </div>
+      <div class="subbox">
+        <a href="/en-us/"></a>
+      </div>
     </div>
   </div>
-
-  <div class="container" id="page-content">
-    <p>Hier könnte ihre Werbung stehen</p>
-    <p>Hier gegebenenfalls auch.</p>
-    <p>Hier nicht.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-
-  <div class="container" id="footer">
-    <p>Coockie Info & Private Policy</p>
-  </div>
-
 </body>
 
 </html>

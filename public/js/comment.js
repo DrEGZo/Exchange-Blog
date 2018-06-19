@@ -2,9 +2,11 @@ const db = firebase.firestore();
 db.settings({ timestampsInSnapshots: true})
 
 var unsubscribeFunctions = {};
+var globalCommentData = {};
 
 function launchComments(commentData,containerTyp,containerId,containerQuery,mainTyp,mainId,addInserter,searchForReplies,isReplyData,slide) {
-    content = stringifyComments(commentData,addInserter,searchForReplies,isReplyData,slide);
+    if (addInserter) globalCommentData[containerId] = commentData;
+    var content = stringifyComments(commentData,addInserter,searchForReplies,isReplyData,slide);
     if (addInserter) content += stringifyCommentInserter(isReplyData);
     if (addInserter) {
         $(containerQuery).append(content);
@@ -177,8 +179,8 @@ function addCommentListeners(commentData,containerTyp,containerId,containerQuery
             if ($(textQuery).attr('disabled') != 'disabled') {
                 $(textQuery).attr('disabled', 'disabled');
                 var content = $(textQuery).val()
-                    .replace(/"/, '&quot;')
-                    .replace(/'/, '&#039;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#039;')
                     .replace(/\\/g, '\\\\');
                 firebase.auth().currentUser.getIdToken(true)
                     .then(idToken => {
@@ -253,26 +255,32 @@ function addRealtimeCommentListeners(containerTyp, containerId, containerQuery, 
         }
         for (var i = 0; i < globalcomments.length; i++) {
             if (document.getElementById(globalcomments[i]) == null) {
-                firebase.auth().currentUser.getIdToken(true)
-                    .then(((id) => (idToken) => {
-                        fetch('/getCommentData',{
-                            idToken: idToken,
-                            commentId: id,
-                            containerTyp: containerTyp,
-                            mainTyp: mainTyp,
-                            mainId: mainId
-                        }).then((data) => {
-                            launchComments([data], containerTyp, containerId, containerQuery, mainTyp, mainId, false, searchForReplies, isReplyData, true);
-                            if ($(containerQuery + '>div>textarea').attr('disabled') == 'disabled') {
-                                $(containerQuery + '>div>textarea').val('').removeAttr('disabled');
-                            }
-                        });
-                    })(globalcomments[i]));
+                firebase.auth().currentUser.getIdToken(true).then(((id) => (idToken) => {
+                    fetch('/getCommentData',{
+                        idToken: idToken,
+                        commentId: id,
+                        containerTyp: containerTyp,
+                        mainTyp: mainTyp,
+                        mainId: mainId
+                    }).then((data) => {
+                        launchComments([data], containerTyp, containerId, containerQuery, mainTyp, mainId, false, searchForReplies, isReplyData, true);
+                        globalCommentData[containerId].push(data);
+                        if ($(containerQuery + '>div>textarea').attr('disabled') == 'disabled') {
+                            $(containerQuery + '>div>textarea').val('').removeAttr('disabled');
+                        }
+                    });
+                })(globalcomments[i]));
             }
         }
         var localcomments = document.querySelector(containerQuery).childNodes;
         for (var i = 0; i < localcomments.length; i++) {
             if (localcomments[i].id != '' && globalcomments.indexOf(localcomments[i].id) == -1) {
+                for (var j = 0; j < globalCommentData[containerId].length; j++) {
+                    if (globalCommentData[containerId][j].id == localcomments[i].id) {
+                        globalCommentData[containerId].splice(j,1);
+                        break;
+                    }
+                }
                 $('#' + localcomments[i].id).slideUp(400,function(){ $(this).remove() });
             }
         }

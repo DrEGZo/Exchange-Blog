@@ -58,24 +58,20 @@ function openModal(index,idList,datastorage) {
         });
 
         $('.media-modal span.fa-comments-o').off();
+        $('.slider-image-comments').html('<div></div>');
+        if (id in globalCommentData) {
+            launchComments(globalCommentData[id], 'media', id, '.slider-image-comments>div', 'media', id, true, false, false, false);
+        } else {
+            launchComments(imageData.comments, 'media', id, '.slider-image-comments>div', 'media', id, true, false, false, false);
+        }
         $('.media-modal span.fa-comments-o').click(() => {
             if ($('.slider-image-comments').css('display') == 'block') {
                 $('.slider-image-comments').fadeOut(400);
                 $('span.fa-comments-o').removeClass('active');
                 if (index != 0) $('span.fa-chevron-left').removeClass('disabled');
-                if (index + 1 < Object.keys(datastorage).length) $('span.fa-chevron-right').removeClass('disabled');
+                if (index < idList.length - 1) $('span.fa-chevron-right').removeClass('disabled');
             } else {
-                $('.slider-image-comments').html('<div></div>');
-                firebase.auth().currentUser.getIdToken(true).then((idToken) => {
-                    return fetch('/getMediaData', {
-                        idToken:  idToken,
-                        lang: language,
-                        mid: id
-                    });
-                }).then((data) => {
-                    launchComments(data.comments, 'media', id, '.slider-image-comments>div', 'media', id, true, false, false, false);
-                    $('.slider-image-comments').fadeIn(400);
-                });
+                $('.slider-image-comments').fadeIn(400);
                 $('.media-modal span.fa-comments-o').addClass('active');
                 $('.media-modal span.fa-chevron-left').addClass('disabled');
                 $('.media-modal span.fa-chevron-right').addClass('disabled');
@@ -96,12 +92,18 @@ function openModal(index,idList,datastorage) {
         
         $('.media-modal span.fa-chevron-left').off();
         $('.media-modal span.fa-chevron-left').click(function () {
-            if (!$(this).hasClass('disabled')) openModal(index - 1,idList,datastorage)();
+            if (!$(this).hasClass('disabled')) {
+                unsubscribeFunctions[id]();
+                openModal(index - 1,idList,datastorage)();
+            }
         });
 
         $('.media-modal span.fa-chevron-right').off();
         $('.media-modal span.fa-chevron-right').click(function () {
-            if (!$(this).hasClass('disabled')) openModal(index + 1,idList,datastorage)();
+            if (!$(this).hasClass('disabled')) {
+                unsubscribeFunctions[id]();
+                openModal(index + 1,idList,datastorage)();
+            }
         });
     }
 }

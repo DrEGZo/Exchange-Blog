@@ -2,7 +2,7 @@ function insertMediaTeaser(medialist, i) {
     var html = '';
     html += '<div class="media-teaser" id="mediaTeaser_' + i + '">';
     html += '<h3>' + dictionary.newmedia[language] + '</h3>';
-    html += '<div class="media-header"></div>';
+    html += '<div class="media-header" id="' + medialist[0].id + '"></div>';
     html += '<div class="media-choice">';
     html += '<div class="media-choice-wrapper">';
     for (var j = 0; j < medialist.length; j++) {
@@ -27,12 +27,16 @@ function insertMediaTeaser(medialist, i) {
                 if (!$(this).hasClass('active')) {
                     $('#mediaTeaser_' + target + ' .media-choice-image').removeClass('active');
                     $(this).addClass('active');
+                    unsubscribeFunctions[$('#mediaTeaser_' + target + ' .media-header').attr('id')]();
+                    $('#mediaTeaser_' + target + ' .media-header').attr('id',medialist[index].id);
                     $('#mediaTeaser_' + target + ' .media-header').off();
                     $('#mediaTeaser_' + target + ' .media-comments *').off();
                     $('#mediaTeaser_' + target + ' .media-comments').slideUp(400, () => {
                         $('#mediaTeaser_' + target + ' .media-comments').html('');
+                        console.log('1',medialist)
                         launchComments(medialist[index].comments, 'media', medialist[index].id, '#mediaTeaser_' + target + ' .media-comments', 'media', medialist[index].id, true, false, false, false)
                     });
+                    console.log('2', medialist)
                     var html = '';
                     if (medialist[index].typ == 'pic') {
                         html += '<div class="media-header-blurbox"  style="background-image:url(\'' + medialist[index].location + '\')"></div>';
@@ -62,6 +66,7 @@ function insertMediaTeaser(medialist, i) {
             }
         })(i, j));
     }
+    unsubscribeFunctions[medialist[0].id] = function(){};
     $('#mediaTeaser_' + i + ' .media-choice-image:nth-child(1)').click();
     if (medialist.length == 1) {
         $('#mediaTeaser_' + i + ' .media-choice').hide(0);
