@@ -9,7 +9,6 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
-//admin.initializeApp(functions.config().firebase);
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://exchange-blog.firebaseio.com"
@@ -26,64 +25,6 @@ var dbCommentReplies = {};
 var dbBlogentries = {};
 var dbStatusUpdates = {};
 var dbMailsettings = {};
-
-/* db.collection('User').onSnapshot(snapshot => {
-  snapshot.forEach(doc => {
-    dbUser[doc.id] = doc.data();
-  });
-});
-db.collection('Media').onSnapshot(snapshot => {
-  snapshot.forEach(doc => {
-    dbMedia[doc.id] = doc.data();
-    if (doc.data().Upload.release.getTime() > Date.now())
-      notReleasedObjects[doc.id] = {
-        typ: 'media',
-        id: doc.id,
-        release: doc.data().Upload.release.getTime(),
-        upload: doc.data().Upload.true.getTime()
-      };
-  });
-});
-db.collection('Comments').onSnapshot(snapshot => {
-  snapshot.forEach(doc => {
-    dbComments[doc.id] = doc.data();
-  });
-});
-db.collection('CommentReplies').onSnapshot(snapshot => {
-  snapshot.forEach(doc => {
-    dbCommentReplies[doc.id] = doc.data();
-  });
-});
-db.collection('Blogentries').onSnapshot(snapshot => {
-  snapshot.forEach(doc => {
-    dbBlogentries[doc.id] = doc.data();
-    if (doc.data().Upload.release.getTime() > Date.now()) 
-      notReleasedObjects[doc.id] = {
-        typ: 'blog',
-        id: doc.id,
-        release: doc.data().Upload.release.getTime(),
-        upload: doc.data().Upload.true.getTime()
-      };
-  });
-});
-db.collection('StatusUpdates').onSnapshot(snapshot => {
-  snapshot.forEach(doc => {
-    dbStatusUpdates[doc.id] = doc.data();
-    if (doc.data().Upload.release.getTime() > Date.now())
-      notReleasedObjects[doc.id] = {
-        typ: 'status',
-        id: doc.id,
-        release: doc.data().Upload.release.getTime(),
-        upload: doc.data().Upload.true.getTime()
-      };
-  });
-});
-db.collection('Mailsettings').onSnapshot(snapshot => {
-  snapshot.forEach(doc => {
-    dbMailsettings[doc.id] = doc.data();
-  });
-}); */
-
 
 app.get('/lorem', (req,res) => {
   res.send('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
@@ -337,43 +278,6 @@ app.post('/addComment', (req, res) => {
     }).then(() => { res.end(JSON.stringify(err)); });
   });
 });
-
-/*app.post('/replyToComment', (req,res) => {
-  auth(req.body.idToken)
-    .then((uid) => {
-      return new Promise((resolve, reject) => {
-        var directory;
-        var coll;
-        if (req.body.typ == 'media') {
-          directory = dbMedia;
-        } else if (req.body.typ == 'blog') {
-          directory = dbBlogentries;
-        }
-        if (uid in dbUser && req.body.target in directory) {
-          if (directory[req.body.target].Visibility.indexOf(dbUser[uid].Rank) != -1) {
-            resolve(uid);
-            return;
-          }
-        }
-        reject();
-      });
-    }).then((uid) => {
-      return db.collection('CommentReplies').add({
-        author: uid,
-        content: escapeHtml(req.body.content),
-        time: new Date()
-      });
-    }).then((id) => {
-      id = id.id;
-      dbComments[req.body.comtarget].replies.push(id);
-      db.collection('Comments').doc(req.body.comtarget).update({
-        replies: dbComments[req.body.comtarget].replies
-      });
-      res.end();
-    }).catch(() => {
-      res.status(403).end();
-    });
-});*/
 
 app.post('/deleteComment', (req, res) => {
   var typ = req.body.typ;
@@ -669,36 +573,6 @@ app.post('/getUserSettings', (req,res) => {
   });
 });
 
-/*app.post('/changeNickname', (req,res) => {
-  auth(req.body.idToken)
-    .then((uid) => {
-      dbUser[uid].Nick = req.body.nick;
-      db.collection('User').doc(uid).update({
-        Nick: req.body.nick
-      });
-      res.end();
-    })
-    .catch(() => {
-      res.status(403).end();
-    })
-});
-
-app.post('/changePrivaNoti', (req,res) => {
-  auth(req.body.idToken)
-    .then((uid) => {
-      dbUser[uid].Notifications = JSON.parse(req.body.notifications);
-      dbUser[uid].NotiFrequency = parseInt(req.body.notiFrequency);
-      db.collection('User').doc(uid).update({
-        Notifications: JSON.parse(req.body.notifications),
-        NotiFrequency: parseInt(req.body.notiFrequency)
-      });
-      res.end();
-    })
-    .catch(() => {
-      res.status(403).end();
-    })
-});*/
-
 app.post('/signUp', (req,res) => {
   updateDatabaseContent(['user']).then(() => {
     if (req.body.uid in dbUser) {
@@ -771,74 +645,6 @@ app.post('/getUserData',(req,res) => {
     }).then(() => { res.end(JSON.stringify(err)); });
   });
 });
-
-
-/*
-
-Das war mal dafür gedacht, eine Email Authentifizierung zu bauen, 
-weil die von Firebase irgendwie nicht funktioniert hat.
-Tatsächlich hat sie sehr wohl funktioniert... mein Postfach war einfach voll >.<
-
-So kann man mal eben 2 Stunden Zeit verschwenden...
-
-app.post('/verifyEmail', (req,res) => {
-  auth(req.body.idToken)
-    .then((uid) => {
-      var key = createNewDatabaseKey();
-      db.collection('User').doc(uid).update({
-        AuthId: key
-      });
-      admin.auth().getUser(uid)
-        .then((user) => {
-          console.log(user.email,key)
-          var text = 'Hello,\n\nIn order to verify your e-mail adress, please follow this link:\n\n';
-          text += 'https://exchange-blog.com/authenticate/' + uid + '/' + key + '/\n\n';
-          text += 'If you didn’t ask to verify this address, you can ignore this email.\n\n';
-          text += 'Your Exchange Blog Team';
-          var transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-              user: 'noreply.exchangeblog@gmail.com',
-              pass: 'U6LJ0omuqEBO6NqxBK82'
-            }
-          });
-          var mailOptions = {
-            from: 'Exchange Blog',
-            to: user.email,
-            subject: 'Verify your Exchange Blog e-mail',
-            text: text
-          };
-          transporter.sendMail(mailOptions);
-          res.end();
-        });
-    })
-    .catch(() => {
-      res.status(403).end();
-    });
-})
-
-app.get('/authenticate/:uid/:key', (req,res) => {
-  try {
-    if (dbUser[req.params.uid].AuthId == req.params.key) {
-      db.collection('User').doc(req.params.uid).update({
-        AuthId: FieldValue.delete()
-      });
-      admin.auth().updateUser(req.body.uid, {
-        emailVerified: true
-      })
-        .then(() => {
-          res.send('Your e-mail address has been successfully verified :)');
-        })
-        .catch(() => {
-          res.send('Your verification link is invalid :/');
-        });
-    } else {
-      res.send('Your verification link is invalid :/');
-    }
-  } catch (e) {
-    res.send('Your verification link is invalid :/');
-  }
-});*/
 
 function auth(idToken) {
   return new Promise((resolve,reject) => {
@@ -933,14 +739,13 @@ function escapeHtml(text) {
 }
 
 function createNewDatabaseKey() {
-  var map = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  var map = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   var id = '';
   do {
-    id += map.substr(Math.floor(Math.random() * 26),1);
+    id += map.substr(Math.floor(Math.random() * 52),1);
     for (var i = 0; i < 19; i++) {
-      id += map.substr(Math.floor(Math.random() * 36), 1);
+      id += map.substr(Math.floor(Math.random() * 62), 1);
     }
-
   } while(
     (id in dbBlogentries) ||
     (id in dbMedia) ||
@@ -950,43 +755,6 @@ function createNewDatabaseKey() {
   );
   return id;
 }
-
-// var notReleasedObjects = {};
-
-/* app.get('/mailtrigger', (req,res) => {
-  console.log('gotmailtrigger')
-  updateDatabaseContent(['user','mail','blog','status']).then(() => {
-    var notReleasedContent = [];
-    for (key in notReleasedObjects) notReleasedContent.push(notReleasedObjects[key]);
-    notReleasedContent.sort((a, b) => {
-      if (a.release < b.release) return -1;
-      if (a.release > b.release) return 1;
-      if (a.upload < b.upload) return -1;
-      if (a.upload > b.upload) return 1;
-      return 0;
-    });
-    for (user in dbUser) {
-      for (var i = 0; i < notReleasedContent.length; i++) {
-        if (notReleasedContent[i].release < Date.now()) {
-          dbUser[user].Mailinglist.push(notReleasedContent[i]);
-          delete notReleasedObjects[notReleasedContent[i].id];
-        } else break;
-      }
-      if (dbUser[user].NotiFrequency == 2) mailTrigger(user);
-      if (dbUser[user].NotiFrequency == 0) {
-        dbUser[user].Mailinglist = [];
-
-      }
-      if (new Date().getUTCHours() == 21
-        && dbUser[user].NotiFrequency == 1
-        && dbUser[user].LastDailyMail != new Date().toDateString()) {
-        dbUser[user].LastDailyMail = new Date().toDateString();
-        mailTrigger(user);
-      }
-      db.collection('User').doc(user).update({ Mailinglist: dbUser[user].Mailinglist, LastDailyMail: dbUser[user].LastDailyMail }).catch((err) => { console.log(err) }).then(() => res.end());
-    }
-  });
-}); */
 
 function mailTrigger(uid, target) {
   var list = [];
@@ -1154,106 +922,6 @@ function updateDatabaseContent(list) {
       });
     })
   ]).catch((err) => { console.log(err) });
-
-
-  /* return new Promise((resolve, reject) => { resolve() }).then(() => {
-    if (list.indexOf('user') == -1) return new Promise((rs, rj) => { rs() });
-    else return db.collection('User').get().then((snapshot) => {
-      snapshot.forEach((doc) => { dbUser[doc.id] = doc.data(); });
-    });
-  }).then(() => {
-    if (list.indexOf('mail') == -1) return new Promise((rs, rj) => { rs() });
-    else return db.collection('Mailsettings').get().then((snapshot) => {
-      snapshot.forEach((doc) => { dbMailsettings[doc.id] = doc.data(); });
-    });
-  }).then(() => {
-    if (list.indexOf('blog') == -1) return new Promise((rs, rj) => { rs() });
-    else return db.collection('Blogentries').get().then((snapshot) => {
-      snapshot.forEach((doc) => { dbBlogentries[doc.id] = doc.data(); });
-  });
-  }).then(() => {
-    if (list.indexOf('media') == -1) return new Promise((rs, rj) => { rs() });
-    else return db.collection('Media').get().then((snapshot) => {
-      snapshot.forEach((doc) => { dbMedia[doc.id] = doc.data(); });
-    });
-  }).then(() => {
-    if (list.indexOf('status') == -1) return new Promise((rs, rj) => { rs() });
-    else return db.collection('StatusUpdates').get().then((snapshot) => {
-      snapshot.forEach((doc) => { dbStatusUpdates[doc.id] = doc.data(); });
-    });
-  }).then(() => {
-    if (list.indexOf('comment') == -1) return new Promise((rs, rj) => { rs() });
-    else return db.collection('Comments').get().then((snapshot) => {
-      snapshot.forEach((doc) => { dbComments[doc.id] = doc.data(); });
-    });
-  }).then(() => {
-    if (list.indexOf('commentreply') == -1) return new Promise((rs, rj) => { rs() });
-    else return db.collection('CommentReplies').get().then((snapshot) => {
-      snapshot.forEach((doc) => { dbCommentReplies[doc.id] = doc.data(); });
-    });
-  }).catch((err) => { console.log(err) }); */
-  
-  
-  
-  
-  
-  
-  /* db.collection('User').get(snapshot => {
-    snapshot.forEach(doc => {
-      dbUser[doc.id] = doc.data();
-    });
-  });
-  db.collection('Media').get(snapshot => {
-    snapshot.forEach(doc => {
-      dbMedia[doc.id] = doc.data();
-      if (doc.data().Upload.release.getTime() > Date.now())
-        notReleasedObjects[doc.id] = {
-          typ: 'media',
-          id: doc.id,
-          release: doc.data().Upload.release.getTime(),
-          upload: doc.data().Upload.true.getTime()
-        };
-    });
-  });
-  db.collection('Comments').get(snapshot => {
-    snapshot.forEach(doc => {
-      dbComments[doc.id] = doc.data();
-    });
-  });
-  db.collection('CommentReplies').get(snapshot => {
-    snapshot.forEach(doc => {
-      dbCommentReplies[doc.id] = doc.data();
-    });
-  });
-  db.collection('Blogentries').get(snapshot => {
-    snapshot.forEach(doc => {
-      dbBlogentries[doc.id] = doc.data();
-      if (doc.data().Upload.release.getTime() > Date.now())
-        notReleasedObjects[doc.id] = {
-          typ: 'blog',
-          id: doc.id,
-          release: doc.data().Upload.release.getTime(),
-          upload: doc.data().Upload.true.getTime()
-        };
-    });
-  });
-  db.collection('StatusUpdates').get(snapshot => {
-    snapshot.forEach(doc => {
-      dbStatusUpdates[doc.id] = doc.data();
-      if (doc.data().Upload.release.getTime() > Date.now())
-        notReleasedObjects[doc.id] = {
-          typ: 'status',
-          id: doc.id,
-          release: doc.data().Upload.release.getTime(),
-          upload: doc.data().Upload.true.getTime()
-        };
-    });
-  });
-  db.collection('Mailsettings').get(snapshot => {
-    snapshot.forEach(doc => {
-      dbMailsettings[doc.id] = doc.data();
-    });
-  }); */
 }
 
 app.get('/updateContent', (req, res) => {
@@ -1284,20 +952,7 @@ function addNonreleasedContent(typ, snapshot) {
     }
   });
 }
-/*
-db.collection('Blogentries').onSnapshot(snapshot => {
-  addNonreleasedContent('blog', snapshot);
-  console.log('changeonblog')
-});
 
-db.collection('Media').onSnapshot(snapshot => {
-  addNonreleasedContent('media', snapshot);
-});
-
-db.collection('StatusUpdates').onSnapshot(snapshot => {
-  addNonreleasedContent('status', snapshot);
-});
-*/
 app.use(function (req, res) {
   res.status(404).end();
 });

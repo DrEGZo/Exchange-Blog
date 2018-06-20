@@ -5,23 +5,20 @@ $(function () {
 var blogid = window.location.href.split('/')[5];
 
 function main() {
-  firebase.auth().currentUser.getIdToken(true)
-    .then((idToken) => {
-      fetch('/getBlogData', {
-        idToken: idToken,
-        lang: language,
-        blogid: blogid
-      }).then((data) => { buildBlogPage(data, idToken) });
-    });
+  firebase.auth().currentUser.getIdToken(true).then((idToken) => {
+    fetch('/getBlogData', {
+      idToken: idToken,
+      lang: language,
+      blogid: blogid
+    }).then((data) => { buildBlogPage(data, idToken) });
+  });
 }
 
 function buildBlogPage(content, idToken) {
   $('title').html(content.title);
   $('#header-teaser div').css('background-image', 'url("' + content.thumbnail + '")');
-  $('#header-teaser').fadeIn();
   $('#page-title h1').html(content.title);
   $('#page-title p').html(content.intro);
-  $('#page-title').slideDown();
   var elements = content.content.split('§§§');
   var midlist = [];
   var galleryreference = {};
@@ -83,9 +80,13 @@ function buildBlogPage(content, idToken) {
       }
     }
     adjustBlogMediaDescription();
+    $('#loading').hide(0);
+    $('#header-teaser').fadeIn();
+    $('#page-title').slideDown();
     $('#page-content').slideDown();
     launchComments(content.comments, 'blog', blogid, '#comments', 'blog', blogid, true, true, false, false)
     $('#comments').slideDown();
+    $('#footer').slideDown();
   });
 }
 

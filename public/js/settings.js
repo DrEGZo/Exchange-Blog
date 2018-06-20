@@ -7,6 +7,7 @@ function main() {
     $('button.verification').click(() => {
         firebase.auth().currentUser.sendEmailVerification();
     });
+    if (firebase.auth().currentUser.emailVerified) $('button.verification').hide(0);
     resetUserSettings().then(() => {
         $('form').submit((e) => { e.preventDefault() });
         $('button.reset').click(() => {
@@ -83,7 +84,9 @@ function main() {
                 });
             }
         });
+        $('#loading').hide(0);
         $('#page-content').slideDown();
+        $('#footer').slideDown();
     });
 }
 

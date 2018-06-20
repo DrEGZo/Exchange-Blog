@@ -44,3 +44,7 @@ form div.reset, .formError {
 input.error {
     border: 2px solid #dc0e0e;
 }
+form a, form a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}

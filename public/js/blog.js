@@ -1,34 +1,32 @@
 $(function () {
-  authenticater(true).then(main);
+  authenticater(true).then(() => { initMenu(getBlogData) });
 });
 
-function main() {
-  initMenu(getBlogData);
+function getBlogData() {
+  var selectedyear = 2018;
+  var selectedmonth;
 
-  function getBlogData() {
-    var selectedyear = 2018;
-    var selectedmonth;
+  if ($('#menu-button-2019').hasClass('active')) selectedyear = 2019;
 
-    if ($('#menu-button-2019').hasClass('active')) selectedyear = 2019;
-
-    for (var i = 0; i < 12; i++) {
-      if ($('#month-choice-' + selectedyear + ' > .menu-button-' + i).hasClass('active')) selectedmonth = i;
-    }
-
-    firebase.auth().currentUser.getIdToken(true)
-      .then(idToken => {
-        return fetch('/getBlogList', {
-          idToken: idToken,
-          lang: language,
-          year: selectedyear,
-          month: selectedmonth
-        });
-      })
-      .then((data) => {
-        buildBlogList(data);
-        $('#page-content').slideDown(400);
-      });
+  for (var i = 0; i < 12; i++) {
+    if ($('#month-choice-' + selectedyear + ' > .menu-button-' + i).hasClass('active')) selectedmonth = i;
   }
+
+  $('#loading').show(0);
+
+  firebase.auth().currentUser.getIdToken(true).then(idToken => {
+    return fetch('/getBlogList', {
+      idToken: idToken,
+      lang: language,
+      year: selectedyear,
+      month: selectedmonth
+    });
+  }).then((data) => {
+    buildBlogList(data);
+    $('#loading').hide(0);
+    $('#page-content').slideDown(400);
+    $('#footer').slideDown();
+  });
 }
 
 function buildBlogList(bloglist) {

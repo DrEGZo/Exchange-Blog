@@ -64,6 +64,10 @@ function main() {
         });
     }
   });
+
+  $('#cookie-info button').click(() => {
+    $('#cookie-info').hide(400);
+  });
   
   fetch('/getHomeContent', {lang: language}).then((data) => {
     launchCarousel(data);
@@ -89,7 +93,10 @@ function launchCarousel(data) {
     if (i == 0) $('.carousel-indicators li:first-child').addClass('active');
     if (i == 0) $('.carousel-item:first-child').addClass('active');
   }
+  $('#loading').hide(0);
   $('#header-carousel').fadeIn();
   $('#page-title').slideDown();
   $('#page-content').slideDown();
+  $('#footer').slideDown();
+  if (!(firebase.auth().currentUser)) $('#cookie-info').show(400);
 }

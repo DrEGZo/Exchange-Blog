@@ -8,23 +8,23 @@ var activityDate = new Date();
 var mediaTeasers = 0;
 
 function main() {
-  refreshData(Date.now())
-    .then(addStatusContent)
-    .then(() => { $('#page-content').slideDown() });
+  refreshData(Date.now()).then(addStatusContent).then(() => { 
+    $('#loading').hide(0);
+    $('#page-content').slideDown();
+    $('#footer').slideDown();
+  });
 }
 
 function refreshData(time) {
-  return firebase.auth().currentUser.getIdToken(true)
-    .then((idToken) => {
-      return fetch('/getActivityFeed', {
-        idToken: idToken,
-        lang: language,
-        time: time
-      });
-    })
-    .then((data) => {
-      nextActivity = data;
+  return firebase.auth().currentUser.getIdToken(true).then((idToken) => {
+    return fetch('/getActivityFeed', {
+      idToken: idToken,
+      lang: language,
+      time: time
     });
+  }).then((data) => {
+    nextActivity = data;
+  });
 }
 
 function addStatusContent() {

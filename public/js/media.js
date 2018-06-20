@@ -12,17 +12,19 @@ function initGallery() {
     if ($('#month-choice-' + selectedyear + ' > .menu-button-' + i).hasClass('active')) selectedmonth = i;
   }
 
-  firebase.auth().currentUser.getIdToken(true)
-    .then((idToken) => {
-      return fetch('/getMediaList', {
-        idToken: idToken,
-        lang: language,
-        year: selectedyear,
-        month: selectedmonth
-      });
-    })
-    .then((data) => {
-      launchGallery('.image-gallery',data);
-      $('#page-content').slideDown(400);
+  $('#loading').show(0);
+
+  firebase.auth().currentUser.getIdToken(true).then((idToken) => {
+    return fetch('/getMediaList', {
+      idToken: idToken,
+      lang: language,
+      year: selectedyear,
+      month: selectedmonth
     });
+  }).then((data) => {
+    launchGallery('.image-gallery',data);
+    $('#loading').hide(0);
+    $('#page-content').slideDown(400);
+    $('#footer').slideDown();
+  });
 }
