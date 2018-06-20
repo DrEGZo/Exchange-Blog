@@ -1256,26 +1256,35 @@ function updateDatabaseContent(list) {
   }); */
 }
 
+app.get('/updateContent', (req, res) => {
+  updateDatabaseContent(['blog','media','status','mail']).then(() => {
+    return Promise.all([
+      db.collection('Blogentries').get().then((snap) => { addNonreleasedContent('blog', snap) }),
+      db.collection('Media').get().then((snap) => { addNonreleasedContent('media', snap) }),
+      db.collection('StatusUpdates').get().then((snap) => { addNonreleasedContent('status', snap) })
+    ]);
+  }).then(() => {
+    db.collection('Mailsettings').doc('ImdNoti').set(dbMailsettings.ImdNoti),
+    db.collection('Mailsettings').doc('DailyNoti').set(dbMailsettings.DailyNoti)
+  }).then(() => { res.end() });
+});
+
 function addNonreleasedContent(typ, snapshot) {
-  updateDatabaseContent(['mail']).then(() => {
-    snapshot.forEach(doc => {
-      if (doc.data().Upload.release.getTime() > Date.now()) {
-        var newContent = {
-          typ: typ,
-          id: doc.id,
-          release: doc.data().Upload.release.getTime(),
-          upload: doc.data().Upload.true.getTime(),
-          visibility: doc.data().Visibility
-        };
-        dbMailsettings.ImdNoti[doc.id] = newContent;
-        dbMailsettings.DailyNoti[doc.id] = newContent;
-      }
-    });
-    db.collection('Mailsettings').doc('ImdNoti').set(dbMailsettings.ImdNoti);
-    db.collection('Mailsettings').doc('DailyNoti').set(dbMailsettings.DailyNoti);
+  snapshot.forEach(doc => {
+    if (doc.data().Upload.release.getTime() > Date.now()) {
+      var newContent = {
+        typ: typ,
+        id: doc.id,
+        release: doc.data().Upload.release.getTime(),
+        upload: doc.data().Upload.true.getTime(),
+        visibility: doc.data().Visibility
+      };
+      dbMailsettings.ImdNoti[doc.id] = newContent;
+      dbMailsettings.DailyNoti[doc.id] = newContent;
+    }
   });
 }
-
+/*
 db.collection('Blogentries').onSnapshot(snapshot => {
   addNonreleasedContent('blog', snapshot);
   console.log('changeonblog')
@@ -1288,7 +1297,7 @@ db.collection('Media').onSnapshot(snapshot => {
 db.collection('StatusUpdates').onSnapshot(snapshot => {
   addNonreleasedContent('status', snapshot);
 });
-
+*/
 app.use(function (req, res) {
   res.status(404).end();
 });
