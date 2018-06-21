@@ -14,3 +14,16 @@ Ursache:    Unbekannt.
 Maßnahme:   Sämtliche DokumentReference.update() Befehle werden mit einem catch versehen, dass den Error loggt.
             Damit ist sichergestellt, dass zumindest der Serverskript weiterläuft.
             Möglicherweise kann es zur Beeinträchtigung der Funktion der gesamten Website kommen.
+
+
+
+
+
+
+
+
+
+
+
+
+            https://youtu.be/7_2CJs_VZk4
