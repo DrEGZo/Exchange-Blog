@@ -18,8 +18,8 @@
             var list = document.querySelectorAll('select[name="' + name + '"]');
             for (var i = 0; i < list.length; i++) {
                 for (var j = start; j < start + range; j++) {
-                    var elm = '<option value="' + (start + j) + '">';
-                    if (name == 'month') elm += new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')[j];
+                    var elm = '<option value="' + j + '">';
+                    if (name == 'month') elm += new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')[j-1];
                     else elm += j;
                     elm += '</option>';
                     list[i].innerHTML += elm;
@@ -345,8 +345,8 @@
     </div>
     <script>
         launchSelect('year', 2018, 2);
-        launchSelect('month', 0, 12);
-        launchSelect('day', 0, 31);
+        launchSelect('month', 1, 12);
+        launchSelect('day', 1, 31);
         launchSelect('hour', 0, 24);
     </script>
 </body>

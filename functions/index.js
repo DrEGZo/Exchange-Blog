@@ -787,7 +787,9 @@ function evaluateIdList(mediaidlist,uid,lang) {
   });
   var medialist = [];
   for (var i = 0; i < mediaidlist.length; i++) {
-    if (dbMedia[mediaidlist[i]].Visibility.indexOf(dbUser[uid].Rank) != -1) 
+    console.log(new Date(dbMedia[mediaidlist[i]].Upload.release).getTime() < Date.now())
+    console.log(new Date(dbMedia[mediaidlist[i]].Upload.release).getTime())
+    if (dbMedia[mediaidlist[i]].Visibility.indexOf(dbUser[uid].Rank) != -1 && new Date(dbMedia[mediaidlist[i]].Upload.release).getTime() < Date.now()) 
       medialist.push(getMetadata('media',mediaidlist[i],uid,lang));
   }
   return medialist;
@@ -877,6 +879,7 @@ function mailTrigger(uid, target) {
     if (dbUser[uid].Notifications[list[i].typ] && list[i].visibility.indexOf(dbUser[uid].Rank) != -1)
       mailingList.push(list[i]);
   }
+  console.log(mailingList)
   if (mailingList.length == 0) return;
   mailingList = mailingList.sort((a,b) => {
     if (a.typ == 'blog' && a.typ != b.typ) return -1;
@@ -903,7 +906,7 @@ function mailTrigger(uid, target) {
       if (mailingList[i].typ == 'blog') {
         mailtext += dbMailsettings[lang].newBlog
           .replace('%TITLE%', dbBlogentries[mailingList[i].id]['Title_' + lang])
-          .replace('%LINK%', 'https://exchange-blog.firebaseapp.com/' + dbMailsettings[lang].link + '/blog/' + mailingList[i].id + '/');
+          .replace('%LINK%', 'https://exchange-blog.com/' + dbMailsettings[lang].link + '/blog/' + mailingList[i].id + '/');
         mailtext += '\n\n';
       } else if (mailingList[i].typ == 'status') {
         var date = new Date(mailingList[i].release);
@@ -927,15 +930,15 @@ function mailTrigger(uid, target) {
           .replace('%AUTHOR%', dbUser[dbStatusUpdates[mailingList[i].id].Author].Nick)
           .replace('%TIME%', datestring)
           .replace('%TEXT%', text)
-          .replace('%LINK%', 'https://exchange-blog.firebaseapp.com/' + dbMailsettings[lang].link + '/timeline/');
+          .replace('%LINK%', 'https://exchange-blog.com/' + dbMailsettings[lang].link + '/timeline/');
         mailtext += '\n\n';
       } else if (mailingList[i].typ == 'media') mediacount++;
     }
     if (mediacount > 0) {
       mailtext += dbMailsettings[lang].newMedia
         .replace('%COUNT%', '' + mediacount)
-        .replace('%LINK1%', 'https://exchange-blog.firebaseapp.com/' + dbMailsettings[lang].link + '/timeline/')
-        .replace('%LINK2%', 'https://exchange-blog.firebaseapp.com/' + dbMailsettings[lang].link + '/media/');
+        .replace('%LINK1%', 'https://exchange-blog.com/' + dbMailsettings[lang].link + '/timeline/')
+        .replace('%LINK2%', 'https://exchange-blog.com/' + dbMailsettings[lang].link + '/media/');
       mailtext += '\n\n';
     }
     mailtext += dbMailsettings[lang].outro;
