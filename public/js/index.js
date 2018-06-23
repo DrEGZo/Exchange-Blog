@@ -49,9 +49,9 @@ $(window).resize(() => { if ($('#lng-cnt-0 button').hasClass('active')) $('#lng-
 function fetchCb(url, data, callback) {
     $.ajax({
         method: 'POST',
-        url: url,
+        url: '/api' + url,
         data: data,
-        //error: (jqxhr) => { redirector(jqxhr.status) },
+        error: (jqxhr) => { redirector(jqxhr.status) },
         success: (data) => { callback(data) }
     });
 }
@@ -63,18 +63,21 @@ function fetch(url, data) {
 }
 
 function redirector(status) {
+    var lang; 
+    if (language == 'de') lang = '/de-de';
+    else lang = '/en-us';
     if (status == 401) {
         if (firebase.auth().currentUser) {
-            window.location.replace("/de-de/alert/notVerified/");
+            window.location.replace(lang + "/alert/notVerified/");
         } else {
-            window.location.replace("/de-de/alert/notLoggedIn/");
+            window.location.replace(lang + "/alert/notLoggedIn/");
         }
     } else if (status == 403) {
-        window.location.replace("/de-de/alert/forbidden/");
+        window.location.replace(lang + "/alert/forbidden/");
     } else if (status >= 500) {
-        window.location.replace("/de-de/alert/serverError/");
+        window.location.replace(lang + "/alert/serverError/");
     } else {
-        window.location.replace("/de-de/alert/notFound/");
+        window.location.replace(lang + "/alert/notFound/");
     }
 }
 

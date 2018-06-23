@@ -24,7 +24,7 @@
       "source": "/en-us/signup/**",
       "destination": "/en-us/signup/index.html"
     }, {
-      "source": "**",
+      "source": "/api/**",
       "function": "expressapp"
       }],
     "ignore": [

@@ -3,18 +3,26 @@ service cloud.firestore {
   
     match /Blogentries/{blogid} {
       allow get: if isLoggedIn() && hasViewPermissions(request.auth.uid);
+      allow write: if isAdmin(request.auth.uid);
     }
     
     match /Media/{mediaid} {
     	allow get: if isLoggedIn() && hasViewPermissions(request.auth.uid);
+    	allow write: if isAdmin(request.auth.uid);
     }
     
     match /Comments/{commentid} {
     	allow get: if hasParentViewPermissions(request.auth.uid);
+    	allow write: if isAdmin(request.auth.uid);
     }
     
     match /StatusUpdates/{statusid} {
     	allow get: if isLoggedIn() && hasViewPermissions(request.auth.uid);
+    	allow write: if isAdmin(request.auth.uid);
+    }
+    
+    match /RegistryCodes/{code} {
+    	allow write: if isAdmin(request.auth.uid);
     }
     
     
@@ -38,6 +46,10 @@ service cloud.firestore {
     
     function hasObjectViewPermissions(user,typ,id) {
     	return get(/databases/$(database)/documents/$(typ)/$(id)).data.Visibility.hasAny([getUserRank(user)]);
+    }
+    
+    function isAdmin(uid) {
+    	return getUserRank(uid) == 'admin';
     }
     
   }

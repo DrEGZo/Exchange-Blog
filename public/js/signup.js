@@ -2,7 +2,7 @@ $(main);
 
 function main() {
     firebase.auth().useDeviceLanguage();
-    var uid = window.location.pathname.split('/')[3];
+    var code = window.location.pathname.split('/')[3];
     $('#page-content').slideDown();
     $('form').submit((e) => { e.preventDefault() });
     $('button.save').click(() => {
@@ -32,7 +32,7 @@ function main() {
         }
         if (!err) {
             fetch('/signUp', {
-                uid: uid,
+                code: code,
                 mail: $('#emailInput').val(),
                 pass: $('#newPasswordInput').val(),
                 name: $('#nameInput').val(),

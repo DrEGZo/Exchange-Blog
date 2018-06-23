@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adminpanel</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+    <script src="/js/index.js"></script>
+    <script>
+        const db = firebase.firestore();
+        const storage = firebase.storage();
+        const settings = { timestampsInSnapshots: true };
+        db.settings(settings);
+
+        function launchSelect(name,start,range) {
+            var list = document.querySelectorAll('select[name="' + name + '"]');
+            for (var i = 0; i < list.length; i++) {
+                for (var j = start; j < start + range; j++) {
+                    var elm = '<option value="' + (start + j) + '">';
+                    if (name == 'month') elm += new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')[j];
+                    else elm += j;
+                    elm += '</option>';
+                    list[i].innerHTML += elm;
+                }
+            }
+        }
+
+        function uploadmedia() {
+            var division = document.getElementById('media_upload');
+            var typ = division.querySelector('[name="typ"]');
+            var fileinput = division.querySelector('[type="file"]');
+            var dir = division.querySelector('[name="dir"]');
+            var desc_de = division.querySelector('[name="desc_de"]');
+            var desc_en = division.querySelector('[name="desc_en"]');
+            var year = division.querySelector('[name="year"]');
+            var month = division.querySelector('[name="month"]');
+            var day = division.querySelector('[name="day"]');
+            var hour = division.querySelector('[name="hour"]');
+            var ranks = division.querySelectorAll('[type="checkbox"]');
+            var progress = division.querySelector('progress');
+
+            var release = new Date(year.value, (month.value - 1), day.value, hour.value);
+            var visibility = [];
+            for (var i = 0; i < ranks.length; i++) {
+                if (ranks[i].checked) visibility.push(ranks[i].value);
+            }
+
+            var file = fileinput.files[0];
+            var ref = storage.ref(dir.value + '/' + file.name);
+            var task = ref.put(file);
+
+            task.on('state_changed', (snapshot) => {
+                var percentage = snapshot.bytesTransferred / snapshot.totalBytes;
+                progress.value = percentage;
+            }, (err) => {
+                console.log(err);
+                alert('Error');
+            }, () => {
+                task.snapshot.ref.getDownloadURL().then((url) => {
+                    var doc = {
+                        Typ: typ.value,
+                        Location: url,
+                        Description_de: desc_de.value,
+                        Description_en: desc_en.value,
+                        Upload: {
+                            true: new Date(),
+                            release: release
+                        },
+                        Comments: [],
+                        Visibility: visibility
+                    };
+
+                    db.collection('Media').add(doc).then(ref => {
+                        console.log('Media uploaded at ' + new Date().toTimeString() + ': ' + ref.id);
+                        alert('Success: ' + ref.id);
+                    }).catch(err => {
+                        console.log(err);
+                        alert('Error');
+                    });
+                });
+            });
+
+
+        }
+
+        function registermedia() {
+            var division = document.getElementById('media_register');
+            var typ = division.querySelector('[name="typ"]');
+            var location = division.querySelector('[name="location"]');
+            var desc_de = division.querySelector('[name="desc_de"]');
+            var desc_en = division.querySelector('[name="desc_en"]');
+            var year = division.querySelector('[name="year"]');
+            var month = division.querySelector('[name="month"]');
+            var day = division.querySelector('[name="day"]');
+            var hour = division.querySelector('[name="hour"]');
+            var ranks = division.querySelectorAll('[type="checkbox"]');
+
+            var release = new Date(year.value, (month.value - 1), day.value, hour.value);
+            var visibility = [];
+            for (var i = 0; i < ranks.length; i++) {
+                if (ranks[i].checked) visibility.push(ranks[i].value);
+            }
+            
+            var doc = {
+                Typ: typ.value,
+                Location: location.value,
+                Description_de: desc_de.value,
+                Description_en: desc_en.value,
+                Upload: {
+                    true: new Date(),
+                    release: release
+                },
+                Comments: [],
+                Visibility: visibility
+            };
+
+            db.collection('Media').add(doc).then(ref => {
+                console.log('Media registered at ' + new Date().toTimeString() + ': ' + ref.id);
+                alert('Success: ' + ref.id);
+            }).catch(err => {
+                console.log(err);
+                alert('Error');
+            });
+        }
+
+        function uploadblog() {
+            var division = document.getElementById('blog_upload');
+            var id = division.querySelector('[name="blogid"]');
+            var thumbnail = division.querySelector('[name="thumbnail"]');
+            var title_de = division.querySelector('[name="title_de"]');
+            var title_en = division.querySelector('[name="title_en"]');
+            var intro_de = division.querySelector('[name="intro_de"]');
+            var intro_en = division.querySelector('[name="intro_en"]');
+            var content_de = division.querySelector('[name="content_de"]');
+            var content_en = division.querySelector('[name="content_en"]');
+            var year = division.querySelector('[name="year"]');
+            var month = division.querySelector('[name="month"]');
+            var day = division.querySelector('[name="day"]');
+            var hour = division.querySelector('[name="hour"]');
+            var ranks = division.querySelectorAll('[type="checkbox"]');
+
+            var release = new Date(year.value, (month.value - 1), day.value, hour.value);
+            var visibility = [];
+            for (var i = 0; i < ranks.length; i++) {
+                if (ranks[i].checked) visibility.push(ranks[i].value);
+            }
+            
+            var doc = {
+                Thumbnail: thumbnail.value,
+                Title_de: title_de.value,
+                Title_en: title_en.value,
+                Intro_de: intro_de.value,
+                Intro_en: intro_en.value,
+                Content_de: content_de.value,
+                Content_en: content_en.value,
+                Upload: {
+                    true: new Date(),
+                    release: release
+                },
+                Comments: [],
+                Visibility: visibility
+            };
+            
+            db.collection('Blogentries').doc(id.value).set(doc).then(() => {
+                console.log('Blog uploaded at ' + new Date().toTimeString() + ': ' + id.value);
+                alert('Success');
+            }).catch(err => {
+                console.log(err);
+                alert('Error');
+            });
+        }
+
+        function adduser() {
+            var rank = document.querySelector('#user_register select[name="rank"]');
+            var lang = document.querySelector('#user_register select[name="lang"]');
+            var note = document.querySelector('#user_register input');
+
+            var map = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            var code = '';
+            for (var i = 0; i < 8; i++) code += map[Math.floor(Math.random()*8)];
+
+            db.collection('RegistryCodes').doc(code).set({
+                Rank: rank.value,
+                Language: lang.value,
+                UserNote: note.value
+            }).then(() => {
+                console.log('Credential established at: ' + new Date().toTimeString() + ': ' + code)
+                alert('Success: ' + code);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="media_upload">
+        <h3>Media Upload</h3>
+        <select name="typ">
+            <option value="pic">Bild</option>
+            <option value="vid">Video</option>
+        </select>
+        <br>
+        <input type="file">
+        <br>Dir
+        <input type="text" name="dir">
+        <br>
+        <select name="year"></select>
+        <br>
+        <select name="month"></select>
+        <br>
+        <select name="day"></select>
+        <br>
+        <select name="hour"></select>
+        <br>
+        Desc_de: <input type="text" name="desc_de">
+        <br>
+        Desc_en: <input type="text" name="desc_en">
+        <br>
+        <input type="checkbox" value="admin" checked>Administrator
+        <br>
+        <input type="checkbox" value="family" checked>Family
+        <br>
+        <input type="checkbox" value="hostfamily" checked>Host Family
+        <br>
+        <input type="checkbox" value="friend" checked>Friend
+        <br>
+        <input type="checkbox" value="schoolmate" checked>Schoolmate
+        <br>
+        <input type="checkbox" value="teacher" checked>Teacher
+        <br>
+        <input type="checkbox" value="stepin" checked>Stepin
+        <br>
+        <input type="checkbox" value="ices" checked>ICES
+        <br>
+        <button onclick="uploadmedia()">Confirm</button>
+        <br>
+        <progress></progress>
+    </div>
+
+    <div id="media_register">
+        <h3>Media Registration</h3>
+        <select name="typ">
+            <option value="pic">Bild</option>
+            <option value="vid">Video</option>
+            <option value="ytvid">YouTube</option>
+        </select>
+        <br>
+        Loc: <input type="text" name="location">
+        <br>
+        <select name="year"></select>
+        <br>
+        <select name="month"></select>
+        <br>
+        <select name="day"></select>
+        <br>
+        <select name="hour"></select>
+        <br> Desc_de:
+        <input type="text" name="desc_de">
+        <br> Desc_en:
+        <input type="text" name="desc_en">
+        <br>
+        <input type="checkbox" value="admin" checked>Administrator
+        <br>
+        <input type="checkbox" value="family" checked>Family
+        <br>
+        <input type="checkbox" value="hostfamily" checked>Host Family
+        <br>
+        <input type="checkbox" value="friend" checked>Friend
+        <br>
+        <input type="checkbox" value="schoolmate" checked>Schoolmate
+        <br>
+        <input type="checkbox" value="teacher" checked>Teacher
+        <br>
+        <input type="checkbox" value="stepin" checked>Stepin
+        <br>
+        <input type="checkbox" value="ices" checked>ICES
+        <br>
+        <button onclick="registermedia()">Confirm</button>
+    </div>
+
+    <div id="blog_upload">
+        <h3>Blog Upload</h3>
+        ID <input type="text" name="blogid">
+        <br>
+        ThID: <input type="text" name="thumbnail">
+        <br>
+        <select name="year"></select>
+        <br>
+        <select name="month"></select>
+        <br>
+        <select name="day"></select>
+        <br>
+        <select name="hour"></select>
+        <br> Title_de:
+        <input type="text" name="title_de">
+        <br> Title_en:
+        <input type="text" name="title_en">
+        <br> Intro_de:
+        <input type="text" name="intro_de">
+        <br> Intro_en:
+        <input type="text" name="intro_en">
+        <br> Content_de:
+        <input type="text" name="content_de">
+        <br> Content_en:
+        <input type="text" name="content_en">
+        <br>
+        <input type="checkbox" value="admin" checked>Administrator
+        <br>
+        <input type="checkbox" value="family" checked>Family
+        <br>
+        <input type="checkbox" value="hostfamily" checked>Host Family
+        <br>
+        <input type="checkbox" value="friend" checked>Friend
+        <br>
+        <input type="checkbox" value="schoolmate" checked>Schoolmate
+        <br>
+        <input type="checkbox" value="teacher" checked>Teacher
+        <br>
+        <input type="checkbox" value="stepin" checked>Stepin
+        <br>
+        <input type="checkbox" value="ices" checked>ICES
+        <br>
+        <button onclick="uploadblog()">Confirm</button>
+    </div>
+
+    <div id="user_register">
+        <h3>User Registration</h3>
+        <select name="rank">
+            <option value="family">Family</option>
+            <option value="hostfamily">Host Family</option>
+            <option value="friend">Friend</option>
+            <option value="schoolmate">Schoolmate</option>
+            <option value="teacher">Teacher</option>
+            <option value="stepin">Stepin</option>
+            <option value="ices">ICES</option>
+        </select>
+        <br>
+        <select name="lang">
+            <option value="de">German</option>
+            <option value="en">English</option>
+        </select>
+        <input type="text">
+        <br>
+        <button onclick="adduser()">Confirm</button>
+    </div>
+    <script>
+        launchSelect('year', 2018, 2);
+        launchSelect('month', 0, 12);
+        launchSelect('day', 0, 31);
+        launchSelect('hour', 0, 24);
+    </script>
+</body>
+</html>

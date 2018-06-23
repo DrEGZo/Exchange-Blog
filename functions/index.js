@@ -25,14 +25,67 @@ var dbCommentReplies = {};
 var dbBlogentries = {};
 var dbStatusUpdates = {};
 var dbMailsettings = {};
+var dbRegistryCodes = {};
 
-app.get('/lorem', (req,res) => {
+function updateDatabaseContent(list) {
+  return Promise.all([
+    new Promise((rs, rj) => {
+      if (list.indexOf('user') == -1) rs();
+      else db.collection('User').get().then((snapshot) => {
+        snapshot.forEach((doc) => { dbUser[doc.id] = doc.data(); }); rs();
+      });
+    }),
+    new Promise((rs, rj) => {
+      if (list.indexOf('mail') == -1) rs();
+      else db.collection('Mailsettings').get().then((snapshot) => {
+        snapshot.forEach((doc) => { dbMailsettings[doc.id] = doc.data(); }); rs();
+      });
+    }),
+    new Promise((rs, rj) => {
+      if (list.indexOf('media') == -1) rs();
+      else db.collection('Media').get().then((snapshot) => {
+        snapshot.forEach((doc) => { dbMedia[doc.id] = doc.data(); }); rs();
+      });
+    }),
+    new Promise((rs, rj) => {
+      if (list.indexOf('blog') == -1) rs();
+      else db.collection('Blogentries').get().then((snapshot) => {
+        snapshot.forEach((doc) => { dbBlogentries[doc.id] = doc.data(); }); rs();
+      });
+    }),
+    new Promise((rs, rj) => {
+      if (list.indexOf('status') == -1) rs();
+      else db.collection('StatusUpdates').get().then((snapshot) => {
+        snapshot.forEach((doc) => { dbStatusUpdates[doc.id] = doc.data(); }); rs();
+      });
+    }),
+    new Promise((rs, rj) => {
+      if (list.indexOf('comment') == -1) rs();
+      else db.collection('Comments').get().then((snapshot) => {
+        snapshot.forEach((doc) => { dbComments[doc.id] = doc.data(); }); rs();
+      });
+    }),
+    new Promise((rs, rj) => {
+      if (list.indexOf('commentreply') == -1) rs();
+      else db.collection('CommentReplies').get().then((snapshot) => {
+        snapshot.forEach((doc) => { dbCommentReplies[doc.id] = doc.data(); }); rs();
+      });
+    }),
+    new Promise((rs, rj) => {
+      if (list.indexOf('registry') == -1) rs();
+      else db.collection('RegistryCodes').get().then((snapshot) => {
+        snapshot.forEach((doc) => { dbRegistryCodes[doc.id] = doc.data(); }); rs();
+      });
+    })
+  ]).catch((err) => { console.log(err) });
+}
+
+app.get('/api/lorem', (req,res) => {
   res.send('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
 });
 
-app.post('/getHomeContent', (req,res) => {
+app.post('/api/getHomeContent', (req,res) => {
   updateDatabaseContent(['blog','media']).then(() => {
-    console.log(dbBlogentries)
     var bloglist = [];
     var result = [];
     for (var blogkey in dbBlogentries) {
@@ -42,7 +95,7 @@ app.post('/getHomeContent', (req,res) => {
         intro: dbBlogentries[blogkey]['Intro_' + req.body.lang],
         location: dbMedia[dbBlogentries[blogkey].Thumbnail].Location,
         upload: dbBlogentries[blogkey].Upload.true
-      })
+      });
     }
     bloglist.sort((a, b) => {
       if (a.upload > b.upload) return -1;
@@ -54,10 +107,10 @@ app.post('/getHomeContent', (req,res) => {
       result.push(bloglist[i]);
     }
     res.json(result);
-  });
+  }).catch((err) => { console.log(err); res.status(500).end(); })
 });
 
-app.post('/getBlogList', (req,res) => {
+app.post('/api/getBlogList', (req,res) => {
   updateDatabaseContent(['user', 'blog', 'media']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
@@ -88,6 +141,7 @@ app.post('/getBlogList', (req,res) => {
     res.json(result);
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -96,7 +150,7 @@ app.post('/getBlogList', (req,res) => {
   });
 });
 
-app.post('/getMediaList', (req,res) => {
+app.post('/api/getMediaList', (req,res) => {
   updateDatabaseContent(['user', 'media', 'comment']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
@@ -112,6 +166,7 @@ app.post('/getMediaList', (req,res) => {
     res.json(evaluateIdList(idlist,uid,req.body.lang));
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -120,7 +175,7 @@ app.post('/getMediaList', (req,res) => {
   });
 });
 
-app.post('/getGalleryData', (req,res) => {
+app.post('/api/getGalleryData', (req,res) => {
   updateDatabaseContent(['user', 'media', 'comment']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
@@ -128,6 +183,7 @@ app.post('/getGalleryData', (req,res) => {
     else res.json({});
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -136,7 +192,7 @@ app.post('/getGalleryData', (req,res) => {
   });
 });
 
-app.post('/getMediaData', (req,res) => {
+app.post('/api/getMediaData', (req,res) => {
   updateDatabaseContent(['user','media','comment']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
@@ -149,6 +205,7 @@ app.post('/getMediaData', (req,res) => {
     }
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -157,7 +214,7 @@ app.post('/getMediaData', (req,res) => {
   });
 })
 
-app.post('/getBlogData', (req, res) => {
+app.post('/api/getBlogData', (req, res) => {
   var blogid = req.body.blogid;
   updateDatabaseContent(['user','blog','comment','commentreply','media']).then(() => {
     return auth(req.body.idToken);
@@ -177,6 +234,7 @@ app.post('/getBlogData', (req, res) => {
     }
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -185,22 +243,22 @@ app.post('/getBlogData', (req, res) => {
   });
 });
 
-app.post('/auth', (req,res) => {
-  auth(req.body.idToken)
-    .then(() => {
-      res.end();
-    }).catch((err) => {
-      res.status(500);
-      admin.auth().verifyIdToken(req.body.idToken).catch(() => {
-        res.status(401);
-      }).then(() => auth(req.body.idToken)).catch(() => {
-        res.status(403);
-      }).then(() => { res.end(JSON.stringify(err)); });
-    });
+app.post('/api/auth', (req,res) => {
+  auth(req.body.idToken).then(() => {
+    res.end();
+  }).catch((err) => {
+    res.status(500);
+    console.log(err);
+    admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+      res.status(401);
+    }).then(() => auth(req.body.idToken)).catch(() => {
+      res.status(403);
+    }).then(() => { res.end(JSON.stringify(err)); });
+  });
 });
 
-app.post('/addComment', (req, res) => {
-  updateDatabaseContent(['user','blog','media','status','comment','commentreply']).then(() => {
+app.post('/api/addComment', (req, res) => {
+  updateDatabaseContent(['user',mainTyp,'comment','commentreply']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
     var reference;
@@ -272,6 +330,7 @@ app.post('/addComment', (req, res) => {
     }
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -280,7 +339,7 @@ app.post('/addComment', (req, res) => {
   });
 });
 
-app.post('/deleteComment', (req, res) => {
+app.post('/api/deleteComment', (req, res) => {
   var typ = req.body.typ;
   if (typ == 'comment') typ = 'commentreply';
   updateDatabaseContent(['user','comment',typ]).then(() => {
@@ -359,6 +418,7 @@ app.post('/deleteComment', (req, res) => {
     }
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -367,7 +427,7 @@ app.post('/deleteComment', (req, res) => {
   });
 });
 
-app.post('/reportComment', (req,res) => {
+app.post('/api/reportComment', (req,res) => {
   updateDatabaseContent(['user','mail','comment','commentreply']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
@@ -416,6 +476,7 @@ app.post('/reportComment', (req,res) => {
     res.end();
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -424,7 +485,7 @@ app.post('/reportComment', (req,res) => {
   });
 });
 
-app.post('/getCommentData', (req,res) => {
+app.post('/api/getCommentData', (req,res) => {
   var commentId = req.body.commentId;
   var containerTyp = req.body.containerTyp;
   var mainTyp = req.body.mainTyp;
@@ -464,6 +525,7 @@ app.post('/getCommentData', (req,res) => {
     }
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -472,7 +534,7 @@ app.post('/getCommentData', (req,res) => {
   });
 });
 
-app.post('/getActivityFeed', (req,res) => {
+app.post('/api/getActivityFeed', (req,res) => {
   updateDatabaseContent(['user','blog','media','status','comment']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
@@ -546,6 +608,7 @@ app.post('/getActivityFeed', (req,res) => {
     res.json(result);
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -554,7 +617,7 @@ app.post('/getActivityFeed', (req,res) => {
   });
 });
 
-app.post('/getUserSettings', (req,res) => {
+app.post('/api/getUserSettings', (req,res) => {
   updateDatabaseContent(['user']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
@@ -566,6 +629,7 @@ app.post('/getUserSettings', (req,res) => {
     });
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -574,39 +638,40 @@ app.post('/getUserSettings', (req,res) => {
   });
 });
 
-app.post('/signUp', (req,res) => {
-  updateDatabaseContent(['user']).then(() => {
-    if (req.body.uid in dbUser) {
-      if (!dbUser[req.body.uid].Active) {
-        admin.auth().updateUser(req.body.uid, {
-          email: req.body.mail,
-          password: req.body.pass
-        }).then(() => {
-          noti = req.body.noti;
-          for (key in noti) {
-            noti[key] = noti[key] === 'true';
-          }
-          db.collection('User').doc(req.body.uid).update({
-            Active: true,
-            Name: req.body.name,
-            Nick: req.body.nick,
-            Notifications: noti,
-            NotiFrequency: parseInt(req.body.notifreq)
-          }).catch((err) => { console.log(err) });
-          res.json({ success: true });
-        }).catch((err) => {
-          res.json({ success: false, error: err });
+app.post('/api/signUp', (req,res) => {
+  updateDatabaseContent(['user', 'registry']).then(() => {
+    if (req.body.code in dbRegistryCodes) {
+      admin.auth().createUser({
+        email: req.body.mail,
+        password: req.body.pass
+      }).then((record) => {
+        noti = req.body.noti;
+        for (key in noti) {
+          noti[key] = noti[key] === 'true';
+        }
+        return db.collection('User').doc(record.uid).set({
+          Rank: dbRegistryCodes[req.body.code].Rank,
+          Name: req.body.name,
+          Nick: req.body.nick,
+          Notifications: noti,
+          NotiFrequency: parseInt(req.body.notifreq),
+          Language: dbRegistryCodes[req.body.code].Language,
+          UserNote: dbRegistryCodes[req.body.code].UserNote
         });
-      } else {
-        res.status(403).end();
-      }
+      }).then(() => {
+        return db.collection('RegistryCodes').doc(req.body.code).delete();
+      }).then(() => {
+        res.json({ success: true });
+      }).catch((err) => {
+        res.json({ success: false, error: err });
+      });
     } else {
-      res.status(404).end();
+      res.status(403).end();
     }
-  });
+  }).catch((err) => { res.json({ success: false, error: err }) });
 });
 
-app.post('/changeSettings', (req,res) => {
+app.post('/api/changeSettings', (req,res) => {
   auth(req.body.idToken).then((uid) => {
     noti = req.body.noti;
     for (key in noti) {
@@ -621,6 +686,7 @@ app.post('/changeSettings', (req,res) => {
     res.end();
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -629,7 +695,7 @@ app.post('/changeSettings', (req,res) => {
   });
 });
 
-app.post('/getUserData',(req,res) => {
+app.post('/api/getUserData',(req,res) => {
   updateDatabaseContent(['user']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
@@ -639,6 +705,7 @@ app.post('/getUserData',(req,res) => {
     });
   }).catch((err) => {
     res.status(500);
+    console.log(err);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
@@ -646,6 +713,45 @@ app.post('/getUserData',(req,res) => {
     }).then(() => { res.end(JSON.stringify(err)); });
   });
 });
+
+app.get('/api/triggermail', (req, res) => {
+  updateDatabaseContent(['user', 'mail']).then(() => {
+    for (uid in dbUser) {
+      if (dbUser[uid].NotiFrequency == 2) mailTrigger(uid, 'ImdNoti');
+    }
+    for (content in dbMailsettings.ImdNoti) {
+      if (dbMailsettings.ImdNoti[content].release < Date.now()) delete dbMailsettings.ImdNoti[content];
+    }
+    return db.collection('Mailsettings').doc('ImdNoti').set(dbMailsettings.ImdNoti);
+  }).catch((err) => { console.log(err) }).then(() => { res.end() });
+});
+
+app.get('/api/triggerdailymail', (req, res) => {
+  updateDatabaseContent(['user', 'mail']).then(() => {
+    for (uid in dbUser) {
+      if (dbUser[uid].NotiFrequency == 1) mailTrigger(uid, 'DailyNoti');
+    }
+    for (content in dbMailsettings.DailyNoti) {
+      if (dbMailsettings.DailyNoti[content].release < Date.now()) delete dbMailsettings.DailyNoti[content];
+    }
+    return db.collection('Mailsettings').doc('DailyNoti').set(dbMailsettings.DailyNoti);
+  }).catch((err) => { console.log(err) }).then(() => { res.end() });
+});
+
+app.get('/api/updateContent', (req, res) => {
+  updateDatabaseContent(['blog', 'media', 'status', 'mail']).then(() => {
+    return Promise.all([
+      db.collection('Blogentries').get().then((snap) => { addNonreleasedContent('blog', snap) }),
+      db.collection('Media').get().then((snap) => { addNonreleasedContent('media', snap) }),
+      db.collection('StatusUpdates').get().then((snap) => { addNonreleasedContent('status', snap) })
+    ]);
+  }).then(() => {
+    db.collection('Mailsettings').doc('ImdNoti').set(dbMailsettings.ImdNoti),
+      db.collection('Mailsettings').doc('DailyNoti').set(dbMailsettings.DailyNoti)
+  }).catch((err) => { console.log(err) }).then(() => { res.end() });
+});
+
+// FUNCTIONS
 
 function auth(idToken) {
   return new Promise((resolve,reject) => {
@@ -853,90 +959,6 @@ function mailTrigger(uid, target) {
     transporter.sendMail(mailOptions);
   }).catch((err) => { console.log(err) });
 }
-
-app.get('/triggermail', (req, res) => {
-  updateDatabaseContent(['user','mail']).then(() => {
-    for (uid in dbUser) {
-      if (dbUser[uid].NotiFrequency == 2) mailTrigger(uid, 'ImdNoti');
-    } 
-    for (content in dbMailsettings.ImdNoti) {
-      if (dbMailsettings.ImdNoti[content].release < Date.now()) delete dbMailsettings.ImdNoti[content];
-    }
-    return db.collection('Mailsettings').doc('ImdNoti').set(dbMailsettings.ImdNoti);
-  }).then(() => { res.end() });
-});
-
-app.get('/triggerdailymail', (req, res) => {
-  updateDatabaseContent(['user', 'mail']).then(() => {
-    for (uid in dbUser) {
-      if (dbUser[uid].NotiFrequency == 1) mailTrigger(uid, 'DailyNoti');
-    }
-    for (content in dbMailsettings.DailyNoti) {
-      if (dbMailsettings.DailyNoti[content].release < Date.now()) delete dbMailsettings.DailyNoti[content];
-    }
-    return db.collection('Mailsettings').doc('DailyNoti').set(dbMailsettings.DailyNoti);
-  }).then(() => { res.end() });
-});
-
-function updateDatabaseContent(list) {
-  return Promise.all([
-    new Promise((rs, rj) => {
-      if (list.indexOf('user') == -1) rs();
-      else db.collection('User').get().then((snapshot) => {
-        snapshot.forEach((doc) => { dbUser[doc.id] = doc.data(); }); rs();
-      });
-    }),
-    new Promise((rs, rj) => {
-      if (list.indexOf('mail') == -1) rs();
-      else db.collection('Mailsettings').get().then((snapshot) => {
-        snapshot.forEach((doc) => { dbMailsettings[doc.id] = doc.data(); }); rs();
-      });
-    }),
-    new Promise((rs, rj) => {
-      if (list.indexOf('media') == -1) rs();
-      else db.collection('Media').get().then((snapshot) => {
-        snapshot.forEach((doc) => { dbMedia[doc.id] = doc.data(); }); rs();
-      });
-    }),
-    new Promise((rs, rj) => {
-      if (list.indexOf('blog') == -1) rs();
-      else db.collection('Blogentries').get().then((snapshot) => {
-        snapshot.forEach((doc) => { dbBlogentries[doc.id] = doc.data(); }); rs();
-      });
-    }),
-    new Promise((rs, rj) => {
-      if (list.indexOf('status') == -1) rs();
-      else db.collection('StatusUpdates').get().then((snapshot) => {
-        snapshot.forEach((doc) => { dbStatusUpdates[doc.id] = doc.data(); }); rs();
-      });
-    }),
-    new Promise((rs, rj) => {
-      if (list.indexOf('comment') == -1) rs();
-      else db.collection('Comments').get().then((snapshot) => {
-        snapshot.forEach((doc) => { dbComments[doc.id] = doc.data(); }); rs();
-      });
-    }),
-    new Promise((rs, rj) => {
-      if (list.indexOf('commentreply') == -1) rs();
-      else db.collection('CommentReplies').get().then((snapshot) => {
-        snapshot.forEach((doc) => { dbCommentReplies[doc.id] = doc.data(); }); rs();
-      });
-    })
-  ]).catch((err) => { console.log(err) });
-}
-
-app.get('/updateContent', (req, res) => {
-  updateDatabaseContent(['blog','media','status','mail']).then(() => {
-    return Promise.all([
-      db.collection('Blogentries').get().then((snap) => { addNonreleasedContent('blog', snap) }),
-      db.collection('Media').get().then((snap) => { addNonreleasedContent('media', snap) }),
-      db.collection('StatusUpdates').get().then((snap) => { addNonreleasedContent('status', snap) })
-    ]);
-  }).then(() => {
-    db.collection('Mailsettings').doc('ImdNoti').set(dbMailsettings.ImdNoti),
-    db.collection('Mailsettings').doc('DailyNoti').set(dbMailsettings.DailyNoti)
-  }).then(() => { res.end() });
-});
 
 function addNonreleasedContent(typ, snapshot) {
   snapshot.forEach(doc => {
