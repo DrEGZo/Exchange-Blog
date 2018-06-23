@@ -44,6 +44,7 @@ function buildBlogPage(content, idToken) {
     }
   }
   $('#page-content').html(html);
+  console.log(midlist)
   fetch('/getGalleryData', {
     idToken: idToken,
     lang: language,

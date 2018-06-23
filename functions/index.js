@@ -45,8 +45,8 @@ app.post('/getHomeContent', (req,res) => {
       })
     }
     bloglist.sort((a, b) => {
-      if (a.upload > b.upload) return 1;
-      if (a.upload < b.upload) return -1;
+      if (a.upload > b.upload) return -1;
+      if (a.upload < b.upload) return 1;
       return 0;
     });
     result = [];
@@ -58,7 +58,7 @@ app.post('/getHomeContent', (req,res) => {
 });
 
 app.post('/getBlogList', (req,res) => {
-  updateDatabaseContent(['user', 'blog']).then(() => {
+  updateDatabaseContent(['user', 'blog', 'media']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
     var rank = dbUser[uid].Rank;
@@ -124,7 +124,8 @@ app.post('/getGalleryData', (req,res) => {
   updateDatabaseContent(['user', 'media', 'comment']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
-    res.json(evaluateIdList(req.body.list, uid, req.body.lang));
+    if (req.body.list != undefined) res.json(evaluateIdList(req.body.list, uid, req.body.lang));
+    else res.json({});
   }).catch((err) => {
     res.status(500);
     admin.auth().verifyIdToken(req.body.idToken).catch(() => {
@@ -158,7 +159,7 @@ app.post('/getMediaData', (req,res) => {
 
 app.post('/getBlogData', (req, res) => {
   var blogid = req.body.blogid;
-  updateDatabaseContent(['user','blog','comment','commentreply']).then(() => {
+  updateDatabaseContent(['user','blog','comment','commentreply','media']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
     if (blogid in dbBlogentries) {
@@ -892,15 +893,15 @@ function updateDatabaseContent(list) {
       });
     }),
     new Promise((rs, rj) => {
-      if (list.indexOf('blog') == -1) rs();
-      else db.collection('Blogentries').get().then((snapshot) => {
-        snapshot.forEach((doc) => { dbBlogentries[doc.id] = doc.data(); }); rs();
-      });
-    }),
-    new Promise((rs, rj) => {
       if (list.indexOf('media') == -1) rs();
       else db.collection('Media').get().then((snapshot) => {
         snapshot.forEach((doc) => { dbMedia[doc.id] = doc.data(); }); rs();
+      });
+    }),
+    new Promise((rs, rj) => {
+      if (list.indexOf('blog') == -1) rs();
+      else db.collection('Blogentries').get().then((snapshot) => {
+        snapshot.forEach((doc) => { dbBlogentries[doc.id] = doc.data(); }); rs();
       });
     }),
     new Promise((rs, rj) => {

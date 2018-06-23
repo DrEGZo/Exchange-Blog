@@ -53,6 +53,7 @@ function initMenu(callback) {
             if (window.innerWidth <= 767 && $(this).parent().hasClass('month-choice')) {
                 $('.month-choice .menu-button:not(.active)').hide(400);
             }
+            $('#footer').slideUp();
             $('#page-content').slideUp({
                 complete: callback
             });
