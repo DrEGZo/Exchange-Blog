@@ -74,6 +74,14 @@
     font-size: 1.5em;
     font-weight: 500;
   }
+  .carousel-caption {
+    right: 5%;
+    left: 5%;
+  }
+  .carousel-caption p {
+    font-size: 0.9em;
+    line-height: 18px;
+  }
   .carousel-caption span.badge {
     display: none;
   }

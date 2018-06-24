@@ -11,6 +11,40 @@ body {
   background-color: #202020;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b3b3b3;
+  border: none;
+  border-radius: 7px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c1c1c1;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #989696;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+  border: none;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #000;
+}
+::-webkit-scrollbar-track:active {
+  background: #000;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .navbar-brand {
   font-size: 2em;
 }
@@ -65,18 +99,17 @@ body {
   border-radius: 15px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
-  transition: background-image 0.5s, opacity 0.5s;
+  transition: opacity 0.5s;
 }
 .lng-bdg:focus {
   outline: none;
 }
 #lng-cnt-1 a {
   background-image: url('/media/de.svg');
+  opacity: 0;
 }
 #lng-cnt-2 a {
   background-image: url('/media/en.svg');
-}
-a.lng-bdg {
   opacity: 0;
 }
 #auth-button {
@@ -250,6 +283,7 @@ a.lng-bdg {
   padding: 10px;
   background-color: #ffc107;
   border-radius: 10px;
+  z-index: 16;
 }
 #cookie-info>a {
   font-weight: 500;
@@ -286,6 +320,9 @@ a.lng-bdg {
   }
   .profile-info-logout:hover {
     background-color: #ad0a0a;
+  }
+  .lng-bdg {
+    transition: background-image 0.5s, opacity 0.5s;
   }
 }
 

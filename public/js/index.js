@@ -11,17 +11,17 @@ firebase.initializeApp(config);
 var language = window.location.href.split('/')[3].split('-')[0];
 
 $(() => {
-    $('#lng-cnt-0 button').css('background-image', 'url("/media/' + language + '.svg")');
+    $('#lng-cnt-0 a').css('background-image', 'url("/media/' + language + '.svg")');
     var link = window.location.href.split('/');
     link[3] = 'de-de';
     $('#lng-cnt-1 a').attr('href',link.join('/'));
     link[3] = 'en-us';
     $('#lng-cnt-2 a').attr('href', link.join('/'));
-    $('#lng-cnt-0 button').click(function(){
+    $('#lng-cnt-0 a').click(function(){
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             $(this).css('background-image', 'url("/media/' + language + '.svg")');
-            $('a.lng-bdg').css('opacity', '0');
+            $('#lng-cnt-1 a, #lng-cnt-2 a').css('opacity', '0');
             $('#lng-cnt-1, #lng-cnt-2').css({
                 top: '0',
                 bottom: '0',
@@ -30,7 +30,7 @@ $(() => {
             });
         } else {
             $(this).addClass('active');
-            $('a.lng-bdg').css('opacity', '1');
+            $('#lng-cnt-1 a, #lng-cnt-2 a').css('opacity', '1');
             if (window.innerWidth > 767) {
                 $(this).css('background-image', 'url("/media/arr.svg")');
                 $('#lng-cnt-1').css({ top: '100%', bottom: '-100%' });
@@ -44,7 +44,7 @@ $(() => {
     });
 });
 
-$(window).resize(() => { if ($('#lng-cnt-0 button').hasClass('active')) $('#lng-cnt-0 button').click() });
+$(window).resize(() => { if ($('#lng-cnt-0 a').hasClass('active')) $('#lng-cnt-0 a').click() });
 
 function fetchCb(url, data, callback) {
     $.ajax({
@@ -98,7 +98,7 @@ function authenticater(verificationRequired) {
                             $('#profile-info .profile-rank')
                                 .html(globalranks[data.rank][language])
                                 .css('background-color',globalranks[data.rank].c);
-                            $('#language-choice>button').css('background-image', '/media/' + language + '.svg');
+                            // $('#lng-cnt-0>a').css('background-image', '/media/' + language + '.svg');
                             resolve();
                         });
                     } else {

@@ -85,11 +85,16 @@ app.get('/api/lorem', (req,res) => {
 });
 
 app.post('/api/getHomeContent', (req,res) => {
-  updateDatabaseContent(['blog','media']).then(() => {
+  updateDatabaseContent(['user','blog','media']).then(() => {
+    if (req.body.idToken != undefined) return auth(req.body.idToken);
+    else return new Promise((resolve, reject) => { resolve(undefined) });
+  }).then((uid) => {
     var bloglist = [];
     var result = [];
     for (var blogkey in dbBlogentries) {
-      bloglist.push({
+      var hasPermission = dbBlogentries[blogkey].Visibility.length == 8;
+      if (uid != undefined) hasPermission = dbBlogentries[blogkey].Visibility.indexOf(dbUser[uid].Rank) != -1;
+      if (hasPermission) bloglist.push({
         id: blogkey,
         title: dbBlogentries[blogkey]['Title_' + req.body.lang],
         intro: dbBlogentries[blogkey]['Intro_' + req.body.lang],
@@ -102,12 +107,19 @@ app.post('/api/getHomeContent', (req,res) => {
       if (a.upload < b.upload) return 1;
       return 0;
     });
-    result = [];
     for (var i = 0; i < 3 && i < bloglist.length; i++) {
       result.push(bloglist[i]);
     }
     res.json(result);
-  }).catch((err) => { console.log(err); res.status(500).end(); })
+  }).catch((err) => {
+    res.status(500);
+    console.log(err);
+    admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+      res.status(401);
+    }).then(() => auth(req.body.idToken)).catch(() => {
+      res.status(403);
+    }).then(() => { res.end(); });
+  });
 });
 
 app.post('/api/getBlogList', (req,res) => {
@@ -118,9 +130,9 @@ app.post('/api/getBlogList', (req,res) => {
     var idlist = [];
     for (var blogkey in dbBlogentries) {
       var hasPermission = dbBlogentries[blogkey].Visibility.indexOf(rank) != -1;
-      var isShown = new Date().getTime() > new Date(dbBlogentries[blogkey].Upload.release).getTime();
-      var yearMatches = new Date(dbBlogentries[blogkey].Upload.true).getFullYear() == req.body.year;
-      var monthMatches = new Date(dbBlogentries[blogkey].Upload.true).getMonth() == req.body.month;
+      var isShown = Date.now() > new Date(dbBlogentries[blogkey].Upload.release).getTime();
+      var yearMatches = new Date(dbBlogentries[blogkey].Upload.true.getTime() - req.body.offset * 60 * 1000).getUTCFullYear() == req.body.year;
+      var monthMatches = new Date(dbBlogentries[blogkey].Upload.true.getTime() - req.body.offset * 60 * 1000).getUTCMonth() == req.body.month;
       if (hasPermission && isShown && yearMatches && monthMatches) idlist.push(blogkey);
     }
     idlist.sort((a, b) => {
@@ -146,7 +158,7 @@ app.post('/api/getBlogList', (req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -158,9 +170,9 @@ app.post('/api/getMediaList', (req,res) => {
     var idlist = [];
     for (var mediakey in dbMedia) {
       var hasPermission = dbMedia[mediakey].Visibility.indexOf(rank) != -1;
-      var isShown = new Date().getTime() > new Date(dbMedia[mediakey].Upload.release).getTime();
-      var yearMatches = new Date(dbMedia[mediakey].Upload.true).getFullYear() == req.body.year;
-      var monthMatches = new Date(dbMedia[mediakey].Upload.true).getMonth() == req.body.month;
+      var isShown = Date.now() > new Date(dbMedia[mediakey].Upload.release).getTime();
+      var yearMatches = new Date(dbMedia[mediakey].Upload.true.getTime() - req.body.offset * 60 * 1000).getUTCFullYear() == req.body.year;
+      var monthMatches = new Date(dbMedia[mediakey].Upload.true.getTime() - req.body.offset * 60 * 1000).getUTCMonth() == req.body.month;
       if (hasPermission && isShown && yearMatches && monthMatches) idlist.push(mediakey);
     }
     res.json(evaluateIdList(idlist,uid,req.body.lang));
@@ -171,7 +183,7 @@ app.post('/api/getMediaList', (req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -188,7 +200,7 @@ app.post('/api/getGalleryData', (req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -210,7 +222,7 @@ app.post('/api/getMediaData', (req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 })
 
@@ -239,7 +251,7 @@ app.post('/api/getBlogData', (req, res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -253,7 +265,7 @@ app.post('/api/auth', (req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -335,7 +347,7 @@ app.post('/api/addComment', (req, res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -423,7 +435,7 @@ app.post('/api/deleteComment', (req, res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -481,7 +493,7 @@ app.post('/api/reportComment', (req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -530,7 +542,7 @@ app.post('/api/getCommentData', (req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -544,26 +556,31 @@ app.post('/api/getActivityFeed', (req,res) => {
       if (dbBlogentries[key].Visibility.indexOf(dbUser[uid].Rank) != -1) contentList.push({
         typ: 'blog',
         key: key,
-        upload: dbBlogentries[key].Upload.release
+        upload: dbBlogentries[key].Upload.release,
+        trueUpload: dbBlogentries[key].Upload.true
       });
     }
     for (key in dbMedia) {
       if (dbMedia[key].Visibility.indexOf(dbUser[uid].Rank) != -1) contentList.push({
         typ: 'media',
         key: key,
-        upload: dbMedia[key].Upload.release
+        upload: dbMedia[key].Upload.release,
+        trueUpload: dbMedia[key].Upload.true
       });
     }
     for (key in dbStatusUpdates) {
       if (dbStatusUpdates[key].Visibility.indexOf(dbUser[uid].Rank) != -1) contentList.push({
         typ: 'status',
         key: key,
-        upload: dbStatusUpdates[key].Upload.release
+        upload: dbStatusUpdates[key].Upload.release,
+        trueUpload: dbStatusUpdates[key].Upload.true
       });
     }
     contentList.sort((a,b) => {
       if (a.upload.getTime() < b.upload.getTime()) return 1;
       if (a.upload.getTime() > b.upload.getTime()) return -1;
+      if (a.trueUpload.getTime() < b.trueUpload.getTime()) return -1;
+      if (a.trueUpload.getTime() > b.trueUpload.getTime()) return 1;
       return 0;
     });
     var result = [];
@@ -581,8 +598,14 @@ app.post('/api/getActivityFeed', (req,res) => {
         }
       } else if (contentList[i].typ == 'media') {
         var medialist = [];
-        var date = contentList[i].upload.toLocaleDateString();
-        while (i < contentList.length && contentList[i].typ == 'media' && date == contentList[i].upload.toLocaleDateString()) {
+        var date = new Date(contentList[i].upload.getTime() - req.body.offset * 60 * 1000);
+        date.setUTCMilliseconds(0);
+        date.setUTCSeconds(0);
+        date.setUTCMinutes(0);
+        date.setUTCHours(0);
+        var lowerBorder = date.getTime() + req.body.offset * 60 * 1000;
+        var upperBorder = lowerBorder + 24 * 60 * 60 * 1000;
+        while (i < contentList.length && contentList[i].typ == 'media' && contentList[i].upload.getTime() >= lowerBorder && contentList[i].upload.getTime() < upperBorder) {
           if (dbMedia[contentList[i].key].Visibility.indexOf(dbUser[uid].Rank) != -1 && contentList[i].upload < time) {
             medialist.push(getMetadata('media', contentList[i].key, uid, req.body.lang));
           }
@@ -613,7 +636,7 @@ app.post('/api/getActivityFeed', (req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -634,7 +657,7 @@ app.post('/api/getUserSettings', (req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -691,7 +714,7 @@ app.post('/api/changeSettings', (req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -710,7 +733,7 @@ app.post('/api/getUserData',(req,res) => {
       res.status(401);
     }).then(() => auth(req.body.idToken)).catch(() => {
       res.status(403);
-    }).then(() => { res.end(JSON.stringify(err)); });
+    }).then(() => { res.end(); });
   });
 });
 
@@ -738,7 +761,7 @@ app.get('/api/triggerdailymail', (req, res) => {
   }).catch((err) => { console.log(err) }).then(() => { res.end() });
 });
 
-app.get('/api/updateContent', (req, res) => {
+/* app.get('/api/updateContent', (req, res) => {
   updateDatabaseContent(['blog', 'media', 'status', 'mail']).then(() => {
     return Promise.all([
       db.collection('Blogentries').get().then((snap) => { addNonreleasedContent('blog', snap) }),
@@ -749,7 +772,7 @@ app.get('/api/updateContent', (req, res) => {
     db.collection('Mailsettings').doc('ImdNoti').set(dbMailsettings.ImdNoti),
       db.collection('Mailsettings').doc('DailyNoti').set(dbMailsettings.DailyNoti)
   }).catch((err) => { console.log(err) }).then(() => { res.end() });
-});
+}); */
 
 // FUNCTIONS
 

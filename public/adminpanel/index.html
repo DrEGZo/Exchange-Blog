@@ -24,6 +24,16 @@
                     elm += '</option>';
                     list[i].innerHTML += elm;
                 }
+                switch (name) {
+                    case 'year':
+                        list[i].value = new Date().getFullYear(); break;
+                    case 'month':
+                        list[i].value = new Date().getMonth() + 1; break;
+                    case 'day':
+                        list[i].value = new Date().getDate(); break;
+                    case 'hour':
+                        list[i].value = new Date().getHours() + 1; break;
+                }
             }
         }
 
@@ -38,8 +48,9 @@
             var month = division.querySelector('[name="month"]');
             var day = division.querySelector('[name="day"]');
             var hour = division.querySelector('[name="hour"]');
-            var ranks = division.querySelectorAll('[type="checkbox"]');
+            var ranks = division.querySelectorAll('[type="checkbox"]:not([name="noti"])');
             var progress = division.querySelector('progress');
+            var noti = division.querySelector('[name="noti"]');
 
             var release = new Date(year.value, (month.value - 1), day.value, hour.value);
             var visibility = [];
@@ -73,8 +84,35 @@
                     };
 
                     db.collection('Media').add(doc).then(ref => {
-                        console.log('Media uploaded at ' + new Date().toTimeString() + ': ' + ref.id);
-                        alert('Success: ' + ref.id);
+                        if (noti.checked) {
+                            newcontent = {};
+                            newcontent[ref.id] = {
+                                id: ref.id,
+                                release: release.getTime(),
+                                upload: Date.now(),
+                                typ: 'media',
+                                visibility: visibility
+                            };
+                            Promise.all([
+                                db.collection('Mailsettings').doc('ImdNoti').update(newcontent),
+                                db.collection('Mailsettings').doc('DailyNoti').update(newcontent)
+                            ]).then(() => {
+                                desc_de.value = "";
+                                desc_en.value = "";
+                                for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
+                                console.log('Media uploaded at ' + new Date().toTimeString() + ': ' + ref.id);
+                                alert('Success: ' + ref.id);
+                            }).catch((err) => {
+                                console.log(err);
+                                alert('Error');
+                            });
+                        } else {
+                            desc_de.value = "";
+                            desc_en.value = "";
+                            for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
+                            console.log('Media uploaded at ' + new Date().toTimeString() + ': ' + ref.id);
+                            alert('Success: ' + ref.id);
+                        }
                     }).catch(err => {
                         console.log(err);
                         alert('Error');
@@ -95,7 +133,8 @@
             var month = division.querySelector('[name="month"]');
             var day = division.querySelector('[name="day"]');
             var hour = division.querySelector('[name="hour"]');
-            var ranks = division.querySelectorAll('[type="checkbox"]');
+            var ranks = division.querySelectorAll('[type="checkbox"]:not([name="noti"])');
+            var noti = division.querySelector('[name="noti"]');
 
             var release = new Date(year.value, (month.value - 1), day.value, hour.value);
             var visibility = [];
@@ -117,8 +156,37 @@
             };
 
             db.collection('Media').add(doc).then(ref => {
-                console.log('Media registered at ' + new Date().toTimeString() + ': ' + ref.id);
-                alert('Success: ' + ref.id);
+                if (noti.checked) {
+                    newcontent = {};
+                    newcontent[ref.id] = {
+                        id: ref.id,
+                        release: release.getTime(),
+                        upload: Date.now(),
+                        typ: 'media',
+                        visibility: visibility
+                    };
+                    Promise.all([
+                        db.collection('Mailsettings').doc('ImdNoti').update(newcontent),
+                        db.collection('Mailsettings').doc('DailyNoti').update(newcontent)
+                    ]).then(() => {
+                        location.value = "";
+                        desc_de.value = "";
+                        desc_en.value = "";
+                        for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
+                        console.log('Media registered at ' + new Date().toTimeString() + ': ' + ref.id);
+                        alert('Success: ' + ref.id);
+                    }).catch((err) => {
+                        console.log(err);
+                        alert('Error');
+                    });
+                } else {
+                    location.value = "";
+                    desc_de.value = "";
+                    desc_en.value = "";
+                    for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
+                    console.log('Media registered at ' + new Date().toTimeString() + ': ' + ref.id);
+                    alert('Success: ' + ref.id);
+                }
             }).catch(err => {
                 console.log(err);
                 alert('Error');
@@ -139,7 +207,8 @@
             var month = division.querySelector('[name="month"]');
             var day = division.querySelector('[name="day"]');
             var hour = division.querySelector('[name="hour"]');
-            var ranks = division.querySelectorAll('[type="checkbox"]');
+            var ranks = division.querySelectorAll('[type="checkbox"]:not([name="noti"])');
+            var noti = division.querySelector('[name="noti"]');
 
             var release = new Date(year.value, (month.value - 1), day.value, hour.value);
             var visibility = [];
@@ -164,8 +233,47 @@
             };
             
             db.collection('Blogentries').doc(id.value).set(doc).then(() => {
-                console.log('Blog uploaded at ' + new Date().toTimeString() + ': ' + id.value);
-                alert('Success');
+                if (noti.checked) {
+                    newcontent = {};
+                    newcontent[id.value] = {
+                        id: id.value,
+                        release: release.getTime(),
+                        upload: Date.now(),
+                        typ: 'blog',
+                        visibility: visibility
+                    };
+                    Promise.all([
+                        db.collection('Mailsettings').doc('ImdNoti').update(newcontent),
+                        db.collection('Mailsettings').doc('DailyNoti').update(newcontent)
+                    ]).then(() => {
+                        id.value = "";
+                        thumbnail.value = "";
+                        title_de.value = "";
+                        title_en.value = "";
+                        intro_de.value = "";
+                        intro_en.value = "";
+                        content_de.value = "";
+                        content_en.value = "";
+                        for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
+                        console.log('Blog uploaded at ' + new Date().toTimeString() + ': ' + id.value);
+                        alert('Success: ' + id.value);
+                    }).catch((err) => {
+                        console.log(err);
+                        alert('Error');
+                    });
+                } else {
+                    id.value = "";
+                    thumbnail.value = "";
+                    title_de.value = "";
+                    title_en.value = "";
+                    intro_de.value = "";
+                    intro_en.value = "";
+                    content_de.value = "";
+                    content_en.value = "";
+                    for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
+                    console.log('Blog uploaded at ' + new Date().toTimeString() + ': ' + id.value);
+                    alert('Success: ' + id.value);
+                }
             }).catch(err => {
                 console.log(err);
                 alert('Error');
@@ -186,10 +294,77 @@
                 Language: lang.value,
                 UserNote: note.value
             }).then(() => {
+                note.value = "";
                 console.log('Credential established at: ' + new Date().toTimeString() + ': ' + code)
                 alert('Success: ' + code);
             });
         }
+
+        function uploadstatus() {
+                var division = document.getElementById('status_upload');
+                var author = division.querySelector('[name="author"]');
+                var content_de = division.querySelector('[name="content_de"]');
+                var content_en = division.querySelector('[name="content_en"]');
+                var year = division.querySelector('[name="year"]');
+                var month = division.querySelector('[name="month"]');
+                var day = division.querySelector('[name="day"]');
+                var hour = division.querySelector('[name="hour"]');
+                var ranks = division.querySelectorAll('[type="checkbox"]:not([name="noti"])');
+                var noti = division.querySelector('[name="noti"]');
+
+                var release = new Date(year.value, (month.value - 1), day.value, hour.value);
+                var visibility = [];
+                for (var i = 0; i < ranks.length; i++) {
+                    if (ranks[i].checked) visibility.push(ranks[i].value);
+                }
+
+                var doc = {
+                    Author: author.value,
+                    Content_de: content_de.value,
+                    Content_en: content_en.value,
+                    Upload: {
+                        true: new Date(),
+                        release: release
+                    },
+                    Comments: [],
+                    Visibility: visibility
+                };
+
+                db.collection('StatusUpdates').add(doc).then((ref) => {
+                    if (noti.checked) {
+                        newcontent = {};
+                        newcontent[ref.id] = {
+                            id: ref.id,
+                            release: release.getTime(),
+                            upload: Date.now(),
+                            typ: 'status',
+                            visibility: visibility
+                        };
+                        Promise.all([
+                            db.collection('Mailsettings').doc('ImdNoti').update(newcontent),
+                            db.collection('Mailsettings').doc('DailyNoti').update(newcontent)
+                        ]).then(() => {
+                            content_de.value = "";
+                            content_en.value = "";
+                            for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
+                            console.log('Status uploaded at ' + new Date().toTimeString() + ': ' + ref.id);
+                            alert('Success: ' + ref.id);
+                        }).catch((err) => {
+                            console.log(err);
+                            alert('Error');
+                        });
+                    } else {
+                        content_de.value = "";
+                        content_en.value = "";
+                        for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
+                        console.log('Status uploaded at ' + new Date().toTimeString() + ': ' + ref.id);
+                        alert('Success: ' + ref.id);
+                    }
+                }).catch(err => {
+                    console.log(err);
+                    alert('Error');
+                });
+            }
     </script>
 </head>
 <body>
@@ -211,6 +386,8 @@
         <select name="day"></select>
         <br>
         <select name="hour"></select>
+        <br>
+        <input type="checkbox" name="noti" checked>Noti
         <br>
         Desc_de: <input type="text" name="desc_de">
         <br>
@@ -234,7 +411,7 @@
         <br>
         <button onclick="uploadmedia()">Confirm</button>
         <br>
-        <progress></progress>
+        <progress value="0"></progress>
     </div>
 
     <div id="media_register">
@@ -254,6 +431,8 @@
         <select name="day"></select>
         <br>
         <select name="hour"></select>
+        <br>
+        <input type="checkbox" name="noti" checked>Noti
         <br> Desc_de:
         <input type="text" name="desc_de">
         <br> Desc_en:
@@ -291,6 +470,8 @@
         <select name="day"></select>
         <br>
         <select name="hour"></select>
+        <br> 
+        <input type="checkbox" name="noti" checked>Noti
         <br> Title_de:
         <input type="text" name="title_de">
         <br> Title_en:
@@ -343,6 +524,44 @@
         <br>
         <button onclick="adduser()">Confirm</button>
     </div>
+
+    <div id="status_upload">
+        <h3>Status Upload</h3>
+        <input type="text" value="dEdIagLyFKNl38HXPxtgQlFIXZo2" name="author">
+        <br>
+        <select name="year"></select>
+        <br>
+        <select name="month"></select>
+        <br>
+        <select name="day"></select>
+        <br>
+        <select name="hour"></select>
+        <br>
+        <input type="checkbox" name="noti" checked>Noti
+        <br> Content_de:
+        <input type="text" name="content_de">
+        <br> Content_en:
+        <input type="text" name="content_en">
+        <br>
+        <input type="checkbox" value="admin" checked>Administrator
+        <br>
+        <input type="checkbox" value="family" checked>Family
+        <br>
+        <input type="checkbox" value="hostfamily" checked>Host Family
+        <br>
+        <input type="checkbox" value="friend" checked>Friend
+        <br>
+        <input type="checkbox" value="schoolmate" checked>Schoolmate
+        <br>
+        <input type="checkbox" value="teacher" checked>Teacher
+        <br>
+        <input type="checkbox" value="stepin" checked>Stepin
+        <br>
+        <input type="checkbox" value="ices" checked>ICES
+        <br>
+        <button onclick="uploadstatus()">Confirm</button>
+    </div>
+
     <script>
         launchSelect('year', 2018, 2);
         launchSelect('month', 1, 12);

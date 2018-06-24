@@ -25,6 +25,10 @@ service cloud.firestore {
     	allow write: if isAdmin(request.auth.uid);
     }
     
+    match /Mailsettings/{doc} {
+  		allow write: if isAdmin(request.auth.uid);
+    }
+    
     
     //Functions
     

@@ -20,7 +20,8 @@ function refreshData(time) {
     return fetch('/getActivityFeed', {
       idToken: idToken,
       lang: language,
-      time: time
+      time: time,
+      offset: new Date().getTimezoneOffset()
     });
   }).then((data) => {
     nextActivity = data;

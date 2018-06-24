@@ -7,20 +7,25 @@ function main() {
     $(window).resize(adjustAuthButton);
     if (user) {
       firebase.auth().currentUser.getIdToken().then((idToken) => {
-        return fetch('/getUserData', {idToken: idToken});
-      }).then((data) => {
-        $('#profile-info .profile-name').html(data.name);
-        $('#profile-info .profile-rank')
-          .html(globalranks[data.rank][language])
-          .css('background-color',globalranks[data.rank].c);
-        $('#auth-button a').html(dictionary.profile[language]);
-        $('#auth-button').addClass('loggedin').css('visibility', 'visible');
-        $('#language-choice').css('visibility','visible');
+        fetch('/getUserData', { idToken: idToken }).then((data) => {
+          $('#profile-info .profile-name').html(data.name);
+          $('#profile-info .profile-rank')
+            .html(globalranks[data.rank][language])
+            .css('background-color', globalranks[data.rank].c);
+          $('#auth-button a').html(dictionary.profile[language]);
+          $('#auth-button').addClass('loggedin').css('visibility', 'visible');
+          $('#language-choice').css('visibility', 'visible');
+          return fetch('/getHomeContent', { lang: language, idToken: idToken });
+        }).then((data) => {
+          launchCarousel(data);
+        });
       });
     } else {
       $('#auth-button a').html('Login');
       $('#auth-button').css('visibility', 'visible');
       $('#language-choice').css('visibility','visible');
+      $('#cookie-info').show(400);
+      fetch('/getHomeContent', { lang: language }).then((data) => launchCarousel(data));
     }
   });
 
@@ -68,16 +73,13 @@ function main() {
   $('#cookie-info button').click(() => {
     $('#cookie-info').hide(400);
   });
-  
-  fetch('/getHomeContent', {lang: language}).then((data) => {
-    launchCarousel(data);
-  });
 }
 
 function launchCarousel(data) {
+  var html = '';
+  var html2 = '';
   for (var i = 0; i < data.length; i++) {
-    $('.carousel-indicators').append('<li data-target="#header_carousel" data-slide-to="' + i + '"></li>');
-    var html = '';
+    html2 += '<li data-target="#header_carousel" data-slide-to="' + i + '"></li>';
     html += '<div class="carousel-item">';
     html += '<img src="' + data[i].location + '">';
     if (language == 'de') html += '<a class=".carousel-link" href="/de-de/blog/' + data[i].id + '/index.html">';
@@ -89,14 +91,14 @@ function launchCarousel(data) {
     html += '</div>';
     html += '</a>';
     html += '</div>';
-    $('.carousel-inner').append(html);
-    if (i == 0) $('.carousel-indicators li:first-child').addClass('active');
-    if (i == 0) $('.carousel-item:first-child').addClass('active');
-  }
+  } 
+  $('.carousel-indicators').html(html2);
+  $('.carousel-inner').html(html);
+  $('.carousel-indicators li:first-child').addClass('active');
+  $('.carousel-item:first-child').addClass('active');
   $('#loading').hide(0);
   $('#header-carousel').fadeIn();
   $('#page-title').slideDown();
   $('#page-content').slideDown();
   $('#footer').slideDown();
-  if (!(firebase.auth().currentUser)) $('#cookie-info').show(400);
 }

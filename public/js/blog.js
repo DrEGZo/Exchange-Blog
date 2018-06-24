@@ -19,7 +19,8 @@ function getBlogData() {
       idToken: idToken,
       lang: language,
       year: selectedyear,
-      month: selectedmonth
+      month: selectedmonth,
+      offset: new Date().getTimezoneOffset()
     });
   }).then((data) => {
     buildBlogList(data);
