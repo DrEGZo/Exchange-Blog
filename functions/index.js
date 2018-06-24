@@ -30,48 +30,56 @@ var dbRegistryCodes = {};
 function updateDatabaseContent(list) {
   return Promise.all([
     new Promise((rs, rj) => {
+      dbUser = {};
       if (list.indexOf('user') == -1) rs();
       else db.collection('User').get().then((snapshot) => {
         snapshot.forEach((doc) => { dbUser[doc.id] = doc.data(); }); rs();
       });
     }),
     new Promise((rs, rj) => {
+      dbMailsettings = {};
       if (list.indexOf('mail') == -1) rs();
       else db.collection('Mailsettings').get().then((snapshot) => {
         snapshot.forEach((doc) => { dbMailsettings[doc.id] = doc.data(); }); rs();
       });
     }),
     new Promise((rs, rj) => {
+      dbMedia = {};
       if (list.indexOf('media') == -1) rs();
       else db.collection('Media').get().then((snapshot) => {
         snapshot.forEach((doc) => { dbMedia[doc.id] = doc.data(); }); rs();
       });
     }),
     new Promise((rs, rj) => {
+      dbBlogentries = {};
       if (list.indexOf('blog') == -1) rs();
       else db.collection('Blogentries').get().then((snapshot) => {
         snapshot.forEach((doc) => { dbBlogentries[doc.id] = doc.data(); }); rs();
       });
     }),
     new Promise((rs, rj) => {
+      dbStatusUpdates = {};
       if (list.indexOf('status') == -1) rs();
       else db.collection('StatusUpdates').get().then((snapshot) => {
         snapshot.forEach((doc) => { dbStatusUpdates[doc.id] = doc.data(); }); rs();
       });
     }),
     new Promise((rs, rj) => {
+      dbComments = {};
       if (list.indexOf('comment') == -1) rs();
       else db.collection('Comments').get().then((snapshot) => {
         snapshot.forEach((doc) => { dbComments[doc.id] = doc.data(); }); rs();
       });
     }),
     new Promise((rs, rj) => {
+      dbCommentReplies = {};
       if (list.indexOf('commentreply') == -1) rs();
       else db.collection('CommentReplies').get().then((snapshot) => {
         snapshot.forEach((doc) => { dbCommentReplies[doc.id] = doc.data(); }); rs();
       });
     }),
     new Promise((rs, rj) => {
+      dbRegistryCodes = {};
       if (list.indexOf('registry') == -1) rs();
       else db.collection('RegistryCodes').get().then((snapshot) => {
         snapshot.forEach((doc) => { dbRegistryCodes[doc.id] = doc.data(); }); rs();
@@ -810,8 +818,6 @@ function evaluateIdList(mediaidlist,uid,lang) {
   });
   var medialist = [];
   for (var i = 0; i < mediaidlist.length; i++) {
-    console.log(new Date(dbMedia[mediaidlist[i]].Upload.release).getTime() < Date.now())
-    console.log(new Date(dbMedia[mediaidlist[i]].Upload.release).getTime())
     if (dbMedia[mediaidlist[i]].Visibility.indexOf(dbUser[uid].Rank) != -1 && new Date(dbMedia[mediaidlist[i]].Upload.release).getTime() < Date.now()) 
       medialist.push(getMetadata('media',mediaidlist[i],uid,lang));
   }

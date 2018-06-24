@@ -60,7 +60,7 @@
 
             var file = fileinput.files[0];
             var ref = storage.ref(dir.value + '/' + file.name);
-            var task = ref.put(file);
+            var task = ref.put(file, { cacheControl: 'public,max-age=86400' });
 
             task.on('state_changed', (snapshot) => {
                 var percentage = snapshot.bytesTransferred / snapshot.totalBytes;
