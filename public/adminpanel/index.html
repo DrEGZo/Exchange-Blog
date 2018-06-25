@@ -287,7 +287,7 @@
 
             var map = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
             var code = '';
-            for (var i = 0; i < 8; i++) code += map[Math.floor(Math.random()*8)];
+            for (var i = 0; i < 8; i++) code += map[Math.floor(Math.random()*26)];
 
             db.collection('RegistryCodes').doc(code).set({
                 Rank: rank.value,
