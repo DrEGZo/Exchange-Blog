@@ -100,7 +100,7 @@ app.post('/api/getHomeContent', (req,res) => {
     var bloglist = [];
     var result = [];
     for (var blogkey in dbBlogentries) {
-      var hasPermission = dbBlogentries[blogkey].Visibility.length == 8;
+      var hasPermission = dbBlogentries[blogkey].Visibility.length == 9;
       if (uid != undefined) hasPermission = dbBlogentries[blogkey].Visibility.indexOf(dbUser[uid].Rank) != -1;
       if (hasPermission) bloglist.push({
         id: blogkey,

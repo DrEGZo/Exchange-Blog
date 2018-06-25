@@ -143,6 +143,11 @@ const globalranks = {
         en: 'Friend',
         c: '#51bb0b'
     },
+    clfriend: {
+        de: 'Freund',
+        en: 'Friend',
+        c: '#51bb0b'
+    },
     schoolmate: {
         de: 'Mitschüler',
         en: 'Schoolmate',
