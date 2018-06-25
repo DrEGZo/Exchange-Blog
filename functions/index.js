@@ -895,7 +895,6 @@ function mailTrigger(uid, target) {
     if (dbUser[uid].Notifications[list[i].typ] && list[i].visibility.indexOf(dbUser[uid].Rank) != -1)
       mailingList.push(list[i]);
   }
-  console.log(mailingList)
   if (mailingList.length == 0) return;
   mailingList = mailingList.sort((a,b) => {
     if (a.typ == 'blog' && a.typ != b.typ) return -1;
@@ -938,7 +937,7 @@ function mailTrigger(uid, target) {
           datestring += (date.getUTCHours() % 12) + ':' + date.getUTCMinutes() + ' ';
           if (date.getUTCHours() < 12) datestring += 'a.m. (UTC)'; else datestring += 'p.m. (UTC)';
         }
-        var textlist = dbStatusUpdates[mailingList[i].id]['Content_' + lang].split(' ');
+        var textlist = dbStatusUpdates[mailingList[i].id]['Content_' + lang].replace('$$$',' ').split(' ');
         var text = '';
         for (var j = 0; j < textlist.length && j < 20; j++) text += textlist[j] + ' ';
         if (textlist.length > 20) text += '[...]';
