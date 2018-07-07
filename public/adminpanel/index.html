@@ -83,11 +83,18 @@
                         Visibility: visibility
                     };
 
-                    db.collection('Media').add(doc).then(ref => {
+                    var map = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+                    var id = '';
+                    id += map.substr(Math.floor(Math.random() * 52), 1);
+                    for (var i = 0; i < 19; i++) {
+                        id += map.substr(Math.floor(Math.random() * 62), 1);
+                    }
+
+                    db.collection('Media').doc(id).set(doc).then(() => {
                         if (noti.checked) {
                             newcontent = {};
-                            newcontent[ref.id] = {
-                                id: ref.id,
+                            newcontent[id] = {
+                                id: id,
                                 release: release.getTime(),
                                 upload: Date.now(),
                                 typ: 'media',
@@ -100,8 +107,8 @@
                                 desc_de.value = "";
                                 desc_en.value = "";
                                 for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
-                                console.log('Media uploaded at ' + new Date().toTimeString() + ': ' + ref.id);
-                                alert('Success: ' + ref.id);
+                                console.log('Media uploaded at ' + new Date().toTimeString() + ': ' + id);
+                                alert('Success: ' + id);
                             }).catch((err) => {
                                 console.log(err);
                                 alert('Error');
@@ -110,8 +117,8 @@
                             desc_de.value = "";
                             desc_en.value = "";
                             for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
-                            console.log('Media uploaded at ' + new Date().toTimeString() + ': ' + ref.id);
-                            alert('Success: ' + ref.id);
+                            console.log('Media uploaded at ' + new Date().toTimeString() + ': ' + id);
+                            alert('Success: ' + id);
                         }
                     }).catch(err => {
                         console.log(err);
@@ -155,11 +162,18 @@
                 Visibility: visibility
             };
 
-            db.collection('Media').add(doc).then(ref => {
+            var map = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            var id = '';
+            id += map.substr(Math.floor(Math.random() * 52), 1);
+            for (var i = 0; i < 19; i++) {
+                id += map.substr(Math.floor(Math.random() * 62), 1);
+            }
+
+            db.collection('Media').doc(id).set(doc).then(ref => {
                 if (noti.checked) {
                     newcontent = {};
-                    newcontent[ref.id] = {
-                        id: ref.id,
+                    newcontent[id] = {
+                        id: id,
                         release: release.getTime(),
                         upload: Date.now(),
                         typ: 'media',
@@ -173,8 +187,8 @@
                         desc_de.value = "";
                         desc_en.value = "";
                         for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
-                        console.log('Media registered at ' + new Date().toTimeString() + ': ' + ref.id);
-                        alert('Success: ' + ref.id);
+                        console.log('Media registered at ' + new Date().toTimeString() + ': ' + id);
+                        alert('Success: ' + id);
                     }).catch((err) => {
                         console.log(err);
                         alert('Error');
@@ -184,8 +198,8 @@
                     desc_de.value = "";
                     desc_en.value = "";
                     for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
-                    console.log('Media registered at ' + new Date().toTimeString() + ': ' + ref.id);
-                    alert('Success: ' + ref.id);
+                    console.log('Media registered at ' + new Date().toTimeString() + ': ' + id);
+                    alert('Success: ' + id);
                 }
             }).catch(err => {
                 console.log(err);
@@ -330,11 +344,18 @@
                     Visibility: visibility
                 };
 
-                db.collection('StatusUpdates').add(doc).then((ref) => {
+                var map = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+                var id = '';
+                id += map.substr(Math.floor(Math.random() * 52), 1);
+                for (var i = 0; i < 19; i++) {
+                    id += map.substr(Math.floor(Math.random() * 62), 1);
+                }
+
+                db.collection('StatusUpdates').doc(id).set(doc).then(() => {
                     if (noti.checked) {
                         newcontent = {};
-                        newcontent[ref.id] = {
-                            id: ref.id,
+                        newcontent[id] = {
+                            id: id,
                             release: release.getTime(),
                             upload: Date.now(),
                             typ: 'status',
@@ -347,8 +368,8 @@
                             content_de.value = "";
                             content_en.value = "";
                             for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
-                            console.log('Status uploaded at ' + new Date().toTimeString() + ': ' + ref.id);
-                            alert('Success: ' + ref.id);
+                            console.log('Status uploaded at ' + new Date().toTimeString() + ': ' + id);
+                            alert('Success: ' + id);
                         }).catch((err) => {
                             console.log(err);
                             alert('Error');
@@ -357,8 +378,8 @@
                         content_de.value = "";
                         content_en.value = "";
                         for (var i = 0; i < ranks.length; i++) ranks[i].checked = true;
-                        console.log('Status uploaded at ' + new Date().toTimeString() + ': ' + ref.id);
-                        alert('Success: ' + ref.id);
+                        console.log('Status uploaded at ' + new Date().toTimeString() + ': ' + id);
+                        alert('Success: ' + id);
                     }
                 }).catch(err => {
                     console.log(err);
