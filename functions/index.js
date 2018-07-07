@@ -278,7 +278,7 @@ app.post('/api/auth', (req,res) => {
 });
 
 app.post('/api/addComment', (req, res) => {
-  updateDatabaseContent(['user',mainTyp,'comment','commentreply']).then(() => {
+  updateDatabaseContent(['user',req.body.mainTyp,'comment','commentreply']).then(() => {
     return auth(req.body.idToken);
   }).then((uid) => {
     var reference;
