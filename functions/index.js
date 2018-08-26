@@ -631,7 +631,7 @@ app.post('/api/getActivityFeed', (req,res) => {
             },
             content: dbStatusUpdates[contentList[i].key]['Content_' + req.body.lang],
             upload: contentList[i].upload,
-            comments: dbStatusUpdates[contentList[i].key].Comments
+            comments: getComments(dbStatusUpdates[contentList[i].key].Comments, dbComments, false, uid)
           });
         }
       }
