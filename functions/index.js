@@ -769,6 +769,50 @@ app.get('/api/triggerdailymail', (req, res) => {
   }).catch((err) => { console.log(err) }).then(() => { res.end() });
 });
 
+app.post('/api/verifyUser', (req, res) => {
+  updateDatabaseContent(['user']).then(() => {
+    return auth(req.body.idToken);
+  }).then((uid) => {
+    if (dbUser[uid].Rank == 'admin') {
+      admin.auth().updateUser(req.body.uid, {emailVerified: true}).then(() => {
+        res.send('success');
+      }).catch(() => {
+        res.send('error');
+      });
+    } else res.status(403).end();
+  }).catch((err) => {
+    res.status(500);
+    console.log(err);
+    admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+      res.status(401);
+    }).then(() => auth(req.body.idToken)).catch(() => {
+      res.status(403);
+    }).then(() => { res.end(); });
+  });
+});
+
+app.post('/api/resetPassword', (req, res) => {
+  updateDatabaseContent(['user']).then(() => {
+    return auth(req.body.idToken);
+  }).then((uid) => {
+    if (dbUser[uid].Rank == 'admin') {
+      admin.auth().updateUser(req.body.uid, { password: '123456' }).then(() => {
+        res.send('success');
+      }).catch(() => {
+        res.send('error');
+      });
+    } else res.status(403).end();
+  }).catch((err) => {
+    res.status(500);
+    console.log(err);
+    admin.auth().verifyIdToken(req.body.idToken).catch(() => {
+      res.status(401);
+    }).then(() => auth(req.body.idToken)).catch(() => {
+      res.status(403);
+    }).then(() => { res.end(); });
+  });
+});
+
 // FUNCTIONS
 
 function auth(idToken) {
