@@ -1,5 +1,4 @@
 const db = firebase.firestore();
-db.settings({ timestampsInSnapshots: true})
 
 var unsubscribeFunctions = {};
 var globalCommentData = {};
